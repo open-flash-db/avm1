@@ -1,0 +1,7 @@
+before switch on non-literals
+Warning: Reference to undeclared variable, 'discriminant'
+Warning: Reference to undeclared variable, 'foo'
+Warning: 'foo' has no property 'bar'
+foo.bar
+foo.bar or 2+2
+after switch on non-literals

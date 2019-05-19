@@ -1,0 +1,4 @@
+before if/else(if)
+Warning: Reference to undeclared variable, 'test'
+Warning: Reference to undeclared variable, 'test2'
+after if/else(if)

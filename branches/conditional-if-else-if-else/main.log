@@ -1,0 +1,5 @@
+before if/else if/else
+Warning: Reference to undeclared variable, 'test'
+Warning: Reference to undeclared variable, 'test2'
+in else
+after if/else if/else

@@ -1,0 +1,8 @@
+frame 4: try statement
+before try/catch
+in try
+after try/catch/finally
+before try/catch/finally
+in try
+in finally
+after try/catch/finally

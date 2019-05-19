@@ -1,0 +1,4 @@
+before LOGICAL AND
+Warning: Reference to undeclared variable, 'test'
+in else + and
+after LOGICAL AND

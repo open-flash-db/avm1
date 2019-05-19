@@ -1,0 +1,6 @@
+bidirectionnal label
+before bidirectionnal
+Warning: Reference to undeclared variable, 'test'
+in bidirectionnal do/while
+Warning: Reference to undeclared variable, 'test2'
+after bidirectionnal

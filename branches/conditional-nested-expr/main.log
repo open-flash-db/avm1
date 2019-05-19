@@ -1,0 +1,4 @@
+before nested conditionnal expression
+Warning: Reference to undeclared variable, 'test'
+Warning: Reference to undeclared variable, 'test2'
+after nested conditionnal expression

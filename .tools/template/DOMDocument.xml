@@ -1,0 +1,24 @@
+<DOMDocument xmlns="http://ns.adobe.com/xfl/2008/" xflVersion="2.2">
+  <timelines>
+    <DOMTimeline name="scene">
+      <layers>
+        <DOMLayer name="layer">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[fscommand("quit");
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timelines>
+  <PrinterSettings/>
+  <publishHistory/>
+</DOMDocument>

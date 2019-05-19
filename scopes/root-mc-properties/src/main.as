@@ -1,0 +1,10 @@
+trace("start");
+trace("_alpha=");
+trace(_alpha);
+trace("blendMode=");
+trace(blendMode);
+trace("cacheAsBitmap=");
+trace(cacheAsBitmap);
+trace("_currentFrame=");
+trace(_currentFrame);
+trace("end");

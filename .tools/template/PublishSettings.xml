@@ -1,0 +1,71 @@
+<flash_profiles>
+<flash_profile version="1.0" name="Default" current="true">
+  <PublishFlashProperties enabled="true">
+    <TopDown></TopDown>
+    <FireFox></FireFox>
+    <Report>0</Report>
+    <Protect>0</Protect>
+    <OmitTraceActions>0</OmitTraceActions>
+    <Quality>80</Quality>
+    <DeblockingFilter>0</DeblockingFilter>
+    <StreamFormat>0</StreamFormat>
+    <StreamCompress>7</StreamCompress>
+    <EventFormat>0</EventFormat>
+    <EventCompress>7</EventCompress>
+    <OverrideSounds>0</OverrideSounds>
+    <Version>15</Version>
+    <ExternalPlayer>FlashPlayer11.2</ExternalPlayer>
+    <ActionScriptVersion>2</ActionScriptVersion>
+    <PackageExportFrame>1</PackageExportFrame>
+    <PackagePaths></PackagePaths>
+    <AS3PackagePaths>.</AS3PackagePaths>
+    <AS3ConfigConst>CONFIG::FLASH_AUTHORING=&quot;true&quot;;</AS3ConfigConst>
+    <DebuggingPermitted>0</DebuggingPermitted>
+    <DebuggingPassword></DebuggingPassword>
+    <CompressMovie>0</CompressMovie>
+    <CompressionType>0</CompressionType>
+    <InvisibleLayer>1</InvisibleLayer>
+    <DeviceSound>0</DeviceSound>
+    <StreamUse8kSampleRate>0</StreamUse8kSampleRate>
+    <EventUse8kSampleRate>0</EventUse8kSampleRate>
+    <UseNetwork>0</UseNetwork>
+    <DocumentClass></DocumentClass>
+    <AS3Strict>2</AS3Strict>
+    <AS3Coach>4</AS3Coach>
+    <AS3AutoDeclare>4096</AS3AutoDeclare>
+    <AS3Dialect>AS3</AS3Dialect>
+    <AS3ExportFrame>1</AS3ExportFrame>
+    <AS3Optimize>1</AS3Optimize>
+    <ExportSwc>0</ExportSwc>
+    <ScriptStuckDelay>15</ScriptStuckDelay>
+    <IncludeXMP>0</IncludeXMP>
+    <HardwareAcceleration>0</HardwareAcceleration>
+    <AS3Flags>4102</AS3Flags>
+    <DefaultLibraryLinkage>rsl</DefaultLibraryLinkage>
+    <RSLPreloaderMethod>wrap</RSLPreloaderMethod>
+    <RSLPreloaderSWF>$(AppConfig)/ActionScript 3.0/rsls/loader_animation.swf</RSLPreloaderSWF>
+    <LibraryPath>
+      <library-path-entry>
+        <swc-path>$(AppConfig)/ActionScript 3.0/libs</swc-path>
+        <linkage>merge</linkage>
+      </library-path-entry>
+      <library-path-entry>
+        <swc-path>$(AppConfig)/ActionScript 3.0/libs/11.0/textLayout.swc</swc-path>
+        <linkage usesDefault="true">rsl</linkage>
+        <rsl-url>http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textLayout_2.0.0.232.swz</rsl-url>
+        <policy-file-url>http://fpdownload.adobe.com/pub/swz/crossdomain.xml</policy-file-url>
+        <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
+      </library-path-entry>
+    </LibraryPath>
+    <LibraryVersions>
+      <library-version>
+        <swc-path>$(AppConfig)/ActionScript 3.0/libs/11.0/textLayout.swc</swc-path>
+        <feature name="tlfText" majorVersion="2" minorVersion="0" build="232"/>
+        <rsl-url>http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textLayout_2.0.0.232.swz</rsl-url>
+        <policy-file-url>http://fpdownload.adobe.com/pub/swz/crossdomain.xml</policy-file-url>
+        <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
+      </library-version>
+    </LibraryVersions>
+  </PublishFlashProperties>
+</flash_profile>
+</flash_profiles>

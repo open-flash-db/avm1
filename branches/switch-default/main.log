@@ -1,0 +1,4 @@
+before switch+default
+Warning: Reference to undeclared variable, 'i'
+default
+after switch+default

@@ -1,0 +1,5 @@
+before nested if/else
+Warning: Reference to undeclared variable, 'test'
+Warning: Reference to undeclared variable, 'test'
+in nested if/else 4
+after nested if/else

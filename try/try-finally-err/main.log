@@ -1,0 +1,6 @@
+start
+err
+in-finally
+Warning: Reference to undeclared variable, 'e'
+undefined
+Warning: Uncaught exception, err-value

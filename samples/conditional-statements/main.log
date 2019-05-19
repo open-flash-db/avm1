@@ -1,0 +1,15 @@
+frame 3: conditionnal statements
+before if
+in if
+after if
+before if/else
+in if
+after if/else
+before nested if
+in nested if
+after nested if
+before nested if/else
+in nested if/else 1
+after nested if
+before conditionnal expression
+after conditionnal expression

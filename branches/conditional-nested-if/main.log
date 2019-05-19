@@ -1,0 +1,3 @@
+before nested if
+Warning: Reference to undeclared variable, 'test'
+after nested if

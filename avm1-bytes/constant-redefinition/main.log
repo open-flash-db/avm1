@@ -1,0 +1,9 @@
+trace(c:0)
+foo
+trace(c:1)
+bar
+trace(c:0)
+baz
+trace(c:1)
+undefined
+end

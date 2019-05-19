@@ -1,0 +1,6 @@
+before LOGICAL OR
+Warning: Reference to undeclared variable, 'test'
+Warning: Reference to undeclared variable, 'test2'
+Warning: Reference to undeclared variable, 'test3'
+in else + or
+after LOGICAL OR

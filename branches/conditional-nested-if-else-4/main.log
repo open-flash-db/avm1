@@ -1,0 +1,7 @@
+before hyper-nested if/else
+Warning: Reference to undeclared variable, 'test'
+Warning: Reference to undeclared variable, 'test'
+Warning: Reference to undeclared variable, 'test'
+Warning: Reference to undeclared variable, 'test'
+in hyper-nested if/else 0000
+after hyper-nested if/else

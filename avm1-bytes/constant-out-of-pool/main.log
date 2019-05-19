@@ -1,0 +1,5 @@
+trace(c:0)
+foo
+trace(c:1)
+undefined
+end

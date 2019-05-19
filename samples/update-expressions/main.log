@@ -1,0 +1,10 @@
+frame 9: update expressions
+Warning: Reference to undeclared variable, 'i'
+after increment
+after prefixed increment
+after decrement
+after prefixed decrement
+after increment + assignment
+after prefixed increment + assignment
+after decrement + assignment
+after prefixed decrement + assignment

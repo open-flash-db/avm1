@@ -1,0 +1,7 @@
+frame 2: frame assignments persistance
+Warning: Reference to undeclared variable, 'varAssignment'
+undefined
+Warning: Reference to undeclared variable, 'scopeAssignment'
+undefined
+Warning: Reference to undeclared variable, 'thisAssignment'
+undefined
