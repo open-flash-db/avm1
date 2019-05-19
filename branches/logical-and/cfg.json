@@ -1,0 +1,158 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before LOGICAL AND"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push-duplicate"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p53"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test2"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        }
+      ],
+      "next": "label_p53"
+    },
+    {
+      "label": "label_p53",
+      "actions": [
+        {
+          "action": "push-duplicate"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p72"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test3"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        }
+      ],
+      "next": "label_p72"
+    },
+    {
+      "label": "label_p72",
+      "actions": [
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p100"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "in if + and"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p119"
+        }
+      ]
+    },
+    {
+      "label": "label_p100",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "in else + and"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p119"
+    },
+    {
+      "label": "label_p119",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "after LOGICAL AND"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p142"
+    },
+    {
+      "label": "label_p142",
+      "actions": []
+    }
+  ]
+}

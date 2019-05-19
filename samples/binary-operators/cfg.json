@@ -1,0 +1,678 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "frame 5: binary operators",
+            "four",
+            "three"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "equals2"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "equals2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "strict-equals"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "strict-equals"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "greater"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "greater"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "bit-l-shift"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "bit-r-shift"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "bit-u-r-shift"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "add2"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "subtract"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "multiply"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "divide"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "modulo"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "bit-or"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "bit-xor"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "bit-and"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "instance-of"
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p354"
+    },
+    {
+      "label": "label_p354",
+      "actions": []
+    }
+  ]
+}

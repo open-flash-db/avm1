@@ -1,0 +1,572 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "frame 3: conditionnal statements",
+            "test",
+            "before if",
+            "in if",
+            "after if",
+            "before if/else",
+            "in else",
+            "after if/else",
+            "before nested if",
+            "in nested if",
+            "after nested if",
+            "test2",
+            "before nested if/else",
+            "in nested if/else 1",
+            "in nested if/else 2",
+            "in nested if/else 3",
+            "in nested if/else 4",
+            "before conditionnal expression",
+            "foo",
+            "baz",
+            "bar",
+            "after conditionnal expression"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "boolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p370"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p370"
+    },
+    {
+      "label": "label_p370",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p405"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p411"
+        }
+      ]
+    },
+    {
+      "label": "label_p405",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p411"
+    },
+    {
+      "label": "label_p411",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "boolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p461"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p461"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p461"
+    },
+    {
+      "label": "label_p461",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 11
+            },
+            {
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 12
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p527"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p516"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p522"
+        }
+      ]
+    },
+    {
+      "label": "label_p516",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 14
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p522"
+    },
+    {
+      "label": "label_p522",
+      "actions": [
+        {
+          "action": "jump",
+          "target": "label_p556"
+        }
+      ]
+    },
+    {
+      "label": "label_p527",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p550"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 15
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p556"
+        }
+      ]
+    },
+    {
+      "label": "label_p550",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 16
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p556"
+    },
+    {
+      "label": "label_p556",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 17
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 18
+            },
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "if",
+          "target": "label_p591"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 19
+            }
+          ]
+        },
+        {
+          "action": "jump",
+          "target": "label_p596"
+        }
+      ]
+    },
+    {
+      "label": "label_p591",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 20
+            }
+          ]
+        }
+      ],
+      "next": "label_p596"
+    },
+    {
+      "label": "label_p596",
+      "actions": [
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 21
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p603"
+    },
+    {
+      "label": "label_p603",
+      "actions": []
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before LOGICAL OR"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push-duplicate"
+        },
+        {
+          "action": "if",
+          "target": "label_p51"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test2"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        }
+      ],
+      "next": "label_p51"
+    },
+    {
+      "label": "label_p51",
+      "actions": [
+        {
+          "action": "push-duplicate"
+        },
+        {
+          "action": "if",
+          "target": "label_p69"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test3"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        }
+      ],
+      "next": "label_p69"
+    },
+    {
+      "label": "label_p69",
+      "actions": [
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p96"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "in if + or"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p114"
+        }
+      ]
+    },
+    {
+      "label": "label_p96",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "in else + or"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p114"
+    },
+    {
+      "label": "label_p114",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "after LOGICAL OR"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p136"
+    },
+    {
+      "label": "label_p136",
+      "actions": []
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "i",
+            "before for/true + break",
+            "in for/true + break",
+            "after for/true + break"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p95"
+    },
+    {
+      "label": "label_p95",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "add2"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p146"
+        },
+        {
+          "action": "jump",
+          "target": "label_p151"
+        }
+      ]
+    },
+    {
+      "label": "label_p146",
+      "actions": [
+        {
+          "action": "jump",
+          "target": "label_p95"
+        }
+      ]
+    },
+    {
+      "label": "label_p151",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p157"
+    },
+    {
+      "label": "label_p157",
+      "actions": []
+    }
+  ]
+}

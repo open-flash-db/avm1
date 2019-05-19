@@ -1,0 +1,122 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "main",
+            "start",
+            "before-call",
+            "after-call",
+            "end"
+          ]
+        },
+        {
+          "action": "define-function",
+          "name": "main",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "label": "label_p55",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p61"
+              },
+              {
+                "label": "label_p61",
+                "actions": []
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p101"
+    },
+    {
+      "label": "label_p101",
+      "actions": []
+    }
+  ]
+}

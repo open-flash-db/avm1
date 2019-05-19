@@ -1,0 +1,189 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "before fake continue",
+            "i",
+            "in for+continue",
+            "after fake continue"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        }
+      ],
+      "next": "label_p85"
+    },
+    {
+      "label": "label_p85",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p157"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "strict-equals"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p136"
+        },
+        {
+          "action": "jump",
+          "target": "label_p142"
+        }
+      ]
+    },
+    {
+      "label": "label_p136",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p142"
+    },
+    {
+      "label": "label_p142",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "increment"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "jump",
+          "target": "label_p85"
+        }
+      ]
+    },
+    {
+      "label": "label_p157",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p163"
+    },
+    {
+      "label": "label_p163",
+      "actions": []
+    }
+  ]
+}

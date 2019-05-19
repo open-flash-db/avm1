@@ -1,0 +1,141 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "frame 1: frame assignments",
+            "varAssignment",
+            "scopeAssignment",
+            "this",
+            "thisAssignment"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            },
+            {
+              "type": "sint32",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p148"
+    },
+    {
+      "label": "label_p148",
+      "actions": []
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "bidirectionnal label"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before bidirectionnal"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p97"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "in bidirectionnal test"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p97"
+    },
+    {
+      "label": "label_p97",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "in bidirectionnal do/while"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test2"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "if",
+          "target": "label_p97"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "after bidirectionnal"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p171"
+    },
+    {
+      "label": "label_p171",
+      "actions": []
+    }
+  ]
+}

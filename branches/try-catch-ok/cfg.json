@@ -1,0 +1,100 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before try/catch"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "try",
+          "try": {
+            "blocks": [
+              {
+                "label": "label_p36",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "in try"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p67"
+                  }
+                ]
+              },
+              {
+                "label": "label_p67",
+                "actions": []
+              }
+            ]
+          },
+          "catch": {
+            "blocks": [
+              {
+                "label": "label_p53",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "in catch"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p67"
+              },
+              {
+                "label": "label_p67",
+                "actions": []
+              }
+            ]
+          },
+          "catch_target": {
+            "type": "variable",
+            "target": "err"
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "after try/catch"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p88"
+    },
+    {
+      "label": "label_p88",
+      "actions": []
+    }
+  ]
+}

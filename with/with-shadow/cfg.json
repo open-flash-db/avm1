@@ -1,0 +1,235 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "x",
+            "o",
+            "start",
+            "shadow",
+            "inner",
+            "outer",
+            "f",
+            "no-shadow",
+            "end"
+          ]
+        },
+        {
+          "action": "define-function",
+          "name": "f",
+          "parameters": [
+            "x",
+            "o"
+          ],
+          "body": {
+            "blocks": [
+              {
+                "label": "label_p63",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "with",
+                    "with": {
+                      "blocks": [
+                        {
+                          "label": "label_p81",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "constant",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-variable"
+                            },
+                            {
+                              "action": "trace"
+                            }
+                          ],
+                          "next": "label_p88"
+                        },
+                        {
+                          "label": "label_p88",
+                          "actions": []
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "next": "label_p88"
+              },
+              {
+                "label": "label_p88",
+                "actions": []
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 4
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "init-object"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            },
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "init-object"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            },
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p166"
+    },
+    {
+      "label": "label_p166",
+      "actions": []
+    }
+  ]
+}

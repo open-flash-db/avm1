@@ -1,0 +1,930 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "i",
+            "decrement suffix",
+            "decrement prefix",
+            "a",
+            "map"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "define-local2"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "sint32",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        }
+      ],
+      "next": "label_p70"
+    },
+    {
+      "label": "label_p70",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "decrement"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "greater"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p117"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p70"
+        }
+      ]
+    },
+    {
+      "label": "label_p117",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "sint32",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        }
+      ],
+      "next": "label_p141"
+    },
+    {
+      "label": "label_p141",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "decrement"
+        },
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "greater"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p188"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p141"
+        }
+      ]
+    },
+    {
+      "label": "label_p188",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "",
+          "preload_parent": false,
+          "preload_root": false,
+          "suppress_super": true,
+          "preload_super": false,
+          "suppress_arguments": true,
+          "preload_arguments": false,
+          "suppress_this": true,
+          "preload_this": false,
+          "preload_global": false,
+          "register_count": 2,
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "label": "label_p211",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "undefined"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 1
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 1
+                  },
+                  {
+                    "action": "pop"
+                  }
+                ],
+                "next": "label_p239"
+              },
+              {
+                "label": "label_p239",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "decrement"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 1
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "greater"
+                  },
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p282"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p239"
+                  }
+                ]
+              },
+              {
+                "label": "label_p282",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 1
+                  },
+                  {
+                    "action": "pop"
+                  }
+                ],
+                "next": "label_p307"
+              },
+              {
+                "label": "label_p307",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "decrement"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 1
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "greater"
+                  },
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p347"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p307"
+                  }
+                ]
+              },
+              {
+                "label": "label_p347",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p353"
+              },
+              {
+                "label": "label_p353",
+                "actions": []
+              }
+            ]
+          }
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            },
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "sint32",
+              "value": 5
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "init-object"
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p379"
+    },
+    {
+      "label": "label_p379",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "decrement"
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "greater"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p450"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p379"
+        }
+      ]
+    },
+    {
+      "label": "label_p450",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "sint32",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "set-member"
+        }
+      ],
+      "next": "label_p486"
+    },
+    {
+      "label": "label_p486",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "decrement"
+        },
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "greater"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p551"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p486"
+        }
+      ]
+    },
+    {
+      "label": "label_p551",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p564"
+    },
+    {
+      "label": "label_p564",
+      "actions": []
+    }
+  ]
+}

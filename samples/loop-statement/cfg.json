@@ -1,0 +1,1160 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "frame 7: loop statements",
+            "i",
+            "before while",
+            "in while",
+            "after while",
+            "before do/while",
+            "in do/while",
+            "after do/while",
+            "before for",
+            "in for",
+            "after for",
+            "map",
+            "foo",
+            "bar",
+            "before for/in",
+            "key",
+            "in for/in",
+            "after for/in",
+            "before while + break",
+            "in while + break",
+            "after while + break",
+            "before  while/true + break",
+            "in  while/true + break",
+            "after while/true + break",
+            "before for/true + break",
+            "in for/true + break",
+            "after for/true + break",
+            "before for + continue",
+            "in for + continue",
+            "after for + continue"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p478"
+    },
+    {
+      "label": "label_p478",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p520"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "increment"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "jump",
+          "target": "label_p478"
+        }
+      ]
+    },
+    {
+      "label": "label_p520",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p547"
+    },
+    {
+      "label": "label_p547",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "increment"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "if",
+          "target": "label_p547"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        }
+      ],
+      "next": "label_p610"
+    },
+    {
+      "label": "label_p610",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p652"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "increment"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "jump",
+          "target": "label_p610"
+        }
+      ]
+    },
+    {
+      "label": "label_p652",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 11
+            },
+            {
+              "type": "constant",
+              "value": 12
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 13
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "init-object"
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 14
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "enumerate2"
+        }
+      ],
+      "next": "label_p697"
+    },
+    {
+      "label": "label_p697",
+      "actions": [
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "null"
+            }
+          ]
+        },
+        {
+          "action": "equals2"
+        },
+        {
+          "action": "if",
+          "target": "label_p730"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 15
+            },
+            {
+              "type": "register",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 16
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p697"
+        }
+      ]
+    },
+    {
+      "label": "label_p730",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 17
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 18
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p757"
+    },
+    {
+      "label": "label_p757",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p826"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 19
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "increment"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p821"
+        },
+        {
+          "action": "jump",
+          "target": "label_p826"
+        }
+      ]
+    },
+    {
+      "label": "label_p821",
+      "actions": [
+        {
+          "action": "jump",
+          "target": "label_p757"
+        }
+      ]
+    },
+    {
+      "label": "label_p826",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 21
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p853"
+    },
+    {
+      "label": "label_p853",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "action": "if",
+          "target": "label_p911"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 22
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "increment"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p906"
+        },
+        {
+          "action": "jump",
+          "target": "label_p911"
+        }
+      ]
+    },
+    {
+      "label": "label_p906",
+      "actions": [
+        {
+          "action": "jump",
+          "target": "label_p853"
+        }
+      ]
+    },
+    {
+      "label": "label_p911",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 23
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 24
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p938"
+    },
+    {
+      "label": "label_p938",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 25
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "add2"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p989"
+        },
+        {
+          "action": "jump",
+          "target": "label_p994"
+        }
+      ]
+    },
+    {
+      "label": "label_p989",
+      "actions": [
+        {
+          "action": "jump",
+          "target": "label_p938"
+        }
+      ]
+    },
+    {
+      "label": "label_p994",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 26
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 27
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        }
+      ],
+      "next": "label_p1021"
+    },
+    {
+      "label": "label_p1021",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p1093"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "strict-equals"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p1072"
+        },
+        {
+          "action": "jump",
+          "target": "label_p1078"
+        }
+      ]
+    },
+    {
+      "label": "label_p1072",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 28
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p1078"
+    },
+    {
+      "label": "label_p1078",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "increment"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "jump",
+          "target": "label_p1021"
+        }
+      ]
+    },
+    {
+      "label": "label_p1093",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 29
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p1099"
+    },
+    {
+      "label": "label_p1099",
+      "actions": []
+    }
+  ]
+}

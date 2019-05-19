@@ -1,0 +1,56 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "foo",
+            "Hello, World!"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "init-object"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p43"
+    },
+    {
+      "label": "label_p43",
+      "actions": []
+    }
+  ]
+}

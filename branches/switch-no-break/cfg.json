@@ -1,0 +1,135 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before switch without break"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "discriminant"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "strict-equals"
+        },
+        {
+          "action": "if",
+          "target": "label_p90"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "strict-equals"
+        },
+        {
+          "action": "if",
+          "target": "label_p99"
+        },
+        {
+          "action": "jump",
+          "target": "label_p108"
+        }
+      ]
+    },
+    {
+      "label": "label_p90",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "foo"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p99"
+    },
+    {
+      "label": "label_p99",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "bar"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p108"
+    },
+    {
+      "label": "label_p108",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "after switch without break"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p140"
+    },
+    {
+      "label": "label_p140",
+      "actions": []
+    }
+  ]
+}

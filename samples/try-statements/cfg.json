@@ -1,0 +1,236 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "frame 4: try statement",
+            "before try/catch",
+            "in try",
+            "in catch",
+            "after try/catch/finally",
+            "before try/catch/finally",
+            "in finally"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "try",
+          "try": {
+            "blocks": [
+              {
+                "label": "label_p147",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p164"
+                  }
+                ]
+              },
+              {
+                "label": "label_p164",
+                "actions": []
+              }
+            ]
+          },
+          "catch": {
+            "blocks": [
+              {
+                "label": "label_p158",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p164"
+              },
+              {
+                "label": "label_p164",
+                "actions": []
+              }
+            ]
+          },
+          "catch_target": {
+            "type": "variable",
+            "target": "err"
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "try",
+          "try": {
+            "blocks": [
+              {
+                "label": "label_p190",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p207"
+                  }
+                ]
+              },
+              {
+                "label": "label_p207",
+                "actions": []
+              }
+            ]
+          },
+          "catch": {
+            "blocks": [
+              {
+                "label": "label_p201",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p207"
+              },
+              {
+                "label": "label_p207",
+                "actions": []
+              }
+            ]
+          },
+          "catch_target": {
+            "type": "variable",
+            "target": "err"
+          },
+          "finally": {
+            "blocks": [
+              {
+                "label": "label_p207",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 6
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p213"
+              },
+              {
+                "label": "label_p213",
+                "actions": []
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p219"
+    },
+    {
+      "label": "label_p219",
+      "actions": []
+    }
+  ]
+}

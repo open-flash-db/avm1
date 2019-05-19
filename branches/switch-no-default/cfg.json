@@ -1,0 +1,141 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before switch"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "i"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "strict-equals"
+        },
+        {
+          "action": "if",
+          "target": "label_p69"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "strict-equals"
+        },
+        {
+          "action": "if",
+          "target": "label_p86"
+        },
+        {
+          "action": "jump",
+          "target": "label_p103"
+        }
+      ]
+    },
+    {
+      "label": "label_p69",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "case 0"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p103"
+        }
+      ]
+    },
+    {
+      "label": "label_p86",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "case 1"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p103"
+        }
+      ]
+    },
+    {
+      "label": "label_p103",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "after switch"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p121"
+    },
+    {
+      "label": "label_p121",
+      "actions": []
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "1 + 1 = 2"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p15"
+    },
+    {
+      "label": "label_p15",
+      "actions": []
+    }
+  ]
+}

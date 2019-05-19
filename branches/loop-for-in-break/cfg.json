@@ -1,0 +1,248 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "map",
+            "foo",
+            "bar",
+            "fuz",
+            "before for/in + early break",
+            "key",
+            "start of for/in + early break",
+            "end of for/in + early break",
+            "after for/in + early break"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            },
+            {
+              "type": "constant",
+              "value": 3
+            },
+            {
+              "type": "sint32",
+              "value": 3
+            },
+            {
+              "type": "sint32",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "init-object"
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "enumerate2"
+        }
+      ],
+      "next": "label_p184"
+    },
+    {
+      "label": "label_p184",
+      "actions": [
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "null"
+            }
+          ]
+        },
+        {
+          "action": "equals2"
+        },
+        {
+          "action": "if",
+          "target": "label_p257"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            },
+            {
+              "type": "register",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "strict-equals"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p235"
+        },
+        {
+          "action": "jump",
+          "target": "label_p246"
+        }
+      ]
+    },
+    {
+      "label": "label_p235",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p184"
+        }
+      ]
+    },
+    {
+      "label": "label_p246",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "null"
+            }
+          ]
+        },
+        {
+          "action": "equals2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p246"
+        }
+      ],
+      "next": "label_p257"
+    },
+    {
+      "label": "label_p257",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p263"
+    },
+    {
+      "label": "label_p263",
+      "actions": []
+    }
+  ]
+}

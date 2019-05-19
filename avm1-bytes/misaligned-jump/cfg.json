@@ -1,0 +1,69 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "start"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 301990553
+            },
+            {
+              "type": "string",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "action": "jump",
+          "target": "label_p15"
+        }
+      ]
+    },
+    {
+      "label": "label_p15",
+      "actions": [
+        {
+          "action": "jump",
+          "target": "label_p38"
+        }
+      ]
+    },
+    {
+      "label": "label_p38",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "end"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p47"
+    },
+    {
+      "label": "label_p47",
+      "actions": []
+    }
+  ]
+}

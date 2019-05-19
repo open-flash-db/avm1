@@ -1,0 +1,168 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "i",
+            "before  while/true + break",
+            "in  while/true + break",
+            "after while/true + break"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p103"
+    },
+    {
+      "label": "label_p103",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "action": "if",
+          "target": "label_p161"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "increment"
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "less2"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "not"
+        },
+        {
+          "action": "if",
+          "target": "label_p156"
+        },
+        {
+          "action": "jump",
+          "target": "label_p161"
+        }
+      ]
+    },
+    {
+      "label": "label_p156",
+      "actions": [
+        {
+          "action": "jump",
+          "target": "label_p103"
+        }
+      ]
+    },
+    {
+      "label": "label_p161",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p167"
+    },
+    {
+      "label": "label_p167",
+      "actions": []
+    }
+  ]
+}

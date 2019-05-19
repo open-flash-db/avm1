@@ -1,0 +1,173 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "x",
+            "y",
+            "start",
+            "p",
+            "Point",
+            "end"
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "Point",
+          "preload_parent": false,
+          "preload_root": false,
+          "suppress_super": true,
+          "preload_super": false,
+          "suppress_arguments": true,
+          "preload_arguments": false,
+          "suppress_this": false,
+          "preload_this": true,
+          "preload_global": false,
+          "register_count": 4,
+          "parameters": [
+            {
+              "register": 3,
+              "name": "x"
+            },
+            {
+              "register": 2,
+              "name": "y"
+            }
+          ],
+          "body": {
+            "blocks": [
+              {
+                "label": "label_p49",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "register",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-member"
+                  }
+                ],
+                "next": "label_p69"
+              },
+              {
+                "label": "label_p69",
+                "actions": []
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            },
+            {
+              "type": "sint32",
+              "value": 3
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            },
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "new-object"
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p112"
+    },
+    {
+      "label": "label_p112",
+      "actions": []
+    }
+  ]
+}

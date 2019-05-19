@@ -1,0 +1,1331 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "before parseDataString",
+            "lproto",
+            "parseDataString",
+            "getStaticText",
+            "showError",
+            "length",
+            "charAt",
+            " ",
+            "\n",
+            "\r",
+            "\t",
+            "substr",
+            "substring",
+            "&",
+            "split",
+            "containerObject",
+            "=",
+            "$",
+            "set",
+            "gid",
+            "*Z*p",
+            "$gid",
+            "get",
+            "gkey",
+            "5N2p",
+            "$key",
+            "families",
+            "9t}[v",
+            "$families",
+            "$url",
+            "loadVars",
+            "prepareGame",
+            "after parseDataString"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "",
+          "preload_parent": false,
+          "preload_root": false,
+          "suppress_super": true,
+          "preload_super": false,
+          "suppress_arguments": true,
+          "preload_arguments": false,
+          "suppress_this": false,
+          "preload_this": true,
+          "preload_global": false,
+          "register_count": 10,
+          "parameters": [
+            {
+              "register": 2,
+              "name": "str"
+            }
+          ],
+          "body": {
+            "blocks": [
+              {
+                "label": "label_p285",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  },
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p335"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 64
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "undefined"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "return"
+                  }
+                ]
+              },
+              {
+                "label": "label_p335",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "boolean",
+                        "value": false
+                      }
+                    ]
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p498"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "subtract"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 6
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 3
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "constant",
+                        "value": 7
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  },
+                  {
+                    "action": "push-duplicate"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p403"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "constant",
+                        "value": 8
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  }
+                ],
+                "next": "label_p403"
+              },
+              {
+                "label": "label_p403",
+                "actions": [
+                  {
+                    "action": "push-duplicate"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p418"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "constant",
+                        "value": 9
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  }
+                ],
+                "next": "label_p418"
+              },
+              {
+                "label": "label_p418",
+                "actions": [
+                  {
+                    "action": "push-duplicate"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p433"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "constant",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  }
+                ],
+                "next": "label_p433"
+              },
+              {
+                "label": "label_p433",
+                "actions": [
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p488"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "subtract"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 2
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 11
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 2
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p335"
+                  }
+                ]
+              },
+              {
+                "label": "label_p488",
+                "actions": [
+                  {
+                    "action": "jump",
+                    "target": "label_p498"
+                  }
+                ]
+              },
+              {
+                "label": "label_p498",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "boolean",
+                        "value": false
+                      }
+                    ]
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p632"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 6
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 4
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 4
+                      },
+                      {
+                        "type": "constant",
+                        "value": 7
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  },
+                  {
+                    "action": "push-duplicate"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p558"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 4
+                      },
+                      {
+                        "type": "constant",
+                        "value": 8
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  }
+                ],
+                "next": "label_p558"
+              },
+              {
+                "label": "label_p558",
+                "actions": [
+                  {
+                    "action": "push-duplicate"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p573"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 4
+                      },
+                      {
+                        "type": "constant",
+                        "value": 9
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  }
+                ],
+                "next": "label_p573"
+              },
+              {
+                "label": "label_p573",
+                "actions": [
+                  {
+                    "action": "push-duplicate"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p588"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 4
+                      },
+                      {
+                        "type": "constant",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  }
+                ],
+                "next": "label_p588"
+              },
+              {
+                "label": "label_p588",
+                "actions": [
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p622"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 12
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 2
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p498"
+                  }
+                ]
+              },
+              {
+                "label": "label_p622",
+                "actions": [
+                  {
+                    "action": "jump",
+                    "target": "label_p632"
+                  }
+                ]
+              },
+              {
+                "label": "label_p632",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 13
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 14
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 8
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      },
+                      {
+                        "type": "constant",
+                        "value": 15
+                      }
+                    ]
+                  },
+                  {
+                    "action": "new-object"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 9
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 5
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 8
+                      },
+                      {
+                        "type": "constant",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 7
+                  },
+                  {
+                    "action": "pop"
+                  }
+                ],
+                "next": "label_p702"
+              },
+              {
+                "label": "label_p702",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 5
+                      },
+                      {
+                        "type": "register",
+                        "value": 7
+                      }
+                    ]
+                  },
+                  {
+                    "action": "less2"
+                  },
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p824"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 16
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 8
+                      },
+                      {
+                        "type": "register",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 14
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 6
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 6
+                      },
+                      {
+                        "type": "constant",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  },
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p808"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 6
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 17
+                      },
+                      {
+                        "type": "register",
+                        "value": 6
+                      },
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "add2"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 2
+                      },
+                      {
+                        "type": "register",
+                        "value": 9
+                      },
+                      {
+                        "type": "constant",
+                        "value": 18
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "pop"
+                  }
+                ],
+                "next": "label_p808"
+              },
+              {
+                "label": "label_p808",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "action": "increment"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 5
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p702"
+                  }
+                ]
+              },
+              {
+                "label": "label_p824",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 19
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 20
+                      },
+                      {
+                        "type": "constant",
+                        "value": 21
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 9
+                      },
+                      {
+                        "type": "constant",
+                        "value": 22
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 0
+                  },
+                  {
+                    "action": "set-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 23
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 24
+                      },
+                      {
+                        "type": "constant",
+                        "value": 25
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 9
+                      },
+                      {
+                        "type": "constant",
+                        "value": 22
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 0
+                  },
+                  {
+                    "action": "set-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 26
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 27
+                      },
+                      {
+                        "type": "constant",
+                        "value": 28
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 9
+                      },
+                      {
+                        "type": "constant",
+                        "value": 22
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 0
+                  },
+                  {
+                    "action": "set-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 19
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  },
+                  {
+                    "action": "push-duplicate"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p959"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 23
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  }
+                ],
+                "next": "label_p959"
+              },
+              {
+                "label": "label_p959",
+                "actions": [
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p999"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 29
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 9
+                      },
+                      {
+                        "type": "constant",
+                        "value": 22
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 30
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "undefined"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "return"
+                  }
+                ]
+              },
+              {
+                "label": "label_p999",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 31
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "pop"
+                  }
+                ],
+                "next": "label_p1017"
+              },
+              {
+                "label": "label_p1017",
+                "actions": []
+              }
+            ]
+          }
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 32
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p1024"
+    },
+    {
+      "label": "label_p1024",
+      "actions": []
+    }
+  ]
+}

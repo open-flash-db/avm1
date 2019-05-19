@@ -1,0 +1,94 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before conditionnal expression"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "foo"
+            },
+            {
+              "type": "string",
+              "value": "test"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "if",
+          "target": "label_p69"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "baz"
+            }
+          ]
+        },
+        {
+          "action": "jump",
+          "target": "label_p77"
+        }
+      ]
+    },
+    {
+      "label": "label_p69",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "bar"
+            }
+          ]
+        }
+      ],
+      "next": "label_p77"
+    },
+    {
+      "label": "label_p77",
+      "actions": [
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "after conditionnal expression"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p113"
+    },
+    {
+      "label": "label_p113",
+      "actions": []
+    }
+  ]
+}

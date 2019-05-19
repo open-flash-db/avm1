@@ -1,0 +1,26 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "frame 8: misc"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p19"
+    },
+    {
+      "label": "label_p19",
+      "actions": []
+    }
+  ]
+}

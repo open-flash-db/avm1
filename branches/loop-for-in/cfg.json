@@ -1,0 +1,162 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "map",
+            "foo",
+            "bar",
+            "before for/in",
+            "key",
+            "in for/in",
+            "after for/in"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "init-object"
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "enumerate2"
+        }
+      ],
+      "next": "label_p97"
+    },
+    {
+      "label": "label_p97",
+      "actions": [
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "null"
+            }
+          ]
+        },
+        {
+          "action": "equals2"
+        },
+        {
+          "action": "if",
+          "target": "label_p130"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            },
+            {
+              "type": "register",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "jump",
+          "target": "label_p97"
+        }
+      ]
+    },
+    {
+      "label": "label_p130",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p136"
+    },
+    {
+      "label": "label_p136",
+      "actions": []
+    }
+  ]
+}

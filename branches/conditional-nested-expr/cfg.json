@@ -1,0 +1,134 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before nested conditionnal expression"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "foo"
+            },
+            {
+              "type": "string",
+              "value": "test"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "if",
+          "target": "label_p105"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test2"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "if",
+          "target": "label_p92"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "fuz"
+            }
+          ]
+        },
+        {
+          "action": "jump",
+          "target": "label_p100"
+        }
+      ]
+    },
+    {
+      "label": "label_p92",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "baz"
+            }
+          ]
+        }
+      ],
+      "next": "label_p100"
+    },
+    {
+      "label": "label_p100",
+      "actions": [
+        {
+          "action": "jump",
+          "target": "label_p113"
+        }
+      ]
+    },
+    {
+      "label": "label_p105",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "bar"
+            }
+          ]
+        }
+      ],
+      "next": "label_p113"
+    },
+    {
+      "label": "label_p113",
+      "actions": [
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "after nested conditionnal expression"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p156"
+    },
+    {
+      "label": "label_p156",
+      "actions": []
+    }
+  ]
+}
