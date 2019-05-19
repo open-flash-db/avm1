@@ -1,6 +1,7 @@
 import { Avm1Emitter } from "avm1-emitter";
-import { ActionType } from "avm1-tree";
-import { emitBytes as emitSwfBytes } from "swf-emitter";
+import { ActionType } from "avm1-tree/action-type";
+import { GetUrl } from "avm1-tree/actions/get-url";
+import { movieToBytes } from "swf-emitter";
 import { Header, Movie, TagType, Ufixed8P8 } from "swf-tree";
 
 export async function getAvm1Bytes(tsModulePath: string): Promise<Uint8Array> {
@@ -8,12 +9,13 @@ export async function getAvm1Bytes(tsModulePath: string): Promise<Uint8Array> {
 }
 
 const QUIT_AVM1_BYTES: Uint8Array = ((): Uint8Array => {
-  const emitter = new Avm1Emitter();
-  emitter.writeAction({
+  const quitAction: GetUrl = {
     action: ActionType.GetUrl,
     url: "fscommand:quit",
     target: "",
-  });
+  };
+  const emitter = new Avm1Emitter();
+  emitter.writeAction(quitAction);
   (emitter as any).stream.writeBytes(new Uint8Array([0x00]));
   return emitter.getBytes();
 })();
@@ -51,5 +53,5 @@ export function avm1BytesToSwf(avm1Bytes: Uint8Array): Uint8Array {
     ],
   };
 
-  return emitSwfBytes(movie);
+  return movieToBytes(movie);
 }

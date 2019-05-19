@@ -24,7 +24,8 @@
  */
 
 import { Avm1Emitter } from "avm1-emitter";
-import { ActionType, ValueType } from "avm1-tree";
+import { ActionType } from "avm1-tree/action-type";
+import { ValueType } from "avm1-tree/value-type";
 
 const emitter = new Avm1Emitter();
 
