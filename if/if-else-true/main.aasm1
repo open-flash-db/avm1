@@ -1,0 +1,10 @@
+label_p0:
+  push(0="start");
+  trace();
+  push(0="branch-true");
+  trace();
+  push(0="end");
+  trace();
+  next label_p37;
+label_p37:
+  end;

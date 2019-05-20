@@ -1,0 +1,34 @@
+label_p0:
+  push(0="before if(if/else if/else)");
+  trace();
+  push(0="test");
+  getVariable();
+  not();
+  if(target=label_p144);
+  push(0="test2");
+  getVariable();
+  not();
+  if(target=label_p85);
+  push(0="in if(if)");
+  trace();
+  jump(target=label_p144);
+  end;
+label_p85:
+  push(0="test3");
+  getVariable();
+  not();
+  if(target=label_p127);
+  push(0="in if(else if)");
+  trace();
+  jump(target=label_p144);
+  end;
+label_p127:
+  push(0="in if(else)");
+  trace();
+  next label_p144;
+label_p144:
+  push(0="after if(if/else if/else)");
+  trace();
+  next label_p175;
+label_p175:
+  end;

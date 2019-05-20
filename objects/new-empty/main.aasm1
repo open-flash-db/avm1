@@ -1,0 +1,19 @@
+label_p0:
+  constantPool(0="start", 1="empty", 2="Empty", 3="end");
+  defineFunction(name="Empty", parameters=[]) {
+    label_p40:
+      end;
+  };
+  push(0=c:0);
+  trace();
+  push(0=c:1, 1=0f64, 2=c:2);
+  newObject();
+  defineLocal();
+  push(0=c:1);
+  getVariable();
+  trace();
+  push(0=c:3);
+  trace();
+  next label_p77;
+label_p77:
+  end;

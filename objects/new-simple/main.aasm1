@@ -1,0 +1,25 @@
+label_p0:
+  constantPool(0="x", 1="y", 2="start", 3="p", 4="Point", 5="end");
+  defineFunction2(name="Point", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=4, parameters=[r:3=i:"x",r:2=i:"y"]) {
+    label_p49:
+      push(0=r:1, 1=c:0, 2=r:3);
+      setMember();
+      push(0=r:1, 1=c:1, 2=r:2);
+      setMember();
+      next label_p69;
+    label_p69:
+      end;
+  };
+  push(0=c:2);
+  trace();
+  push(0=c:3, 1=3i32, 2=2i32, 3=2i32, 4=c:4);
+  newObject();
+  defineLocal();
+  push(0=c:3);
+  getVariable();
+  trace();
+  push(0=c:5);
+  trace();
+  next label_p112;
+label_p112:
+  end;

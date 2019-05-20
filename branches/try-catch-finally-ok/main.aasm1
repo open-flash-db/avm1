@@ -1,0 +1,31 @@
+label_p0:
+  push(0="before try/catch/finally");
+  trace();
+  try(catchTarget=i:"err") {
+    label_p44:
+      push(0="in try");
+      trace();
+      jump(target=label_p75);
+      end;
+    label_p75:
+      end;
+  } catch {
+    label_p61:
+      push(0="in catch");
+      trace();
+      next label_p75;
+    label_p75:
+      end;
+  } finally {
+    label_p75:
+      push(0="in finally");
+      trace();
+      next label_p91;
+    label_p91:
+      end;
+  };
+  push(0="after try/catch/finally");
+  trace();
+  next label_p120;
+label_p120:
+  end;

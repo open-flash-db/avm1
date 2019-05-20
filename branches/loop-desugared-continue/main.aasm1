@@ -1,0 +1,39 @@
+label_p0:
+  constantPool(0="before fake continue", 1="i", 2="in for+continue", 3="after fake continue");
+  push(0=c:0);
+  trace();
+  push(0=c:1, 1=0f64);
+  setVariable();
+  next label_p85;
+label_p85:
+  push(0=c:1);
+  getVariable();
+  push(0=2i32);
+  less2();
+  not();
+  if(target=label_p157);
+  push(0=c:1);
+  getVariable();
+  push(0=0f64);
+  strictEquals();
+  not();
+  if(target=label_p136);
+  jump(target=label_p142);
+  end;
+label_p136:
+  push(0=c:2);
+  trace();
+  next label_p142;
+label_p142:
+  push(0=c:1, 1=c:1);
+  getVariable();
+  increment();
+  setVariable();
+  jump(target=label_p85);
+  end;
+label_p157:
+  push(0=c:3);
+  trace();
+  next label_p163;
+label_p163:
+  end;

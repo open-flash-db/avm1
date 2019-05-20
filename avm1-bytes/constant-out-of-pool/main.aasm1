@@ -1,0 +1,15 @@
+label_p0:
+  constantPool(0="foo");
+  push(0="trace(c:0)");
+  trace();
+  push(0=c:0);
+  trace();
+  push(0="trace(c:1)");
+  trace();
+  push(0=c:1);
+  trace();
+  push(0="end");
+  trace();
+  next label_p62;
+label_p62:
+  end;

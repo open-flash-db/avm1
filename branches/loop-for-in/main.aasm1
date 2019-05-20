@@ -1,0 +1,28 @@
+label_p0:
+  constantPool(0="map", 1="foo", 2="bar", 3="before for/in", 4="key", 5="in for/in", 6="after for/in");
+  push(0=c:0, 1=c:1, 2=1i32, 3=c:2, 4=2i32, 5=2i32);
+  initObject();
+  defineLocal();
+  push(0=c:3);
+  trace();
+  push(0=c:0);
+  getVariable();
+  enumerate2();
+  next label_p97;
+label_p97:
+  storeRegister();
+  push(0=null);
+  equals2();
+  if(target=label_p130);
+  push(0=c:4, 1=r:0);
+  setVariable();
+  push(0=c:5);
+  trace();
+  jump(target=label_p97);
+  end;
+label_p130:
+  push(0=c:6);
+  trace();
+  next label_p136;
+label_p136:
+  end;

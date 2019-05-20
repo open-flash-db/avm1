@@ -1,0 +1,31 @@
+label_p0:
+  constantPool(0="frame 6: member access", 1="obj", 2="foo", 3="bar");
+  push(0=c:0);
+  trace();
+  push(0=c:1, 1=0f64);
+  initObject();
+  defineLocal();
+  push(0=c:1);
+  getVariable();
+  push(0=c:2, 1=c:3);
+  setMember();
+  push(0=c:1);
+  getVariable();
+  push(0=c:2, 1=c:3);
+  setMember();
+  push(0=c:2, 1=c:2);
+  defineLocal();
+  push(0=c:1);
+  getVariable();
+  push(0=c:2);
+  getVariable();
+  push(0=c:3);
+  setMember();
+  push(0=c:1);
+  getVariable();
+  push(0=c:2);
+  getMember();
+  trace();
+  next label_p129;
+label_p129:
+  end;

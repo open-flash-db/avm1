@@ -1,0 +1,24 @@
+label_p0:
+  constantPool(0="main", 1="start", 2="before-call", 3="after-call", 4="end");
+  defineFunction(name="main", parameters=[]) {
+    label_p55:
+      push(0=c:0);
+      trace();
+      next label_p61;
+    label_p61:
+      end;
+  };
+  push(0=c:1);
+  trace();
+  push(0=c:2);
+  trace();
+  push(0=0f64, 1=c:0);
+  callFunction();
+  pop();
+  push(0=c:3);
+  trace();
+  push(0=c:4);
+  trace();
+  next label_p101;
+label_p101:
+  end;

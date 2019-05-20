@@ -1,0 +1,219 @@
+label_p0:
+  constantPool(0="frame 7: loop statements", 1="i", 2="before while", 3="in while", 4="after while", 5="before do/while", 6="in do/while", 7="after do/while", 8="before for", 9="in for", 10="after for", 11="map", 12="foo", 13="bar", 14="before for/in", 15="key", 16="in for/in", 17="after for/in", 18="before while + break", 19="in while + break", 20="after while + break", 21="before  while/true + break", 22="in  while/true + break", 23="after while/true + break", 24="before for/true + break", 25="in for/true + break", 26="after for/true + break", 27="before for + continue", 28="in for + continue", 29="after for + continue");
+  push(0=c:0);
+  trace();
+  push(0=c:1, 1=0f64);
+  defineLocal();
+  push(0=c:2);
+  trace();
+  next label_p478;
+label_p478:
+  push(0=c:1);
+  getVariable();
+  push(0=2i32);
+  less2();
+  not();
+  if(target=label_p520);
+  push(0=c:3);
+  trace();
+  push(0=c:1, 1=c:1);
+  getVariable();
+  increment();
+  setVariable();
+  jump(target=label_p478);
+  end;
+label_p520:
+  push(0=c:4);
+  trace();
+  push(0=c:1, 1=0f64);
+  setVariable();
+  push(0=c:5);
+  trace();
+  next label_p547;
+label_p547:
+  push(0=c:6);
+  trace();
+  push(0=c:1, 1=c:1);
+  getVariable();
+  increment();
+  setVariable();
+  push(0=c:1);
+  getVariable();
+  push(0=2i32);
+  less2();
+  if(target=label_p547);
+  push(0=c:7);
+  trace();
+  push(0=c:8);
+  trace();
+  push(0=c:1, 1=0f64);
+  setVariable();
+  next label_p610;
+label_p610:
+  push(0=c:1);
+  getVariable();
+  push(0=2i32);
+  less2();
+  not();
+  if(target=label_p652);
+  push(0=c:9);
+  trace();
+  push(0=c:1, 1=c:1);
+  getVariable();
+  increment();
+  setVariable();
+  jump(target=label_p610);
+  end;
+label_p652:
+  push(0=c:10);
+  trace();
+  push(0=c:11, 1=c:12, 2=1i32, 3=c:13, 4=2i32, 5=2i32);
+  initObject();
+  defineLocal();
+  push(0=c:14);
+  trace();
+  push(0=c:11);
+  getVariable();
+  enumerate2();
+  next label_p697;
+label_p697:
+  storeRegister();
+  push(0=null);
+  equals2();
+  if(target=label_p730);
+  push(0=c:15, 1=r:0);
+  defineLocal();
+  push(0=c:16);
+  trace();
+  jump(target=label_p697);
+  end;
+label_p730:
+  push(0=c:17);
+  trace();
+  push(0=c:1, 1=0f64);
+  setVariable();
+  push(0=c:18);
+  trace();
+  next label_p757;
+label_p757:
+  push(0=c:1);
+  getVariable();
+  push(0=4i32);
+  less2();
+  not();
+  if(target=label_p826);
+  push(0=c:19);
+  trace();
+  push(0=c:1, 1=c:1);
+  getVariable();
+  increment();
+  setVariable();
+  push(0=c:1);
+  getVariable();
+  push(0=2i32);
+  less2();
+  not();
+  not();
+  if(target=label_p821);
+  jump(target=label_p826);
+  end;
+label_p821:
+  jump(target=label_p757);
+  end;
+label_p826:
+  push(0=c:20);
+  trace();
+  push(0=c:1, 1=0f64);
+  setVariable();
+  push(0=c:21);
+  trace();
+  next label_p853;
+label_p853:
+  push(0=false);
+  if(target=label_p911);
+  push(0=c:22);
+  trace();
+  push(0=c:1, 1=c:1);
+  getVariable();
+  increment();
+  setVariable();
+  push(0=c:1);
+  getVariable();
+  push(0=2i32);
+  less2();
+  not();
+  not();
+  if(target=label_p906);
+  jump(target=label_p911);
+  end;
+label_p906:
+  jump(target=label_p853);
+  end;
+label_p911:
+  push(0=c:23);
+  trace();
+  push(0=c:1, 1=0f64);
+  setVariable();
+  push(0=c:24);
+  trace();
+  next label_p938;
+label_p938:
+  push(0=c:25);
+  trace();
+  push(0=c:1, 1=c:1);
+  getVariable();
+  push(0=2i32);
+  add2();
+  setVariable();
+  push(0=c:1);
+  getVariable();
+  push(0=2i32);
+  less2();
+  not();
+  not();
+  if(target=label_p989);
+  jump(target=label_p994);
+  end;
+label_p989:
+  jump(target=label_p938);
+  end;
+label_p994:
+  push(0=c:26);
+  trace();
+  push(0=c:27);
+  trace();
+  push(0=c:1, 1=0f64);
+  setVariable();
+  next label_p1021;
+label_p1021:
+  push(0=c:1);
+  getVariable();
+  push(0=2i32);
+  less2();
+  not();
+  if(target=label_p1093);
+  push(0=c:1);
+  getVariable();
+  push(0=0f64);
+  strictEquals();
+  not();
+  if(target=label_p1072);
+  jump(target=label_p1078);
+  end;
+label_p1072:
+  push(0=c:28);
+  trace();
+  next label_p1078;
+label_p1078:
+  push(0=c:1, 1=c:1);
+  getVariable();
+  increment();
+  setVariable();
+  jump(target=label_p1021);
+  end;
+label_p1093:
+  push(0=c:29);
+  trace();
+  next label_p1099;
+label_p1099:
+  end;

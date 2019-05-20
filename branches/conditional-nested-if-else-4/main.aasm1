@@ -1,0 +1,162 @@
+label_p0:
+  constantPool(0="before hyper-nested if/else", 1="test", 2="in hyper-nested if/else 1111", 3="in hyper-nested if/else 1110", 4="in hyper-nested if/else 1101", 5="in hyper-nested if/else 1100", 6="in hyper-nested if/else 1011", 7="in hyper-nested if/else 1010", 8="in hyper-nested if/else 1001", 9="in hyper-nested if/else 1000", 10="in hyper-nested if/else 0111", 11="in hyper-nested if/else 0110", 12="in hyper-nested if/else 0101", 13="in hyper-nested if/else 0100", 14="in hyper-nested if/else 0011", 15="in hyper-nested if/else 0010", 16="in hyper-nested if/else 0001", 17="in hyper-nested if/else 0000", 18="after hyper-nested if/else");
+  push(0=c:0);
+  trace();
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p719);
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p639);
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p605);
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p594);
+  push(0=c:2);
+  trace();
+  jump(target=label_p600);
+  end;
+label_p594:
+  push(0=c:3);
+  trace();
+  next label_p600;
+label_p600:
+  jump(target=label_p634);
+  end;
+label_p605:
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p628);
+  push(0=c:4);
+  trace();
+  jump(target=label_p634);
+  end;
+label_p628:
+  push(0=c:5);
+  trace();
+  next label_p634;
+label_p634:
+  jump(target=label_p714);
+  end;
+label_p639:
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p685);
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p674);
+  push(0=c:6);
+  trace();
+  jump(target=label_p680);
+  end;
+label_p674:
+  push(0=c:7);
+  trace();
+  next label_p680;
+label_p680:
+  jump(target=label_p714);
+  end;
+label_p685:
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p708);
+  push(0=c:8);
+  trace();
+  jump(target=label_p714);
+  end;
+label_p708:
+  push(0=c:9);
+  trace();
+  next label_p714;
+label_p714:
+  jump(target=label_p886);
+  end;
+label_p719:
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p811);
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p777);
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p766);
+  push(0=c:10);
+  trace();
+  jump(target=label_p772);
+  end;
+label_p766:
+  push(0=c:11);
+  trace();
+  next label_p772;
+label_p772:
+  jump(target=label_p806);
+  end;
+label_p777:
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p800);
+  push(0=c:12);
+  trace();
+  jump(target=label_p806);
+  end;
+label_p800:
+  push(0=c:13);
+  trace();
+  next label_p806;
+label_p806:
+  jump(target=label_p886);
+  end;
+label_p811:
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p857);
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p846);
+  push(0=c:14);
+  trace();
+  jump(target=label_p852);
+  end;
+label_p846:
+  push(0=c:15);
+  trace();
+  next label_p852;
+label_p852:
+  jump(target=label_p886);
+  end;
+label_p857:
+  push(0=c:1);
+  getVariable();
+  not();
+  if(target=label_p880);
+  push(0=c:16);
+  trace();
+  jump(target=label_p886);
+  end;
+label_p880:
+  push(0=c:17);
+  trace();
+  next label_p886;
+label_p886:
+  push(0=c:18);
+  trace();
+  next label_p892;
+label_p892:
+  end;

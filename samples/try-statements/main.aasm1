@@ -1,0 +1,54 @@
+label_p0:
+  constantPool(0="frame 4: try statement", 1="before try/catch", 2="in try", 3="in catch", 4="after try/catch/finally", 5="before try/catch/finally", 6="in finally");
+  push(0=c:0);
+  trace();
+  push(0=c:1);
+  trace();
+  try(catchTarget=i:"err") {
+    label_p147:
+      push(0=c:2);
+      trace();
+      jump(target=label_p164);
+      end;
+    label_p164:
+      end;
+  } catch {
+    label_p158:
+      push(0=c:3);
+      trace();
+      next label_p164;
+    label_p164:
+      end;
+  };
+  push(0=c:4);
+  trace();
+  push(0=c:5);
+  trace();
+  try(catchTarget=i:"err") {
+    label_p190:
+      push(0=c:2);
+      trace();
+      jump(target=label_p207);
+      end;
+    label_p207:
+      end;
+  } catch {
+    label_p201:
+      push(0=c:3);
+      trace();
+      next label_p207;
+    label_p207:
+      end;
+  } finally {
+    label_p207:
+      push(0=c:6);
+      trace();
+      next label_p213;
+    label_p213:
+      end;
+  };
+  push(0=c:4);
+  trace();
+  next label_p219;
+label_p219:
+  end;

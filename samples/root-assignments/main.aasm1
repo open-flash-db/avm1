@@ -1,0 +1,24 @@
+label_p0:
+  constantPool(0="frame 1: frame assignments", 1="varAssignment", 2="scopeAssignment", 3="this", 4="thisAssignment");
+  push(0=c:0);
+  trace();
+  push(0=c:1, 1=1i32);
+  defineLocal();
+  push(0=c:2, 1=2i32);
+  setVariable();
+  push(0=c:3);
+  getVariable();
+  push(0=c:4, 1=3i32);
+  setMember();
+  push(0=c:1);
+  getVariable();
+  trace();
+  push(0=c:2);
+  getVariable();
+  trace();
+  push(0=c:4);
+  getVariable();
+  trace();
+  next label_p148;
+label_p148:
+  end;

@@ -1,0 +1,29 @@
+label_p0:
+  constantPool(0="start", 1="_alpha=", 2="", 3="blendMode=", 4="blendMode", 5="cacheAsBitmap=", 6="cacheAsBitmap", 7="_currentFrame=", 8="end");
+  push(0=c:0);
+  trace();
+  push(0=c:1);
+  trace();
+  push(0=c:2, 1=6i32);
+  getProperty();
+  trace();
+  push(0=c:3);
+  trace();
+  push(0=c:4);
+  getVariable();
+  trace();
+  push(0=c:5);
+  trace();
+  push(0=c:6);
+  getVariable();
+  trace();
+  push(0=c:7);
+  trace();
+  push(0=c:2, 1=4i32);
+  getProperty();
+  trace();
+  push(0=c:8);
+  trace();
+  next label_p163;
+label_p163:
+  end;

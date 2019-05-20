@@ -1,0 +1,15 @@
+label_p0:
+  push(0="frame 2: frame assignments persistance");
+  trace();
+  push(0="varAssignment");
+  getVariable();
+  trace();
+  push(0="scopeAssignment");
+  getVariable();
+  trace();
+  push(0="thisAssignment");
+  getVariable();
+  trace();
+  next label_p107;
+label_p107:
+  end;

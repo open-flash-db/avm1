@@ -1,0 +1,23 @@
+label_p0:
+  push(0="bidirectionnal label");
+  trace();
+  push(0="before bidirectionnal");
+  trace();
+  push(0="test");
+  getVariable();
+  not();
+  if(target=label_p97);
+  push(0="in bidirectionnal test");
+  trace();
+  next label_p97;
+label_p97:
+  push(0="in bidirectionnal do/while");
+  trace();
+  push(0="test2");
+  getVariable();
+  if(target=label_p97);
+  push(0="after bidirectionnal");
+  trace();
+  next label_p171;
+label_p171:
+  end;

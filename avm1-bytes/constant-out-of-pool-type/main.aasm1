@@ -1,0 +1,13 @@
+label_p0:
+  constantPool(0="foo");
+  push(0=c:1, 1=undefined);
+  strictEquals();
+  trace();
+  push(0=c:1, 1="undefined");
+  strictEquals();
+  trace();
+  push(0="end");
+  trace();
+  next label_p44;
+label_p44:
+  end;
