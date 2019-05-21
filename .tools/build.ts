@@ -1,14 +1,22 @@
+import { toAasm } from "avm1-asm/to-aasm";
+import { cfgFromBytes } from "avm1-parser";
+import { $Cfg, Cfg } from "avm1-tree/cfg";
 import fs from "fs";
 import { Incident } from "incident";
+import { JsonValueWriter } from "kryo/writers/json-value";
 import sysPath from "path";
 import rimraf from "rimraf";
 import { avm1BytesToSwf, getAvm1Bytes } from "./build-avm1-bytes";
 import { buildSwf } from "./build-swf-flash-pro";
+import { bytesFromSource } from "./bytes-from-source";
 import { extractAvm1 } from "./extract-avm1";
 import { outputFile } from "./helpers";
 import { DB_DIR } from "./locations";
 import meta from "./meta";
 import { runSwf } from "./run-all";
+import { readFile, readTextFile, writeTextFile } from "./utils";
+
+const JSON_VALUE_WRITER: JsonValueWriter = new JsonValueWriter();
 
 const PROJECT_ROOT = sysPath.join(meta.dirname, "..");
 const EMPTY_BUFFER: Buffer = Buffer.alloc(0);
@@ -64,11 +72,33 @@ export async function build(): Promise<void> {
     return Promise.all(promises);
   }
 
-  await Promise.all([buildAs2Items(), buildTsBytesItems()]);
+  async function buildTxtBytesItems(): Promise<any> {
+    const promises: Array<Promise<void>> = [];
+    for (const item of testItems) {
+      if (item.src === undefined || item.src.type !== "txt-bytes") {
+        continue;
+      }
+      promises.push(readTextFile(item.src.path).then(async (sourceText: string) => {
+        const avm1Bytes: Uint8Array = bytesFromSource(sourceText);
+        await outputFile(item.avm1Path, avm1Bytes);
+        const swfBytes: Uint8Array = avm1BytesToSwf(avm1Bytes);
+        await outputFile(item.swfPath, swfBytes);
+      }));
+    }
+    return Promise.all(promises);
+  }
+
+  await Promise.all([buildAs2Items(), buildTsBytesItems(), buildTxtBytesItems()]);
 
   for (const item of testItems) {
     const logBuffer: Buffer = await runSwf(item.swfPath);
     await outputFile(item.logPath, logBuffer);
+    const avm1Bytes: Uint8Array = await readFile(item.avm1Path);
+    const cfg: Cfg = cfgFromBytes(avm1Bytes);
+    const cfgJson: string = JSON.stringify($Cfg.write(JSON_VALUE_WRITER, cfg), null, 2);
+    await writeTextFile(item.cfgPath, `${cfgJson}\n`);
+    const aasm1: string = toAasm(cfg);
+    await writeTextFile(item.aasm1Path, aasm1);
   }
 }
 
@@ -90,10 +120,12 @@ interface TestItem {
   swfPath: string;
   avm1Path: string;
   logPath: string;
+  cfgPath: string;
+  aasm1Path: string;
   src?: TestItemSource;
 }
 
-type TestItemSource = As2Source | TsBytesSource;
+type TestItemSource = As2Source | TsBytesSource | TxtBytesSource;
 
 interface As2Source {
   type: "as2";
@@ -102,6 +134,11 @@ interface As2Source {
 
 interface TsBytesSource {
   type: "ts-bytes";
+  path: string;
+}
+
+interface TxtBytesSource {
+  type: "txt-bytes";
   path: string;
 }
 
@@ -122,8 +159,10 @@ async function getTestItems(): Promise<TestItem[]> {
       const swfPath = sysPath.join(root, "main.swf");
       const avm1Path = sysPath.join(root, "main.avm1");
       const logPath = sysPath.join(root, "main.log");
+      const cfgPath = sysPath.join(root, "cfg.json");
+      const aasm1Path = sysPath.join(root, "main.aasm1");
       const src = getItemSourceSync(root);
-      const item: TestItem = {name, root, swfPath, avm1Path, logPath, src};
+      const item: TestItem = {name, root, swfPath, avm1Path, logPath, cfgPath, aasm1Path, src};
       items.push(item);
     }
   }
@@ -133,9 +172,12 @@ async function getTestItems(): Promise<TestItem[]> {
 function getItemSourceSync(itemRoot: string): TestItemSource | undefined {
   const srcDir = sysPath.join(itemRoot, "src");
   const tsBytesPath = sysPath.join(srcDir, "main.ts");
+  const txtBytesPath = sysPath.join(srcDir, "main.txt");
   const asPath = sysPath.join(srcDir, "main.as");
   if (fs.existsSync(tsBytesPath)) {
     return {type: "ts-bytes", path: tsBytesPath};
+  } else if (fs.existsSync(txtBytesPath)) {
+    return {type: "txt-bytes", path: txtBytesPath};
   } else if (fs.existsSync(asPath)) {
     return {type: "as2", path: asPath};
   } else {

@@ -1,0 +1,53 @@
+label_p0:
+  constantPool(0="dx", 1="dy");
+  defineFunction2(name="deltaOfDir", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=true, preloadThis=false, preloadGlobal=false, registerCount=2, parameters=[r:1=i:"d"]) {
+    label_p35:
+      push(0=r:1);
+      storeRegister();
+      push(0=0f64);
+      strictEquals();
+      if(target=label_p115);
+      push(0=r:0, 1=1i32);
+      strictEquals();
+      if(target=label_p146);
+      push(0=r:0, 1=2i32);
+      strictEquals();
+      if(target=label_p177);
+      push(0=r:0, 1=3i32);
+      strictEquals();
+      if(target=label_p208);
+      jump(target=label_p234);
+      end;
+    label_p115:
+      push(0=c:0, 1=1i32);
+      setVariable();
+      push(0=c:1, 1=0f64);
+      setVariable();
+      jump(target=label_p234);
+      end;
+    label_p146:
+      push(0=c:0, 1=-1i32);
+      setVariable();
+      push(0=c:1, 1=0f64);
+      setVariable();
+      jump(target=label_p234);
+      end;
+    label_p177:
+      push(0=c:0, 1=0f64);
+      setVariable();
+      push(0=c:1, 1=1i32);
+      setVariable();
+      jump(target=label_p234);
+      end;
+    label_p208:
+      push(0=c:0, 1=0f64);
+      setVariable();
+      push(0=c:1, 1=-1i32);
+      setVariable();
+      next label_p234;
+    label_p234:
+      end;
+  };
+  next label_p234;
+label_p234:
+  end;

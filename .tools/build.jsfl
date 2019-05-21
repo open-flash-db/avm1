@@ -43,6 +43,7 @@ var data = {
   "\"objects/new-simple/src/main.as\"": "file:///objects/new-simple/main.swf",
   "\"samples/binary-operators/src/main.as\"": "file:///samples/binary-operators/main.swf",
   "\"samples/conditional-statements/src/main.as\"": "file:///samples/conditional-statements/main.swf",
+  "\"samples/delta-of-dir/src/main.as\"": "file:///samples/delta-of-dir/main.swf",
   "\"samples/hello-world/src/main.as\"": "file:///samples/hello-world/main.swf",
   "\"samples/hoisted-fn/src/main.as\"": "file:///samples/hoisted-fn/main.swf",
   "\"samples/loop-statement/src/main.as\"": "file:///samples/loop-statement/main.swf",

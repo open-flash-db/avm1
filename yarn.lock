@@ -18,7 +18,7 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@open-flash/stream@^0.1.0", "@open-flash/stream@^0.1.1":
+"@open-flash/stream@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@open-flash/stream/-/stream-0.1.1.tgz#6e80f21e16c0a43bfb793ec18a5db341f193a79b"
   integrity sha512-GD/hPHHA/W8I0x/hROnfbtCkHZYUEkNVqiS1P/esNsCAj1PQoIb/4FRkZeLDQkMD3pivbZZLYzsr+nlRIK9gbQ==
@@ -111,30 +111,84 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-avm1-emitter@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/avm1-emitter/-/avm1-emitter-0.0.4.tgz#634c778f7064c414eaae1f0579f8e11f52c7f84f"
-  integrity sha512-G5tMINbPT1EIJTRcSbu6O2WB5S+nBiisIORMLzz9yAsIySQAUcRGq/Sp4Zvq0anlthtt4hip9DJOsr7l4YJavA==
+avm1-asm@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/avm1-asm/-/avm1-asm-0.0.1.tgz#f6687a9869605e44b14bbcdeda44b6af4498335c"
+  integrity sha512-Buf0DyEhuIwESN66zLgbq8ng+PdwsfTPx86OUkyd0JstEK+c9QazYHvSclyWNF1rlI27PHH9wTuo6GEXk8SjzA==
   dependencies:
-    "@open-flash/stream" "^0.1.0"
-    avm1-tree "^0.1.0"
+    "@open-flash/stream" "^0.1.1"
+    avm1-emitter "^0.0.5"
+    avm1-parser "^0.2.1"
+    avm1-tree "^0.3.0"
+    incident "^3.2.0"
+    kryo "^0.8.1"
+    semantic-types "^0.1.1"
+    swf-tree "^0.6.0"
+
+avm1-emitter@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/avm1-emitter/-/avm1-emitter-0.0.5.tgz#947ccd278fb177acda7298aecae7f5f995ff7851"
+  integrity sha512-YAdtMlb32i7zPgjBCHRYhB0sO1RSbDnu+vUr4atyMy7UPA2qQssI8Hal+F6VjCtsc/P4hYAEwCj3Bu26mYZdfA==
+  dependencies:
+    "@open-flash/stream" "^0.1.1"
+    avm1-tree "^0.2.0"
     incident "^3.2.0"
     semantic-types "^0.1.1"
 
-avm1-tree@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/avm1-tree/-/avm1-tree-0.1.0.tgz#4395ebed7ed9fb228c715f44c4838b00477e1dbd"
-  integrity sha512-mkoWBvOod78gcdKbsGAMbjnsf10g5wrAoTTN1r48Y1vtmhcUVyMEPWzSltYlOE2srM2XJfxisEs6aSz2rThvmQ==
+avm1-emitter@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/avm1-emitter/-/avm1-emitter-0.4.0.tgz#ae99666fc25ef7a100ba9563d5851523ac38ad39"
+  integrity sha512-vGgfmIy9sylwUDDSbuTzyp3U64tMWea2SzWqdLzn7r80xSoywuTyFYLZetAk3AK0arYj1JMMorkj+Wjgvd6bug==
+  dependencies:
+    "@open-flash/stream" "^0.1.1"
+    avm1-tree "^0.4.0"
+    incident "^3.2.0"
+    semantic-types "^0.1.1"
+
+avm1-parser@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/avm1-parser/-/avm1-parser-0.2.1.tgz#fe104cd22a11877c9bc4cd753aff8cf62efacce5"
+  integrity sha512-jUjw1Wx6yYtyO9KBmcYl3bH605P9/blOmCIKxhhheOttd3Po4CCzyrRQpIfG0FX3JUXse2qXCrgWMdS3PLCAmQ==
+  dependencies:
+    "@open-flash/stream" "^0.1.1"
+    avm1-tree "^0.2.0"
+    incident "^3.2.0"
+    semantic-types "^0.1.1"
+
+avm1-parser@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/avm1-parser/-/avm1-parser-0.4.0.tgz#ecc5b1358455369f838de38e3847f58461d911dc"
+  integrity sha512-VEuG+1QjWViLwY+E4xkM5lEnynzsa4vt+hKVBJ/wRSiAfaJXB3AvBKwhZYii05kZLm1EVAP3zqnPJAbBfySXvA==
+  dependencies:
+    "@open-flash/stream" "^0.1.1"
+    avm1-tree "^0.4.0"
+    incident "^3.2.0"
+    semantic-types "^0.1.1"
+
+avm1-tree@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/avm1-tree/-/avm1-tree-0.2.0.tgz#ad75c14fbe295dd54c54e53fbdd256df8256030c"
+  integrity sha512-cGwIimxueMnBqODK56/9o6Y2GMbTzyo+ZhR1jqen+fOL98VWmcgj0pXbbQayKmyyDk2iv3+b/O6EB/An0pm0Og==
   dependencies:
     incident "^3.2.0"
     kryo "^0.8.1"
     semantic-types "^0.1.1"
     ts-tagged "^1.0.0"
 
-avm1-tree@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/avm1-tree/-/avm1-tree-0.2.0.tgz#ad75c14fbe295dd54c54e53fbdd256df8256030c"
-  integrity sha512-cGwIimxueMnBqODK56/9o6Y2GMbTzyo+ZhR1jqen+fOL98VWmcgj0pXbbQayKmyyDk2iv3+b/O6EB/An0pm0Og==
+avm1-tree@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/avm1-tree/-/avm1-tree-0.3.0.tgz#214d1dc2a0636c64fb53f07d2f5d51b83518dfee"
+  integrity sha512-VeMM12ueE86eLSYlsmd+SZ+6kwIx1AEv6bKchPwWHudecuaKn5KuoOF58nV+nrz7IvOZRlSR/xeMFSSW2T0H3A==
+  dependencies:
+    incident "^3.2.0"
+    kryo "^0.8.1"
+    semantic-types "^0.1.1"
+    ts-tagged "^1.0.0"
+
+avm1-tree@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/avm1-tree/-/avm1-tree-0.4.0.tgz#9482982b400c1504aea1223608ee3853caa097c9"
+  integrity sha512-lbty2gVEtzU/vQfw6wUi877rqKk8TsKz+InYSJg48nplnEwUQwZhDXn1TPajRnXhRumMIuM/JIKtUQoYsYZ0Wg==
   dependencies:
     incident "^3.2.0"
     kryo "^0.8.1"
@@ -425,10 +479,10 @@ swf-emitter@^0.3.1:
     semantic-types "^0.1.1"
     swf-tree "^0.6.0"
 
-swf-parser@^0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/swf-parser/-/swf-parser-0.5.3.tgz#3400e1fcb998f209a5631c1499411593b29a72e7"
-  integrity sha512-sUgGuL4hixIrC39/LMDJEGdPezQT3w1eLVRfxIkDYNh+AQlmN15m+uep6O3y5dJ0O4RPY6NjnZOZI8iYBf69wg==
+swf-parser@^0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/swf-parser/-/swf-parser-0.5.4.tgz#a1b52724c30f6d2cec07357674fc385a635d9341"
+  integrity sha512-pzoSuMkvrOFnP1jQqZ4tvx7CvEkwDsDZkkr7KPEJNs5m+sXRytOZc69PERbpjzCGQBJo3KhlsWOcE0HwvDTwjw==
   dependencies:
     "@open-flash/stream" "^0.1.1"
     "@types/pako" "^1.0.1"

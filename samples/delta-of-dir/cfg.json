@@ -1,0 +1,308 @@
+{
+  "blocks": [
+    {
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "dx",
+            "dy"
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "deltaOfDir",
+          "preload_parent": false,
+          "preload_root": false,
+          "suppress_super": true,
+          "preload_super": false,
+          "suppress_arguments": true,
+          "preload_arguments": false,
+          "suppress_this": true,
+          "preload_this": false,
+          "preload_global": false,
+          "register_count": 2,
+          "parameters": [
+            {
+              "register": 1,
+              "name": "d"
+            }
+          ],
+          "body": {
+            "blocks": [
+              {
+                "label": "label_p35",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 0
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "strict-equals"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p115"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "strict-equals"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p146"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "strict-equals"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p177"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "strict-equals"
+                  },
+                  {
+                    "action": "if",
+                    "target": "label_p208"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p234"
+                  }
+                ]
+              },
+              {
+                "label": "label_p115",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p234"
+                  }
+                ]
+              },
+              {
+                "label": "label_p146",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": -1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p234"
+                  }
+                ]
+              },
+              {
+                "label": "label_p177",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "jump",
+                    "target": "label_p234"
+                  }
+                ]
+              },
+              {
+                "label": "label_p208",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "sint32",
+                        "value": -1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  }
+                ],
+                "next": "label_p234"
+              },
+              {
+                "label": "label_p234",
+                "actions": []
+              }
+            ]
+          }
+        }
+      ],
+      "next": "label_p234"
+    },
+    {
+      "label": "label_p234",
+      "actions": []
+    }
+  ]
+}

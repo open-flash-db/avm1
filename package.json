@@ -7,11 +7,14 @@
   },
   "dependencies": {
     "@open-flash/stream": "^0.1.1",
-    "avm1-emitter": "^0.0.4",
-    "avm1-tree": "^0.2.0",
+    "avm1-asm": "^0.0.1",
+    "avm1-emitter": "^0.4.0",
+    "avm1-parser": "^0.4.0",
+    "avm1-tree": "^0.4.0",
+    "kryo": "^0.8.1",
     "rimraf": "^2.6.3",
     "swf-emitter": "^0.3.1",
-    "swf-parser": "^0.5.3",
+    "swf-parser": "^0.5.4",
     "swf-tree": "^0.6.0",
     "typescript": "^3.4.5"
   },
