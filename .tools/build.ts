@@ -8,6 +8,7 @@ import sysPath from "path";
 import rimraf from "rimraf";
 import { avm1BytesToSwf, getAvm1Bytes } from "./build-avm1-bytes";
 import { buildSwf } from "./build-swf-flash-pro";
+import { buildSwf as buildSwfWithHaxe } from "./build-swf-haxe";
 import { bytesFromSource } from "./bytes-from-source";
 import { extractAvm1 } from "./extract-avm1";
 import { outputFile } from "./helpers";
@@ -44,7 +45,7 @@ export async function build(): Promise<void> {
     const flashProFiles: Map<string, string> = new Map();
     for (const item of as2Items) {
       await outputFile(item.swfPath, EMPTY_BUFFER); // Ensure directory exists and permissions are OK
-      flashProFiles.set(item.src!.path, item.swfPath);
+      flashProFiles.set((item.src as As2Source).path, item.swfPath);
     }
     await buildSwf(flashProFiles);
     for (const item of as2Items) {
@@ -55,6 +56,26 @@ export async function build(): Promise<void> {
         throw new Incident(err, "Avm1ExtractionError", item, ({swfPath}) => `Cannot extract AVM1 from ${swfPath}`);
       }
     }
+  }
+
+  async function buildHxItems(): Promise<any> {
+    const promises: Array<Promise<void>> = [];
+    for (const item of testItems) {
+      if (item.src === undefined || item.src.type !== "haxe") {
+        continue;
+      }
+      const src: HaxeSource = item.src;
+      promises.push((async () => {
+        await buildSwfWithHaxe(src.cwd, src.main, item.swfPath);
+        try {
+          const avm1Bytes: Uint8Array = await extractAvm1(item.swfPath);
+          await outputFile(item.avm1Path, Buffer.from(avm1Bytes));
+        } catch (err) {
+          throw new Incident(err, "Avm1ExtractionError", item, ({swfPath}) => `Cannot extract AVM1 from ${swfPath}`);
+        }
+      })());
+    }
+    return Promise.all(promises);
   }
 
   async function buildTsBytesItems(): Promise<any> {
@@ -88,7 +109,7 @@ export async function build(): Promise<void> {
     return Promise.all(promises);
   }
 
-  await Promise.all([buildAs2Items(), buildTsBytesItems(), buildTxtBytesItems()]);
+  await Promise.all([buildAs2Items(), buildHxItems(), buildTsBytesItems(), buildTxtBytesItems()]);
 
   for (const item of testItems) {
     const logBuffer: Buffer = await runSwf(item.swfPath);
@@ -125,11 +146,17 @@ interface TestItem {
   src?: TestItemSource;
 }
 
-type TestItemSource = As2Source | TsBytesSource | TxtBytesSource;
+type TestItemSource = As2Source | HaxeSource | TsBytesSource | TxtBytesSource;
 
 interface As2Source {
   type: "as2";
   path: string;
+}
+
+interface HaxeSource {
+  type: "haxe";
+  cwd: string;
+  main: string;
 }
 
 interface TsBytesSource {
@@ -174,12 +201,15 @@ function getItemSourceSync(itemRoot: string): TestItemSource | undefined {
   const tsBytesPath = sysPath.join(srcDir, "main.ts");
   const txtBytesPath = sysPath.join(srcDir, "main.txt");
   const asPath = sysPath.join(srcDir, "main.as");
+  const hxPath = sysPath.join(srcDir, "Main.hx");
   if (fs.existsSync(tsBytesPath)) {
     return {type: "ts-bytes", path: tsBytesPath};
   } else if (fs.existsSync(txtBytesPath)) {
     return {type: "txt-bytes", path: txtBytesPath};
   } else if (fs.existsSync(asPath)) {
     return {type: "as2", path: asPath};
+  } else if (fs.existsSync(hxPath)) {
+    return {type: "haxe", cwd: srcDir, main: "Main"};
   } else {
     return undefined;
   }
