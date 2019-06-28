@@ -3,7 +3,7 @@ label_p0:
   defineFunction2(name="deltaOfDir", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=true, preloadThis=false, preloadGlobal=false, registerCount=2, parameters=[r:1=i:"d"]) {
     label_p35:
       push(0=r:1);
-      storeRegister();
+      storeRegister(r:0);
       push(0=0f64);
       strictEquals();
       if(target=label_p115);

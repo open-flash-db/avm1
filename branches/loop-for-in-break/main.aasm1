@@ -10,7 +10,7 @@ label_p0:
   enumerate2();
   next label_p184;
 label_p184:
-  storeRegister();
+  storeRegister(r:0);
   push(0=null);
   equals2();
   if(target=label_p257);

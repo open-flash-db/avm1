@@ -36,7 +36,7 @@ label_p141:
   push(0=c:0, 1=c:0);
   getVariable();
   decrement();
-  storeRegister();
+  storeRegister(r:0);
   setVariable();
   push(0=r:0, 1=0f64);
   greater();
@@ -55,18 +55,18 @@ label_p188:
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=true, preloadThis=false, preloadGlobal=false, registerCount=2, parameters=[]) {
     label_p211:
       push(0=undefined);
-      storeRegister();
+      storeRegister(r:1);
       pop();
       push(0=c:1);
       trace();
       push(0=5i32);
-      storeRegister();
+      storeRegister(r:1);
       pop();
       next label_p239;
     label_p239:
       push(0=r:1, 1=r:1);
       decrement();
-      storeRegister();
+      storeRegister(r:1);
       pop();
       push(0=0f64);
       greater();
@@ -82,13 +82,13 @@ label_p188:
       push(0=c:2);
       trace();
       push(0=5i32);
-      storeRegister();
+      storeRegister(r:1);
       pop();
       next label_p307;
     label_p307:
       push(0=r:1);
       decrement();
-      storeRegister();
+      storeRegister(r:1);
       push(0=0f64);
       greater();
       not();
@@ -156,7 +156,7 @@ label_p486:
   push(0=c:0);
   getMember();
   decrement();
-  storeRegister();
+  storeRegister(r:0);
   setMember();
   push(0=r:0, 1=0f64);
   greater();

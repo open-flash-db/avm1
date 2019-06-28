@@ -28,7 +28,7 @@ label_p0:
       subtract();
       push(0=1i32, 1=r:2, 2=c:6);
       callMethod();
-      storeRegister();
+      storeRegister(r:3);
       pop();
       push(0=r:3, 1=c:7);
       equals2();
@@ -61,7 +61,7 @@ label_p0:
       subtract();
       push(0=0f64, 1=2i32, 2=r:2, 3=c:11);
       callMethod();
-      storeRegister();
+      storeRegister(r:2);
       pop();
       jump(target=label_p335);
       end;
@@ -73,7 +73,7 @@ label_p0:
       if(target=label_p632);
       push(0=0f64, 1=1i32, 2=r:2, 3=c:6);
       callMethod();
-      storeRegister();
+      storeRegister(r:4);
       pop();
       push(0=r:4, 1=c:7);
       equals2();
@@ -102,7 +102,7 @@ label_p0:
       if(target=label_p622);
       push(0=1i32, 1=1i32, 2=r:2, 3=c:12);
       callMethod();
-      storeRegister();
+      storeRegister(r:2);
       pop();
       jump(target=label_p498);
       end;
@@ -112,18 +112,18 @@ label_p0:
     label_p632:
       push(0=c:13, 1=1i32, 2=r:2, 3=c:14);
       callMethod();
-      storeRegister();
+      storeRegister(r:8);
       pop();
       push(0=0f64, 1=c:15);
       newObject();
-      storeRegister();
+      storeRegister(r:9);
       pop();
       push(0=0f64);
-      storeRegister();
+      storeRegister(r:5);
       pop();
       push(0=r:8, 1=c:5);
       getMember();
-      storeRegister();
+      storeRegister(r:7);
       pop();
       next label_p702;
     label_p702:
@@ -135,7 +135,7 @@ label_p0:
       getMember();
       push(0=c:14);
       callMethod();
-      storeRegister();
+      storeRegister(r:6);
       pop();
       push(0=r:6, 1=c:5);
       getMember();
@@ -155,26 +155,26 @@ label_p0:
     label_p808:
       push(0=r:5);
       increment();
-      storeRegister();
+      storeRegister(r:5);
       pop();
       jump(target=label_p702);
       end;
     label_p824:
       push(0=r:1, 1=c:19, 2=r:1, 3=c:20, 4=c:21, 5=1i32, 6=r:9, 7=c:22);
       callMethod();
-      storeRegister();
+      storeRegister(r:0);
       setMember();
       push(0=r:0);
       setMember();
       push(0=r:1, 1=c:23, 2=r:1, 3=c:24, 4=c:25, 5=1i32, 6=r:9, 7=c:22);
       callMethod();
-      storeRegister();
+      storeRegister(r:0);
       setMember();
       push(0=r:0);
       setMember();
       push(0=r:1, 1=c:26, 2=r:1, 3=c:27, 4=c:28, 5=1i32, 6=r:9, 7=c:22);
       callMethod();
-      storeRegister();
+      storeRegister(r:0);
       setMember();
       push(0=r:0);
       setMember();
