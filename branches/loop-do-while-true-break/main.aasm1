@@ -14,8 +14,7 @@ label_p86:
   greater();
   not();
   if(target=label_p118);
-  jump(target=label_p138);
-  end;
+  next label_p138;
 label_p118:
   push(0=c:0, 1=c:0);
   getVariable();

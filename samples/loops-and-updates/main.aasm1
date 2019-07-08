@@ -21,8 +21,7 @@ label_p70:
   push(0=c:0);
   getVariable();
   trace();
-  jump(target=label_p70);
-  end;
+  next label_p70;
 label_p117:
   push(0=c:0);
   getVariable();
@@ -45,8 +44,7 @@ label_p141:
   push(0=c:0);
   getVariable();
   trace();
-  jump(target=label_p141);
-  end;
+  next label_p141;
 label_p188:
   push(0=c:0);
   getVariable();
@@ -74,8 +72,7 @@ label_p188:
       if(target=label_p282);
       push(0=r:1);
       trace();
-      jump(target=label_p239);
-      end;
+      next label_p239;
     label_p282:
       push(0=r:1);
       trace();
@@ -95,8 +92,7 @@ label_p188:
       if(target=label_p347);
       push(0=r:1);
       trace();
-      jump(target=label_p307);
-      end;
+      next label_p307;
     label_p347:
       push(0=r:1);
       trace();
@@ -133,8 +129,7 @@ label_p379:
   push(0=c:0);
   getMember();
   trace();
-  jump(target=label_p379);
-  end;
+  next label_p379;
 label_p450:
   push(0=c:4);
   getVariable();
@@ -167,8 +162,7 @@ label_p486:
   push(0=c:0);
   getMember();
   trace();
-  jump(target=label_p486);
-  end;
+  next label_p486;
 label_p551:
   push(0=c:4);
   getVariable();

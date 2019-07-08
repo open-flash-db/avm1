@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -43,14 +44,12 @@
               "value": "baz"
             }
           ]
-        },
-        {
-          "action": "jump",
-          "target": "label_p77"
         }
-      ]
+      ],
+      "next": "label_p77"
     },
     {
+      "type": "simple",
       "label": "label_p69",
       "actions": [
         {
@@ -66,6 +65,7 @@
       "next": "label_p77"
     },
     {
+      "type": "simple",
       "label": "label_p77",
       "actions": [
         {
@@ -87,6 +87,7 @@
       "next": "label_p113"
     },
     {
+      "type": "end",
       "label": "label_p113",
       "actions": []
     }

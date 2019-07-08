@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -20,6 +21,7 @@
           "try": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p36",
                 "actions": [
                   {
@@ -33,14 +35,12 @@
                   },
                   {
                     "action": "trace"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p67"
                   }
-                ]
+                ],
+                "next": "label_p67"
               },
               {
+                "type": "end",
                 "label": "label_p67",
                 "actions": []
               }
@@ -49,6 +49,7 @@
           "catch": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p53",
                 "actions": [
                   {
@@ -67,6 +68,7 @@
                 "next": "label_p67"
               },
               {
+                "type": "end",
                 "label": "label_p67",
                 "actions": []
               }
@@ -93,6 +95,7 @@
       "next": "label_p88"
     },
     {
+      "type": "end",
       "label": "label_p88",
       "actions": []
     }

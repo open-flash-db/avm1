@@ -24,8 +24,7 @@ label_p370:
   if(target=label_p405);
   push(0=c:3);
   trace();
-  jump(target=label_p411);
-  end;
+  next label_p411;
 label_p405:
   push(0=c:6);
   trace();
@@ -65,15 +64,13 @@ label_p461:
   if(target=label_p516);
   push(0=c:13);
   trace();
-  jump(target=label_p522);
-  end;
+  next label_p522;
 label_p516:
   push(0=c:14);
   trace();
   next label_p522;
 label_p522:
-  jump(target=label_p556);
-  end;
+  next label_p556;
 label_p527:
   push(0=c:1);
   getVariable();
@@ -81,8 +78,7 @@ label_p527:
   if(target=label_p550);
   push(0=c:15);
   trace();
-  jump(target=label_p556);
-  end;
+  next label_p556;
 label_p550:
   push(0=c:16);
   trace();
@@ -96,8 +92,7 @@ label_p556:
   getVariable();
   if(target=label_p591);
   push(0=c:19);
-  jump(target=label_p596);
-  end;
+  next label_p596;
 label_p591:
   push(0=c:20);
   next label_p596;

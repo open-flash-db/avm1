@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -70,6 +71,7 @@
       "next": "label_p162"
     },
     {
+      "type": "simple",
       "label": "label_p162",
       "actions": [
         {
@@ -121,14 +123,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p226"
         }
-      ]
+      ],
+      "next": "label_p226"
     },
     {
+      "type": "simple",
       "label": "label_p197",
       "actions": [
         {
@@ -161,14 +161,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p226"
         }
-      ]
+      ],
+      "next": "label_p226"
     },
     {
+      "type": "simple",
       "label": "label_p220",
       "actions": [
         {
@@ -187,6 +185,7 @@
       "next": "label_p226"
     },
     {
+      "type": "simple",
       "label": "label_p226",
       "actions": [
         {
@@ -264,14 +263,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p162"
         }
-      ]
+      ],
+      "next": "label_p162"
     },
     {
+      "type": "simple",
       "label": "label_p267",
       "actions": [
         {
@@ -290,6 +287,7 @@
       "next": "label_p273"
     },
     {
+      "type": "end",
       "label": "label_p273",
       "actions": []
     }

@@ -20,8 +20,7 @@ label_p0:
   callFunction();
   strictEquals();
   if(target=label_p222);
-  jump(target=label_p233);
-  end;
+  next label_p233;
 label_p205:
   push(0=c:4);
   trace();
@@ -29,13 +28,11 @@ label_p205:
 label_p211:
   push(0=c:5);
   trace();
-  jump(target=label_p239);
-  end;
+  next label_p239;
 label_p222:
   push(0=c:6);
   trace();
-  jump(target=label_p239);
-  end;
+  next label_p239;
 label_p233:
   push(0=c:7);
   trace();

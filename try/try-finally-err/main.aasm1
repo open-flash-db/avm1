@@ -5,7 +5,7 @@ label_p0:
       trace();
       push(0="err-value");
       throw();
-      end;
+      throw;
   };
   push(0="start");
   trace();

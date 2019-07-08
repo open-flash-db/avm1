@@ -21,8 +21,7 @@ label_p69:
   if(target=label_p96);
   push(0="in if + or");
   trace();
-  jump(target=label_p114);
-  end;
+  next label_p114;
 label_p96:
   push(0="in else + or");
   trace();

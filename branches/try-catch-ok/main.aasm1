@@ -5,8 +5,7 @@ label_p0:
     label_p36:
       push(0="in try");
       trace();
-      jump(target=label_p67);
-      end;
+      next label_p67;
     label_p67:
       end;
   } catch {

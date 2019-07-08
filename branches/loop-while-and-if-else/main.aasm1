@@ -14,8 +14,7 @@ label_p124:
   if(target=label_p159);
   push(0=c:3);
   trace();
-  jump(target=label_p188);
-  end;
+  next label_p188;
 label_p159:
   push(0=c:2);
   getVariable();
@@ -23,8 +22,7 @@ label_p159:
   if(target=label_p182);
   push(0=c:4);
   trace();
-  jump(target=label_p188);
-  end;
+  next label_p188;
 label_p182:
   push(0=c:5);
   trace();
@@ -34,8 +32,7 @@ label_p188:
   getVariable();
   increment();
   setVariable();
-  jump(target=label_p124);
-  end;
+  next label_p124;
 label_p203:
   push(0=c:7);
   trace();

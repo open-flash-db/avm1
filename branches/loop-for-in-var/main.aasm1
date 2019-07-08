@@ -18,8 +18,7 @@ label_p136:
   defineLocal();
   push(0=c:5);
   trace();
-  jump(target=label_p136);
-  end;
+  next label_p136;
 label_p169:
   push(0=c:6);
   trace();

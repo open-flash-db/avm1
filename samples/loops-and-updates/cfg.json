@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -57,6 +58,7 @@
       "next": "label_p70"
     },
     {
+      "type": "simple",
       "label": "label_p70",
       "actions": [
         {
@@ -126,14 +128,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p70"
         }
-      ]
+      ],
+      "next": "label_p70"
     },
     {
+      "type": "simple",
       "label": "label_p117",
       "actions": [
         {
@@ -183,6 +183,7 @@
       "next": "label_p141"
     },
     {
+      "type": "simple",
       "label": "label_p141",
       "actions": [
         {
@@ -248,14 +249,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p141"
         }
-      ]
+      ],
+      "next": "label_p141"
     },
     {
+      "type": "simple",
       "label": "label_p188",
       "actions": [
         {
@@ -299,6 +298,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p211",
                 "actions": [
                   {
@@ -348,6 +348,7 @@
                 "next": "label_p239"
               },
               {
+                "type": "simple",
                 "label": "label_p239",
                 "actions": [
                   {
@@ -403,14 +404,12 @@
                   },
                   {
                     "action": "trace"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p239"
                   }
-                ]
+                ],
+                "next": "label_p239"
               },
               {
+                "type": "simple",
                 "label": "label_p282",
                 "actions": [
                   {
@@ -457,6 +456,7 @@
                 "next": "label_p307"
               },
               {
+                "type": "simple",
                 "label": "label_p307",
                 "actions": [
                   {
@@ -505,14 +505,12 @@
                   },
                   {
                     "action": "trace"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p307"
                   }
-                ]
+                ],
+                "next": "label_p307"
               },
               {
+                "type": "simple",
                 "label": "label_p347",
                 "actions": [
                   {
@@ -531,6 +529,7 @@
                 "next": "label_p353"
               },
               {
+                "type": "end",
                 "label": "label_p353",
                 "actions": []
               }
@@ -583,6 +582,7 @@
       "next": "label_p379"
     },
     {
+      "type": "simple",
       "label": "label_p379",
       "actions": [
         {
@@ -700,14 +700,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p379"
         }
-      ]
+      ],
+      "next": "label_p379"
     },
     {
+      "type": "simple",
       "label": "label_p450",
       "actions": [
         {
@@ -781,6 +779,7 @@
       "next": "label_p486"
     },
     {
+      "type": "simple",
       "label": "label_p486",
       "actions": [
         {
@@ -882,14 +881,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p486"
         }
-      ]
+      ],
+      "next": "label_p486"
     },
     {
+      "type": "simple",
       "label": "label_p551",
       "actions": [
         {
@@ -923,6 +920,7 @@
       "next": "label_p564"
     },
     {
+      "type": "end",
       "label": "label_p564",
       "actions": []
     }

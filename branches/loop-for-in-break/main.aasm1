@@ -24,13 +24,11 @@ label_p184:
   strictEquals();
   not();
   if(target=label_p235);
-  jump(target=label_p246);
-  end;
+  next label_p246;
 label_p235:
   push(0=c:7);
   trace();
-  jump(target=label_p184);
-  end;
+  next label_p184;
 label_p246:
   push(0=null);
   equals2();

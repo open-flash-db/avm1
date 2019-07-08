@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -32,6 +33,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p35",
                 "actions": [
                   {
@@ -122,14 +124,12 @@
                   {
                     "action": "if",
                     "target": "label_p208"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p234"
                   }
-                ]
+                ],
+                "next": "label_p234"
               },
               {
+                "type": "simple",
                 "label": "label_p115",
                 "actions": [
                   {
@@ -163,14 +163,12 @@
                   },
                   {
                     "action": "set-variable"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p234"
                   }
-                ]
+                ],
+                "next": "label_p234"
               },
               {
+                "type": "simple",
                 "label": "label_p146",
                 "actions": [
                   {
@@ -204,14 +202,12 @@
                   },
                   {
                     "action": "set-variable"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p234"
                   }
-                ]
+                ],
+                "next": "label_p234"
               },
               {
+                "type": "simple",
                 "label": "label_p177",
                 "actions": [
                   {
@@ -245,14 +241,12 @@
                   },
                   {
                     "action": "set-variable"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p234"
                   }
-                ]
+                ],
+                "next": "label_p234"
               },
               {
+                "type": "simple",
                 "label": "label_p208",
                 "actions": [
                   {
@@ -291,6 +285,7 @@
                 "next": "label_p234"
               },
               {
+                "type": "end",
                 "label": "label_p234",
                 "actions": []
               }
@@ -301,6 +296,7 @@
       "next": "label_p234"
     },
     {
+      "type": "end",
       "label": "label_p234",
       "actions": []
     }

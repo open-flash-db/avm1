@@ -16,8 +16,7 @@ label_p0:
       pop();
       push(0="in-try");
       trace();
-      jump(target=label_p94);
-      end;
+      next label_p94;
     label_p94:
       end;
   } catch {

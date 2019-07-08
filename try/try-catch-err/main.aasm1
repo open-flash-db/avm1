@@ -5,7 +5,7 @@ label_p0:
       trace();
       push(0="err-value");
       throw();
-      end;
+      throw;
   };
   push(0="start");
   trace();
@@ -16,8 +16,7 @@ label_p0:
       pop();
       push(0="in-try");
       trace();
-      jump(target=label_p110);
-      end;
+      next label_p110;
     label_p110:
       end;
   } catch {

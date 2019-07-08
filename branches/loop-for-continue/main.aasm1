@@ -18,8 +18,7 @@ label_p89:
   strictEquals();
   not();
   if(target=label_p140);
-  jump(target=label_p146);
-  end;
+  next label_p146;
 label_p140:
   push(0=c:2);
   trace();
@@ -29,8 +28,7 @@ label_p146:
   getVariable();
   increment();
   setVariable();
-  jump(target=label_p89);
-  end;
+  next label_p89;
 label_p161:
   push(0=c:3);
   trace();

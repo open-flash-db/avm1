@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -44,6 +45,7 @@
           "try": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p147",
                 "actions": [
                   {
@@ -57,14 +59,12 @@
                   },
                   {
                     "action": "trace"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p164"
                   }
-                ]
+                ],
+                "next": "label_p164"
               },
               {
+                "type": "end",
                 "label": "label_p164",
                 "actions": []
               }
@@ -73,6 +73,7 @@
           "catch": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p158",
                 "actions": [
                   {
@@ -91,6 +92,7 @@
                 "next": "label_p164"
               },
               {
+                "type": "end",
                 "label": "label_p164",
                 "actions": []
               }
@@ -130,6 +132,7 @@
           "try": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p190",
                 "actions": [
                   {
@@ -143,14 +146,12 @@
                   },
                   {
                     "action": "trace"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p207"
                   }
-                ]
+                ],
+                "next": "label_p207"
               },
               {
+                "type": "end",
                 "label": "label_p207",
                 "actions": []
               }
@@ -159,6 +160,7 @@
           "catch": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p201",
                 "actions": [
                   {
@@ -177,6 +179,7 @@
                 "next": "label_p207"
               },
               {
+                "type": "end",
                 "label": "label_p207",
                 "actions": []
               }
@@ -189,6 +192,7 @@
           "finally": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p207",
                 "actions": [
                   {
@@ -207,6 +211,7 @@
                 "next": "label_p213"
               },
               {
+                "type": "end",
                 "label": "label_p213",
                 "actions": []
               }
@@ -229,6 +234,7 @@
       "next": "label_p219"
     },
     {
+      "type": "end",
       "label": "label_p219",
       "actions": []
     }

@@ -17,8 +17,7 @@ label_p162:
   if(target=label_p197);
   push(0=c:6);
   trace();
-  jump(target=label_p226);
-  end;
+  next label_p226;
 label_p197:
   push(0=c:5);
   getVariable();
@@ -26,8 +25,7 @@ label_p197:
   if(target=label_p220);
   push(0=c:7);
   trace();
-  jump(target=label_p226);
-  end;
+  next label_p226;
 label_p220:
   push(0=c:8);
   trace();
@@ -47,8 +45,7 @@ label_p226:
   push(0=c:3);
   getMember();
   trace();
-  jump(target=label_p162);
-  end;
+  next label_p162;
 label_p267:
   push(0=c:10);
   trace();

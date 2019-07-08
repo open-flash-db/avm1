@@ -10,8 +10,7 @@ label_p0:
   push(0=r:0, 1=2i32);
   strictEquals();
   if(target=label_p99);
-  jump(target=label_p108);
-  end;
+  next label_p108;
 label_p90:
   push(0="foo");
   trace();

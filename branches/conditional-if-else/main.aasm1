@@ -7,8 +7,7 @@ label_p0:
   if(target=label_p52);
   push(0="in if");
   trace();
-  jump(target=label_p65);
-  end;
+  next label_p65;
 label_p52:
   push(0="in else");
   trace();

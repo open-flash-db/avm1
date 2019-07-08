@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -96,6 +97,7 @@
           "body": {
             "blocks": [
               {
+                "type": "return",
                 "label": "label_p285",
                 "actions": [
                   {
@@ -181,6 +183,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p335",
                 "actions": [
                   {
@@ -297,6 +300,7 @@
                 "next": "label_p403"
               },
               {
+                "type": "simple",
                 "label": "label_p403",
                 "actions": [
                   {
@@ -329,6 +333,7 @@
                 "next": "label_p418"
               },
               {
+                "type": "simple",
                 "label": "label_p418",
                 "actions": [
                   {
@@ -361,6 +366,7 @@
                 "next": "label_p433"
               },
               {
+                "type": "simple",
                 "label": "label_p433",
                 "actions": [
                   {
@@ -428,23 +434,18 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p335"
                   }
-                ]
+                ],
+                "next": "label_p335"
               },
               {
+                "type": "simple",
                 "label": "label_p488",
-                "actions": [
-                  {
-                    "action": "jump",
-                    "target": "label_p498"
-                  }
-                ]
+                "actions": [],
+                "next": "label_p498"
               },
               {
+                "type": "simple",
                 "label": "label_p498",
                 "actions": [
                   {
@@ -537,6 +538,7 @@
                 "next": "label_p558"
               },
               {
+                "type": "simple",
                 "label": "label_p558",
                 "actions": [
                   {
@@ -569,6 +571,7 @@
                 "next": "label_p573"
               },
               {
+                "type": "simple",
                 "label": "label_p573",
                 "actions": [
                   {
@@ -601,6 +604,7 @@
                 "next": "label_p588"
               },
               {
+                "type": "simple",
                 "label": "label_p588",
                 "actions": [
                   {
@@ -640,23 +644,18 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p498"
                   }
-                ]
+                ],
+                "next": "label_p498"
               },
               {
+                "type": "simple",
                 "label": "label_p622",
-                "actions": [
-                  {
-                    "action": "jump",
-                    "target": "label_p632"
-                  }
-                ]
+                "actions": [],
+                "next": "label_p632"
               },
               {
+                "type": "simple",
                 "label": "label_p632",
                 "actions": [
                   {
@@ -756,6 +755,7 @@
                 "next": "label_p702"
               },
               {
+                "type": "simple",
                 "label": "label_p702",
                 "actions": [
                   {
@@ -925,6 +925,7 @@
                 "next": "label_p808"
               },
               {
+                "type": "simple",
                 "label": "label_p808",
                 "actions": [
                   {
@@ -945,14 +946,12 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p702"
                   }
-                ]
+                ],
+                "next": "label_p702"
               },
               {
+                "type": "simple",
                 "label": "label_p824",
                 "actions": [
                   {
@@ -1200,6 +1199,7 @@
                 "next": "label_p959"
               },
               {
+                "type": "return",
                 "label": "label_p959",
                 "actions": [
                   {
@@ -1270,6 +1270,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p999",
                 "actions": [
                   {
@@ -1299,6 +1300,7 @@
                 "next": "label_p1017"
               },
               {
+                "type": "end",
                 "label": "label_p1017",
                 "actions": []
               }
@@ -1324,6 +1326,7 @@
       "next": "label_p1024"
     },
     {
+      "type": "end",
       "label": "label_p1024",
       "actions": []
     }

@@ -18,8 +18,7 @@ label_p62:
   getVariable();
   increment();
   setVariable();
-  jump(target=label_p62);
-  end;
+  next label_p62;
 label_p104:
   push(0=c:3);
   trace();

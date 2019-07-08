@@ -20,11 +20,9 @@ label_p95:
   not();
   not();
   if(target=label_p146);
-  jump(target=label_p151);
-  end;
+  next label_p151;
 label_p146:
-  jump(target=label_p95);
-  end;
+  next label_p95;
 label_p151:
   push(0=c:3);
   trace();

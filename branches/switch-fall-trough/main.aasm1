@@ -22,8 +22,7 @@ label_p0:
   push(0=r:0, 1=5i32);
   strictEquals();
   if(target=label_p218);
-  jump(target=label_p235);
-  end;
+  next label_p235;
 label_p145:
   push(0="case 0");
   trace();
@@ -31,23 +30,19 @@ label_p145:
 label_p157:
   push(0="case 0 or 1");
   trace();
-  jump(target=label_p235);
-  end;
+  next label_p235;
 label_p179:
   push(0="case 2");
   trace();
-  jump(target=label_p235);
-  end;
+  next label_p235;
 label_p196:
   push(0="case 3 or 4");
   trace();
-  jump(target=label_p235);
-  end;
+  next label_p235;
 label_p218:
   push(0="case 5");
   trace();
-  jump(target=label_p235);
-  end;
+  next label_p235;
 label_p235:
   push(0="after switch+fall-trough");
   trace();

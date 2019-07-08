@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -10,6 +11,7 @@
           "body": {
             "blocks": [
               {
+                "type": "throw",
                 "label": "label_p9",
                 "actions": [
                   {
@@ -58,6 +60,7 @@
           "try": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p56",
                 "actions": [
                   {
@@ -90,14 +93,12 @@
                   },
                   {
                     "action": "trace"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p110"
                   }
-                ]
+                ],
+                "next": "label_p110"
               },
               {
+                "type": "end",
                 "label": "label_p110",
                 "actions": []
               }
@@ -106,6 +107,7 @@
           "catch": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p90",
                 "actions": [
                   {
@@ -139,6 +141,7 @@
                 "next": "label_p110"
               },
               {
+                "type": "end",
                 "label": "label_p110",
                 "actions": []
               }
@@ -151,6 +154,7 @@
           "finally": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p110",
                 "actions": [
                   {
@@ -169,6 +173,7 @@
                 "next": "label_p126"
               },
               {
+                "type": "end",
                 "label": "label_p126",
                 "actions": []
               }
@@ -191,6 +196,7 @@
       "next": "label_p135"
     },
     {
+      "type": "end",
       "label": "label_p135",
       "actions": []
     }

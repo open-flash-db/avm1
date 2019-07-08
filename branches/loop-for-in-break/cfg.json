@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -91,6 +92,7 @@
       "next": "label_p184"
     },
     {
+      "type": "simple",
       "label": "label_p184",
       "actions": [
         {
@@ -170,14 +172,12 @@
         {
           "action": "if",
           "target": "label_p235"
-        },
-        {
-          "action": "jump",
-          "target": "label_p246"
         }
-      ]
+      ],
+      "next": "label_p246"
     },
     {
+      "type": "simple",
       "label": "label_p235",
       "actions": [
         {
@@ -191,14 +191,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p184"
         }
-      ]
+      ],
+      "next": "label_p184"
     },
     {
+      "type": "simple",
       "label": "label_p246",
       "actions": [
         {
@@ -223,6 +221,7 @@
       "next": "label_p257"
     },
     {
+      "type": "simple",
       "label": "label_p257",
       "actions": [
         {
@@ -241,6 +240,7 @@
       "next": "label_p263"
     },
     {
+      "type": "end",
       "label": "label_p263",
       "actions": []
     }

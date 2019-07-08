@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -146,14 +147,12 @@
         {
           "action": "if",
           "target": "label_p218"
-        },
-        {
-          "action": "jump",
-          "target": "label_p235"
         }
-      ]
+      ],
+      "next": "label_p235"
     },
     {
+      "type": "simple",
       "label": "label_p145",
       "actions": [
         {
@@ -172,6 +171,7 @@
       "next": "label_p157"
     },
     {
+      "type": "simple",
       "label": "label_p157",
       "actions": [
         {
@@ -185,14 +185,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p235"
         }
-      ]
+      ],
+      "next": "label_p235"
     },
     {
+      "type": "simple",
       "label": "label_p179",
       "actions": [
         {
@@ -206,14 +204,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p235"
         }
-      ]
+      ],
+      "next": "label_p235"
     },
     {
+      "type": "simple",
       "label": "label_p196",
       "actions": [
         {
@@ -227,14 +223,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p235"
         }
-      ]
+      ],
+      "next": "label_p235"
     },
     {
+      "type": "simple",
       "label": "label_p218",
       "actions": [
         {
@@ -248,14 +242,12 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "jump",
-          "target": "label_p235"
         }
-      ]
+      ],
+      "next": "label_p235"
     },
     {
+      "type": "simple",
       "label": "label_p235",
       "actions": [
         {
@@ -274,6 +266,7 @@
       "next": "label_p265"
     },
     {
+      "type": "end",
       "label": "label_p265",
       "actions": []
     }

@@ -8,8 +8,7 @@ label_p0:
     label_p147:
       push(0=c:2);
       trace();
-      jump(target=label_p164);
-      end;
+      next label_p164;
     label_p164:
       end;
   } catch {
@@ -28,8 +27,7 @@ label_p0:
     label_p190:
       push(0=c:2);
       trace();
-      jump(target=label_p207);
-      end;
+      next label_p207;
     label_p207:
       end;
   } catch {

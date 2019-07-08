@@ -23,8 +23,7 @@ label_p72:
   if(target=label_p100);
   push(0="in if + and");
   trace();
-  jump(target=label_p119);
-  end;
+  next label_p119;
 label_p100:
   push(0="in else + and");
   trace();

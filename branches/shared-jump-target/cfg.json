@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -62,6 +63,7 @@
       "next": "label_p97"
     },
     {
+      "type": "simple",
       "label": "label_p97",
       "actions": [
         {
@@ -108,6 +110,7 @@
       "next": "label_p171"
     },
     {
+      "type": "end",
       "label": "label_p171",
       "actions": []
     }

@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -44,6 +45,7 @@
       "next": "label_p62"
     },
     {
+      "type": "simple",
       "label": "label_p62",
       "actions": [
         {
@@ -110,14 +112,12 @@
         },
         {
           "action": "set-variable"
-        },
-        {
-          "action": "jump",
-          "target": "label_p62"
         }
-      ]
+      ],
+      "next": "label_p62"
     },
     {
+      "type": "simple",
       "label": "label_p104",
       "actions": [
         {
@@ -136,6 +136,7 @@
       "next": "label_p110"
     },
     {
+      "type": "end",
       "label": "label_p110",
       "actions": []
     }

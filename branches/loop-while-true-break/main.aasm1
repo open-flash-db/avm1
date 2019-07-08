@@ -21,11 +21,9 @@ label_p103:
   not();
   not();
   if(target=label_p156);
-  jump(target=label_p161);
-  end;
+  next label_p161;
 label_p156:
-  jump(target=label_p103);
-  end;
+  next label_p103;
 label_p161:
   push(0=c:3);
   trace();

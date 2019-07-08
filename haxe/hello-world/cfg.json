@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -180,6 +181,7 @@
           "body": {
             "blocks": [
               {
+                "type": "return",
                 "label": "label_p1157",
                 "actions": [
                   {
@@ -267,6 +269,7 @@
           "body": {
             "blocks": [
               {
+                "type": "end",
                 "label": "label_p1202",
                 "actions": []
               }
@@ -380,6 +383,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p1264",
                 "actions": [
                   {
@@ -445,6 +449,7 @@
                 "next": "label_p1296"
               },
               {
+                "type": "end",
                 "label": "label_p1296",
                 "actions": []
               }
@@ -480,6 +485,7 @@
           "body": {
             "blocks": [
               {
+                "type": "end",
                 "label": "label_p1313",
                 "actions": []
               }
@@ -598,6 +604,7 @@
           "body": {
             "blocks": [
               {
+                "type": "return",
                 "label": "label_p1377",
                 "actions": [
                   {
@@ -721,6 +728,7 @@
       "next": "label_p1441"
     },
     {
+      "type": "simple",
       "label": "label_p1441",
       "actions": [
         {
@@ -768,14 +776,12 @@
         },
         {
           "action": "set-member"
-        },
-        {
-          "action": "jump",
-          "target": "label_p1441"
         }
-      ]
+      ],
+      "next": "label_p1441"
     },
     {
+      "type": "simple",
       "label": "label_p1473",
       "actions": [
         {
@@ -819,6 +825,7 @@
           "body": {
             "blocks": [
               {
+                "type": "end",
                 "label": "label_p1496",
                 "actions": []
               }
@@ -945,6 +952,7 @@
           "body": {
             "blocks": [
               {
+                "type": "return",
                 "label": "label_p1564",
                 "actions": [
                   {
@@ -1000,6 +1008,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p1594",
                 "actions": [
                   {
@@ -1144,6 +1153,7 @@
                 "next": "label_p1669"
               },
               {
+                "type": "simple",
                 "label": "label_p1669",
                 "actions": [
                   {
@@ -1173,15 +1183,13 @@
                 "next": "label_p1685"
               },
               {
+                "type": "simple",
                 "label": "label_p1685",
-                "actions": [
-                  {
-                    "action": "jump",
-                    "target": "label_p1700"
-                  }
-                ]
+                "actions": [],
+                "next": "label_p1700"
               },
               {
+                "type": "simple",
                 "label": "label_p1690",
                 "actions": [
                   {
@@ -1204,6 +1212,7 @@
                 "next": "label_p1700"
               },
               {
+                "type": "return",
                 "label": "label_p1700",
                 "actions": [
                   {
@@ -1301,6 +1310,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p1765",
                 "actions": [
                   {
@@ -1423,6 +1433,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p1835",
                 "actions": [
                   {
@@ -1526,6 +1537,7 @@
                 "next": "label_p1896"
               },
               {
+                "type": "simple",
                 "label": "label_p1896",
                 "actions": [
                   {
@@ -1569,14 +1581,12 @@
                   {
                     "action": "if",
                     "target": "label_p1927"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2094"
                   }
-                ]
+                ],
+                "next": "label_p2094"
               },
               {
+                "type": "simple",
                 "label": "label_p1927",
                 "actions": [
                   {
@@ -1730,14 +1740,12 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2089"
                   }
-                ]
+                ],
+                "next": "label_p2089"
               },
               {
+                "type": "simple",
                 "label": "label_p2025",
                 "actions": [
                   {
@@ -1857,15 +1865,13 @@
                 "next": "label_p2089"
               },
               {
+                "type": "simple",
                 "label": "label_p2089",
-                "actions": [
-                  {
-                    "action": "jump",
-                    "target": "label_p1896"
-                  }
-                ]
+                "actions": [],
+                "next": "label_p1896"
               },
               {
+                "type": "return",
                 "label": "label_p2094",
                 "actions": [
                   {
@@ -1890,6 +1896,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p2103",
                 "actions": [
                   {
@@ -1974,6 +1981,7 @@
                 "next": "label_p2152"
               },
               {
+                "type": "simple",
                 "label": "label_p2152",
                 "actions": [
                   {
@@ -2017,14 +2025,12 @@
                   {
                     "action": "if",
                     "target": "label_p2183"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2306"
                   }
-                ]
+                ],
+                "next": "label_p2306"
               },
               {
+                "type": "simple",
                 "label": "label_p2183",
                 "actions": [
                   {
@@ -2161,14 +2167,12 @@
                         "value": 16
                       }
                     ]
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2277"
                   }
-                ]
+                ],
+                "next": "label_p2277"
               },
               {
+                "type": "simple",
                 "label": "label_p2272",
                 "actions": [
                   {
@@ -2184,6 +2188,7 @@
                 "next": "label_p2277"
               },
               {
+                "type": "simple",
                 "label": "label_p2277",
                 "actions": [
                   {
@@ -2227,14 +2232,12 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2152"
                   }
-                ]
+                ],
+                "next": "label_p2152"
               },
               {
+                "type": "return",
                 "label": "label_p2306",
                 "actions": [
                   {
@@ -2275,6 +2278,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p2325",
                 "actions": [
                   {
@@ -2354,14 +2358,12 @@
                         "value": true
                       }
                     ]
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2387"
                   }
-                ]
+                ],
+                "next": "label_p2387"
               },
               {
+                "type": "simple",
                 "label": "label_p2378",
                 "actions": [
                   {
@@ -2387,6 +2389,7 @@
                 "next": "label_p2387"
               },
               {
+                "type": "simple",
                 "label": "label_p2387",
                 "actions": [
                   {
@@ -2401,14 +2404,12 @@
                         "value": false
                       }
                     ]
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2411"
                   }
-                ]
+                ],
+                "next": "label_p2411"
               },
               {
+                "type": "simple",
                 "label": "label_p2402",
                 "actions": [
                   {
@@ -2434,6 +2435,7 @@
                 "next": "label_p2411"
               },
               {
+                "type": "simple",
                 "label": "label_p2411",
                 "actions": [
                   {
@@ -2448,14 +2450,12 @@
                         "value": false
                       }
                     ]
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2435"
                   }
-                ]
+                ],
+                "next": "label_p2435"
               },
               {
+                "type": "simple",
                 "label": "label_p2426",
                 "actions": [
                   {
@@ -2481,6 +2481,7 @@
                 "next": "label_p2435"
               },
               {
+                "type": "return",
                 "label": "label_p2435",
                 "actions": [
                   {
@@ -2505,6 +2506,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p2447",
                 "actions": [
                   {
@@ -2713,6 +2715,7 @@
                 "next": "label_p2568"
               },
               {
+                "type": "simple",
                 "label": "label_p2568",
                 "actions": [
                   {
@@ -2777,6 +2780,7 @@
                 "next": "label_p2603"
               },
               {
+                "type": "simple",
                 "label": "label_p2603",
                 "actions": [
                   {
@@ -2824,14 +2828,12 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2603"
                   }
-                ]
+                ],
+                "next": "label_p2603"
               },
               {
+                "type": "simple",
                 "label": "label_p2638",
                 "actions": [
                   {
@@ -2881,6 +2883,7 @@
                 "next": "label_p2666"
               },
               {
+                "type": "simple",
                 "label": "label_p2666",
                 "actions": [
                   {
@@ -2983,6 +2986,7 @@
                 "next": "label_p2726"
               },
               {
+                "type": "simple",
                 "label": "label_p2726",
                 "actions": [
                   {
@@ -3015,6 +3019,7 @@
                 "next": "label_p2741"
               },
               {
+                "type": "simple",
                 "label": "label_p2741",
                 "actions": [
                   {
@@ -3047,6 +3052,7 @@
                 "next": "label_p2756"
               },
               {
+                "type": "simple",
                 "label": "label_p2756",
                 "actions": [
                   {
@@ -3055,14 +3061,12 @@
                   {
                     "action": "if",
                     "target": "label_p2767"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2666"
                   }
-                ]
+                ],
+                "next": "label_p2666"
               },
               {
+                "type": "simple",
                 "label": "label_p2767",
                 "actions": [
                   {
@@ -3130,6 +3134,7 @@
                 "next": "label_p2804"
               },
               {
+                "type": "simple",
                 "label": "label_p2804",
                 "actions": [
                   {
@@ -3268,14 +3273,12 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p2666"
                   }
-                ]
+                ],
+                "next": "label_p2666"
               },
               {
+                "type": "simple",
                 "label": "label_p2885",
                 "actions": [
                   {
@@ -3390,6 +3393,7 @@
                 "next": "label_p2955"
               },
               {
+                "type": "return",
                 "label": "label_p2955",
                 "actions": [
                   {
@@ -3437,6 +3441,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p2982",
                 "actions": [
                   {
@@ -3454,6 +3459,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p2993",
                 "actions": [
                   {
@@ -3515,6 +3521,7 @@
           "body": {
             "blocks": [
               {
+                "type": "return",
                 "label": "label_p3027",
                 "actions": [
                   {
@@ -3576,6 +3583,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p3058",
                 "actions": [
                   {
@@ -3595,6 +3603,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "return",
                           "label": "label_p3069",
                           "actions": [
                             {
@@ -3802,6 +3811,7 @@
           "body": {
             "blocks": [
               {
+                "type": "return",
                 "label": "label_p3174",
                 "actions": [
                   {
@@ -3838,6 +3848,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p3192",
                 "actions": [
                   {
@@ -3922,6 +3933,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p3235",
                 "actions": [
                   {
@@ -3939,6 +3951,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p3241",
                 "actions": [
                   {
@@ -4185,6 +4198,7 @@
                 "next": "label_p3380"
               },
               {
+                "type": "simple",
                 "label": "label_p3380",
                 "actions": [
                   {
@@ -4263,6 +4277,7 @@
                 "next": "label_p3418"
               },
               {
+                "type": "return",
                 "label": "label_p3418",
                 "actions": [
                   {
@@ -4271,6 +4286,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p3424",
                 "actions": [
                   {
@@ -4320,14 +4336,12 @@
                         "value": false
                       }
                     ]
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p3493"
                   }
-                ]
+                ],
+                "next": "label_p3493"
               },
               {
+                "type": "simple",
                 "label": "label_p3458",
                 "actions": [
                   {
@@ -4385,6 +4399,7 @@
                 "next": "label_p3493"
               },
               {
+                "type": "return",
                 "label": "label_p3493",
                 "actions": [
                   {
@@ -4406,6 +4421,7 @@
                 ]
               },
               {
+                "type": "simple",
                 "label": "label_p3509",
                 "actions": [
                   {
@@ -4439,14 +4455,12 @@
                         "value": true
                       }
                     ]
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p3541"
                   }
-                ]
+                ],
+                "next": "label_p3541"
               },
               {
+                "type": "simple",
                 "label": "label_p3533",
                 "actions": [
                   {
@@ -4469,6 +4483,7 @@
                 "next": "label_p3541"
               },
               {
+                "type": "return",
                 "label": "label_p3541",
                 "actions": [
                   {
@@ -4480,6 +4495,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p3548",
                 "actions": [
                   {
@@ -4523,6 +4539,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p3573",
                 "actions": [
                   {
@@ -4563,6 +4580,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p3598",
                 "actions": [
                   {
@@ -4587,6 +4605,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p3612",
                 "actions": [
                   {
@@ -4630,6 +4649,7 @@
                 ]
               },
               {
+                "type": "return",
                 "label": "label_p3637",
                 "actions": [
                   {
@@ -4682,6 +4702,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p3667",
                 "actions": [
                   {
@@ -4901,6 +4922,7 @@
                 "next": "label_p3792"
               },
               {
+                "type": "simple",
                 "label": "label_p3792",
                 "actions": [
                   {
@@ -4946,6 +4968,7 @@
                 "next": "label_p3822"
               },
               {
+                "type": "simple",
                 "label": "label_p3822",
                 "actions": [
                   {
@@ -5218,6 +5241,7 @@
                 "next": "label_p3982"
               },
               {
+                "type": "return",
                 "label": "label_p3982",
                 "actions": [
                   {
@@ -5275,6 +5299,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p4009",
                 "actions": [
                   {
@@ -5377,6 +5402,7 @@
                 "next": "label_p4060"
               },
               {
+                "type": "end",
                 "label": "label_p4060",
                 "actions": []
               }
@@ -5425,6 +5451,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p4083",
                 "actions": [
                   {
@@ -5641,14 +5668,12 @@
                   },
                   {
                     "action": "add2"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p4213"
                   }
-                ]
+                ],
+                "next": "label_p4213"
               },
               {
+                "type": "simple",
                 "label": "label_p4208",
                 "actions": [
                   {
@@ -5664,6 +5689,7 @@
                 "next": "label_p4213"
               },
               {
+                "type": "simple",
                 "label": "label_p4213",
                 "actions": [
                   {
@@ -5765,6 +5791,7 @@
                 "next": "label_p4261"
               },
               {
+                "type": "simple",
                 "label": "label_p4261",
                 "actions": [
                   {
@@ -5817,6 +5844,7 @@
                 "next": "label_p4293"
               },
               {
+                "type": "simple",
                 "label": "label_p4293",
                 "actions": [
                   {
@@ -5867,14 +5895,12 @@
                   {
                     "action": "if",
                     "target": "label_p4327"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p4414"
                   }
-                ]
+                ],
+                "next": "label_p4414"
               },
               {
+                "type": "simple",
                 "label": "label_p4327",
                 "actions": [
                   {
@@ -6019,14 +6045,12 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p4293"
                   }
-                ]
+                ],
+                "next": "label_p4293"
               },
               {
+                "type": "simple",
                 "label": "label_p4414",
                 "actions": [
                   {
@@ -6158,6 +6182,7 @@
                 "next": "label_p4490"
               },
               {
+                "type": "simple",
                 "label": "label_p4490",
                 "actions": [
                   {
@@ -6276,6 +6301,7 @@
                 "next": "label_p4553"
               },
               {
+                "type": "simple",
                 "label": "label_p4553",
                 "actions": [
                   {
@@ -6287,14 +6313,12 @@
                   {
                     "action": "if",
                     "target": "label_p4565"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p4614"
                   }
-                ]
+                ],
+                "next": "label_p4614"
               },
               {
+                "type": "simple",
                 "label": "label_p4565",
                 "actions": [
                   {
@@ -6370,14 +6394,12 @@
                   },
                   {
                     "action": "set-member"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p4490"
                   }
-                ]
+                ],
+                "next": "label_p4490"
               },
               {
+                "type": "simple",
                 "label": "label_p4614",
                 "actions": [
                   {
@@ -6404,6 +6426,7 @@
                 "next": "label_p4624"
               },
               {
+                "type": "end",
                 "label": "label_p4624",
                 "actions": []
               }
@@ -6448,6 +6471,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p4645",
                 "actions": [
                   {
@@ -6664,14 +6688,12 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p4840"
                   }
-                ]
+                ],
+                "next": "label_p4840"
               },
               {
+                "type": "simple",
                 "label": "label_p4773",
                 "actions": [
                   {
@@ -6792,6 +6814,7 @@
                 "next": "label_p4840"
               },
               {
+                "type": "end",
                 "label": "label_p4840",
                 "actions": []
               }
@@ -6831,6 +6854,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p4859",
                 "actions": [
                   {
@@ -6934,6 +6958,7 @@
                 "next": "label_p4911"
               },
               {
+                "type": "end",
                 "label": "label_p4911",
                 "actions": []
               }
@@ -6978,6 +7003,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p4932",
                 "actions": [
                   {
@@ -7214,6 +7240,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "return",
                           "label": "label_p5054",
                           "actions": [
                             {
@@ -7260,6 +7287,7 @@
                           ]
                         },
                         {
+                          "type": "return",
                           "label": "label_p5082",
                           "actions": [
                             {
@@ -7372,6 +7400,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "simple",
                           "label": "label_p5139",
                           "actions": [
                             {
@@ -7425,6 +7454,7 @@
                           "next": "label_p5168"
                         },
                         {
+                          "type": "end",
                           "label": "label_p5168",
                           "actions": []
                         }
@@ -7489,6 +7519,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "simple",
                           "label": "label_p5199",
                           "actions": [
                             {
@@ -7534,6 +7565,7 @@
                           "next": "label_p5225"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5225",
                           "actions": [
                             {
@@ -7577,14 +7609,12 @@
                             {
                               "action": "if",
                               "target": "label_p5256"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p5319"
                             }
-                          ]
+                          ],
+                          "next": "label_p5319"
                         },
                         {
+                          "type": "return",
                           "label": "label_p5256",
                           "actions": [
                             {
@@ -7668,6 +7698,7 @@
                           ]
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5303",
                           "actions": [
                             {
@@ -7688,14 +7719,12 @@
                             },
                             {
                               "action": "pop"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p5225"
                             }
-                          ]
+                          ],
+                          "next": "label_p5225"
                         },
                         {
+                          "type": "return",
                           "label": "label_p5319",
                           "actions": [
                             {
@@ -7777,6 +7806,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "simple",
                           "label": "label_p5358",
                           "actions": [
                             {
@@ -7836,14 +7866,12 @@
                             },
                             {
                               "action": "pop"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p5411"
                             }
-                          ]
+                          ],
+                          "next": "label_p5411"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5398",
                           "actions": [
                             {
@@ -7866,6 +7894,7 @@
                           "next": "label_p5411"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5411",
                           "actions": [
                             {
@@ -7957,6 +7986,7 @@
                           "next": "label_p5471"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5471",
                           "actions": [
                             {
@@ -8000,14 +8030,12 @@
                             {
                               "action": "if",
                               "target": "label_p5502"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p5544"
                             }
-                          ]
+                          ],
+                          "next": "label_p5544"
                         },
                         {
+                          "type": "return",
                           "label": "label_p5502",
                           "actions": [
                             {
@@ -8060,6 +8088,7 @@
                           ]
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5528",
                           "actions": [
                             {
@@ -8080,14 +8109,12 @@
                             },
                             {
                               "action": "pop"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p5471"
                             }
-                          ]
+                          ],
+                          "next": "label_p5471"
                         },
                         {
+                          "type": "return",
                           "label": "label_p5544",
                           "actions": [
                             {
@@ -8169,6 +8196,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "simple",
                           "label": "label_p5586",
                           "actions": [
                             {
@@ -8228,14 +8256,12 @@
                             },
                             {
                               "action": "pop"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p5642"
                             }
-                          ]
+                          ],
+                          "next": "label_p5642"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5626",
                           "actions": [
                             {
@@ -8265,6 +8291,7 @@
                           "next": "label_p5642"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5642",
                           "actions": [
                             {
@@ -8340,15 +8367,13 @@
                           "next": "label_p5686"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5686",
-                          "actions": [
-                            {
-                              "action": "jump",
-                              "target": "label_p5707"
-                            }
-                          ]
+                          "actions": [],
+                          "next": "label_p5707"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5691",
                           "actions": [
                             {
@@ -8378,6 +8403,7 @@
                           "next": "label_p5707"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5707",
                           "actions": [
                             {
@@ -8424,14 +8450,12 @@
                             {
                               "action": "if",
                               "target": "label_p5742"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p5784"
                             }
-                          ]
+                          ],
+                          "next": "label_p5784"
                         },
                         {
+                          "type": "return",
                           "label": "label_p5742",
                           "actions": [
                             {
@@ -8484,6 +8508,7 @@
                           ]
                         },
                         {
+                          "type": "simple",
                           "label": "label_p5768",
                           "actions": [
                             {
@@ -8504,14 +8529,12 @@
                             },
                             {
                               "action": "pop"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p5707"
                             }
-                          ]
+                          ],
+                          "next": "label_p5707"
                         },
                         {
+                          "type": "return",
                           "label": "label_p5784",
                           "actions": [
                             {
@@ -8584,6 +8607,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "return",
                           "label": "label_p5822",
                           "actions": [
                             {
@@ -8628,6 +8652,7 @@
                               "body": {
                                 "blocks": [
                                   {
+                                    "type": "return",
                                     "label": "label_p5849",
                                     "actions": [
                                       {
@@ -8711,6 +8736,7 @@
                               "body": {
                                 "blocks": [
                                   {
+                                    "type": "return",
                                     "label": "label_p5889",
                                     "actions": [
                                       {
@@ -8873,6 +8899,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "simple",
                           "label": "label_p5969",
                           "actions": [
                             {
@@ -8937,6 +8964,7 @@
                           "next": "label_p6009"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p6009",
                           "actions": [
                             {
@@ -8980,14 +9008,12 @@
                             {
                               "action": "if",
                               "target": "label_p6040"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p6097"
                             }
-                          ]
+                          ],
+                          "next": "label_p6097"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p6040",
                           "actions": [
                             {
@@ -9077,14 +9103,12 @@
                             },
                             {
                               "action": "pop"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p6009"
                             }
-                          ]
+                          ],
+                          "next": "label_p6009"
                         },
                         {
+                          "type": "return",
                           "label": "label_p6097",
                           "actions": [
                             {
@@ -9162,6 +9186,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "simple",
                           "label": "label_p6134",
                           "actions": [
                             {
@@ -9226,6 +9251,7 @@
                           "next": "label_p6174"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p6174",
                           "actions": [
                             {
@@ -9269,14 +9295,12 @@
                             {
                               "action": "if",
                               "target": "label_p6205"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p6269"
                             }
-                          ]
+                          ],
+                          "next": "label_p6269"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p6205",
                           "actions": [
                             {
@@ -9364,6 +9388,7 @@
                           "next": "label_p6253"
                         },
                         {
+                          "type": "simple",
                           "label": "label_p6253",
                           "actions": [
                             {
@@ -9384,14 +9409,12 @@
                             },
                             {
                               "action": "pop"
-                            },
-                            {
-                              "action": "jump",
-                              "target": "label_p6174"
                             }
-                          ]
+                          ],
+                          "next": "label_p6174"
                         },
                         {
+                          "type": "return",
                           "label": "label_p6269",
                           "actions": [
                             {
@@ -9614,6 +9637,7 @@
                     "body": {
                       "blocks": [
                         {
+                          "type": "return",
                           "label": "label_p6385",
                           "actions": [
                             {
@@ -9687,6 +9711,7 @@
                           ]
                         },
                         {
+                          "type": "return",
                           "label": "label_p6428",
                           "actions": [
                             {
@@ -9786,6 +9811,7 @@
                 "next": "label_p6476"
               },
               {
+                "type": "simple",
                 "label": "label_p6476",
                 "actions": [
                   {
@@ -10119,6 +10145,7 @@
                 "next": "label_p6640"
               },
               {
+                "type": "end",
                 "label": "label_p6640",
                 "actions": []
               }
@@ -10166,6 +10193,7 @@
           "body": {
             "blocks": [
               {
+                "type": "end",
                 "label": "label_p6663",
                 "actions": []
               }
@@ -10330,6 +10358,7 @@
           "body": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p6749",
                 "actions": [
                   {
@@ -10375,14 +10404,12 @@
                         "value": 3
                       }
                     ]
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p6784"
                   }
-                ]
+                ],
+                "next": "label_p6784"
               },
               {
+                "type": "simple",
                 "label": "label_p6779",
                 "actions": [
                   {
@@ -10398,6 +10425,7 @@
                 "next": "label_p6784"
               },
               {
+                "type": "simple",
                 "label": "label_p6784",
                 "actions": [
                   {
@@ -10410,6 +10438,7 @@
                 "next": "label_p6788"
               },
               {
+                "type": "end",
                 "label": "label_p6788",
                 "actions": []
               }
@@ -10505,6 +10534,7 @@
       "next": "label_p6836"
     },
     {
+      "type": "simple",
       "label": "label_p6836",
       "actions": [
         {
@@ -10552,14 +10582,12 @@
         },
         {
           "action": "set-member"
-        },
-        {
-          "action": "jump",
-          "target": "label_p6836"
         }
-      ]
+      ],
+      "next": "label_p6836"
     },
     {
+      "type": "simple",
       "label": "label_p6868",
       "actions": [
         {
@@ -10651,6 +10679,7 @@
       "next": "label_p6916"
     },
     {
+      "type": "simple",
       "label": "label_p6916",
       "actions": [
         {
@@ -10698,14 +10727,12 @@
         },
         {
           "action": "set-member"
-        },
-        {
-          "action": "jump",
-          "target": "label_p6916"
         }
-      ]
+      ],
+      "next": "label_p6916"
     },
     {
+      "type": "simple",
       "label": "label_p6948",
       "actions": [
         {
@@ -10797,6 +10824,7 @@
       "next": "label_p6996"
     },
     {
+      "type": "simple",
       "label": "label_p6996",
       "actions": [
         {
@@ -10844,14 +10872,12 @@
         },
         {
           "action": "set-member"
-        },
-        {
-          "action": "jump",
-          "target": "label_p6996"
         }
-      ]
+      ],
+      "next": "label_p6996"
     },
     {
+      "type": "simple",
       "label": "label_p7028",
       "actions": [
         {
@@ -10943,6 +10969,7 @@
       "next": "label_p7076"
     },
     {
+      "type": "simple",
       "label": "label_p7076",
       "actions": [
         {
@@ -10990,14 +11017,12 @@
         },
         {
           "action": "set-member"
-        },
-        {
-          "action": "jump",
-          "target": "label_p7076"
         }
-      ]
+      ],
+      "next": "label_p7076"
     },
     {
+      "type": "simple",
       "label": "label_p7108",
       "actions": [
         {
@@ -11089,6 +11114,7 @@
       "next": "label_p7156"
     },
     {
+      "type": "simple",
       "label": "label_p7156",
       "actions": [
         {
@@ -11136,14 +11162,12 @@
         },
         {
           "action": "set-member"
-        },
-        {
-          "action": "jump",
-          "target": "label_p7156"
         }
-      ]
+      ],
+      "next": "label_p7156"
     },
     {
+      "type": "simple",
       "label": "label_p7188",
       "actions": [
         {
@@ -11211,6 +11235,7 @@
       "next": "label_p7224"
     },
     {
+      "type": "simple",
       "label": "label_p7224",
       "actions": [
         {
@@ -11258,14 +11283,12 @@
         },
         {
           "action": "set-member"
-        },
-        {
-          "action": "jump",
-          "target": "label_p7224"
         }
-      ]
+      ],
+      "next": "label_p7224"
     },
     {
+      "type": "simple",
       "label": "label_p7256",
       "actions": [
         {
@@ -11544,6 +11567,7 @@
           "body": {
             "blocks": [
               {
+                "type": "return",
                 "label": "label_p7401",
                 "actions": [
                   {
@@ -11632,6 +11656,7 @@
           "body": {
             "blocks": [
               {
+                "type": "return",
                 "label": "label_p7446",
                 "actions": [
                   {
@@ -12577,6 +12602,7 @@
           "try": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p7963",
                 "actions": [
                   {
@@ -12688,14 +12714,12 @@
                   },
                   {
                     "action": "pop"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p8054"
                   }
-                ]
+                ],
+                "next": "label_p8054"
               },
               {
+                "type": "end",
                 "label": "label_p8054",
                 "actions": []
               }
@@ -12704,6 +12728,7 @@
           "catch": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p8028",
                 "actions": [
                   {
@@ -12757,6 +12782,7 @@
                 "next": "label_p8054"
               },
               {
+                "type": "end",
                 "label": "label_p8054",
                 "actions": []
               }
@@ -12771,6 +12797,7 @@
       "next": "label_p8054"
     },
     {
+      "type": "end",
       "label": "label_p8054",
       "actions": []
     }

@@ -5,8 +5,7 @@ label_p0:
   getVariable();
   if(target=label_p69);
   push(0="baz");
-  jump(target=label_p77);
-  end;
+  next label_p77;
 label_p69:
   push(0="bar");
   next label_p77;

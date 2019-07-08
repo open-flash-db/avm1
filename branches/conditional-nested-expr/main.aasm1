@@ -8,14 +8,12 @@ label_p0:
   getVariable();
   if(target=label_p92);
   push(0="fuz");
-  jump(target=label_p100);
-  end;
+  next label_p100;
 label_p92:
   push(0="baz");
   next label_p100;
 label_p100:
-  jump(target=label_p113);
-  end;
+  next label_p113;
 label_p105:
   push(0="bar");
   next label_p113;

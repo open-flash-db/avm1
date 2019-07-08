@@ -7,8 +7,7 @@ label_p0:
   if(target=label_p56);
   push(0="in if");
   trace();
-  jump(target=label_p90);
-  end;
+  next label_p90;
 label_p56:
   push(0="test2");
   getVariable();

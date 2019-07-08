@@ -1,6 +1,7 @@
 {
   "blocks": [
     {
+      "type": "simple",
       "label": "label_p0",
       "actions": [
         {
@@ -20,6 +21,7 @@
           "try": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p44",
                 "actions": [
                   {
@@ -33,14 +35,12 @@
                   },
                   {
                     "action": "trace"
-                  },
-                  {
-                    "action": "jump",
-                    "target": "label_p75"
                   }
-                ]
+                ],
+                "next": "label_p75"
               },
               {
+                "type": "end",
                 "label": "label_p75",
                 "actions": []
               }
@@ -49,6 +49,7 @@
           "catch": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p61",
                 "actions": [
                   {
@@ -67,6 +68,7 @@
                 "next": "label_p75"
               },
               {
+                "type": "end",
                 "label": "label_p75",
                 "actions": []
               }
@@ -79,6 +81,7 @@
           "finally": {
             "blocks": [
               {
+                "type": "simple",
                 "label": "label_p75",
                 "actions": [
                   {
@@ -97,6 +100,7 @@
                 "next": "label_p91"
               },
               {
+                "type": "end",
                 "label": "label_p91",
                 "actions": []
               }
@@ -119,6 +123,7 @@
       "next": "label_p120"
     },
     {
+      "type": "end",
       "label": "label_p120",
       "actions": []
     }
