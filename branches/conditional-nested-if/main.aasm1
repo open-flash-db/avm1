@@ -12,10 +12,8 @@ label_p0:
   if(target=label_p92);
   push(0=c:2);
   trace();
-  next label_p92;
 label_p92:
   push(0=c:3);
   trace();
-  next label_p98;
 label_p98:
   end;

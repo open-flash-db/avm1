@@ -4,7 +4,6 @@ label_p0:
     label_p55:
       push(0=c:0);
       trace();
-      next label_p61;
     label_p61:
       end;
   };
@@ -19,6 +18,5 @@ label_p0:
   trace();
   push(0=c:4);
   trace();
-  next label_p101;
 label_p101:
   end;

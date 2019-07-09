@@ -8,7 +8,6 @@ label_p0:
   push(0=c:0);
   getVariable();
   enumerate2();
-  next label_p97;
 label_p97:
   storeRegister(r:0);
   push(0=null);
@@ -22,6 +21,5 @@ label_p97:
 label_p130:
   push(0=c:6);
   trace();
-  next label_p136;
 label_p136:
   end;

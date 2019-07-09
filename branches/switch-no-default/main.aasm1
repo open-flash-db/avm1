@@ -18,10 +18,8 @@ label_p69:
 label_p86:
   push(0="case 1");
   trace();
-  next label_p103;
 label_p103:
   push(0="after switch");
   trace();
-  next label_p121;
 label_p121:
   end;

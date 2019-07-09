@@ -26,6 +26,5 @@ label_p0:
   push(0=c:2);
   getMember();
   trace();
-  next label_p129;
 label_p129:
   end;

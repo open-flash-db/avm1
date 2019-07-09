@@ -16,7 +16,6 @@ label_p0:
 label_p174:
   push(0=c:3);
   trace();
-  next label_p180;
 label_p180:
   next label_p214;
 label_p185:
@@ -30,10 +29,8 @@ label_p185:
 label_p208:
   push(0=c:5);
   trace();
-  next label_p214;
 label_p214:
   push(0=c:6);
   trace();
-  next label_p220;
 label_p220:
   end;

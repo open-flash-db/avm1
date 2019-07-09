@@ -3,7 +3,6 @@ label_p0:
     label_p9:
       push(0="ok");
       trace();
-      next label_p17;
     label_p17:
       end;
   };
@@ -16,19 +15,16 @@ label_p0:
       pop();
       push(0="in-try");
       trace();
-      next label_p68;
     label_p68:
       end;
   } finally {
     label_p68:
       push(0="in-finally");
       trace();
-      next label_p84;
     label_p84:
       end;
   };
   push(0="end");
   trace();
-  next label_p93;
 label_p93:
   end;

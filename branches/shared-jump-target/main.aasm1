@@ -9,7 +9,6 @@ label_p0:
   if(target=label_p97);
   push(0="in bidirectionnal test");
   trace();
-  next label_p97;
 label_p97:
   push(0="in bidirectionnal do/while");
   trace();
@@ -18,6 +17,5 @@ label_p97:
   if(target=label_p97);
   push(0="after bidirectionnal");
   trace();
-  next label_p171;
 label_p171:
   end;

@@ -37,21 +37,18 @@ label_p0:
       pop();
       push(0=r:3, 1=c:8);
       equals2();
-      next label_p403;
     label_p403:
       pushDuplicate();
       if(target=label_p418);
       pop();
       push(0=r:3, 1=c:9);
       equals2();
-      next label_p418;
     label_p418:
       pushDuplicate();
       if(target=label_p433);
       pop();
       push(0=r:3, 1=c:10);
       equals2();
-      next label_p433;
     label_p433:
       not();
       if(target=label_p488);
@@ -65,7 +62,6 @@ label_p0:
       pop();
       next label_p335;
     label_p488:
-      next label_p498;
     label_p498:
       push(0=false);
       if(target=label_p632);
@@ -80,21 +76,18 @@ label_p0:
       pop();
       push(0=r:4, 1=c:8);
       equals2();
-      next label_p558;
     label_p558:
       pushDuplicate();
       if(target=label_p573);
       pop();
       push(0=r:4, 1=c:9);
       equals2();
-      next label_p573;
     label_p573:
       pushDuplicate();
       if(target=label_p588);
       pop();
       push(0=r:4, 1=c:10);
       equals2();
-      next label_p588;
     label_p588:
       not();
       if(target=label_p622);
@@ -104,7 +97,6 @@ label_p0:
       pop();
       next label_p498;
     label_p622:
-      next label_p632;
     label_p632:
       push(0=c:13, 1=1i32, 2=r:2, 3=c:14);
       callMethod();
@@ -121,7 +113,6 @@ label_p0:
       getMember();
       storeRegister(r:7);
       pop();
-      next label_p702;
     label_p702:
       push(0=r:5, 1=r:7);
       less2();
@@ -147,7 +138,6 @@ label_p0:
       push(0=2i32, 1=r:9, 2=c:18);
       callMethod();
       pop();
-      next label_p808;
     label_p808:
       push(0=r:5);
       increment();
@@ -184,7 +174,6 @@ label_p0:
       getMember();
       push(0=null);
       equals2();
-      next label_p959;
     label_p959:
       not();
       if(target=label_p999);
@@ -200,13 +189,11 @@ label_p0:
       push(0=0f64, 1=r:1, 2=c:31);
       callMethod();
       pop();
-      next label_p1017;
     label_p1017:
       end;
   };
   setMember();
   push(0=c:32);
   trace();
-  next label_p1024;
 label_p1024:
   end;

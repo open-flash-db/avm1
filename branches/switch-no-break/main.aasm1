@@ -14,14 +14,11 @@ label_p0:
 label_p90:
   push(0="foo");
   trace();
-  next label_p99;
 label_p99:
   push(0="bar");
   trace();
-  next label_p108;
 label_p108:
   push(0="after switch without break");
   trace();
-  next label_p140;
 label_p140:
   end;

@@ -4,7 +4,6 @@ label_p0:
   setVariable();
   push(0=c:1);
   trace();
-  next label_p86;
 label_p86:
   push(0=c:0);
   getVariable();
@@ -31,6 +30,5 @@ label_p150:
 label_p155:
   push(0=c:3);
   trace();
-  next label_p161;
 label_p161:
   end;

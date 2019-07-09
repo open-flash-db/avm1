@@ -40,10 +40,8 @@ label_p0:
       setVariable();
       push(0=c:1, 1=-1i32);
       setVariable();
-      next label_p234;
     label_p234:
       end;
   };
-  next label_p234;
 label_p234:
   end;

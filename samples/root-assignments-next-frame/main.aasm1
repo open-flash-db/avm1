@@ -10,6 +10,5 @@ label_p0:
   push(0="thisAssignment");
   getVariable();
   trace();
-  next label_p107;
 label_p107:
   end;

@@ -6,7 +6,6 @@ label_p0:
   defineLocal();
   push(0=c:2);
   trace();
-  next label_p478;
 label_p478:
   push(0=c:1);
   getVariable();
@@ -28,7 +27,6 @@ label_p520:
   setVariable();
   push(0=c:5);
   trace();
-  next label_p547;
 label_p547:
   push(0=c:6);
   trace();
@@ -47,7 +45,6 @@ label_p547:
   trace();
   push(0=c:1, 1=0f64);
   setVariable();
-  next label_p610;
 label_p610:
   push(0=c:1);
   getVariable();
@@ -73,7 +70,6 @@ label_p652:
   push(0=c:11);
   getVariable();
   enumerate2();
-  next label_p697;
 label_p697:
   storeRegister(r:0);
   push(0=null);
@@ -91,7 +87,6 @@ label_p730:
   setVariable();
   push(0=c:18);
   trace();
-  next label_p757;
 label_p757:
   push(0=c:1);
   getVariable();
@@ -122,7 +117,6 @@ label_p826:
   setVariable();
   push(0=c:21);
   trace();
-  next label_p853;
 label_p853:
   push(0=false);
   if(target=label_p911);
@@ -149,7 +143,6 @@ label_p911:
   setVariable();
   push(0=c:24);
   trace();
-  next label_p938;
 label_p938:
   push(0=c:25);
   trace();
@@ -175,7 +168,6 @@ label_p994:
   trace();
   push(0=c:1, 1=0f64);
   setVariable();
-  next label_p1021;
 label_p1021:
   push(0=c:1);
   getVariable();
@@ -193,7 +185,6 @@ label_p1021:
 label_p1072:
   push(0=c:28);
   trace();
-  next label_p1078;
 label_p1078:
   push(0=c:1, 1=c:1);
   getVariable();
@@ -203,6 +194,5 @@ label_p1078:
 label_p1093:
   push(0=c:29);
   trace();
-  next label_p1099;
 label_p1099:
   end;

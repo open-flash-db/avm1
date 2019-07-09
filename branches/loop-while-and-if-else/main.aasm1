@@ -2,7 +2,6 @@ label_p0:
   constantPool(0="before while(if/else if/else if/else)", 1="test2", 2="test", 3="in if", 4="in else if", 5="in else", 6="i", 7="after while(if/else if/else if/else)");
   push(0=c:0);
   trace();
-  next label_p124;
 label_p124:
   push(0=c:1);
   getVariable();
@@ -26,7 +25,6 @@ label_p159:
 label_p182:
   push(0=c:5);
   trace();
-  next label_p188;
 label_p188:
   push(0=c:6, 1=c:6);
   getVariable();
@@ -36,6 +34,5 @@ label_p188:
 label_p203:
   push(0=c:7);
   trace();
-  next label_p209;
 label_p209:
   end;

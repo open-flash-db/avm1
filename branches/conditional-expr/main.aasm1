@@ -8,11 +8,9 @@ label_p0:
   next label_p77;
 label_p69:
   push(0="bar");
-  next label_p77;
 label_p77:
   defineLocal();
   push(0="after conditionnal expression");
   trace();
-  next label_p113;
 label_p113:
   end;

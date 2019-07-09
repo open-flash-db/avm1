@@ -41,7 +41,6 @@ label_p0:
       push(0=c:13);
       callMethod();
       pop();
-      next label_p1296;
     label_p1296:
       end;
   };
@@ -85,7 +84,6 @@ label_p0:
   getMember();
   storeRegister(r:2);
   enumerate2();
-  next label_p1441;
 label_p1441:
   storeRegister(r:0);
   push(0=null);
@@ -155,21 +153,18 @@ label_p1473:
       push(0=null);
       equals2();
       not();
-      next label_p1669;
     label_p1669:
       not();
       if(target=label_p1685);
       push(0=c:24);
       storeRegister(r:4);
       pop();
-      next label_p1685;
     label_p1685:
       next label_p1700;
     label_p1690:
       push(0=c:24);
       storeRegister(r:4);
       pop();
-      next label_p1700;
     label_p1700:
       push(0=r:4);
       storeRegister(r:5);
@@ -227,7 +222,6 @@ label_p1473:
       getMember();
       storeRegister(r:8);
       pop();
-      next label_p1896;
     label_p1896:
       push(0=true);
       not();
@@ -285,7 +279,6 @@ label_p1473:
       add2();
       storeRegister(r:6);
       pop();
-      next label_p2089;
     label_p2089:
       next label_p1896;
     label_p2094:
@@ -308,7 +301,6 @@ label_p1473:
       push(0=0i32);
       storeRegister(r:9);
       pop();
-      next label_p2152;
     label_p2152:
       push(0=true);
       not();
@@ -345,7 +337,6 @@ label_p1473:
       next label_p2277;
     label_p2272:
       push(0=c:30);
-      next label_p2277;
     label_p2277:
       push(0=r:11);
       add2();
@@ -383,7 +374,6 @@ label_p1473:
       push(0=r:6, 1=c:25);
       getVariable();
       instanceOf();
-      next label_p2387;
     label_p2387:
       if(target=label_p2402);
       push(0=false);
@@ -392,7 +382,6 @@ label_p1473:
       push(0=r:6, 1=c:35);
       equals2();
       not();
-      next label_p2411;
     label_p2411:
       if(target=label_p2426);
       push(0=false);
@@ -401,7 +390,6 @@ label_p1473:
       push(0=r:6, 1=c:36);
       equals2();
       not();
-      next label_p2435;
     label_p2435:
       not();
       if(target=label_p2447);
@@ -443,7 +431,6 @@ label_p1473:
       push(0=r:14);
       storeRegister(r:9);
       pop();
-      next label_p2568;
     label_p2568:
       push(0=r:3, 1=c:29);
       add2();
@@ -455,7 +442,6 @@ label_p1473:
       pop();
       push(0=r:2);
       enumerate2();
-      next label_p2603;
     label_p2603:
       storeRegister(r:0);
       push(0=null);
@@ -473,7 +459,6 @@ label_p1473:
       callMethod();
       storeRegister(r:12);
       pop();
-      next label_p2666;
     label_p2666:
       push(0=0i32, 1=r:12, 2=c:44);
       callMethod();
@@ -490,21 +475,18 @@ label_p1473:
       pop();
       push(0=r:13, 1=c:8);
       equals2();
-      next label_p2726;
     label_p2726:
       pushDuplicate();
       if(target=label_p2741);
       pop();
       push(0=r:13, 1=c:46);
       equals2();
-      next label_p2741;
     label_p2741:
       pushDuplicate();
       if(target=label_p2756);
       pop();
       push(0=r:13, 1=c:47);
       equals2();
-      next label_p2756;
     label_p2756:
       not();
       if(target=label_p2767);
@@ -521,7 +503,6 @@ label_p1473:
       add2();
       storeRegister(r:9);
       pop();
-      next label_p2804;
     label_p2804:
       push(0=r:3, 1=r:2, 2=r:13);
       getMember();
@@ -565,7 +546,6 @@ label_p1473:
       add2();
       storeRegister(r:9);
       pop();
-      next label_p2955;
     label_p2955:
       push(0=r:9, 1=r:3, 2=c:52);
       add2();
@@ -705,7 +685,6 @@ label_p1473:
       push(0=null);
       equals2();
       not();
-      next label_p3380;
     label_p3380:
       pushDuplicate();
       if(target=label_p3418);
@@ -722,7 +701,6 @@ label_p1473:
       push(0=null);
       equals2();
       not();
-      next label_p3418;
     label_p3418:
       return();
       return;
@@ -744,7 +722,6 @@ label_p1473:
       push(0=r:2, 1=5.46040909e-315f64);
       modulo();
       strictEquals();
-      next label_p3493;
     label_p3493:
       if(target=label_p3509);
       push(0=false);
@@ -760,7 +737,6 @@ label_p1473:
     label_p3533:
       push(0=r:2, 1=false);
       strictEquals();
-      next label_p3541;
     label_p3541:
       not();
       return();
@@ -844,7 +820,6 @@ label_p1473:
       push(0=800i32);
       storeRegister(r:4);
       pop();
-      next label_p3792;
     label_p3792:
       push(0=r:5, 1=0i32);
       equals2();
@@ -853,7 +828,6 @@ label_p1473:
       push(0=600i32);
       storeRegister(r:5);
       pop();
-      next label_p3822;
     label_p3822:
       push(0=r:5, 1=30i32);
       add2();
@@ -888,7 +862,6 @@ label_p1473:
       pop();
       push(0=r:2, 1=c:84, 2=r:7);
       setMember();
-      next label_p3982;
     label_p3982:
       push(0=r:3);
       return();
@@ -912,7 +885,6 @@ label_p1473:
       getMember();
       push(0=c:83, 1=r:2);
       setMember();
-      next label_p4060;
     label_p4060:
       end;
   };
@@ -957,7 +929,6 @@ label_p1473:
       next label_p4213;
     label_p4208:
       push(0=c:16);
-      next label_p4213;
     label_p4213:
       add2();
       push(0=c:90);
@@ -978,7 +949,6 @@ label_p1473:
       push(0=null);
       equals2();
       not();
-      next label_p4261;
     label_p4261:
       not();
       if(target=label_p4414);
@@ -989,7 +959,6 @@ label_p1473:
       getMember();
       storeRegister(r:9);
       pop();
-      next label_p4293;
     label_p4293:
       push(0=true);
       not();
@@ -1044,7 +1013,6 @@ label_p1473:
       pop();
       push(0=r:5, 1=c:95, 2=r:10);
       setMember();
-      next label_p4490;
     label_p4490:
       push(0=true);
       not();
@@ -1066,7 +1034,6 @@ label_p1473:
       push(0=c:75);
       getMember();
       greater();
-      next label_p4553;
     label_p4553:
       not();
       not();
@@ -1086,7 +1053,6 @@ label_p1473:
     label_p4614:
       push(0=r:4, 1=c:84, 2=r:9);
       setMember();
-      next label_p4624;
     label_p4624:
       end;
   };
@@ -1147,7 +1113,6 @@ label_p1473:
       push(0=c:99);
       callMethod();
       pop();
-      next label_p4840;
     label_p4840:
       end;
   };
@@ -1170,7 +1135,6 @@ label_p1473:
       pop();
       push(0=r:2, 1=c:84, 2=null);
       setMember();
-      next label_p4911;
     label_p4911:
       end;
   };
@@ -1244,7 +1208,6 @@ label_p1473:
           push(0=c:108);
           callMethod();
           pop();
-          next label_p5168;
         label_p5168:
           end;
       };
@@ -1263,7 +1226,6 @@ label_p1473:
           getMember();
           storeRegister(r:4);
           pop();
-          next label_p5225;
         label_p5225:
           push(0=true);
           not();
@@ -1321,7 +1283,6 @@ label_p1473:
           push(0=0i32);
           storeRegister(r:5);
           pop();
-          next label_p5411;
         label_p5411:
           push(0=r:5, 1=0i32);
           less2();
@@ -1338,7 +1299,6 @@ label_p1473:
           push(0=0i32);
           storeRegister(r:5);
           pop();
-          next label_p5471;
         label_p5471:
           push(0=true);
           not();
@@ -1394,7 +1354,6 @@ label_p1473:
           subtract();
           storeRegister(r:5);
           pop();
-          next label_p5642;
         label_p5642:
           push(0=r:5, 1=r:4);
           less2();
@@ -1408,7 +1367,6 @@ label_p1473:
           add2();
           storeRegister(r:5);
           pop();
-          next label_p5686;
         label_p5686:
           next label_p5707;
         label_p5691:
@@ -1416,7 +1374,6 @@ label_p1473:
           subtract();
           storeRegister(r:5);
           pop();
-          next label_p5707;
         label_p5707:
           push(0=true);
           not();
@@ -1513,7 +1470,6 @@ label_p1473:
           getMember();
           storeRegister(r:5);
           pop();
-          next label_p6009;
         label_p6009:
           push(0=true);
           not();
@@ -1563,7 +1519,6 @@ label_p1473:
           getMember();
           storeRegister(r:5);
           pop();
-          next label_p6174;
         label_p6174:
           push(0=true);
           not();
@@ -1586,7 +1541,6 @@ label_p1473:
           push(0=1i32, 1=r:3, 2=c:42);
           callMethod();
           pop();
-          next label_p6253;
         label_p6253:
           push(0=r:4);
           increment();
@@ -1660,7 +1614,6 @@ label_p1473:
       push(0=c:2, 1=0i32);
       initObject();
       setMember();
-      next label_p6476;
     label_p6476:
       push(0=r:2, 1=c:2);
       getMember();
@@ -1712,7 +1665,6 @@ label_p1473:
       getMember();
       push(0=c:123, 1=c:124);
       setMember();
-      next label_p6640;
     label_p6640:
       end;
   };
@@ -1751,10 +1703,8 @@ label_p1473:
       next label_p6784;
     label_p6779:
       push(0=c:16);
-      next label_p6784;
     label_p6784:
       getUrl2();
-      next label_p6788;
     label_p6788:
       end;
   };
@@ -1773,7 +1723,6 @@ label_p1473:
   getMember();
   storeRegister(r:2);
   enumerate2();
-  next label_p6836;
 label_p6836:
   storeRegister(r:0);
   push(0=null);
@@ -1799,7 +1748,6 @@ label_p6868:
   getMember();
   storeRegister(r:2);
   enumerate2();
-  next label_p6916;
 label_p6916:
   storeRegister(r:0);
   push(0=null);
@@ -1825,7 +1773,6 @@ label_p6948:
   getMember();
   storeRegister(r:2);
   enumerate2();
-  next label_p6996;
 label_p6996:
   storeRegister(r:0);
   push(0=null);
@@ -1851,7 +1798,6 @@ label_p7028:
   getMember();
   storeRegister(r:2);
   enumerate2();
-  next label_p7076;
 label_p7076:
   storeRegister(r:0);
   push(0=null);
@@ -1877,7 +1823,6 @@ label_p7108:
   getMember();
   storeRegister(r:2);
   enumerate2();
-  next label_p7156;
 label_p7156:
   storeRegister(r:0);
   push(0=null);
@@ -1899,7 +1844,6 @@ label_p7188:
   getMember();
   storeRegister(r:2);
   enumerate2();
-  next label_p7224;
 label_p7224:
   storeRegister(r:0);
   push(0=null);
@@ -2129,7 +2073,6 @@ label_p7256:
       push(0=c:9);
       callMethod();
       pop();
-      next label_p8054;
     label_p8054:
       end;
   } catch {
@@ -2141,10 +2084,8 @@ label_p7256:
       push(0=c:98);
       callMethod();
       pop();
-      next label_p8054;
     label_p8054:
       end;
   };
-  next label_p8054;
 label_p8054:
   end;

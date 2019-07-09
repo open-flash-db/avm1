@@ -14,6 +14,5 @@ label_p0:
   trace();
   push(0=c:3);
   trace();
-  next label_p77;
 label_p77:
   end;

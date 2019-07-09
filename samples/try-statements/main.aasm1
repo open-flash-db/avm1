@@ -8,14 +8,12 @@ label_p0:
     label_p147:
       push(0=c:2);
       trace();
-      next label_p164;
     label_p164:
       end;
   } catch {
     label_p158:
       push(0=c:3);
       trace();
-      next label_p164;
     label_p164:
       end;
   };
@@ -27,26 +25,22 @@ label_p0:
     label_p190:
       push(0=c:2);
       trace();
-      next label_p207;
     label_p207:
       end;
   } catch {
     label_p201:
       push(0=c:3);
       trace();
-      next label_p207;
     label_p207:
       end;
   } finally {
     label_p207:
       push(0=c:6);
       trace();
-      next label_p213;
     label_p213:
       end;
   };
   push(0=c:4);
   trace();
-  next label_p219;
 label_p219:
   end;

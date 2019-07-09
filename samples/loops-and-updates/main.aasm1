@@ -6,7 +6,6 @@ label_p0:
   trace();
   push(0=c:0, 1=5i32);
   setVariable();
-  next label_p70;
 label_p70:
   push(0=c:0);
   getVariable();
@@ -30,7 +29,6 @@ label_p117:
   trace();
   push(0=c:0, 1=5i32);
   setVariable();
-  next label_p141;
 label_p141:
   push(0=c:0, 1=c:0);
   getVariable();
@@ -60,7 +58,6 @@ label_p188:
       push(0=5i32);
       storeRegister(r:1);
       pop();
-      next label_p239;
     label_p239:
       push(0=r:1, 1=r:1);
       decrement();
@@ -81,7 +78,6 @@ label_p188:
       push(0=5i32);
       storeRegister(r:1);
       pop();
-      next label_p307;
     label_p307:
       push(0=r:1);
       decrement();
@@ -96,7 +92,6 @@ label_p188:
     label_p347:
       push(0=r:1);
       trace();
-      next label_p353;
     label_p353:
       end;
   };
@@ -106,7 +101,6 @@ label_p188:
   defineLocal();
   push(0=c:1);
   trace();
-  next label_p379;
 label_p379:
   push(0=c:4);
   getVariable();
@@ -142,7 +136,6 @@ label_p450:
   getVariable();
   push(0=c:0, 1=5i32);
   setMember();
-  next label_p486;
 label_p486:
   push(0=c:4);
   getVariable();
@@ -169,6 +162,5 @@ label_p551:
   push(0=c:0);
   getMember();
   trace();
-  next label_p564;
 label_p564:
   end;

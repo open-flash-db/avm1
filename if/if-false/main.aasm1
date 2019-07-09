@@ -3,6 +3,5 @@ label_p0:
   trace();
   push(0="end");
   trace();
-  next label_p20;
 label_p20:
   end;

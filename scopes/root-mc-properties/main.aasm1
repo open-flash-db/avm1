@@ -24,6 +24,5 @@ label_p0:
   trace();
   push(0=c:8);
   trace();
-  next label_p163;
 label_p163:
   end;

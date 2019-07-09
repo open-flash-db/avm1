@@ -19,6 +19,5 @@ label_p0:
   push(0=c:4);
   getVariable();
   trace();
-  next label_p148;
 label_p148:
   end;

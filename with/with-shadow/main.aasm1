@@ -12,11 +12,9 @@ label_p0:
           push(0=c:0);
           getVariable();
           trace();
-          next label_p88;
         label_p88:
           end;
       };
-      next label_p88;
     label_p88:
       end;
   };
@@ -38,6 +36,5 @@ label_p0:
   pop();
   push(0=c:8);
   trace();
-  next label_p166;
 label_p166:
   end;

@@ -26,7 +26,6 @@ label_p0:
 label_p145:
   push(0="case 0");
   trace();
-  next label_p157;
 label_p157:
   push(0="case 0 or 1");
   trace();
@@ -42,10 +41,8 @@ label_p196:
 label_p218:
   push(0="case 5");
   trace();
-  next label_p235;
 label_p235:
   push(0="after switch+fall-trough");
   trace();
-  next label_p265;
 label_p265:
   end;

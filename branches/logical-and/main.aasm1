@@ -9,7 +9,6 @@ label_p0:
   pop();
   push(0="test2");
   getVariable();
-  next label_p53;
 label_p53:
   pushDuplicate();
   not();
@@ -17,7 +16,6 @@ label_p53:
   pop();
   push(0="test3");
   getVariable();
-  next label_p72;
 label_p72:
   not();
   if(target=label_p100);
@@ -27,10 +25,8 @@ label_p72:
 label_p100:
   push(0="in else + and");
   trace();
-  next label_p119;
 label_p119:
   push(0="after LOGICAL AND");
   trace();
-  next label_p142;
 label_p142:
   end;

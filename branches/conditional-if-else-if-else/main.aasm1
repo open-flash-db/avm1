@@ -19,10 +19,8 @@ label_p60:
 label_p98:
   push(0="in else");
   trace();
-  next label_p111;
 label_p111:
   push(0="after if/else if/else");
   trace();
-  next label_p138;
 label_p138:
   end;

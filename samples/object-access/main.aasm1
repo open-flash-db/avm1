@@ -5,6 +5,5 @@ label_p0:
   push(0=c:0);
   getMember();
   trace();
-  next label_p43;
 label_p43:
   end;

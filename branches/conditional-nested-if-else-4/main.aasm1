@@ -24,7 +24,6 @@ label_p0:
 label_p594:
   push(0=c:3);
   trace();
-  next label_p600;
 label_p600:
   next label_p634;
 label_p605:
@@ -38,7 +37,6 @@ label_p605:
 label_p628:
   push(0=c:5);
   trace();
-  next label_p634;
 label_p634:
   next label_p714;
 label_p639:
@@ -56,7 +54,6 @@ label_p639:
 label_p674:
   push(0=c:7);
   trace();
-  next label_p680;
 label_p680:
   next label_p714;
 label_p685:
@@ -70,7 +67,6 @@ label_p685:
 label_p708:
   push(0=c:9);
   trace();
-  next label_p714;
 label_p714:
   next label_p886;
 label_p719:
@@ -92,7 +88,6 @@ label_p719:
 label_p766:
   push(0=c:11);
   trace();
-  next label_p772;
 label_p772:
   next label_p806;
 label_p777:
@@ -106,7 +101,6 @@ label_p777:
 label_p800:
   push(0=c:13);
   trace();
-  next label_p806;
 label_p806:
   next label_p886;
 label_p811:
@@ -124,7 +118,6 @@ label_p811:
 label_p846:
   push(0=c:15);
   trace();
-  next label_p852;
 label_p852:
   next label_p886;
 label_p857:
@@ -138,10 +131,8 @@ label_p857:
 label_p880:
   push(0=c:17);
   trace();
-  next label_p886;
 label_p886:
   push(0=c:18);
   trace();
-  next label_p892;
 label_p892:
   end;

@@ -16,7 +16,6 @@ label_p0:
       pop();
       push(0="in-try");
       trace();
-      next label_p110;
     label_p110:
       end;
   } catch {
@@ -26,19 +25,16 @@ label_p0:
       push(0="e");
       getVariable();
       trace();
-      next label_p110;
     label_p110:
       end;
   } finally {
     label_p110:
       push(0="in-finally");
       trace();
-      next label_p126;
     label_p126:
       end;
   };
   push(0="end");
   trace();
-  next label_p135;
 label_p135:
   end;

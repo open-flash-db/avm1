@@ -28,10 +28,8 @@ label_p163:
 label_p186:
   push(0=c:5);
   trace();
-  next label_p192;
 label_p192:
   push(0=c:6);
   trace();
-  next label_p198;
 label_p198:
   end;

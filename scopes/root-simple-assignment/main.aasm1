@@ -9,6 +9,5 @@ label_p0:
   trace();
   push(0=c:3);
   trace();
-  next label_p50;
 label_p50:
   end;

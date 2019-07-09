@@ -2,12 +2,9 @@ label_p0:
   push(0="start");
   trace();
   push(0=301990553i32, 1="");
-  next label_p15;
 label_p15:
-  next label_p38;
 label_p38:
   push(0="end");
   trace();
-  next label_p47;
 label_p47:
   end;

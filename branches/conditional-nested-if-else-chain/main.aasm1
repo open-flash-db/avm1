@@ -23,10 +23,8 @@ label_p85:
 label_p127:
   push(0="in if(else)");
   trace();
-  next label_p144;
 label_p144:
   push(0="after if(if/else if/else)");
   trace();
-  next label_p175;
 label_p175:
   end;
