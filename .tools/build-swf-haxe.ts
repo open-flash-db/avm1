@@ -14,16 +14,16 @@ async function execHaxe(args: ReadonlyArray<string>, cwd: string): Promise<void>
     const outChunks: Buffer[] = [];
     const errChunks: Buffer[] = [];
 
-    proc.stdout.on("data", (chunk: Buffer): void => {
+    proc.stdout!.on("data", (chunk: Buffer): void => {
       outChunks.push(chunk);
     });
-    proc.stderr.on("data", (chunk: Buffer): void => {
+    proc.stderr!.on("data", (chunk: Buffer): void => {
       errChunks.push(chunk);
     });
 
     if (IS_DEBUG) {
-      proc.stdout.pipe(process.stdout);
-      proc.stderr.pipe(process.stderr);
+      proc.stdout!.pipe(process.stdout);
+      proc.stderr!.pipe(process.stderr);
     }
 
     let completed: boolean = false;
