@@ -1,0 +1,41 @@
+# A `try` can have empty `catch` and `finally` blocks.
+
+9b_0600 (                                                  # defineFunction
+  6600                                                     # "f\0"
+  0000                                                     # parameter_count
+  0800                                                     # body_size
+) {
+  96_0400 [                                                # push
+    00:6f6b00                                              # "ok\0"
+  ]
+  26                                                       # trace
+}
+
+96_0700 [                                                  # push
+  00:737461727400                                          # "start\0"
+]
+26                                                         # trace
+
+8f_0900 (                                                  # try
+  00                                                       # flags
+  1900                                                     # try_size
+  0000                                                     # catch_size
+  0000                                                     # finally_size
+  6500                                                     # catch_target ("e\0")
+) {
+  96_0800 [                                                # push
+    07:00000000                                            # 0i32
+    00:6600                                                # "f\0"
+  ]
+  3d                                                       # callFunction
+  17                                                       # pop
+  96_0800 [                                                # push
+    00:696e2d74727900                                      # "in-try\0"
+  ]
+  26                                                       # trace
+}
+
+96_0500 [                                                  # push
+  00:656e6400                                              # "end\0"
+]
+26                                                         # trace

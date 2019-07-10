@@ -1,0 +1,7 @@
+start
+ok
+in-try
+in-err
+Warning: Reference to undeclared variable, 'e'
+undefined
+end

@@ -1,0 +1,69 @@
+# Jump outside of try, then inside and throw.
+
+9b_0600 (                                                  # defineFunction
+  6600                                                     # "f\0"
+  0000                                                     # parameter_count
+  1800                                                     # body_size
+) {
+  96_0500 [                                                # push
+    00:65727200                                            # "err\0"
+  ]
+  26                                                       # trace
+  96_0b00 [                                                # push
+    00:6572722d76616c756500                                # "err-value\0"
+  ]
+  2a                                                       # throw
+}
+
+96_0700 [                                                  # push
+  00:737461727400                                          # "start\0"
+]
+26                                                         # trace
+
+8f_0900 (                                                  # try
+  02                                                       # flags
+  1e00                                                     # try_size
+  0000                                                     # catch_size
+  1800                                                     # finally_size
+  6500                                                     # catch_target ("e\0")
+) {
+  99_0200(3600)                                            # jump(out)
+  # in:
+  96_0800 [                                                # push
+    07:00000000                                            # 0i32
+    00:6600                                                # "f\0"
+  ]
+  3d                                                       # callFunction
+  17                                                       # pop
+  96_0800 [                                                # push
+    00:696e2d74727900                                      # "in-try\0"
+  ]
+  26                                                       # trace
+} {
+  96_0c00 [                                                # push
+    00:696e2d66696e616c6c7900                              # "in-finally\0"
+  ]
+  26                                                       # trace
+  96_0300 [                                                # push
+    00:6500                                                # "e\0"
+  ]
+  1c                                                       # getVariable
+  26                                                       # trace
+}
+
+99_0200(0e00)                                              # jump(end)
+
+# out:
+
+96_0500 [                                                  # push
+  00:6f757400                                              # "out\0"
+]
+26                                                         # trace
+99_0200(bcff)                                              # jump(in)
+
+# end:
+
+96_0500 [                                                  # push
+  00:656e6400                                              # "end\0"
+]
+26                                                         # trace

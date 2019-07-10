@@ -1,0 +1,40 @@
+label_p0:
+  defineFunction(name="f", parameters=[]) {
+    label_p9:
+      push(0="ok");
+      trace();
+    label_p17:
+      end;
+  };
+  defineFunction(name="main", parameters=[]) {
+    label_p29:
+      push(0="start");
+      trace();
+      try(catchTarget=i:"") {
+        label_p51:
+          push(0=0f64, 1="f");
+          callFunction();
+          pop();
+          push(0="in-try");
+          trace();
+          push(0=true);
+          return();
+          return;
+      } finally {
+        label_p86:
+          push(0="in-finally");
+          trace();
+          push(0=false);
+          return();
+          return;
+      };
+      push(0="end");
+      trace();
+    label_p117:
+      end;
+  };
+  push(0=0f64, 1="main");
+  callFunction();
+  trace();
+label_p137:
+  end;

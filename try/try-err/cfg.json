@@ -1,0 +1,133 @@
+{
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "define-function",
+          "name": "f",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "throw",
+                "label": "label_p9",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "err"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "err-value"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "throw"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "start"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "try",
+          "try": {
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "label_p56",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 0
+                      },
+                      {
+                        "type": "string",
+                        "value": "f"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-function"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "in-try"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p81"
+              },
+              {
+                "type": "end",
+                "label": "label_p81",
+                "actions": []
+              }
+            ]
+          },
+          "catch_target": {
+            "type": "variable",
+            "target": "e"
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "end"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p90"
+    },
+    {
+      "type": "end",
+      "label": "label_p90",
+      "actions": []
+    }
+  ]
+}

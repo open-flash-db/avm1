@@ -68,6 +68,7 @@ var data = {
   "\"try/try-catch-ok/src/main.as\"": "file:///try/try-catch-ok/main.swf",
   "\"try/try-finally-err/src/main.as\"": "file:///try/try-finally-err/main.swf",
   "\"try/try-finally-ok/src/main.as\"": "file:///try/try-finally-ok/main.swf",
+  "\"try/try-return-finally-ok/src/main.as\"": "file:///try/try-return-finally-ok/main.swf",
   "\"with/with-shadow/src/main.as\"": "file:///with/with-shadow/main.swf"
 };
 

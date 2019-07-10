@@ -1,0 +1,207 @@
+{
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "define-function",
+          "name": "f",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "label_p9",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "ok"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p17"
+              },
+              {
+                "type": "end",
+                "label": "label_p17",
+                "actions": []
+              }
+            ]
+          }
+        },
+        {
+          "action": "define-function",
+          "name": "main",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "label_p29",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "start"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "try",
+                    "try": {
+                      "blocks": [
+                        {
+                          "type": "return",
+                          "label": "label_p51",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "float64",
+                                  "value": 0
+                                },
+                                {
+                                  "type": "string",
+                                  "value": "f"
+                                }
+                              ]
+                            },
+                            {
+                              "action": "call-function"
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "string",
+                                  "value": "in-try"
+                                }
+                              ]
+                            },
+                            {
+                              "action": "trace"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "boolean",
+                                  "value": true
+                                }
+                              ]
+                            },
+                            {
+                              "action": "return"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "catch_target": {
+                      "type": "variable",
+                      "target": ""
+                    },
+                    "finally": {
+                      "blocks": [
+                        {
+                          "type": "return",
+                          "label": "label_p86",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "string",
+                                  "value": "in-finally"
+                                }
+                              ]
+                            },
+                            {
+                              "action": "trace"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "boolean",
+                                  "value": false
+                                }
+                              ]
+                            },
+                            {
+                              "action": "return"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "end"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p117"
+              },
+              {
+                "type": "end",
+                "label": "label_p117",
+                "actions": []
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "string",
+              "value": "main"
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p137"
+    },
+    {
+      "type": "end",
+      "label": "label_p137",
+      "actions": []
+    }
+  ]
+}

@@ -22,6 +22,15 @@ const JSON_VALUE_WRITER: JsonValueWriter = new JsonValueWriter();
 const PROJECT_ROOT = sysPath.join(meta.dirname, "..");
 const EMPTY_BUFFER: Buffer = Buffer.alloc(0);
 
+const WHITELIST: ReadonlySet<string> = new Set([
+  // "try/try-err",
+  // "try/try-catch-err-no-jump",
+  // "try/try-catch-err-jump-out-try",
+  // "try/try-catch-err-jump-catch-try",
+  // "try/try-return-finally-ok",
+  // "try/try-finally-err-jump-out-try",
+]);
+
 export async function cleanBuild(): Promise<void> {
   // await clean();
   return build();
@@ -115,11 +124,16 @@ export async function build(): Promise<void> {
     const logBuffer: Buffer = await runSwf(item.swfPath);
     await outputFile(item.logPath, logBuffer);
     const avm1Bytes: Uint8Array = await readFile(item.avm1Path);
-    const cfg: Cfg = cfgFromBytes(avm1Bytes);
-    const cfgJson: string = JSON.stringify($Cfg.write(JSON_VALUE_WRITER, cfg), null, 2);
-    await writeTextFile(item.cfgPath, `${cfgJson}\n`);
-    const aasm1: string = toAasm(cfg);
-    await writeTextFile(item.aasm1Path, aasm1);
+    try {
+      const cfg: Cfg = cfgFromBytes(avm1Bytes);
+      const cfgJson: string = JSON.stringify($Cfg.write(JSON_VALUE_WRITER, cfg), null, 2);
+      await writeTextFile(item.cfgPath, `${cfgJson}\n`);
+      const aasm1: string = toAasm(cfg);
+      await writeTextFile(item.aasm1Path, aasm1);
+    } catch (err) {
+      console.error(item.name);
+      console.error(err);
+    }
   }
 }
 
@@ -182,6 +196,12 @@ async function getTestItems(): Promise<TestItem[]> {
         continue;
       }
       const name = dirEnt.name;
+
+      const fullName: string = `${groupName}/${name}`;
+      if (WHITELIST.size > 0 && !WHITELIST.has(fullName)) {
+        continue;
+      }
+
       const root = sysPath.join(groupPath, name);
       const swfPath = sysPath.join(root, "main.swf");
       const avm1Path = sysPath.join(root, "main.avm1");
