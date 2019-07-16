@@ -64,7 +64,7 @@
                     "try": {
                       "blocks": [
                         {
-                          "type": "return",
+                          "type": "throw",
                           "label": "label_p51",
                           "actions": [
                             {
@@ -103,12 +103,12 @@
                               "values": [
                                 {
                                   "type": "string",
-                                  "value": "tres"
+                                  "value": "terr"
                                 }
                               ]
                             },
                             {
-                              "action": "return"
+                              "action": "throw"
                             }
                           ]
                         }
@@ -121,7 +121,7 @@
                     "finally": {
                       "blocks": [
                         {
-                          "type": "return",
+                          "type": "throw",
                           "label": "label_p90",
                           "actions": [
                             {
@@ -141,12 +141,12 @@
                               "values": [
                                 {
                                   "type": "string",
-                                  "value": "fres"
+                                  "value": "ferr"
                                 }
                               ]
                             },
                             {
-                              "action": "return"
+                              "action": "throw"
                             }
                           ]
                         }

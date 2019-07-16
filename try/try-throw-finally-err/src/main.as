@@ -8,10 +8,10 @@ function main() {
   try {
     f();
     trace("in-try");
-    return "tres";
+    throw "terr";
   } finally {
     trace("in-finally");
-    return "fres";
+    throw "ferr";
   }
   trace("end");
 }

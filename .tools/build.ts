@@ -29,6 +29,7 @@ const WHITELIST: ReadonlySet<string> = new Set([
   // "try/try-catch-err-jump-catch-try",
   // "try/try-return-finally-ok",
   // "try/try-finally-err-jump-out-try",
+  // "avm1-bytes/end-action-inside-function",
 ]);
 
 export async function cleanBuild(): Promise<void> {

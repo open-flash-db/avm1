@@ -1,0 +1,32 @@
+label_p0:
+  defineFunction(name="f", parameters=[]) {
+    label_p9:
+      push(0="err");
+      trace();
+      push(0="err-value");
+      throw();
+      throw;
+  };
+  push(0="start");
+  trace();
+  try(catchTarget=i:"e") {
+    label_p56:
+      push(0="in-try");
+      trace();
+    label_p73:
+      push(0="in-catch");
+    label_p86:
+      end;
+  } catch {
+    label_p81:
+      end;
+  } finally {
+    label_p81:
+      end;
+  };
+  bitOr();
+  unknown();
+  bitLShift();
+  stringGreater();
+label_p85:
+  end;

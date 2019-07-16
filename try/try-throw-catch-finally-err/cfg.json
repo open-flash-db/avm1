@@ -11,7 +11,7 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
+                "type": "throw",
                 "label": "label_p9",
                 "actions": [
                   {
@@ -25,14 +25,20 @@
                   },
                   {
                     "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "err"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "throw"
                   }
-                ],
-                "next": "label_p17"
-              },
-              {
-                "type": "end",
-                "label": "label_p17",
-                "actions": []
+                ]
               }
             ]
           }
@@ -45,7 +51,7 @@
             "blocks": [
               {
                 "type": "simple",
-                "label": "label_p29",
+                "label": "label_p38",
                 "actions": [
                   {
                     "action": "push",
@@ -64,8 +70,8 @@
                     "try": {
                       "blocks": [
                         {
-                          "type": "return",
-                          "label": "label_p51",
+                          "type": "throw",
+                          "label": "label_p61",
                           "actions": [
                             {
                               "action": "push",
@@ -103,12 +109,46 @@
                               "values": [
                                 {
                                   "type": "string",
-                                  "value": "tres"
+                                  "value": "terr"
                                 }
                               ]
                             },
                             {
-                              "action": "return"
+                              "action": "throw"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "catch": {
+                      "blocks": [
+                        {
+                          "type": "throw",
+                          "label": "label_p105",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "string",
+                                  "value": "in-catch"
+                                }
+                              ]
+                            },
+                            {
+                              "action": "trace"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "string",
+                                  "value": "cerr"
+                                }
+                              ]
+                            },
+                            {
+                              "action": "throw"
                             }
                           ]
                         }
@@ -116,13 +156,13 @@
                     },
                     "catch_target": {
                       "type": "variable",
-                      "target": ""
+                      "target": "e"
                     },
                     "finally": {
                       "blocks": [
                         {
-                          "type": "return",
-                          "label": "label_p90",
+                          "type": "throw",
+                          "label": "label_p129",
                           "actions": [
                             {
                               "action": "push",
@@ -141,12 +181,12 @@
                               "values": [
                                 {
                                   "type": "string",
-                                  "value": "fres"
+                                  "value": "ferr"
                                 }
                               ]
                             },
                             {
-                              "action": "return"
+                              "action": "throw"
                             }
                           ]
                         }
@@ -166,11 +206,11 @@
                     "action": "trace"
                   }
                 ],
-                "next": "label_p125"
+                "next": "label_p164"
               },
               {
                 "type": "end",
-                "label": "label_p125",
+                "label": "label_p164",
                 "actions": []
               }
             ]
@@ -196,11 +236,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p145"
+      "next": "label_p184"
     },
     {
       "type": "end",
-      "label": "label_p145",
+      "label": "label_p184",
       "actions": []
     }
   ]

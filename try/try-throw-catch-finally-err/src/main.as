@@ -1,6 +1,6 @@
 function f() {
   trace("ok");
-  // throw "err-value";
+  throw "err";
 }
 
 function main() {
@@ -8,10 +8,13 @@ function main() {
   try {
     f();
     trace("in-try");
-    return "tres";
+    throw "terr";
+  } catch(e) {
+    trace("in-catch");
+    throw "cerr";
   } finally {
     trace("in-finally");
-    return "fres";
+    throw "ferr";
   }
   trace("end");
 }

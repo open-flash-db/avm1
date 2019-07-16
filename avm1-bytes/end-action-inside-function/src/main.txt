@@ -1,0 +1,40 @@
+# Call a function containing an "end" action.
+# Expected possible outcomes
+# - start/ok/ok2/end: "end" is ignored
+# - start/ok/end: "end" forces the end of the function
+# - start/ok: "end" forces the execution
+# Observed result: start/ok/end
+# Conclusion: "end" forces the end of the current stack frame
+
+9b_0600 (                                                  # defineFunction
+  6600                                                     # "f\0"
+  0000                                                     # parameter_count
+  1200                                                     # body_size
+) {
+  96_0400 [                                                # push
+    00:6f6b00                                              # "ok\0"
+  ]
+  26                                                       # trace
+  00                                                       # end
+  96_0500 [                                                # push
+    00:6f6b3200                                            # "ok2\0"
+  ]
+  26                                                       # trace
+}
+
+96_0700 [                                                  # push
+  00:737461727400                                          # "start\0"
+]
+26                                                         # trace
+
+96_0800 [                                                  # push
+  07:00000000                                              # 0i32
+  00:6600                                                  # "f\0"
+]
+3d                                                         # callFunction
+17                                                         # pop
+
+96_0500 [                                                  # push
+  00:656e6400                                              # "end\0"
+]
+26                                                         # trace

@@ -1,0 +1,149 @@
+{
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "label_p0",
+      "actions": [
+        {
+          "action": "define-function",
+          "name": "f",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "throw",
+                "label": "label_p9",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "err"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "err-value"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "throw"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "start"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "try",
+          "try": {
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "label_p56",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "in-try"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "label_p73"
+              },
+              {
+                "type": "simple",
+                "label": "label_p73",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "in-catch"
+                      }
+                    ]
+                  }
+                ],
+                "next": "label_p86"
+              },
+              {
+                "type": "end",
+                "label": "label_p86",
+                "actions": []
+              }
+            ]
+          },
+          "catch": {
+            "blocks": [
+              {
+                "type": "end",
+                "label": "label_p81",
+                "actions": []
+              }
+            ]
+          },
+          "catch_target": {
+            "type": "variable",
+            "target": "e"
+          },
+          "finally": {
+            "blocks": [
+              {
+                "type": "end",
+                "label": "label_p81",
+                "actions": []
+              }
+            ]
+          }
+        },
+        {
+          "action": "bit-or"
+        },
+        {
+          "action": "unknown",
+          "action_code": 116
+        },
+        {
+          "action": "bit-l-shift"
+        },
+        {
+          "action": "string-greater"
+        }
+      ],
+      "next": "label_p85"
+    },
+    {
+      "type": "end",
+      "label": "label_p85",
+      "actions": []
+    }
+  ]
+}

@@ -17,16 +17,16 @@ label_p0:
           pop();
           push(0="in-try");
           trace();
-          push(0="tres");
-          return();
-          return;
+          push(0="terr");
+          throw();
+          throw;
       } finally {
         label_p90:
           push(0="in-finally");
           trace();
-          push(0="fres");
-          return();
-          return;
+          push(0="ferr");
+          throw();
+          throw;
       };
       push(0="end");
       trace();

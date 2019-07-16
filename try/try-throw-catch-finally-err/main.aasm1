@@ -3,38 +3,46 @@ label_p0:
     label_p9:
       push(0="ok");
       trace();
-    label_p17:
-      end;
+      push(0="err");
+      throw();
+      throw;
   };
   defineFunction(name="main", parameters=[]) {
-    label_p29:
+    label_p38:
       push(0="start");
       trace();
-      try(catchTarget=i:"") {
-        label_p51:
+      try(catchTarget=i:"e") {
+        label_p61:
           push(0=0f64, 1="f");
           callFunction();
           pop();
           push(0="in-try");
           trace();
-          push(0="tres");
-          return();
-          return;
+          push(0="terr");
+          throw();
+          throw;
+      } catch {
+        label_p105:
+          push(0="in-catch");
+          trace();
+          push(0="cerr");
+          throw();
+          throw;
       } finally {
-        label_p90:
+        label_p129:
           push(0="in-finally");
           trace();
-          push(0="fres");
-          return();
-          return;
+          push(0="ferr");
+          throw();
+          throw;
       };
       push(0="end");
       trace();
-    label_p125:
+    label_p164:
       end;
   };
   push(0=0f64, 1="main");
   callFunction();
   trace();
-label_p145:
+label_p184:
   end;

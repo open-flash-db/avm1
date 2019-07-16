@@ -1,4 +1,5 @@
-# Jump outside of try, then inside and throw.
+# A `try/catch/finally` where the `try` falls through to the start of `catch`, then `catch` throws an
+# error. It checks if `finally` is still triggered or not.
 
 9b_0600 (                                                  # defineFunction
   6600                                                     # "f\0"
@@ -21,46 +22,31 @@
 26                                                         # trace
 
 8f_0900 (                                                  # try
-  01                                                       # flags
-  1e00                                                     # try_size
-  1400                                                     # catch_size
+  03                                                       # flags(has_catch, has_finally)
+  1900                                                     # try_size
+  0000                                                     # catch_size
   0000                                                     # finally_size
   6500                                                     # catch_target ("e\0")
 ) {
-  99_0200(1e00)                                            # jump(catch)
-  # in:
+  96_0800 [                                                # push
+    00:696e2d74727900                                      # "in-try\0"
+  ]
+  26                                                       # trace
+} {
+  96_0a00 [                                                # push
+    00:696e2d636174636800                                  # "in-catch\0"
+  ]
+  26                                                       # trace
   96_0800 [                                                # push
     07:00000000                                            # 0i32
     00:6600                                                # "f\0"
   ]
   3d                                                       # callFunction
   17                                                       # pop
-  96_0800 [                                                # push
-    00:696e2d74727900                                      # "in-try\0"
-  ]
-  26                                                       # trace
 } {
-  99_0200(1000)                                            # jump(catchEnd)
-
-  # catch:
-
-  96_0700 [                                                # push
-    00:636174636800                                        # "catch\0"
+  96_0c00 [                                                # push
+    00:696e2d66696e616c6c7900                              # "in-finally\0"
   ]
-  26                                                       # trace
-  99_0200(d2ff)                                            # jump(in)
-
-  # catchEend:
-
-
-  96_0800 [                                                # push
-    00:696e2d65727200                                      # "in-err\0"
-  ]
-  26                                                       # trace
-  96_0300 [                                                # push
-    00:6500                                                # "e\0"
-  ]
-  1c                                                       # getVariable
   26                                                       # trace
 }
 
