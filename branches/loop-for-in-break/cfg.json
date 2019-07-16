@@ -237,12 +237,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p263"
-    },
-    {
-      "type": "end",
-      "label": "label_p263",
-      "actions": []
+      "next": null
     }
   ]
 }

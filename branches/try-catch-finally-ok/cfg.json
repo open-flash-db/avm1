@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "try",
       "label": "label_p0",
       "actions": [
         {
@@ -15,98 +15,86 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "try",
-          "try": {
-            "blocks": [
+        }
+      ],
+      "try": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p44",
+            "actions": [
               {
-                "type": "simple",
-                "label": "label_p44",
-                "actions": [
+                "action": "push",
+                "values": [
                   {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "in try"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
+                    "type": "string",
+                    "value": "in try"
                   }
-                ],
-                "next": "label_p75"
+                ]
               },
               {
-                "type": "end",
-                "label": "label_p75",
-                "actions": []
+                "action": "trace"
               }
-            ]
-          },
-          "catch": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p61",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "in catch"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  }
-                ],
-                "next": "label_p75"
-              },
-              {
-                "type": "end",
-                "label": "label_p75",
-                "actions": []
-              }
-            ]
-          },
-          "catch_target": {
-            "type": "variable",
-            "target": "err"
-          },
-          "finally": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p75",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "in finally"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  }
-                ],
-                "next": "label_p91"
-              },
-              {
-                "type": "end",
-                "label": "label_p91",
-                "actions": []
-              }
-            ]
+            ],
+            "next": "label_p75"
           }
-        },
+        ]
+      },
+      "catch": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p61",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in catch"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "label_p75"
+          }
+        ]
+      },
+      "catch_target": {
+        "type": "variable",
+        "target": "err"
+      },
+      "finally": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p75",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in finally"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "label_p91"
+          }
+        ]
+      }
+    },
+    {
+      "type": "simple",
+      "label": "label_p91",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -120,12 +108,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p120"
-    },
-    {
-      "type": "end",
-      "label": "label_p120",
-      "actions": []
+      "next": null
     }
   ]
 }

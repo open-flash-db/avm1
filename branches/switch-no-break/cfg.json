@@ -126,12 +126,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p140"
-    },
-    {
-      "type": "end",
-      "label": "label_p140",
-      "actions": []
+      "next": null
     }
   ]
 }

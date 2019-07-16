@@ -27,12 +27,7 @@
                     "action": "trace"
                   }
                 ],
-                "next": "label_p17"
-              },
-              {
-                "type": "end",
-                "label": "label_p17",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -81,12 +76,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p60"
-    },
-    {
-      "type": "end",
-      "label": "label_p60",
-      "actions": []
+      "next": null
     }
   ]
 }

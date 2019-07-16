@@ -176,9 +176,6 @@
                         "type": "undefined"
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -1263,9 +1260,6 @@
                         "type": "undefined"
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -1297,12 +1291,7 @@
                     "action": "pop"
                   }
                 ],
-                "next": "label_p1017"
-              },
-              {
-                "type": "end",
-                "label": "label_p1017",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -1323,12 +1312,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p1024"
-    },
-    {
-      "type": "end",
-      "label": "label_p1024",
-      "actions": []
+      "next": null
     }
   ]
 }

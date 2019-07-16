@@ -564,12 +564,7 @@
           "action": "pop"
         }
       ],
-      "next": "label_p417"
-    },
-    {
-      "type": "end",
-      "label": "label_p417",
-      "actions": []
+      "next": null
     }
   ]
 }

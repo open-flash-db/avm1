@@ -69,12 +69,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p50"
-    },
-    {
-      "type": "end",
-      "label": "label_p50",
-      "actions": []
+      "next": null
     }
   ]
 }

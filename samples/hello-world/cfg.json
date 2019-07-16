@@ -17,12 +17,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p19"
-    },
-    {
-      "type": "end",
-      "label": "label_p19",
-      "actions": []
+      "next": null
     }
   ]
 }

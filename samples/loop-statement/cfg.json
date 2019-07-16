@@ -1135,12 +1135,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p1099"
-    },
-    {
-      "type": "end",
-      "label": "label_p1099",
-      "actions": []
+      "next": null
     }
   ]
 }

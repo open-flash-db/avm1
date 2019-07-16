@@ -65,12 +65,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p53"
-    },
-    {
-      "type": "end",
-      "label": "label_p53",
-      "actions": []
+      "next": null
     }
   ]
 }

@@ -231,9 +231,6 @@
                   },
                   {
                     "action": "call-method"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               }
@@ -267,13 +264,7 @@
           "register_count": 1,
           "parameters": [],
           "body": {
-            "blocks": [
-              {
-                "type": "end",
-                "label": "label_p1202",
-                "actions": []
-              }
-            ]
+            "blocks": []
           }
         },
         {
@@ -446,12 +437,7 @@
                     "action": "pop"
                   }
                 ],
-                "next": "label_p1296"
-              },
-              {
-                "type": "end",
-                "label": "label_p1296",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -483,13 +469,7 @@
           "register_count": 1,
           "parameters": [],
           "body": {
-            "blocks": [
-              {
-                "type": "end",
-                "label": "label_p1313",
-                "actions": []
-              }
-            ]
+            "blocks": []
           }
         },
         {
@@ -654,9 +634,6 @@
                   },
                   {
                     "action": "call-method"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               }
@@ -823,13 +800,7 @@
           "register_count": 1,
           "parameters": [],
           "body": {
-            "blocks": [
-              {
-                "type": "end",
-                "label": "label_p1496",
-                "actions": []
-              }
-            ]
+            "blocks": []
           }
         },
         {
@@ -1001,9 +972,6 @@
                         "value": 20
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -1303,9 +1271,6 @@
                   },
                   {
                     "action": "call-function"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -1426,9 +1391,6 @@
                   },
                   {
                     "action": "get-member"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -1889,9 +1851,6 @@
                   },
                   {
                     "action": "add2"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -2271,9 +2230,6 @@
                         "value": 8
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -2499,9 +2455,6 @@
                         "value": 6
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -3434,9 +3387,6 @@
                         "value": 9
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -3452,9 +3402,6 @@
                         "value": 53
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -3470,9 +3417,6 @@
                         "value": 2
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               }
@@ -3576,9 +3520,6 @@
                         "type": "null"
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -3696,9 +3637,6 @@
                             },
                             {
                               "action": "call-method"
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         }
@@ -3760,9 +3698,6 @@
                         "value": 5
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               }
@@ -3841,9 +3776,6 @@
                         "value": false
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -3926,9 +3858,6 @@
                   },
                   {
                     "action": "equals2"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -3944,9 +3873,6 @@
                         "value": true
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -4279,11 +4205,7 @@
               {
                 "type": "return",
                 "label": "label_p3418",
-                "actions": [
-                  {
-                    "action": "return"
-                  }
-                ]
+                "actions": []
               },
               {
                 "type": "simple",
@@ -4414,9 +4336,6 @@
                         "value": false
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -4488,9 +4407,6 @@
                 "actions": [
                   {
                     "action": "not"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -4532,9 +4448,6 @@
                   },
                   {
                     "action": "equals2"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -4573,9 +4486,6 @@
                         "value": true
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -4598,9 +4508,6 @@
                   },
                   {
                     "action": "strict-equals"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -4642,9 +4549,6 @@
                   },
                   {
                     "action": "equals2"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               },
@@ -4660,9 +4564,6 @@
                         "value": true
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               }
@@ -5252,9 +5153,6 @@
                         "value": 3
                       }
                     ]
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               }
@@ -5399,12 +5297,7 @@
                     "action": "set-member"
                   }
                 ],
-                "next": "label_p4060"
-              },
-              {
-                "type": "end",
-                "label": "label_p4060",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -6423,12 +6316,7 @@
                     "action": "set-member"
                   }
                 ],
-                "next": "label_p4624"
-              },
-              {
-                "type": "end",
-                "label": "label_p4624",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -6690,7 +6578,7 @@
                     "action": "pop"
                   }
                 ],
-                "next": "label_p4840"
+                "next": null
               },
               {
                 "type": "simple",
@@ -6811,12 +6699,7 @@
                     "action": "pop"
                   }
                 ],
-                "next": "label_p4840"
-              },
-              {
-                "type": "end",
-                "label": "label_p4840",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -6955,12 +6838,7 @@
                     "action": "set-member"
                   }
                 ],
-                "next": "label_p4911"
-              },
-              {
-                "type": "end",
-                "label": "label_p4911",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -7280,9 +7158,6 @@
                             },
                             {
                               "action": "init-array"
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         },
@@ -7329,9 +7204,6 @@
                             },
                             {
                               "action": "call-method"
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         }
@@ -7451,12 +7323,7 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "label_p5168"
-                        },
-                        {
-                          "type": "end",
-                          "label": "label_p5168",
-                          "actions": []
+                          "next": null
                         }
                       ]
                     }
@@ -7691,9 +7558,6 @@
                                   "value": true
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         },
@@ -7735,9 +7599,6 @@
                                   "value": false
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         }
@@ -8081,9 +7942,6 @@
                                   "value": 5
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         },
@@ -8125,9 +7983,6 @@
                                   "value": -1
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         }
@@ -8501,9 +8356,6 @@
                                   "value": 5
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         },
@@ -8545,9 +8397,6 @@
                                   "value": -1
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         }
@@ -8701,9 +8550,6 @@
                                       },
                                       {
                                         "action": "less2"
-                                      },
-                                      {
-                                        "action": "return"
                                       }
                                     ]
                                   }
@@ -8812,9 +8658,6 @@
                                       },
                                       {
                                         "action": "get-member"
-                                      },
-                                      {
-                                        "action": "return"
                                       }
                                     ]
                                   }
@@ -8832,9 +8675,6 @@
                             },
                             {
                               "action": "init-object"
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         }
@@ -9119,9 +8959,6 @@
                                   "value": 3
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         }
@@ -9425,9 +9262,6 @@
                                   "value": 3
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         }
@@ -9704,9 +9538,6 @@
                                   "type": "null"
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         },
@@ -9722,9 +9553,6 @@
                                   "value": 3
                                 }
                               ]
-                            },
-                            {
-                              "action": "return"
                             }
                           ]
                         }
@@ -10099,7 +9927,7 @@
                   },
                   {
                     "action": "if",
-                    "target": "label_p6640"
+                    "target": null
                   },
                   {
                     "action": "push",
@@ -10142,12 +9970,7 @@
                     "action": "set-member"
                   }
                 ],
-                "next": "label_p6640"
-              },
-              {
-                "type": "end",
-                "label": "label_p6640",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -10191,13 +10014,7 @@
           "register_count": 1,
           "parameters": [],
           "body": {
-            "blocks": [
-              {
-                "type": "end",
-                "label": "label_p6663",
-                "actions": []
-              }
-            ]
+            "blocks": []
           }
         },
         {
@@ -10435,12 +10252,7 @@
                     "load_variables": false
                   }
                 ],
-                "next": "label_p6788"
-              },
-              {
-                "type": "end",
-                "label": "label_p6788",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -11288,7 +11100,7 @@
       "next": "label_p7224"
     },
     {
-      "type": "simple",
+      "type": "try",
       "label": "label_p7256",
       "actions": [
         {
@@ -11601,9 +11413,6 @@
                   },
                   {
                     "action": "call-method"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               }
@@ -11690,9 +11499,6 @@
                   },
                   {
                     "action": "call-method"
-                  },
-                  {
-                    "action": "return"
                   }
                 ]
               }
@@ -12596,210 +12402,191 @@
         },
         {
           "action": "set-member"
-        },
-        {
-          "action": "try",
-          "try": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p7963",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 2
-                      }
-                    ]
-                  },
-                  {
-                    "action": "get-variable"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 3
-                      }
-                    ]
-                  },
-                  {
-                    "action": "get-member"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 83
-                      },
-                      {
-                        "type": "sint32",
-                        "value": 0
-                      }
-                    ]
-                  },
-                  {
-                    "action": "set-member"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 2
-                      }
-                    ]
-                  },
-                  {
-                    "action": "get-variable"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 3
-                      }
-                    ]
-                  },
-                  {
-                    "action": "get-member"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 145
-                      },
-                      {
-                        "type": "null"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "set-member"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "sint32",
-                        "value": 0
-                      },
-                      {
-                        "type": "constant",
-                        "value": 5
-                      }
-                    ]
-                  },
-                  {
-                    "action": "get-variable"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 9
-                      }
-                    ]
-                  },
-                  {
-                    "action": "call-method"
-                  },
-                  {
-                    "action": "pop"
-                  }
-                ],
-                "next": "label_p8054"
-              },
-              {
-                "type": "end",
-                "label": "label_p8054",
-                "actions": []
-              }
-            ]
-          },
-          "catch": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p8028",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "register",
-                        "value": 0
-                      },
-                      {
-                        "type": "sint32",
-                        "value": 1
-                      },
-                      {
-                        "type": "constant",
-                        "value": 2
-                      }
-                    ]
-                  },
-                  {
-                    "action": "get-variable"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 3
-                      }
-                    ]
-                  },
-                  {
-                    "action": "get-member"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 98
-                      }
-                    ]
-                  },
-                  {
-                    "action": "call-method"
-                  },
-                  {
-                    "action": "pop"
-                  }
-                ],
-                "next": "label_p8054"
-              },
-              {
-                "type": "end",
-                "label": "label_p8054",
-                "actions": []
-              }
-            ]
-          },
-          "catch_target": {
-            "type": "register",
-            "target": 0
-          }
         }
       ],
-      "next": "label_p8054"
-    },
-    {
-      "type": "end",
-      "label": "label_p8054",
-      "actions": []
+      "try": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p7963",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "action": "get-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 83
+                  },
+                  {
+                    "type": "sint32",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "action": "set-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "action": "get-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 145
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              {
+                "action": "set-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "sint32",
+                    "value": 0
+                  },
+                  {
+                    "type": "constant",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 9
+                  }
+                ]
+              },
+              {
+                "action": "call-method"
+              },
+              {
+                "action": "pop"
+              }
+            ],
+            "next": null
+          }
+        ]
+      },
+      "catch": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p8028",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "register",
+                    "value": 0
+                  },
+                  {
+                    "type": "sint32",
+                    "value": 1
+                  },
+                  {
+                    "type": "constant",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "action": "get-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 98
+                  }
+                ]
+              },
+              {
+                "action": "call-method"
+              },
+              {
+                "action": "pop"
+              }
+            ],
+            "next": null
+          }
+        ]
+      },
+      "catch_target": {
+        "type": "register",
+        "target": 0
+      }
     }
   ]
 }

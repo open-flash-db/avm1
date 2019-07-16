@@ -263,12 +263,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p265"
-    },
-    {
-      "type": "end",
-      "label": "label_p265",
-      "actions": []
+      "next": null
     }
   ]
 }

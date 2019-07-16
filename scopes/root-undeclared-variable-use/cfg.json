@@ -44,12 +44,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p30"
-    },
-    {
-      "type": "end",
-      "label": "label_p30",
-      "actions": []
+      "next": null
     }
   ]
 }

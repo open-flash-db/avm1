@@ -558,12 +558,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p603"
-    },
-    {
-      "type": "end",
-      "label": "label_p603",
-      "actions": []
+      "next": null
     }
   ]
 }

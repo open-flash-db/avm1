@@ -85,12 +85,7 @@
                     "action": "set-member"
                   }
                 ],
-                "next": "label_p69"
-              },
-              {
-                "type": "end",
-                "label": "label_p69",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -166,12 +161,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p112"
-    },
-    {
-      "type": "end",
-      "label": "label_p112",
-      "actions": []
+      "next": null
     }
   ]
 }

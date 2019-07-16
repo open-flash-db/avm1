@@ -232,12 +232,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p245"
-    },
-    {
-      "type": "end",
-      "label": "label_p245",
-      "actions": []
+      "next": null
     }
   ]
 }

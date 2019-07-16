@@ -151,12 +151,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p157"
-    },
-    {
-      "type": "end",
-      "label": "label_p157",
-      "actions": []
+      "next": null
     }
   ]
 }

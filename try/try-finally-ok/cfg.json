@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "try",
       "label": "label_p0",
       "actions": [
         {
@@ -27,12 +27,7 @@
                     "action": "trace"
                   }
                 ],
-                "next": "label_p17"
-              },
-              {
-                "type": "end",
-                "label": "label_p17",
-                "actions": []
+                "next": null
               }
             ]
           }
@@ -48,89 +43,82 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "try",
-          "try": {
-            "blocks": [
+        }
+      ],
+      "try": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p39",
+            "actions": [
               {
-                "type": "simple",
-                "label": "label_p39",
-                "actions": [
+                "action": "push",
+                "values": [
                   {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "float64",
-                        "value": 0
-                      },
-                      {
-                        "type": "string",
-                        "value": "f"
-                      }
-                    ]
+                    "type": "float64",
+                    "value": 0
                   },
                   {
-                    "action": "call-function"
-                  },
-                  {
-                    "action": "pop"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "in-try"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
+                    "type": "string",
+                    "value": "f"
                   }
-                ],
-                "next": "label_p68"
+                ]
               },
               {
-                "type": "end",
-                "label": "label_p68",
-                "actions": []
-              }
-            ]
-          },
-          "catch_target": {
-            "type": "variable",
-            "target": ""
-          },
-          "finally": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p68",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "in-finally"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  }
-                ],
-                "next": "label_p84"
+                "action": "call-function"
               },
               {
-                "type": "end",
-                "label": "label_p84",
-                "actions": []
+                "action": "pop"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in-try"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
               }
-            ]
+            ],
+            "next": "label_p68"
           }
-        },
+        ]
+      },
+      "catch_target": {
+        "type": "variable",
+        "target": ""
+      },
+      "finally": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p68",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in-finally"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "label_p84"
+          }
+        ]
+      }
+    },
+    {
+      "type": "simple",
+      "label": "label_p84",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -144,12 +132,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p93"
-    },
-    {
-      "type": "end",
-      "label": "label_p93",
-      "actions": []
+      "next": null
     }
   ]
 }

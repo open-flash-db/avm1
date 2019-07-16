@@ -180,12 +180,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p220"
-    },
-    {
-      "type": "end",
-      "label": "label_p220",
-      "actions": []
+      "next": null
     }
   ]
 }

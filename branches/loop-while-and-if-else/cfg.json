@@ -192,12 +192,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p209"
-    },
-    {
-      "type": "end",
-      "label": "label_p209",
-      "actions": []
+      "next": null
     }
   ]
 }

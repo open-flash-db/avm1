@@ -133,12 +133,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p104"
-    },
-    {
-      "type": "end",
-      "label": "label_p104",
-      "actions": []
+      "next": null
     }
   ]
 }

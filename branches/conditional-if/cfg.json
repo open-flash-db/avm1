@@ -67,12 +67,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p56"
-    },
-    {
-      "type": "end",
-      "label": "label_p56",
-      "actions": []
+      "next": null
     }
   ]
 }

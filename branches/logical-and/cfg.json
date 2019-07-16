@@ -150,12 +150,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p142"
-    },
-    {
-      "type": "end",
-      "label": "label_p142",
-      "actions": []
+      "next": null
     }
   ]
 }

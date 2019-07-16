@@ -41,12 +41,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p37"
-    },
-    {
-      "type": "end",
-      "label": "label_p37",
-      "actions": []
+      "next": null
     }
   ]
 }

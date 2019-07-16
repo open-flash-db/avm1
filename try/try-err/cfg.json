@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "try",
       "label": "label_p0",
       "actions": [
         {
@@ -34,9 +34,6 @@
                         "value": "err-value"
                       }
                     ]
-                  },
-                  {
-                    "action": "throw"
                   }
                 ]
               }
@@ -54,61 +51,59 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "try",
-          "try": {
-            "blocks": [
+        }
+      ],
+      "try": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p56",
+            "actions": [
               {
-                "type": "simple",
-                "label": "label_p56",
-                "actions": [
+                "action": "push",
+                "values": [
                   {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "sint32",
-                        "value": 0
-                      },
-                      {
-                        "type": "string",
-                        "value": "f"
-                      }
-                    ]
+                    "type": "sint32",
+                    "value": 0
                   },
                   {
-                    "action": "call-function"
-                  },
-                  {
-                    "action": "pop"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "in-try"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
+                    "type": "string",
+                    "value": "f"
                   }
-                ],
-                "next": "label_p81"
+                ]
               },
               {
-                "type": "end",
-                "label": "label_p81",
-                "actions": []
+                "action": "call-function"
+              },
+              {
+                "action": "pop"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in-try"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
               }
-            ]
-          },
-          "catch_target": {
-            "type": "variable",
-            "target": "e"
+            ],
+            "next": "label_p81"
           }
-        },
+        ]
+      },
+      "catch_target": {
+        "type": "variable",
+        "target": "e"
+      }
+    },
+    {
+      "type": "simple",
+      "label": "label_p81",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -122,12 +117,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p90"
-    },
-    {
-      "type": "end",
-      "label": "label_p90",
-      "actions": []
+      "next": null
     }
   ]
 }

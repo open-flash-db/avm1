@@ -71,12 +71,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p62"
-    },
-    {
-      "type": "end",
-      "label": "label_p62",
-      "actions": []
+      "next": null
     }
   ]
 }

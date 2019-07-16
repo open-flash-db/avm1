@@ -95,12 +95,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p98"
-    },
-    {
-      "type": "end",
-      "label": "label_p98",
-      "actions": []
+      "next": null
     }
   ]
 }

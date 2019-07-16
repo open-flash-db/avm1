@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "try",
       "label": "label_p0",
       "actions": [
         {
@@ -34,9 +34,6 @@
                         "value": "err-value"
                       }
                     ]
-                  },
-                  {
-                    "action": "throw"
                   }
                 ]
               }
@@ -54,71 +51,82 @@
         },
         {
           "action": "trace"
+        }
+      ],
+      "try": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p56",
+            "actions": [],
+            "next": "label_p111"
+          }
+        ]
+      },
+      "catch": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p86",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in-err"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "e"
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "label_p106"
+          }
+        ]
+      },
+      "catch_target": {
+        "type": "variable",
+        "target": "e"
+      }
+    },
+    {
+      "type": "simple",
+      "label": "label_p106",
+      "actions": [],
+      "next": "label_p125"
+    },
+    {
+      "type": "simple",
+      "label": "label_p111",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "out"
+            }
+          ]
         },
         {
-          "action": "try",
-          "try": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p56",
-                "actions": [],
-                "next": "label_p111"
-              },
-              {
-                "type": "end",
-                "label": "label_p111",
-                "actions": []
-              }
-            ]
-          },
-          "catch": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p86",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "in-err"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "e"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "get-variable"
-                  },
-                  {
-                    "action": "trace"
-                  }
-                ],
-                "next": "label_p106"
-              },
-              {
-                "type": "end",
-                "label": "label_p106",
-                "actions": []
-              }
-            ]
-          },
-          "catch_target": {
-            "type": "variable",
-            "target": "e"
-          }
+          "action": "trace"
         }
       ],
       "next": "label_p125"
@@ -140,12 +148,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p134"
-    },
-    {
-      "type": "end",
-      "label": "label_p134",
-      "actions": []
+      "next": null
     }
   ]
 }

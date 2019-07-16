@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "try",
       "label": "label_p0",
       "actions": [
         {
@@ -39,70 +39,63 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "try",
-          "try": {
-            "blocks": [
+        }
+      ],
+      "try": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p147",
+            "actions": [
               {
-                "type": "simple",
-                "label": "label_p147",
-                "actions": [
+                "action": "push",
+                "values": [
                   {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 2
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
+                    "type": "constant",
+                    "value": 2
                   }
-                ],
-                "next": "label_p164"
+                ]
               },
               {
-                "type": "end",
-                "label": "label_p164",
-                "actions": []
+                "action": "trace"
               }
-            ]
-          },
-          "catch": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p158",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 3
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  }
-                ],
-                "next": "label_p164"
-              },
-              {
-                "type": "end",
-                "label": "label_p164",
-                "actions": []
-              }
-            ]
-          },
-          "catch_target": {
-            "type": "variable",
-            "target": "err"
+            ],
+            "next": "label_p164"
           }
-        },
+        ]
+      },
+      "catch": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p158",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "label_p164"
+          }
+        ]
+      },
+      "catch_target": {
+        "type": "variable",
+        "target": "err"
+      }
+    },
+    {
+      "type": "try",
+      "label": "label_p164",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -126,98 +119,86 @@
         },
         {
           "action": "trace"
-        },
-        {
-          "action": "try",
-          "try": {
-            "blocks": [
+        }
+      ],
+      "try": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p190",
+            "actions": [
               {
-                "type": "simple",
-                "label": "label_p190",
-                "actions": [
+                "action": "push",
+                "values": [
                   {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 2
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
+                    "type": "constant",
+                    "value": 2
                   }
-                ],
-                "next": "label_p207"
+                ]
               },
               {
-                "type": "end",
-                "label": "label_p207",
-                "actions": []
+                "action": "trace"
               }
-            ]
-          },
-          "catch": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p201",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 3
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  }
-                ],
-                "next": "label_p207"
-              },
-              {
-                "type": "end",
-                "label": "label_p207",
-                "actions": []
-              }
-            ]
-          },
-          "catch_target": {
-            "type": "variable",
-            "target": "err"
-          },
-          "finally": {
-            "blocks": [
-              {
-                "type": "simple",
-                "label": "label_p207",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 6
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  }
-                ],
-                "next": "label_p213"
-              },
-              {
-                "type": "end",
-                "label": "label_p213",
-                "actions": []
-              }
-            ]
+            ],
+            "next": "label_p207"
           }
-        },
+        ]
+      },
+      "catch": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p201",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "label_p207"
+          }
+        ]
+      },
+      "catch_target": {
+        "type": "variable",
+        "target": "err"
+      },
+      "finally": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p207",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 6
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "label_p213"
+          }
+        ]
+      }
+    },
+    {
+      "type": "simple",
+      "label": "label_p213",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -231,12 +212,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p219"
-    },
-    {
-      "type": "end",
-      "label": "label_p219",
-      "actions": []
+      "next": null
     }
   ]
 }

@@ -107,12 +107,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p171"
-    },
-    {
-      "type": "end",
-      "label": "label_p171",
-      "actions": []
+      "next": null
     }
   ]
 }

@@ -28,7 +28,7 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
+                "type": "with",
                 "label": "label_p63",
                 "actions": [
                   {
@@ -57,48 +57,34 @@
                   },
                   {
                     "action": "get-variable"
-                  },
-                  {
-                    "action": "with",
-                    "with": {
-                      "blocks": [
-                        {
-                          "type": "simple",
-                          "label": "label_p81",
-                          "actions": [
-                            {
-                              "action": "push",
-                              "values": [
-                                {
-                                  "type": "constant",
-                                  "value": 0
-                                }
-                              ]
-                            },
-                            {
-                              "action": "get-variable"
-                            },
-                            {
-                              "action": "trace"
-                            }
-                          ],
-                          "next": "label_p88"
-                        },
-                        {
-                          "type": "end",
-                          "label": "label_p88",
-                          "actions": []
-                        }
-                      ]
-                    }
                   }
                 ],
-                "next": "label_p88"
-              },
-              {
-                "type": "end",
-                "label": "label_p88",
-                "actions": []
+                "with": {
+                  "blocks": [
+                    {
+                      "type": "simple",
+                      "label": "label_p81",
+                      "actions": [
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "constant",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "action": "get-variable"
+                        },
+                        {
+                          "action": "trace"
+                        }
+                      ],
+                      "next": null
+                    }
+                  ]
+                }
               }
             ]
           }
@@ -230,12 +216,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p166"
-    },
-    {
-      "type": "end",
-      "label": "label_p166",
-      "actions": []
+      "next": null
     }
   ]
 }

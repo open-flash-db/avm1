@@ -58,40 +58,8 @@
           {
             "type": "simple",
             "label": "label_p56",
-            "actions": [
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "float64",
-                    "value": 0
-                  },
-                  {
-                    "type": "string",
-                    "value": "f"
-                  }
-                ]
-              },
-              {
-                "action": "call-function"
-              },
-              {
-                "action": "pop"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "string",
-                    "value": "in-try"
-                  }
-                ]
-              },
-              {
-                "action": "trace"
-              }
-            ],
-            "next": "label_p110"
+            "actions": [],
+            "next": "label_p91"
           }
         ]
       },
@@ -99,37 +67,9 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p90",
-            "actions": [
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "string",
-                    "value": "in-err"
-                  }
-                ]
-              },
-              {
-                "action": "trace"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "string",
-                    "value": "e"
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "trace"
-              }
-            ],
-            "next": "label_p110"
+            "label": "label_p86",
+            "actions": [],
+            "next": "label_p107"
           }
         ]
       },
@@ -140,8 +80,92 @@
     },
     {
       "type": "simple",
-      "label": "label_p110",
+      "label": "label_p61",
       "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 0
+            },
+            {
+              "type": "string",
+              "value": "f"
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "in-try"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p107"
+    },
+    {
+      "type": "simple",
+      "label": "label_p91",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "catch"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "label_p61"
+    },
+    {
+      "type": "simple",
+      "label": "label_p107",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "in-err"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "e"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "trace"
+        },
         {
           "action": "push",
           "values": [

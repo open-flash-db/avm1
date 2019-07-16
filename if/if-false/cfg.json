@@ -29,12 +29,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p20"
-    },
-    {
-      "type": "end",
-      "label": "label_p20",
-      "actions": []
+      "next": null
     }
   ]
 }

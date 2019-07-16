@@ -126,7 +126,7 @@
                     "target": "label_p208"
                   }
                 ],
-                "next": "label_p234"
+                "next": null
               },
               {
                 "type": "simple",
@@ -165,7 +165,7 @@
                     "action": "set-variable"
                   }
                 ],
-                "next": "label_p234"
+                "next": null
               },
               {
                 "type": "simple",
@@ -204,7 +204,7 @@
                     "action": "set-variable"
                   }
                 ],
-                "next": "label_p234"
+                "next": null
               },
               {
                 "type": "simple",
@@ -243,7 +243,7 @@
                     "action": "set-variable"
                   }
                 ],
-                "next": "label_p234"
+                "next": null
               },
               {
                 "type": "simple",
@@ -282,23 +282,13 @@
                     "action": "set-variable"
                   }
                 ],
-                "next": "label_p234"
-              },
-              {
-                "type": "end",
-                "label": "label_p234",
-                "actions": []
+                "next": null
               }
             ]
           }
         }
       ],
-      "next": "label_p234"
-    },
-    {
-      "type": "end",
-      "label": "label_p234",
-      "actions": []
+      "next": null
     }
   ]
 }

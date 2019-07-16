@@ -84,12 +84,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p113"
-    },
-    {
-      "type": "end",
-      "label": "label_p113",
-      "actions": []
+      "next": null
     }
   ]
 }

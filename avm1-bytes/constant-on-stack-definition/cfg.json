@@ -47,12 +47,7 @@
           "action": "trace"
         }
       ],
-      "next": "label_p35"
-    },
-    {
-      "type": "end",
-      "label": "label_p35",
-      "actions": []
+      "next": null
     }
   ]
 }
