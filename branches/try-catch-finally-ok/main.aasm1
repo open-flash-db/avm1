@@ -1,23 +1,23 @@
-label_p0:
+l0_0:
   push(0="before try/catch/finally");
   trace();
   try {
-    label_p44:
+    l1_44:
       push(0="in try");
       trace();
-      next label_p75;
+      next l3_75;
   } catch(i:"err") {
-    label_p61:
+    l2_61:
       push(0="in catch");
       trace();
-      next label_p75;
+      next l3_75;
   } finally {
-    label_p75:
+    l3_75:
       push(0="in finally");
       trace();
-      next label_p91;
+      next l0_91;
   }
-label_p91:
+l0_91:
   push(0="after try/catch/finally");
   trace();
   end;

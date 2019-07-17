@@ -1,6 +1,6 @@
-label_p0:
+l0_0:
   defineFunction(name="f", parameters=[]) {
-    label_p9:
+    l4_9:
       push(0="ok");
       trace();
       end;
@@ -8,28 +8,28 @@ label_p0:
   push(0="start");
   trace();
   try {
-    label_p40:
+    l1_40:
       push(0=0f64, 1="f");
       callFunction();
       pop();
       push(0="in-try");
       trace();
-      next label_p94;
+      next l3_94;
   } catch(i:"e") {
-    label_p74:
+    l2_74:
       push(0="in-err");
       trace();
       push(0="e");
       getVariable();
       trace();
-      next label_p94;
+      next l3_94;
   } finally {
-    label_p94:
+    l3_94:
       push(0="in-finally");
       trace();
-      next label_p110;
+      next l0_110;
   }
-label_p110:
+l0_110:
   push(0="end");
   trace();
   end;

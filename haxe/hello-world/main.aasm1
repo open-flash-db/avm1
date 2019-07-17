@@ -1,8 +1,8 @@
-label_p0:
+l0_0:
   constantPool(0="@estr", 1="xx", 2="flash", 3="Boot", 4="__string_rec", 5="Main", 6="__name__", 7="prototype", 8="__class__", 9="main", 10="Hello, World!", 11="quit", 12="Lib", 13="fscommand", 14="Std", 15="string", 16="", 17="Object", 18="_global", 19="length", 20="<...>", 21="movieclip", 22="function", 23="__ename__", 24="object", 25="String", 26="Array", 27="__enum__", 28="(", 29="    ", 30=",", 31=")", 32="[", 33="]", 34="toString", 35="[object Object]", 36="[type Function]", 37="{\n", 38="typeof", 39="_name", 40="MC(", 41=") ", 42="push", 43="iterator", 44="hasNext", 45="next", 46="__super__", 47="__interfaces__", 48=",\n", 49=" : ", 50="substring", 51="\n", 52="}", 53="<function>", 54="__closure", 55="arguments", 56="callee", 57="o", 58="f", 59="apply", 60="__instanceof", 61="Int", 62="Float", 63="Bool", 64="Dynamic", 65="Class", 66="Enum", 67="number", 68="Math", 69="ceil", 70="getTrace", 71="current", 72="__trace_txt", 73="Stage", 74="width", 75="height", 76="createTextField", 77="getTextFormat", 78="font", 79="_sans", 80="setNewTextFormat", 81="selectable", 82="textColor", 83="def_color", 84="__trace_lines", 85="__set_trace_color", 86="__trace", 87="fileName", 88="lineNumber", 89=":", 90=": ", 91="customParams", 92="split", 93="concat", 94="join", 95="text", 96="textHeight", 97="shift", 98="__exc", 99="onerror", 100="(uncaught exception)", 101="__clear_trace", 102="removeTextField", 103="__init", 104="haxeInitDone", 105="copy", 106="slice", 107="splice", 108="call", 109="insert", 110="remove", 111="indexOf", 112="lastIndexOf", 113="cur", 114="arr", 115="map", 116="filter", 117="ASSetPropFlags", 118="charCodeAt", 119="cca", 120="_root", 121="@instanceof", 122="@closure", 123="align", 124="LT", 125="FSCommand:", 126="_MovieClip", 127="display", 128="filters", 129="geom", 130="haxe", 131="this", 132="NaN", 133="Number", 134="NEGATIVE_INFINITY", 135="POSITIVE_INFINITY", 136="isFinite", 137="isNaN", 138="g", 139="Void", 140="MovieClip", 141="TextField", 142="TextFormat", 143="TextSnapshot", 144="StyleSheet", 145="exception");
   push(0=c:0);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=2, parameters=[]) {
-    label_p1157:
+    l3_1157:
       push(0=c:1, 1=r:1, 2=2i32, 3=c:2);
       getVariable();
       push(0=c:3);
@@ -28,7 +28,7 @@ label_p0:
   setMember();
   push(0=r:0, 1=c:9);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=2, parameters=[]) {
-    label_p1264:
+    l5_1264:
       push(0=c:10);
       trace();
       push(0=c:11, 1=1i32, 2=c:2);
@@ -57,7 +57,7 @@ label_p0:
   setMember();
   push(0=r:0, 1=c:15);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=3, parameters=[r:2=i:""]) {
-    label_p1377:
+    l7_1377:
       push(0=c:16, 1=r:2, 2=2i32, 3=c:2);
       getVariable();
       push(0=c:3);
@@ -77,16 +77,16 @@ label_p0:
   getMember();
   storeRegister(r:2);
   enumerate2();
-label_p1441:
+l0_1441:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=label_p1473);
+  if(target=l0_1473);
   push(0=r:1, 1=r:0, 2=r:2, 3=r:0);
   getMember();
   setMember();
-  next label_p1441;
-label_p1473:
+  next l0_1441;
+l0_1473:
   pop();
   push(0=c:2);
   getVariable();
@@ -106,29 +106,29 @@ label_p1473:
   setMember();
   push(0=r:0, 1=c:4);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=16, parameters=[r:2=i:"",r:3=i:""]) {
-    label_p1564:
+    l9_1564:
       push(0=r:3, 1=c:19);
       getMember();
       push(0=20i32);
       less2();
       not();
       not();
-      if(target=label_p1594);
+      if(target=l9_1594);
       push(0=c:20);
       return;
-    label_p1594:
+    l9_1594:
       push(0=r:2);
       typeOf();
       storeRegister(r:4);
       pop();
       push(0=r:4, 1=c:21);
       equals2();
-      if(target=label_p1690);
+      if(target=l9_1690);
       push(0=r:4, 1=c:22);
       equals2();
       pushDuplicate();
       not();
-      if(target=label_p1669);
+      if(target=l9_1669);
       pop();
       push(0=r:2, 1=c:6);
       getMember();
@@ -136,63 +136,63 @@ label_p1473:
       equals2();
       not();
       pushDuplicate();
-      if(target=label_p1669);
+      if(target=l9_1669);
       pop();
       push(0=r:2, 1=c:23);
       getMember();
       push(0=null);
       equals2();
       not();
-    label_p1669:
+    l9_1669:
       not();
-      if(target=label_p1685);
+      if(target=l9_1685);
       push(0=c:24);
       storeRegister(r:4);
       pop();
-    label_p1685:
-      next label_p1700;
-    label_p1690:
+    l9_1685:
+      next l9_1700;
+    l9_1690:
       push(0=c:24);
       storeRegister(r:4);
       pop();
-    label_p1700:
+    l9_1700:
       push(0=r:4);
       storeRegister(r:5);
       push(0=c:24);
       equals2();
-      if(target=label_p1765);
+      if(target=l9_1765);
       push(0=r:5, 1=c:22);
       equals2();
-      if(target=label_p2982);
+      if(target=l9_2982);
       push(0=r:5, 1=c:15);
       equals2();
-      if(target=label_p2993);
+      if(target=l9_2993);
       push(0=r:2, 1=1i32, 2=c:25);
       callFunction();
       return;
-    label_p1765:
+    l9_1765:
       push(0=r:2, 1=c:26);
       getVariable();
       instanceOf();
       not();
-      if(target=label_p2325);
+      if(target=l9_2325);
       push(0=r:2, 1=c:27);
       getMember();
       push(0=null);
       equals2();
       not();
       not();
-      if(target=label_p2103);
+      if(target=l9_2103);
       push(0=r:2, 1=c:19);
       getMember();
       push(0=2i32);
       equals2();
       not();
-      if(target=label_p1835);
+      if(target=l9_1835);
       push(0=r:2, 1=0i32);
       getMember();
       return;
-    label_p1835:
+    l9_1835:
       push(0=r:2, 1=0i32);
       getMember();
       push(0=c:28);
@@ -210,17 +210,17 @@ label_p1473:
       getMember();
       storeRegister(r:8);
       pop();
-    label_p1896:
+    l9_1896:
       push(0=true);
       not();
-      if(target=label_p2094);
+      if(target=l9_2094);
       push(0=r:7, 1=r:8);
       less2();
       not();
       not();
-      if(target=label_p1927);
-      next label_p2094;
-    label_p1927:
+      if(target=l9_1927);
+      next l9_2094;
+    l9_1927:
       push(0=r:7);
       storeRegister(r:0);
       increment();
@@ -232,7 +232,7 @@ label_p1473:
       push(0=r:9, 1=2i32);
       equals2();
       not();
-      if(target=label_p2025);
+      if(target=l9_2025);
       push(0=r:3, 1=r:2, 2=r:9);
       getMember();
       push(0=2i32, 1=c:2);
@@ -247,8 +247,8 @@ label_p1473:
       add2();
       storeRegister(r:6);
       pop();
-      next label_p2089;
-    label_p2025:
+      next l9_2089;
+    l9_2025:
       push(0=r:3, 1=r:2, 2=r:9);
       getMember();
       push(0=2i32, 1=c:2);
@@ -267,13 +267,13 @@ label_p1473:
       add2();
       storeRegister(r:6);
       pop();
-    label_p2089:
-      next label_p1896;
-    label_p2094:
+    l9_2089:
+      next l9_1896;
+    l9_2094:
       push(0=r:6, 1=c:31);
       add2();
       return;
-    label_p2103:
+    l9_2103:
       push(0=r:2, 1=c:19);
       getMember();
       storeRegister(r:6);
@@ -288,17 +288,17 @@ label_p1473:
       push(0=0i32);
       storeRegister(r:9);
       pop();
-    label_p2152:
+    l9_2152:
       push(0=true);
       not();
-      if(target=label_p2306);
+      if(target=l9_2306);
       push(0=r:9, 1=r:6);
       less2();
       not();
       not();
-      if(target=label_p2183);
-      next label_p2306;
-    label_p2183:
+      if(target=l9_2183);
+      next l9_2306;
+    l9_2183:
       push(0=r:9);
       storeRegister(r:0);
       increment();
@@ -319,12 +319,12 @@ label_p1473:
       pop();
       push(0=r:10, 1=0i32);
       greater();
-      if(target=label_p2272);
+      if(target=l9_2272);
       push(0=c:16);
-      next label_p2277;
-    label_p2272:
+      next l9_2277;
+    l9_2272:
       push(0=c:30);
-    label_p2277:
+    l9_2277:
       push(0=r:11);
       add2();
       storeRegister(r:12);
@@ -333,15 +333,15 @@ label_p1473:
       add2();
       storeRegister(r:8);
       pop();
-      next label_p2152;
-    label_p2306:
+      next l9_2152;
+    l9_2306:
       push(0=r:8, 1=c:33);
       add2();
       storeRegister(r:8);
       pop();
       push(0=r:8);
       return;
-    label_p2325:
+    l9_2325:
       push(0=0i32, 1=r:2, 2=c:34);
       callMethod();
       storeRegister(r:6);
@@ -353,35 +353,35 @@ label_p1473:
       push(0=r:7, 1=c:15);
       equals2();
       not();
-      if(target=label_p2378);
+      if(target=l9_2378);
       push(0=true);
-      next label_p2387;
-    label_p2378:
+      next l9_2387;
+    l9_2378:
       push(0=r:6, 1=c:25);
       getVariable();
       instanceOf();
-    label_p2387:
-      if(target=label_p2402);
+    l9_2387:
+      if(target=l9_2402);
       push(0=false);
-      next label_p2411;
-    label_p2402:
+      next l9_2411;
+    l9_2402:
       push(0=r:6, 1=c:35);
       equals2();
       not();
-    label_p2411:
-      if(target=label_p2426);
+    l9_2411:
+      if(target=l9_2426);
       push(0=false);
-      next label_p2435;
-    label_p2426:
+      next l9_2435;
+    l9_2426:
       push(0=r:6, 1=c:36);
       equals2();
       not();
-    label_p2435:
+    l9_2435:
       not();
-      if(target=label_p2447);
+      if(target=l9_2447);
       push(0=r:6);
       return;
-    label_p2447:
+    l9_2447:
       push(0=c:37);
       storeRegister(r:9);
       pop();
@@ -392,7 +392,7 @@ label_p1473:
       push(0=r:10, 1=c:21);
       equals2();
       not();
-      if(target=label_p2568);
+      if(target=l9_2568);
       push(0=r:2, 1=c:39);
       getMember();
       push(0=1i32, 1=c:14);
@@ -416,7 +416,7 @@ label_p1473:
       push(0=r:14);
       storeRegister(r:9);
       pop();
-    label_p2568:
+    l9_2568:
       push(0=r:3, 1=c:29);
       add2();
       storeRegister(r:3);
@@ -427,16 +427,16 @@ label_p1473:
       pop();
       push(0=r:2);
       enumerate2();
-    label_p2603:
+    l9_2603:
       storeRegister(r:0);
       push(0=null);
       equals2();
-      if(target=label_p2638);
+      if(target=l9_2638);
       push(0=r:0, 1=1i32, 2=r:12, 3=c:42);
       callMethod();
       pop();
-      next label_p2603;
-    label_p2638:
+      next l9_2603;
+    l9_2638:
       push(0=r:12);
       storeRegister(r:11);
       pop();
@@ -444,11 +444,11 @@ label_p1473:
       callMethod();
       storeRegister(r:12);
       pop();
-    label_p2666:
+    l9_2666:
       push(0=0i32, 1=r:12, 2=c:44);
       callMethod();
       not();
-      if(target=label_p2885);
+      if(target=l9_2885);
       push(0=0i32, 1=r:12, 2=c:45);
       callMethod();
       storeRegister(r:13);
@@ -456,39 +456,39 @@ label_p1473:
       push(0=r:13, 1=c:7);
       equals2();
       pushDuplicate();
-      if(target=label_p2726);
+      if(target=l9_2726);
       pop();
       push(0=r:13, 1=c:8);
       equals2();
-    label_p2726:
+    l9_2726:
       pushDuplicate();
-      if(target=label_p2741);
+      if(target=l9_2741);
       pop();
       push(0=r:13, 1=c:46);
       equals2();
-    label_p2741:
+    l9_2741:
       pushDuplicate();
-      if(target=label_p2756);
+      if(target=l9_2756);
       pop();
       push(0=r:13, 1=c:47);
       equals2();
-    label_p2756:
+    l9_2756:
       not();
-      if(target=label_p2767);
-      next label_p2666;
-    label_p2767:
+      if(target=l9_2767);
+      next l9_2666;
+    l9_2767:
       push(0=r:9, 1=c:19);
       getMember();
       push(0=2i32);
       equals2();
       not();
       not();
-      if(target=label_p2804);
+      if(target=l9_2804);
       push(0=r:9, 1=c:48);
       add2();
       storeRegister(r:9);
       pop();
-    label_p2804:
+    l9_2804:
       push(0=r:3, 1=r:2, 2=r:13);
       getMember();
       push(0=2i32, 1=c:2);
@@ -511,8 +511,8 @@ label_p1473:
       add2();
       storeRegister(r:9);
       pop();
-      next label_p2666;
-    label_p2885:
+      next l9_2666;
+    l9_2885:
       push(0=4i32, 1=1i32, 2=r:3, 3=c:50);
       callMethod();
       storeRegister(r:12);
@@ -526,12 +526,12 @@ label_p1473:
       equals2();
       not();
       not();
-      if(target=label_p2955);
+      if(target=l9_2955);
       push(0=r:9, 1=c:51);
       add2();
       storeRegister(r:9);
       pop();
-    label_p2955:
+    l9_2955:
       push(0=r:9, 1=r:3, 2=c:52);
       add2();
       add2();
@@ -539,17 +539,17 @@ label_p1473:
       pop();
       push(0=r:9);
       return;
-    label_p2982:
+    l9_2982:
       push(0=c:53);
       return;
-    label_p2993:
+    l9_2993:
       push(0=r:2);
       return;
   };
   setMember();
   push(0=r:0, 1=c:54);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=false, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=6, parameters=[r:2=i:"",r:3=i:""]) {
-    label_p3027:
+    l10_3027:
       push(0=r:3, 1=r:2);
       getMember();
       storeRegister(r:4);
@@ -557,12 +557,12 @@ label_p1473:
       push(0=r:4, 1=null);
       equals2();
       not();
-      if(target=label_p3058);
+      if(target=l10_3058);
       push(0=null);
       return;
-    label_p3058:
+    l10_3058:
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=false, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=3, parameters=[]) {
-        label_p3069:
+        l11_3069:
           push(0=c:55);
           getVariable();
           push(0=c:56);
@@ -591,32 +591,32 @@ label_p1473:
   setMember();
   push(0=r:0, 1=c:60);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=7, parameters=[r:2=i:"",r:3=i:""]) {
-    label_p3174:
+    l12_3174:
       push(0=r:3);
       not();
       not();
-      if(target=label_p3192);
+      if(target=l12_3192);
       push(0=false);
       return;
-    label_p3192:
+    l12_3192:
       push(0=r:2, 1=r:3);
       instanceOf();
       not();
-      if(target=label_p3241);
+      if(target=l12_3241);
       push(0=r:3, 1=c:26);
       getVariable();
       equals2();
       not();
-      if(target=label_p3235);
+      if(target=l12_3235);
       push(0=r:2, 1=c:27);
       getMember();
       push(0=null);
       equals2();
       return;
-    label_p3235:
+    l12_3235:
       push(0=true);
       return;
-    label_p3241:
+    l12_3241:
       push(0=r:3);
       storeRegister(r:4);
       pop();
@@ -625,71 +625,71 @@ label_p1473:
       push(0=c:61);
       getVariable();
       equals2();
-      if(target=label_p3424);
+      if(target=l12_3424);
       push(0=r:5, 1=c:62);
       getVariable();
       equals2();
-      if(target=label_p3548);
+      if(target=l12_3548);
       push(0=r:5, 1=c:63);
       getVariable();
       equals2();
-      if(target=label_p3573);
+      if(target=l12_3573);
       push(0=r:5, 1=c:25);
       getVariable();
       equals2();
-      if(target=label_p3612);
+      if(target=l12_3612);
       push(0=r:5, 1=c:64);
       getVariable();
       equals2();
-      if(target=label_p3637);
+      if(target=l12_3637);
       push(0=r:2, 1=c:27);
       getMember();
       push(0=r:3);
       equals2();
       pushDuplicate();
-      if(target=label_p3380);
+      if(target=l12_3380);
       pop();
       push(0=r:3, 1=c:65);
       getVariable();
       equals2();
       pushDuplicate();
       not();
-      if(target=label_p3380);
+      if(target=l12_3380);
       pop();
       push(0=r:2, 1=c:6);
       getMember();
       push(0=null);
       equals2();
       not();
-    label_p3380:
+    l12_3380:
       pushDuplicate();
-      if(target=label_p3418);
+      if(target=l12_3418);
       pop();
       push(0=r:3, 1=c:66);
       getVariable();
       equals2();
       pushDuplicate();
       not();
-      if(target=label_p3418);
+      if(target=l12_3418);
       pop();
       push(0=r:2, 1=c:23);
       getMember();
       push(0=null);
       equals2();
       not();
-    label_p3418:
+    l12_3418:
       return;
-    label_p3424:
+    l12_3424:
       push(0=r:2);
       typeOf();
       storeRegister(r:6);
       pop();
       push(0=r:6, 1=c:67);
       equals2();
-      if(target=label_p3458);
+      if(target=l12_3458);
       push(0=false);
-      next label_p3493;
-    label_p3458:
+      next l12_3493;
+    l12_3458:
       push(0=r:2, 1=1i32, 2=c:68);
       getVariable();
       push(0=c:69);
@@ -697,24 +697,24 @@ label_p1473:
       push(0=r:2, 1=5.46040909e-315f64);
       modulo();
       strictEquals();
-    label_p3493:
-      if(target=label_p3509);
+    l12_3493:
+      if(target=l12_3509);
       push(0=false);
       return;
-    label_p3509:
+    l12_3509:
       push(0=r:2, 1=true);
       strictEquals();
       not();
-      if(target=label_p3533);
+      if(target=l12_3533);
       push(0=true);
-      next label_p3541;
-    label_p3533:
+      next l12_3541;
+    l12_3533:
       push(0=r:2, 1=false);
       strictEquals();
-    label_p3541:
+    l12_3541:
       not();
       return;
-    label_p3548:
+    l12_3548:
       push(0=r:2);
       typeOf();
       storeRegister(r:6);
@@ -722,18 +722,18 @@ label_p1473:
       push(0=r:6, 1=c:67);
       equals2();
       return;
-    label_p3573:
+    l12_3573:
       push(0=r:2, 1=true);
       strictEquals();
       not();
-      if(target=label_p3598);
+      if(target=l12_3598);
       push(0=true);
       return;
-    label_p3598:
+    l12_3598:
       push(0=r:2, 1=false);
       strictEquals();
       return;
-    label_p3612:
+    l12_3612:
       push(0=r:2);
       typeOf();
       storeRegister(r:6);
@@ -741,14 +741,14 @@ label_p1473:
       push(0=r:6, 1=c:15);
       equals2();
       return;
-    label_p3637:
+    l12_3637:
       push(0=true);
       return;
   };
   setMember();
   push(0=r:0, 1=c:70);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=8, parameters=[]) {
-    label_p3667:
+    l13_3667:
       push(0=c:2);
       getVariable();
       push(0=c:12);
@@ -764,7 +764,7 @@ label_p1473:
       push(0=r:3, 1=null);
       equals2();
       not();
-      if(target=label_p3982);
+      if(target=l13_3982);
       push(0=c:2);
       getVariable();
       push(0=c:73);
@@ -784,19 +784,19 @@ label_p1473:
       push(0=r:4, 1=0i32);
       equals2();
       not();
-      if(target=label_p3792);
+      if(target=l13_3792);
       push(0=800i32);
       storeRegister(r:4);
       pop();
-    label_p3792:
+    l13_3792:
       push(0=r:5, 1=0i32);
       equals2();
       not();
-      if(target=label_p3822);
+      if(target=l13_3822);
       push(0=600i32);
       storeRegister(r:5);
       pop();
-    label_p3822:
+    l13_3822:
       push(0=r:5, 1=30i32);
       add2();
       push(0=r:4, 1=0i32, 2=0i32, 3=1048500i32, 4=c:72, 5=6i32, 6=r:2, 7=c:76);
@@ -830,14 +830,14 @@ label_p1473:
       pop();
       push(0=r:2, 1=c:84, 2=r:7);
       setMember();
-    label_p3982:
+    l13_3982:
       push(0=r:3);
       return;
   };
   setMember();
   push(0=r:0, 1=c:85);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=3, parameters=[r:2=i:""]) {
-    label_p4009:
+    l14_4009:
       push(0=0i32, 1=c:2);
       getVariable();
       push(0=c:3);
@@ -857,7 +857,7 @@ label_p1473:
   setMember();
   push(0=r:0, 1=c:86);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=13, parameters=[r:2=i:"",r:3=i:""]) {
-    label_p4083:
+    l15_4083:
       push(0=c:2);
       getVariable();
       push(0=c:12);
@@ -888,14 +888,14 @@ label_p1473:
       getMember();
       push(0=null);
       equals2();
-      if(target=label_p4208);
+      if(target=l15_4208);
       push(0=c:89, 1=r:3, 2=c:88);
       getMember();
       add2();
-      next label_p4213;
-    label_p4208:
+      next l15_4213;
+    l15_4208:
       push(0=c:16);
-    label_p4213:
+    l15_4213:
       add2();
       push(0=c:90);
       add2();
@@ -908,16 +908,16 @@ label_p1473:
       not();
       pushDuplicate();
       not();
-      if(target=label_p4261);
+      if(target=l15_4261);
       pop();
       push(0=r:3, 1=c:91);
       getMember();
       push(0=null);
       equals2();
       not();
-    label_p4261:
+    l15_4261:
       not();
-      if(target=label_p4414);
+      if(target=l15_4414);
       push(0=0i32);
       storeRegister(r:8);
       pop();
@@ -925,18 +925,18 @@ label_p1473:
       getMember();
       storeRegister(r:9);
       pop();
-    label_p4293:
+    l15_4293:
       push(0=true);
       not();
-      if(target=label_p4414);
+      if(target=l15_4414);
       push(0=r:8, 1=r:9, 2=c:19);
       getMember();
       less2();
       not();
       not();
-      if(target=label_p4327);
-      next label_p4414;
-    label_p4327:
+      if(target=l15_4327);
+      next l15_4414;
+    l15_4327:
       push(0=r:9, 1=r:8);
       getMember();
       storeRegister(r:10);
@@ -961,8 +961,8 @@ label_p1473:
       add2();
       storeRegister(r:7);
       pop();
-      next label_p4293;
-    label_p4414:
+      next l15_4293;
+    l15_4414:
       push(0=c:51, 1=1i32, 2=r:7, 3=c:92);
       callMethod();
       storeRegister(r:8);
@@ -979,17 +979,17 @@ label_p1473:
       pop();
       push(0=r:5, 1=c:95, 2=r:10);
       setMember();
-    label_p4490:
+    l15_4490:
       push(0=true);
       not();
-      if(target=label_p4614);
+      if(target=l15_4614);
       push(0=r:9, 1=c:19);
       getMember();
       push(0=1i32);
       greater();
       pushDuplicate();
       not();
-      if(target=label_p4553);
+      if(target=l15_4553);
       pop();
       push(0=r:5, 1=c:96);
       getMember();
@@ -1000,12 +1000,12 @@ label_p1473:
       push(0=c:75);
       getMember();
       greater();
-    label_p4553:
+    l15_4553:
       not();
       not();
-      if(target=label_p4565);
-      next label_p4614;
-    label_p4565:
+      if(target=l15_4565);
+      next l15_4614;
+    l15_4565:
       push(0=0i32, 1=r:9, 2=c:97);
       callMethod();
       pop();
@@ -1015,8 +1015,8 @@ label_p1473:
       pop();
       push(0=r:5, 1=c:95, 2=r:11);
       setMember();
-      next label_p4490;
-    label_p4614:
+      next l15_4490;
+    l15_4614:
       push(0=r:4, 1=c:84, 2=r:9);
       setMember();
       end;
@@ -1024,7 +1024,7 @@ label_p1473:
   setMember();
   push(0=r:0, 1=c:98);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=6, parameters=[r:2=i:""]) {
-    label_p4645:
+    l16_4645:
       push(0=c:16);
       storeRegister(r:3);
       pop();
@@ -1037,7 +1037,7 @@ label_p1473:
       push(0=null);
       equals2();
       not();
-      if(target=label_p4773);
+      if(target=l16_4773);
       push(0=c:16, 1=r:2, 2=2i32, 3=c:2);
       getVariable();
       push(0=c:3);
@@ -1060,7 +1060,7 @@ label_p1473:
       callMethod();
       pop();
       end;
-    label_p4773:
+    l16_4773:
       push(0=c:16, 1=r:2, 2=2i32, 3=c:2);
       getVariable();
       push(0=c:3);
@@ -1083,7 +1083,7 @@ label_p1473:
   setMember();
   push(0=r:0, 1=c:101);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=3, parameters=[]) {
-    label_p4859:
+    l17_4859:
       push(0=c:2);
       getVariable();
       push(0=c:12);
@@ -1104,7 +1104,7 @@ label_p1473:
   setMember();
   push(0=r:0, 1=c:103);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=5, parameters=[r:2=i:""]) {
-    label_p4932:
+    l18_4932:
       push(0=c:18);
       getVariable();
       storeRegister(r:3);
@@ -1113,7 +1113,7 @@ label_p1473:
       getMember();
       not();
       not();
-      if(target=label_p6476);
+      if(target=l18_6476);
       push(0=r:3, 1=c:104, 2=true);
       setMember();
       push(0=c:26);
@@ -1140,16 +1140,16 @@ label_p1473:
       getMember();
       push(0=c:107);
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=4, parameters=[r:2=i:"",r:3=i:""]) {
-        label_p5054:
+        l19_5054:
           push(0=r:3, 1=0i32);
           greater();
           not();
           not();
-          if(target=label_p5082);
+          if(target=l19_5082);
           push(0=0i32);
           initArray();
           return;
-        label_p5082:
+        l19_5082:
           push(0=r:3, 1=r:2, 2=r:1, 3=3i32, 4=c:107);
           getVariable();
           push(0=c:108);
@@ -1163,7 +1163,7 @@ label_p1473:
       getMember();
       push(0=c:109);
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=4, parameters=[r:2=i:"",r:3=i:""]) {
-        label_p5139:
+        l20_5139:
           push(0=r:3, 1=0i32, 2=r:2, 3=r:1, 4=4i32, 5=c:107);
           getVariable();
           push(0=c:108);
@@ -1178,7 +1178,7 @@ label_p1473:
       getMember();
       push(0=c:110);
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=5, parameters=[r:2=i:""]) {
-        label_p5199:
+        l21_5199:
           push(0=0i32);
           storeRegister(r:3);
           pop();
@@ -1186,35 +1186,35 @@ label_p1473:
           getMember();
           storeRegister(r:4);
           pop();
-        label_p5225:
+        l21_5225:
           push(0=true);
           not();
-          if(target=label_p5319);
+          if(target=l21_5319);
           push(0=r:3, 1=r:4);
           less2();
           not();
           not();
-          if(target=label_p5256);
-          next label_p5319;
-        label_p5256:
+          if(target=l21_5256);
+          next l21_5319;
+        l21_5256:
           push(0=r:1, 1=r:3);
           getMember();
           push(0=r:2);
           equals2();
           not();
-          if(target=label_p5303);
+          if(target=l21_5303);
           push(0=1i32, 1=r:3, 2=2i32, 3=r:1, 4=c:107);
           callMethod();
           pop();
           push(0=true);
           return;
-        label_p5303:
+        l21_5303:
           push(0=r:3);
           increment();
           storeRegister(r:3);
           pop();
-          next label_p5225;
-        label_p5319:
+          next l21_5225;
+        l21_5319:
           push(0=false);
           return;
       };
@@ -1225,27 +1225,27 @@ label_p1473:
       getMember();
       push(0=c:111);
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=6, parameters=[r:2=i:"",r:3=i:""]) {
-        label_p5358:
+        l22_5358:
           push(0=r:1, 1=c:19);
           getMember();
           storeRegister(r:4);
           pop();
           push(0=r:3, 1=null);
           equals2();
-          if(target=label_p5398);
+          if(target=l22_5398);
           push(0=r:3);
           storeRegister(r:5);
           pop();
-          next label_p5411;
-        label_p5398:
+          next l22_5411;
+        l22_5398:
           push(0=0i32);
           storeRegister(r:5);
           pop();
-        label_p5411:
+        l22_5411:
           push(0=r:5, 1=0i32);
           less2();
           not();
-          if(target=label_p5471);
+          if(target=l22_5471);
           push(0=r:5, 1=r:4);
           add2();
           storeRegister(r:5);
@@ -1253,36 +1253,36 @@ label_p1473:
           push(0=r:5, 1=0i32);
           less2();
           not();
-          if(target=label_p5471);
+          if(target=l22_5471);
           push(0=0i32);
           storeRegister(r:5);
           pop();
-        label_p5471:
+        l22_5471:
           push(0=true);
           not();
-          if(target=label_p5544);
+          if(target=l22_5544);
           push(0=r:5, 1=r:4);
           less2();
           not();
           not();
-          if(target=label_p5502);
-          next label_p5544;
-        label_p5502:
+          if(target=l22_5502);
+          next l22_5544;
+        l22_5502:
           push(0=r:1, 1=r:5);
           getMember();
           push(0=r:2);
           equals2();
           not();
-          if(target=label_p5528);
+          if(target=l22_5528);
           push(0=r:5);
           return;
-        label_p5528:
+        l22_5528:
           push(0=r:5);
           increment();
           storeRegister(r:5);
           pop();
-          next label_p5471;
-        label_p5544:
+          next l22_5471;
+        l22_5544:
           push(0=-1i32);
           return;
       };
@@ -1293,70 +1293,70 @@ label_p1473:
       getMember();
       push(0=c:112);
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=6, parameters=[r:2=i:"",r:3=i:""]) {
-        label_p5586:
+        l23_5586:
           push(0=r:1, 1=c:19);
           getMember();
           storeRegister(r:4);
           pop();
           push(0=r:3, 1=null);
           equals2();
-          if(target=label_p5626);
+          if(target=l23_5626);
           push(0=r:3);
           storeRegister(r:5);
           pop();
-          next label_p5642;
-        label_p5626:
+          next l23_5642;
+        l23_5626:
           push(0=r:4, 1=1i32);
           subtract();
           storeRegister(r:5);
           pop();
-        label_p5642:
+        l23_5642:
           push(0=r:5, 1=r:4);
           less2();
           not();
-          if(target=label_p5691);
+          if(target=l23_5691);
           push(0=r:5, 1=0i32);
           less2();
           not();
-          if(target=label_p5686);
+          if(target=l23_5686);
           push(0=r:5, 1=r:4);
           add2();
           storeRegister(r:5);
           pop();
-        label_p5686:
-          next label_p5707;
-        label_p5691:
+        l23_5686:
+          next l23_5707;
+        l23_5691:
           push(0=r:4, 1=1i32);
           subtract();
           storeRegister(r:5);
           pop();
-        label_p5707:
+        l23_5707:
           push(0=true);
           not();
-          if(target=label_p5784);
+          if(target=l23_5784);
           push(0=r:5, 1=0i32);
           less2();
           not();
           not();
           not();
-          if(target=label_p5742);
-          next label_p5784;
-        label_p5742:
+          if(target=l23_5742);
+          next l23_5784;
+        l23_5742:
           push(0=r:1, 1=r:5);
           getMember();
           push(0=r:2);
           equals2();
           not();
-          if(target=label_p5768);
+          if(target=l23_5768);
           push(0=r:5);
           return;
-        label_p5768:
+        l23_5768:
           push(0=r:5);
           decrement();
           storeRegister(r:5);
           pop();
-          next label_p5707;
-        label_p5784:
+          next l23_5707;
+        l23_5784:
           push(0=-1i32);
           return;
       };
@@ -1367,10 +1367,10 @@ label_p1473:
       getMember();
       push(0=c:43);
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=2, parameters=[]) {
-        label_p5822:
+        l24_5822:
           push(0=c:113, 1=0i32, 2=c:114, 3=r:1, 4=c:44);
           defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=2, parameters=[]) {
-            label_p5849:
+            l25_5849:
               push(0=r:1, 1=c:113);
               getMember();
               push(0=r:1, 1=c:114);
@@ -1382,7 +1382,7 @@ label_p1473:
           };
           push(0=c:45);
           defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=2, parameters=[]) {
-            label_p5889:
+            l26_5889:
               push(0=r:1, 1=c:114);
               getMember();
               push(0=r:1);
@@ -1409,7 +1409,7 @@ label_p1473:
       getMember();
       push(0=c:115);
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=7, parameters=[r:2=i:""]) {
-        label_p5969:
+        l27_5969:
           push(0=0i32);
           initArray();
           storeRegister(r:3);
@@ -1421,17 +1421,17 @@ label_p1473:
           getMember();
           storeRegister(r:5);
           pop();
-        label_p6009:
+        l27_6009:
           push(0=true);
           not();
-          if(target=label_p6097);
+          if(target=l27_6097);
           push(0=r:4, 1=r:5);
           less2();
           not();
           not();
-          if(target=label_p6040);
-          next label_p6097;
-        label_p6040:
+          if(target=l27_6040);
+          next l27_6097;
+        l27_6040:
           push(0=r:1, 1=r:4);
           getMember();
           push(0=1i32, 1=r:2, 2=undefined);
@@ -1445,8 +1445,8 @@ label_p1473:
           increment();
           storeRegister(r:4);
           pop();
-          next label_p6009;
-        label_p6097:
+          next l27_6009;
+        l27_6097:
           push(0=r:3);
           return;
       };
@@ -1457,7 +1457,7 @@ label_p1473:
       getMember();
       push(0=c:116);
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=6, parameters=[r:2=i:""]) {
-        label_p6134:
+        l28_6134:
           push(0=0i32);
           initArray();
           storeRegister(r:3);
@@ -1469,35 +1469,35 @@ label_p1473:
           getMember();
           storeRegister(r:5);
           pop();
-        label_p6174:
+        l28_6174:
           push(0=true);
           not();
-          if(target=label_p6269);
+          if(target=l28_6269);
           push(0=r:4, 1=r:5);
           less2();
           not();
           not();
-          if(target=label_p6205);
-          next label_p6269;
-        label_p6205:
+          if(target=l28_6205);
+          next l28_6269;
+        l28_6205:
           push(0=r:1, 1=r:4);
           getMember();
           push(0=1i32, 1=r:2, 2=undefined);
           callMethod();
           not();
-          if(target=label_p6253);
+          if(target=l28_6253);
           push(0=r:1, 1=r:4);
           getMember();
           push(0=1i32, 1=r:3, 2=c:42);
           callMethod();
           pop();
-        label_p6253:
+        l28_6253:
           push(0=r:4);
           increment();
           storeRegister(r:4);
           pop();
-          next label_p6174;
-        label_p6269:
+          next l28_6174;
+        l28_6269:
           push(0=r:3);
           return;
       };
@@ -1531,7 +1531,7 @@ label_p1473:
       getMember();
       push(0=c:118);
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=4, parameters=[r:2=i:""]) {
-        label_p6385:
+        l29_6385:
           push(0=r:2, 1=1i32, 2=r:1, 3=c:119);
           callMethod();
           storeRegister(r:3);
@@ -1540,10 +1540,10 @@ label_p1473:
           greater();
           not();
           not();
-          if(target=label_p6428);
+          if(target=l29_6428);
           push(0=null);
           return;
-        label_p6428:
+        l29_6428:
           push(0=r:3);
           return;
       };
@@ -1555,13 +1555,13 @@ label_p1473:
       push(0=null);
       equals2();
       not();
-      if(target=label_p6476);
+      if(target=l18_6476);
       push(0=c:18);
       getVariable();
       push(0=c:2, 1=0i32);
       initObject();
       setMember();
-    label_p6476:
+    l18_6476:
       push(0=r:2, 1=c:2);
       getMember();
       push(0=c:12);
@@ -1637,17 +1637,17 @@ label_p1473:
   setMember();
   push(0=r:0, 1=c:13);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=4, parameters=[r:2=i:"",r:3=i:""]) {
-    label_p6749:
+    l31_6749:
       push(0=c:125, 1=r:2);
       add2();
       push(0=r:3, 1=null);
       equals2();
-      if(target=label_p6779);
+      if(target=l31_6779);
       push(0=r:3);
-      next label_p6784;
-    label_p6779:
+      next l31_6784;
+    l31_6779:
       push(0=c:16);
-    label_p6784:
+    l31_6784:
       getUrl2();
       end;
   };
@@ -1666,16 +1666,16 @@ label_p1473:
   getMember();
   storeRegister(r:2);
   enumerate2();
-label_p6836:
+l0_6836:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=label_p6868);
+  if(target=l0_6868);
   push(0=r:1, 1=r:0, 2=r:2, 3=r:0);
   getMember();
   setMember();
-  next label_p6836;
-label_p6868:
+  next l0_6836;
+l0_6868:
   pop();
   push(0=c:2);
   getVariable();
@@ -1691,16 +1691,16 @@ label_p6868:
   getMember();
   storeRegister(r:2);
   enumerate2();
-label_p6916:
+l0_6916:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=label_p6948);
+  if(target=l0_6948);
   push(0=r:1, 1=r:0, 2=r:2, 3=r:0);
   getMember();
   setMember();
-  next label_p6916;
-label_p6948:
+  next l0_6916;
+l0_6948:
   pop();
   push(0=c:2);
   getVariable();
@@ -1716,16 +1716,16 @@ label_p6948:
   getMember();
   storeRegister(r:2);
   enumerate2();
-label_p6996:
+l0_6996:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=label_p7028);
+  if(target=l0_7028);
   push(0=r:1, 1=r:0, 2=r:2, 3=r:0);
   getMember();
   setMember();
-  next label_p6996;
-label_p7028:
+  next l0_6996;
+l0_7028:
   pop();
   push(0=c:2);
   getVariable();
@@ -1741,16 +1741,16 @@ label_p7028:
   getMember();
   storeRegister(r:2);
   enumerate2();
-label_p7076:
+l0_7076:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=label_p7108);
+  if(target=l0_7108);
   push(0=r:1, 1=r:0, 2=r:2, 3=r:0);
   getMember();
   setMember();
-  next label_p7076;
-label_p7108:
+  next l0_7076;
+l0_7108:
   pop();
   push(0=c:2);
   getVariable();
@@ -1766,16 +1766,16 @@ label_p7108:
   getMember();
   storeRegister(r:2);
   enumerate2();
-label_p7156:
+l0_7156:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=label_p7188);
+  if(target=l0_7188);
   push(0=r:1, 1=r:0, 2=r:2, 3=r:0);
   getMember();
   setMember();
-  next label_p7156;
-label_p7188:
+  next l0_7156;
+l0_7188:
   pop();
   push(0=c:130, 1=0i32, 2=c:17);
   newObject();
@@ -1787,16 +1787,16 @@ label_p7188:
   getMember();
   storeRegister(r:2);
   enumerate2();
-label_p7224:
+l0_7224:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=label_p7256);
+  if(target=l0_7256);
   push(0=r:1, 1=r:0, 2=r:2, 3=r:0);
   getMember();
   setMember();
-  next label_p7224;
-label_p7256:
+  next l0_7224;
+l0_7256:
   pop();
   push(0=c:2);
   getVariable();
@@ -1839,7 +1839,7 @@ label_p7256:
   getVariable();
   push(0=c:136);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=3, parameters=[r:2=i:""]) {
-    label_p7401:
+    l32_7401:
       push(0=r:2, 1=1i32, 2=c:18);
       getVariable();
       push(0=c:136);
@@ -1851,7 +1851,7 @@ label_p7256:
   getVariable();
   push(0=c:137);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=3, parameters=[r:2=i:""]) {
-    label_p7446:
+    l33_7446:
       push(0=r:2, 1=1i32, 2=c:18);
       getVariable();
       push(0=c:137);
@@ -1996,7 +1996,7 @@ label_p7256:
   getMember();
   setMember();
   try {
-    label_p7963:
+    l1_7963:
       push(0=c:2);
       getVariable();
       push(0=c:3);
@@ -2016,7 +2016,7 @@ label_p7256:
       pop();
       end;
   } catch(r:0) {
-    label_p8028:
+    l2_8028:
       push(0=r:0, 1=1i32, 2=c:2);
       getVariable();
       push(0=c:3);

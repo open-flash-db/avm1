@@ -1,6 +1,6 @@
-label_p0:
+l0_0:
   defineFunction(name="f", parameters=[]) {
-    label_p9:
+    l1_9:
       push(0="ok");
       trace();
       end;

@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="foo");
   push(0="trace(c:0)");
   trace();

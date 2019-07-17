@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="properties", 1="", 2="not properties", 3="_accProps", 4="_lockroot", 5="_global", 6="_level", 7="_parent", 8="_root", 9="this", 10="scroll");
   push(0=c:0);
   trace();

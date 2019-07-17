@@ -1,33 +1,33 @@
-label_p0:
+l0_0:
   constantPool(0="before for + continue", 1="i", 2="in for + continue", 3="after for + continue");
   push(0=c:0);
   trace();
   push(0=c:1, 1=0f64);
   setVariable();
-label_p89:
+l0_89:
   push(0=c:1);
   getVariable();
   push(0=2i32);
   less2();
   not();
-  if(target=label_p161);
+  if(target=l0_161);
   push(0=c:1);
   getVariable();
   push(0=0f64);
   strictEquals();
   not();
-  if(target=label_p140);
-  next label_p146;
-label_p140:
+  if(target=l0_140);
+  next l0_146;
+l0_140:
   push(0=c:2);
   trace();
-label_p146:
+l0_146:
   push(0=c:1, 1=c:1);
   getVariable();
   increment();
   setVariable();
-  next label_p89;
-label_p161:
+  next l0_89;
+l0_161:
   push(0=c:3);
   trace();
   end;

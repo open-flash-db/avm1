@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="frame 5: binary operators", 1="four", 2="three");
   push(0=c:0);
   trace();

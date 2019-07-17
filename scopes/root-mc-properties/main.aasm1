@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="start", 1="_alpha=", 2="", 3="blendMode=", 4="blendMode", 5="cacheAsBitmap=", 6="cacheAsBitmap", 7="_currentFrame=", 8="end");
   push(0=c:0);
   trace();

@@ -1,35 +1,35 @@
-label_p0:
+l0_0:
   constantPool(0="before nested if/else", 1="test", 2="in nested if/else 1", 3="in nested if/else 2", 4="in nested if/else 3", 5="in nested if/else 4", 6="after nested if/else");
   push(0=c:0);
   trace();
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p185);
+  if(target=l0_185);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p174);
+  if(target=l0_174);
   push(0=c:2);
   trace();
-  next label_p180;
-label_p174:
+  next l0_180;
+l0_174:
   push(0=c:3);
   trace();
-label_p180:
-  next label_p214;
-label_p185:
+l0_180:
+  next l0_214;
+l0_185:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p208);
+  if(target=l0_208);
   push(0=c:4);
   trace();
-  next label_p214;
-label_p208:
+  next l0_214;
+l0_208:
   push(0=c:5);
   trace();
-label_p214:
+l0_214:
   push(0=c:6);
   trace();
   end;

@@ -1,7 +1,7 @@
-label_p0:
+l0_0:
   constantPool(0="main", 1="start", 2="before-call", 3="after-call", 4="end");
   defineFunction(name="main", parameters=[]) {
-    label_p55:
+    l1_55:
       push(0=c:0);
       trace();
       end;

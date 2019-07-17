@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="i", 1="decrement suffix", 2="decrement prefix", 3="a", 4="map");
   push(0=c:0);
   defineLocal2();
@@ -6,7 +6,7 @@ label_p0:
   trace();
   push(0=c:0, 1=5i32);
   setVariable();
-label_p70:
+l0_70:
   push(0=c:0);
   getVariable();
   push(0=c:0, 1=c:0);
@@ -16,12 +16,12 @@ label_p70:
   push(0=0f64);
   greater();
   not();
-  if(target=label_p117);
+  if(target=l0_117);
   push(0=c:0);
   getVariable();
   trace();
-  next label_p70;
-label_p117:
+  next l0_70;
+l0_117:
   push(0=c:0);
   getVariable();
   trace();
@@ -29,7 +29,7 @@ label_p117:
   trace();
   push(0=c:0, 1=5i32);
   setVariable();
-label_p141:
+l0_141:
   push(0=c:0, 1=c:0);
   getVariable();
   decrement();
@@ -38,18 +38,18 @@ label_p141:
   push(0=r:0, 1=0f64);
   greater();
   not();
-  if(target=label_p188);
+  if(target=l0_188);
   push(0=c:0);
   getVariable();
   trace();
-  next label_p141;
-label_p188:
+  next l0_141;
+l0_188:
   push(0=c:0);
   getVariable();
   trace();
   push(0=c:3);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=true, preloadThis=false, preloadGlobal=false, registerCount=2, parameters=[]) {
-    label_p211:
+    l1_211:
       push(0=undefined);
       storeRegister(r:1);
       pop();
@@ -58,7 +58,7 @@ label_p188:
       push(0=5i32);
       storeRegister(r:1);
       pop();
-    label_p239:
+    l1_239:
       push(0=r:1, 1=r:1);
       decrement();
       storeRegister(r:1);
@@ -66,11 +66,11 @@ label_p188:
       push(0=0f64);
       greater();
       not();
-      if(target=label_p282);
+      if(target=l1_282);
       push(0=r:1);
       trace();
-      next label_p239;
-    label_p282:
+      next l1_239;
+    l1_282:
       push(0=r:1);
       trace();
       push(0=c:2);
@@ -78,18 +78,18 @@ label_p188:
       push(0=5i32);
       storeRegister(r:1);
       pop();
-    label_p307:
+    l1_307:
       push(0=r:1);
       decrement();
       storeRegister(r:1);
       push(0=0f64);
       greater();
       not();
-      if(target=label_p347);
+      if(target=l1_347);
       push(0=r:1);
       trace();
-      next label_p307;
-    label_p347:
+      next l1_307;
+    l1_347:
       push(0=r:1);
       trace();
       end;
@@ -100,7 +100,7 @@ label_p188:
   defineLocal();
   push(0=c:1);
   trace();
-label_p379:
+l0_379:
   push(0=c:4);
   getVariable();
   push(0=c:0);
@@ -116,14 +116,14 @@ label_p379:
   push(0=0f64);
   greater();
   not();
-  if(target=label_p450);
+  if(target=l0_450);
   push(0=c:4);
   getVariable();
   push(0=c:0);
   getMember();
   trace();
-  next label_p379;
-label_p450:
+  next l0_379;
+l0_450:
   push(0=c:4);
   getVariable();
   push(0=c:0);
@@ -135,7 +135,7 @@ label_p450:
   getVariable();
   push(0=c:0, 1=5i32);
   setMember();
-label_p486:
+l0_486:
   push(0=c:4);
   getVariable();
   push(0=c:0, 1=c:4);
@@ -148,14 +148,14 @@ label_p486:
   push(0=r:0, 1=0f64);
   greater();
   not();
-  if(target=label_p551);
+  if(target=l0_551);
   push(0=c:4);
   getVariable();
   push(0=c:0);
   getMember();
   trace();
-  next label_p486;
-label_p551:
+  next l0_486;
+l0_551:
   push(0=c:4);
   getVariable();
   push(0=c:0);

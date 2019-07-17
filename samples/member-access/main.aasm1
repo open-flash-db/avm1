@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="frame 6: member access", 1="obj", 2="foo", 3="bar");
   push(0=c:0);
   trace();

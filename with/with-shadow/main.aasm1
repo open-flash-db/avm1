@@ -1,14 +1,14 @@
-label_p0:
+l0_0:
   constantPool(0="x", 1="o", 2="start", 3="shadow", 4="inner", 5="outer", 6="f", 7="no-shadow", 8="end");
   defineFunction(name="f", parameters=[i:"x",i:"o"]) {
-    label_p63:
+    l1_63:
       push(0=c:0);
       getVariable();
       trace();
       push(0=c:1);
       getVariable();
       with {
-        label_p81:
+        l2_81:
           push(0=c:0);
           getVariable();
           trace();

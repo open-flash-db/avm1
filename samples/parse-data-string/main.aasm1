@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="before parseDataString", 1="lproto", 2="parseDataString", 3="getStaticText", 4="showError", 5="length", 6="charAt", 7=" ", 8="\n", 9="", 10="	", 11="substr", 12="substring", 13="&", 14="split", 15="containerObject", 16="=", 17="$", 18="set", 19="gid", 20="*Z*p", 21="$gid", 22="get", 23="gkey", 24="5N2p", 25="$key", 26="families", 27="9t}[v", 28="$families", 29="$url", 30="loadVars", 31="prepareGame", 32="after parseDataString");
   push(0=c:0);
   trace();
@@ -6,11 +6,11 @@ label_p0:
   getVariable();
   push(0=c:2);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=10, parameters=[r:2=i:"str"]) {
-    label_p285:
+    l1_285:
       push(0=r:2, 1=null);
       equals2();
       not();
-      if(target=label_p335);
+      if(target=l1_335);
       push(0=64i32, 1=1i32, 2=r:1, 3=c:3);
       callMethod();
       push(0=1i32, 1=r:1, 2=c:4);
@@ -18,9 +18,9 @@ label_p0:
       pop();
       push(0=undefined);
       return;
-    label_p335:
+    l1_335:
       push(0=false);
-      if(target=label_p498);
+      if(target=l1_498);
       push(0=r:2, 1=c:5);
       getMember();
       push(0=1i32);
@@ -32,25 +32,25 @@ label_p0:
       push(0=r:3, 1=c:7);
       equals2();
       pushDuplicate();
-      if(target=label_p403);
+      if(target=l1_403);
       pop();
       push(0=r:3, 1=c:8);
       equals2();
-    label_p403:
+    l1_403:
       pushDuplicate();
-      if(target=label_p418);
+      if(target=l1_418);
       pop();
       push(0=r:3, 1=c:9);
       equals2();
-    label_p418:
+    l1_418:
       pushDuplicate();
-      if(target=label_p433);
+      if(target=l1_433);
       pop();
       push(0=r:3, 1=c:10);
       equals2();
-    label_p433:
+    l1_433:
       not();
-      if(target=label_p488);
+      if(target=l1_488);
       push(0=r:2, 1=c:5);
       getMember();
       push(0=1i32);
@@ -59,11 +59,11 @@ label_p0:
       callMethod();
       storeRegister(r:2);
       pop();
-      next label_p335;
-    label_p488:
-    label_p498:
+      next l1_335;
+    l1_488:
+    l1_498:
       push(0=false);
-      if(target=label_p632);
+      if(target=l1_632);
       push(0=0f64, 1=1i32, 2=r:2, 3=c:6);
       callMethod();
       storeRegister(r:4);
@@ -71,32 +71,32 @@ label_p0:
       push(0=r:4, 1=c:7);
       equals2();
       pushDuplicate();
-      if(target=label_p558);
+      if(target=l1_558);
       pop();
       push(0=r:4, 1=c:8);
       equals2();
-    label_p558:
+    l1_558:
       pushDuplicate();
-      if(target=label_p573);
+      if(target=l1_573);
       pop();
       push(0=r:4, 1=c:9);
       equals2();
-    label_p573:
+    l1_573:
       pushDuplicate();
-      if(target=label_p588);
+      if(target=l1_588);
       pop();
       push(0=r:4, 1=c:10);
       equals2();
-    label_p588:
+    l1_588:
       not();
-      if(target=label_p622);
+      if(target=l1_622);
       push(0=1i32, 1=1i32, 2=r:2, 3=c:12);
       callMethod();
       storeRegister(r:2);
       pop();
-      next label_p498;
-    label_p622:
-    label_p632:
+      next l1_498;
+    l1_622:
+    l1_632:
       push(0=c:13, 1=1i32, 2=r:2, 3=c:14);
       callMethod();
       storeRegister(r:8);
@@ -112,11 +112,11 @@ label_p0:
       getMember();
       storeRegister(r:7);
       pop();
-    label_p702:
+    l1_702:
       push(0=r:5, 1=r:7);
       less2();
       not();
-      if(target=label_p824);
+      if(target=l1_824);
       push(0=c:16, 1=1i32, 2=r:8, 3=r:5);
       getMember();
       push(0=c:14);
@@ -128,7 +128,7 @@ label_p0:
       push(0=2i32);
       equals2();
       not();
-      if(target=label_p808);
+      if(target=l1_808);
       push(0=r:6, 1=1i32);
       getMember();
       push(0=c:17, 1=r:6, 2=0f64);
@@ -137,13 +137,13 @@ label_p0:
       push(0=2i32, 1=r:9, 2=c:18);
       callMethod();
       pop();
-    label_p808:
+    l1_808:
       push(0=r:5);
       increment();
       storeRegister(r:5);
       pop();
-      next label_p702;
-    label_p824:
+      next l1_702;
+    l1_824:
       push(0=r:1, 1=c:19, 2=r:1, 3=c:20, 4=c:21, 5=1i32, 6=r:9, 7=c:22);
       callMethod();
       storeRegister(r:0);
@@ -167,15 +167,15 @@ label_p0:
       push(0=null);
       equals2();
       pushDuplicate();
-      if(target=label_p959);
+      if(target=l1_959);
       pop();
       push(0=r:1, 1=c:23);
       getMember();
       push(0=null);
       equals2();
-    label_p959:
+    l1_959:
       not();
-      if(target=label_p999);
+      if(target=l1_999);
       push(0=c:29, 1=1i32, 2=r:9, 3=c:22);
       callMethod();
       push(0=1i32, 1=r:1, 2=c:30);
@@ -183,7 +183,7 @@ label_p0:
       pop();
       push(0=undefined);
       return;
-    label_p999:
+    l1_999:
       push(0=0f64, 1=r:1, 2=c:31);
       callMethod();
       pop();

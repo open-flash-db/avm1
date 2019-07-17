@@ -1,7 +1,7 @@
-label_p0:
+l0_0:
   constantPool(0="x", 1="y", 2="start", 3="p", 4="Point", 5="end");
   defineFunction2(name="Point", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=4, parameters=[r:3=i:"x",r:2=i:"y"]) {
-    label_p49:
+    l1_49:
       push(0=r:1, 1=c:0, 2=r:3);
       setMember();
       push(0=r:1, 1=c:1, 2=r:2);

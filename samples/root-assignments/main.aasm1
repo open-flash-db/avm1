@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="frame 1: frame assignments", 1="varAssignment", 2="scopeAssignment", 3="this", 4="thisAssignment");
   push(0=c:0);
   trace();

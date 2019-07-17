@@ -1,18 +1,18 @@
-label_p0:
+l0_0:
   push(0="before try/catch");
   trace();
   try {
-    label_p36:
+    l1_36:
       push(0="in try");
       trace();
-      next label_p67;
+      next l0_67;
   } catch(i:"err") {
-    label_p53:
+    l2_53:
       push(0="in catch");
       trace();
-      next label_p67;
+      next l0_67;
   }
-label_p67:
+l0_67:
   push(0="after try/catch");
   trace();
   end;

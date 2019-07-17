@@ -1,18 +1,18 @@
-label_p0:
+l0_0:
   constantPool(0="before nested if", 1="test", 2="in nested if", 3="after nested if");
   push(0=c:0);
   trace();
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p92);
+  if(target=l0_92);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p92);
+  if(target=l0_92);
   push(0=c:2);
   trace();
-label_p92:
+l0_92:
   push(0=c:3);
   trace();
   end;

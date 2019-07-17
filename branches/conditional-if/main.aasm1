@@ -1,13 +1,13 @@
-label_p0:
+l0_0:
   push(0="before if");
   trace();
   push(0="test");
   getVariable();
   not();
-  if(target=label_p42);
+  if(target=l0_42);
   push(0="in if");
   trace();
-label_p42:
+l0_42:
   push(0="after if");
   trace();
   end;

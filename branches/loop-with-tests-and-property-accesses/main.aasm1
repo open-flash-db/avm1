@@ -1,34 +1,34 @@
-label_p0:
+l0_0:
   constantPool(0="before while(if/else if/else if/else)", 1="map", 2="foo", 3="bar", 4="test2", 5="test", 6="in if", 7="in else if", 8="in else", 9="i", 10="after while(if/else if/else if/else)");
   push(0=c:0);
   trace();
   push(0=c:1, 1=c:2, 2=1i32, 3=c:3, 4=2i32, 5=2i32);
   initObject();
   defineLocal();
-label_p162:
+l0_162:
   push(0=c:4);
   getVariable();
   not();
-  if(target=label_p267);
+  if(target=l0_267);
   push(0=c:5);
   getVariable();
   not();
-  if(target=label_p197);
+  if(target=l0_197);
   push(0=c:6);
   trace();
-  next label_p226;
-label_p197:
+  next l0_226;
+l0_197:
   push(0=c:5);
   getVariable();
   not();
-  if(target=label_p220);
+  if(target=l0_220);
   push(0=c:7);
   trace();
-  next label_p226;
-label_p220:
+  next l0_226;
+l0_220:
   push(0=c:8);
   trace();
-label_p226:
+l0_226:
   push(0=c:1);
   getVariable();
   push(0=c:2);
@@ -43,8 +43,8 @@ label_p226:
   push(0=c:3);
   getMember();
   trace();
-  next label_p162;
-label_p267:
+  next l0_162;
+l0_267:
   push(0=c:10);
   trace();
   end;

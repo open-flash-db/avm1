@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="frame 3: conditionnal statements", 1="test", 2="before if", 3="in if", 4="after if", 5="before if/else", 6="in else", 7="after if/else", 8="before nested if", 9="in nested if", 10="after nested if", 11="test2", 12="before nested if/else", 13="in nested if/else 1", 14="in nested if/else 2", 15="in nested if/else 3", 16="in nested if/else 4", 17="before conditionnal expression", 18="foo", 19="baz", 20="bar", 21="after conditionnal expression");
   push(0=c:0);
   trace();
@@ -9,10 +9,10 @@ label_p0:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p370);
+  if(target=l0_370);
   push(0=c:3);
   trace();
-label_p370:
+l0_370:
   push(0=c:4);
   trace();
   push(0=c:5);
@@ -20,14 +20,14 @@ label_p370:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p405);
+  if(target=l0_405);
   push(0=c:3);
   trace();
-  next label_p411;
-label_p405:
+  next l0_411;
+l0_405:
   push(0=c:6);
   trace();
-label_p411:
+l0_411:
   push(0=c:7);
   trace();
   push(0=c:1, 1=true);
@@ -37,14 +37,14 @@ label_p411:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p461);
+  if(target=l0_461);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p461);
+  if(target=l0_461);
   push(0=c:9);
   trace();
-label_p461:
+l0_461:
   push(0=c:10);
   trace();
   push(0=c:11, 1=false);
@@ -54,43 +54,43 @@ label_p461:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p527);
+  if(target=l0_527);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p516);
+  if(target=l0_516);
   push(0=c:13);
   trace();
-  next label_p522;
-label_p516:
+  next l0_522;
+l0_516:
   push(0=c:14);
   trace();
-label_p522:
-  next label_p556;
-label_p527:
+l0_522:
+  next l0_556;
+l0_527:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p550);
+  if(target=l0_550);
   push(0=c:15);
   trace();
-  next label_p556;
-label_p550:
+  next l0_556;
+l0_550:
   push(0=c:16);
   trace();
-label_p556:
+l0_556:
   push(0=c:10);
   trace();
   push(0=c:17);
   trace();
   push(0=c:18, 1=c:1);
   getVariable();
-  if(target=label_p591);
+  if(target=l0_591);
   push(0=c:19);
-  next label_p596;
-label_p591:
+  next l0_596;
+l0_591:
   push(0=c:20);
-label_p596:
+l0_596:
   defineLocal();
   push(0=c:21);
   trace();

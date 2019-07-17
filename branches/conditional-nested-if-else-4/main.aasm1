@@ -1,137 +1,137 @@
-label_p0:
+l0_0:
   constantPool(0="before hyper-nested if/else", 1="test", 2="in hyper-nested if/else 1111", 3="in hyper-nested if/else 1110", 4="in hyper-nested if/else 1101", 5="in hyper-nested if/else 1100", 6="in hyper-nested if/else 1011", 7="in hyper-nested if/else 1010", 8="in hyper-nested if/else 1001", 9="in hyper-nested if/else 1000", 10="in hyper-nested if/else 0111", 11="in hyper-nested if/else 0110", 12="in hyper-nested if/else 0101", 13="in hyper-nested if/else 0100", 14="in hyper-nested if/else 0011", 15="in hyper-nested if/else 0010", 16="in hyper-nested if/else 0001", 17="in hyper-nested if/else 0000", 18="after hyper-nested if/else");
   push(0=c:0);
   trace();
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p719);
+  if(target=l0_719);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p639);
+  if(target=l0_639);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p605);
+  if(target=l0_605);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p594);
+  if(target=l0_594);
   push(0=c:2);
   trace();
-  next label_p600;
-label_p594:
+  next l0_600;
+l0_594:
   push(0=c:3);
   trace();
-label_p600:
-  next label_p634;
-label_p605:
+l0_600:
+  next l0_634;
+l0_605:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p628);
+  if(target=l0_628);
   push(0=c:4);
   trace();
-  next label_p634;
-label_p628:
+  next l0_634;
+l0_628:
   push(0=c:5);
   trace();
-label_p634:
-  next label_p714;
-label_p639:
+l0_634:
+  next l0_714;
+l0_639:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p685);
+  if(target=l0_685);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p674);
+  if(target=l0_674);
   push(0=c:6);
   trace();
-  next label_p680;
-label_p674:
+  next l0_680;
+l0_674:
   push(0=c:7);
   trace();
-label_p680:
-  next label_p714;
-label_p685:
+l0_680:
+  next l0_714;
+l0_685:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p708);
+  if(target=l0_708);
   push(0=c:8);
   trace();
-  next label_p714;
-label_p708:
+  next l0_714;
+l0_708:
   push(0=c:9);
   trace();
-label_p714:
-  next label_p886;
-label_p719:
+l0_714:
+  next l0_886;
+l0_719:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p811);
+  if(target=l0_811);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p777);
+  if(target=l0_777);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p766);
+  if(target=l0_766);
   push(0=c:10);
   trace();
-  next label_p772;
-label_p766:
+  next l0_772;
+l0_766:
   push(0=c:11);
   trace();
-label_p772:
-  next label_p806;
-label_p777:
+l0_772:
+  next l0_806;
+l0_777:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p800);
+  if(target=l0_800);
   push(0=c:12);
   trace();
-  next label_p806;
-label_p800:
+  next l0_806;
+l0_800:
   push(0=c:13);
   trace();
-label_p806:
-  next label_p886;
-label_p811:
+l0_806:
+  next l0_886;
+l0_811:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p857);
+  if(target=l0_857);
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p846);
+  if(target=l0_846);
   push(0=c:14);
   trace();
-  next label_p852;
-label_p846:
+  next l0_852;
+l0_846:
   push(0=c:15);
   trace();
-label_p852:
-  next label_p886;
-label_p857:
+l0_852:
+  next l0_886;
+l0_857:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p880);
+  if(target=l0_880);
   push(0=c:16);
   trace();
-  next label_p886;
-label_p880:
+  next l0_886;
+l0_880:
   push(0=c:17);
   trace();
-label_p886:
+l0_886:
   push(0=c:18);
   trace();
   end;

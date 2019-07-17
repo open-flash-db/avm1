@@ -1,9 +1,9 @@
-label_p0:
+l0_0:
   push(0="start");
   trace();
   push(0=301990553i32, 1="");
-label_p15:
-label_p38:
+l0_15:
+l0_38:
   push(0="end");
   trace();
   end;

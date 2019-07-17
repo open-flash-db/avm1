@@ -1,24 +1,24 @@
-label_p0:
+l0_0:
   constantPool(0="i", 1="before while", 2="in while", 3="after while");
   push(0=c:0, 1=0f64);
   setVariable();
   push(0=c:1);
   trace();
-label_p62:
+l0_62:
   push(0=c:0);
   getVariable();
   push(0=2i32);
   less2();
   not();
-  if(target=label_p104);
+  if(target=l0_104);
   push(0=c:2);
   trace();
   push(0=c:0, 1=c:0);
   getVariable();
   increment();
   setVariable();
-  next label_p62;
-label_p104:
+  next l0_62;
+l0_104:
   push(0=c:3);
   trace();
   end;

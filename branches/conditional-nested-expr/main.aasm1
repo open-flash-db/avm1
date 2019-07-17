@@ -1,21 +1,21 @@
-label_p0:
+l0_0:
   push(0="before nested conditionnal expression");
   trace();
   push(0="foo", 1="test");
   getVariable();
-  if(target=label_p105);
+  if(target=l0_105);
   push(0="test2");
   getVariable();
-  if(target=label_p92);
+  if(target=l0_92);
   push(0="fuz");
-  next label_p100;
-label_p92:
+  next l0_100;
+l0_92:
   push(0="baz");
-label_p100:
-  next label_p113;
-label_p105:
+l0_100:
+  next l0_113;
+l0_105:
   push(0="bar");
-label_p113:
+l0_113:
   defineLocal();
   push(0="after nested conditionnal expression");
   trace();

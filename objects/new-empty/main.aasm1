@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="start", 1="empty", 2="Empty", 3="end");
   defineFunction(name="Empty", parameters=[]) {
   };

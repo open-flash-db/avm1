@@ -1,29 +1,29 @@
-label_p0:
+l0_0:
   push(0="before LOGICAL OR");
   trace();
   push(0="test");
   getVariable();
   pushDuplicate();
-  if(target=label_p51);
+  if(target=l0_51);
   pop();
   push(0="test2");
   getVariable();
-label_p51:
+l0_51:
   pushDuplicate();
-  if(target=label_p69);
+  if(target=l0_69);
   pop();
   push(0="test3");
   getVariable();
-label_p69:
+l0_69:
   not();
-  if(target=label_p96);
+  if(target=l0_96);
   push(0="in if + or");
   trace();
-  next label_p114;
-label_p96:
+  next l0_114;
+l0_96:
   push(0="in else + or");
   trace();
-label_p114:
+l0_114:
   push(0="after LOGICAL OR");
   trace();
   end;

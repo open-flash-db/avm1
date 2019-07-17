@@ -1,34 +1,34 @@
-label_p0:
+l0_0:
   constantPool(0="before if/else if/else if/else", 1="test", 2="in if", 3="in else if", 4="in else if (2)", 5="in else", 6="after if/else if/else if/else");
   push(0=c:0);
   trace();
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p140);
+  if(target=l0_140);
   push(0=c:2);
   trace();
-  next label_p192;
-label_p140:
+  next l0_192;
+l0_140:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p163);
+  if(target=l0_163);
   push(0=c:3);
   trace();
-  next label_p192;
-label_p163:
+  next l0_192;
+l0_163:
   push(0=c:1);
   getVariable();
   not();
-  if(target=label_p186);
+  if(target=l0_186);
   push(0=c:4);
   trace();
-  next label_p192;
-label_p186:
+  next l0_192;
+l0_186:
   push(0=c:5);
   trace();
-label_p192:
+l0_192:
   push(0=c:6);
   trace();
   end;

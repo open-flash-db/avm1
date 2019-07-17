@@ -1,4 +1,4 @@
-label_p0:
+l0_0:
   constantPool(0="frame 9: update expressions", 1="i", 2="after increment", 3="after prefixed increment", 4="after decrement", 5="after prefixed decrement", 6="j", 7="after increment + assignment", 8="after prefixed increment + assignment", 9="after decrement + assignment", 10="after prefixed decrement + assignment");
   push(0=c:0);
   trace();
