@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "try",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "define-function",
@@ -12,7 +12,7 @@
             "blocks": [
               {
                 "type": "simple",
-                "label": "label_p9",
+                "label": "l3_9",
                 "actions": [
                   {
                     "action": "push",
@@ -49,7 +49,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p40",
+            "label": "l1_40",
             "actions": [
               {
                 "action": "push",
@@ -83,7 +83,7 @@
                 "action": "trace"
               }
             ],
-            "next": "label_p65"
+            "next": "l0_65"
           }
         ]
       },
@@ -91,7 +91,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p65",
+            "label": "l2_65",
             "actions": [
               {
                 "action": "push",
@@ -121,7 +121,7 @@
                 "action": "trace"
               }
             ],
-            "next": "label_p85"
+            "next": "l0_85"
           }
         ]
       },
@@ -132,7 +132,7 @@
     },
     {
       "type": "simple",
-      "label": "label_p65",
+      "label": "l0_65",
       "actions": [
         {
           "action": "push",
@@ -162,11 +162,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p85"
+      "next": "l0_85"
     },
     {
       "type": "simple",
-      "label": "label_p85",
+      "label": "l0_85",
       "actions": [
         {
           "action": "push",

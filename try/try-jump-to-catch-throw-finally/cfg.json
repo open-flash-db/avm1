@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "try",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "define-function",
@@ -12,7 +12,7 @@
             "blocks": [
               {
                 "type": "throw",
-                "label": "label_p9",
+                "label": "l4_9",
                 "actions": [
                   {
                     "action": "push",
@@ -57,7 +57,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p56",
+            "label": "l1_56",
             "actions": [
               {
                 "action": "push",
@@ -72,7 +72,7 @@
                 "action": "trace"
               }
             ],
-            "next": "label_p73"
+            "next": "l0_73"
           }
         ]
       },
@@ -80,7 +80,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p73",
+            "label": "l2_73",
             "actions": [
               {
                 "action": "push",
@@ -114,7 +114,7 @@
                 "action": "pop"
               }
             ],
-            "next": "label_p100"
+            "next": "l3_100"
           }
         ]
       },
@@ -126,7 +126,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p100",
+            "label": "l3_100",
             "actions": [
               {
                 "action": "push",
@@ -141,14 +141,14 @@
                 "action": "trace"
               }
             ],
-            "next": "label_p116"
+            "next": "l0_116"
           }
         ]
       }
     },
     {
       "type": "simple",
-      "label": "label_p73",
+      "label": "l0_73",
       "actions": [
         {
           "action": "push",
@@ -194,11 +194,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p116"
+      "next": "l0_116"
     },
     {
       "type": "simple",
-      "label": "label_p116",
+      "label": "l0_116",
       "actions": [
         {
           "action": "push",

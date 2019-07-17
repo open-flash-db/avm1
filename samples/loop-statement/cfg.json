@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -80,11 +80,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p478"
+      "next": "l0_478"
     },
     {
       "type": "simple",
-      "label": "label_p478",
+      "label": "l0_478",
       "actions": [
         {
           "action": "push",
@@ -115,7 +115,7 @@
         },
         {
           "action": "if",
-          "target": "label_p520"
+          "target": "l0_520"
         },
         {
           "action": "push",
@@ -152,11 +152,11 @@
           "action": "set-variable"
         }
       ],
-      "next": "label_p478"
+      "next": "l0_478"
     },
     {
       "type": "simple",
-      "label": "label_p520",
+      "label": "l0_520",
       "actions": [
         {
           "action": "push",
@@ -199,11 +199,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p547"
+      "next": "l0_547"
     },
     {
       "type": "simple",
-      "label": "label_p547",
+      "label": "l0_547",
       "actions": [
         {
           "action": "push",
@@ -265,7 +265,7 @@
         },
         {
           "action": "if",
-          "target": "label_p547"
+          "target": "l0_547"
         },
         {
           "action": "push",
@@ -308,11 +308,11 @@
           "action": "set-variable"
         }
       ],
-      "next": "label_p610"
+      "next": "l0_610"
     },
     {
       "type": "simple",
-      "label": "label_p610",
+      "label": "l0_610",
       "actions": [
         {
           "action": "push",
@@ -343,7 +343,7 @@
         },
         {
           "action": "if",
-          "target": "label_p652"
+          "target": "l0_652"
         },
         {
           "action": "push",
@@ -380,11 +380,11 @@
           "action": "set-variable"
         }
       ],
-      "next": "label_p610"
+      "next": "l0_610"
     },
     {
       "type": "simple",
-      "label": "label_p652",
+      "label": "l0_652",
       "actions": [
         {
           "action": "push",
@@ -461,11 +461,11 @@
           "action": "enumerate2"
         }
       ],
-      "next": "label_p697"
+      "next": "l0_697"
     },
     {
       "type": "simple",
-      "label": "label_p697",
+      "label": "l0_697",
       "actions": [
         {
           "action": "store-register",
@@ -484,7 +484,7 @@
         },
         {
           "action": "if",
-          "target": "label_p730"
+          "target": "l0_730"
         },
         {
           "action": "push",
@@ -515,11 +515,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p697"
+      "next": "l0_697"
     },
     {
       "type": "simple",
-      "label": "label_p730",
+      "label": "l0_730",
       "actions": [
         {
           "action": "push",
@@ -562,11 +562,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p757"
+      "next": "l0_757"
     },
     {
       "type": "simple",
-      "label": "label_p757",
+      "label": "l0_757",
       "actions": [
         {
           "action": "push",
@@ -597,7 +597,7 @@
         },
         {
           "action": "if",
-          "target": "label_p826"
+          "target": "l0_826"
         },
         {
           "action": "push",
@@ -665,20 +665,20 @@
         },
         {
           "action": "if",
-          "target": "label_p821"
+          "target": "l0_821"
         }
       ],
-      "next": "label_p826"
+      "next": "l0_826"
     },
     {
       "type": "simple",
-      "label": "label_p821",
+      "label": "l0_821",
       "actions": [],
-      "next": "label_p757"
+      "next": "l0_757"
     },
     {
       "type": "simple",
-      "label": "label_p826",
+      "label": "l0_826",
       "actions": [
         {
           "action": "push",
@@ -721,11 +721,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p853"
+      "next": "l0_853"
     },
     {
       "type": "simple",
-      "label": "label_p853",
+      "label": "l0_853",
       "actions": [
         {
           "action": "push",
@@ -738,7 +738,7 @@
         },
         {
           "action": "if",
-          "target": "label_p911"
+          "target": "l0_911"
         },
         {
           "action": "push",
@@ -806,20 +806,20 @@
         },
         {
           "action": "if",
-          "target": "label_p906"
+          "target": "l0_906"
         }
       ],
-      "next": "label_p911"
+      "next": "l0_911"
     },
     {
       "type": "simple",
-      "label": "label_p906",
+      "label": "l0_906",
       "actions": [],
-      "next": "label_p853"
+      "next": "l0_853"
     },
     {
       "type": "simple",
-      "label": "label_p911",
+      "label": "l0_911",
       "actions": [
         {
           "action": "push",
@@ -862,11 +862,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p938"
+      "next": "l0_938"
     },
     {
       "type": "simple",
-      "label": "label_p938",
+      "label": "l0_938",
       "actions": [
         {
           "action": "push",
@@ -943,20 +943,20 @@
         },
         {
           "action": "if",
-          "target": "label_p989"
+          "target": "l0_989"
         }
       ],
-      "next": "label_p994"
+      "next": "l0_994"
     },
     {
       "type": "simple",
-      "label": "label_p989",
+      "label": "l0_989",
       "actions": [],
-      "next": "label_p938"
+      "next": "l0_938"
     },
     {
       "type": "simple",
-      "label": "label_p994",
+      "label": "l0_994",
       "actions": [
         {
           "action": "push",
@@ -999,11 +999,11 @@
           "action": "set-variable"
         }
       ],
-      "next": "label_p1021"
+      "next": "l0_1021"
     },
     {
       "type": "simple",
-      "label": "label_p1021",
+      "label": "l0_1021",
       "actions": [
         {
           "action": "push",
@@ -1034,7 +1034,7 @@
         },
         {
           "action": "if",
-          "target": "label_p1093"
+          "target": "l0_1093"
         },
         {
           "action": "push",
@@ -1065,14 +1065,14 @@
         },
         {
           "action": "if",
-          "target": "label_p1072"
+          "target": "l0_1072"
         }
       ],
-      "next": "label_p1078"
+      "next": "l0_1078"
     },
     {
       "type": "simple",
-      "label": "label_p1072",
+      "label": "l0_1072",
       "actions": [
         {
           "action": "push",
@@ -1087,11 +1087,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p1078"
+      "next": "l0_1078"
     },
     {
       "type": "simple",
-      "label": "label_p1078",
+      "label": "l0_1078",
       "actions": [
         {
           "action": "push",
@@ -1116,11 +1116,11 @@
           "action": "set-variable"
         }
       ],
-      "next": "label_p1021"
+      "next": "l0_1021"
     },
     {
       "type": "simple",
-      "label": "label_p1093",
+      "label": "l0_1093",
       "actions": [
         {
           "action": "push",

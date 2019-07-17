@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "push",
@@ -46,7 +46,7 @@
         },
         {
           "action": "if",
-          "target": "label_p145"
+          "target": "l0_145"
         },
         {
           "action": "push",
@@ -66,7 +66,7 @@
         },
         {
           "action": "if",
-          "target": "label_p157"
+          "target": "l0_157"
         },
         {
           "action": "push",
@@ -86,7 +86,7 @@
         },
         {
           "action": "if",
-          "target": "label_p179"
+          "target": "l0_179"
         },
         {
           "action": "push",
@@ -106,7 +106,7 @@
         },
         {
           "action": "if",
-          "target": "label_p196"
+          "target": "l0_196"
         },
         {
           "action": "push",
@@ -126,7 +126,7 @@
         },
         {
           "action": "if",
-          "target": "label_p196"
+          "target": "l0_196"
         },
         {
           "action": "push",
@@ -146,14 +146,14 @@
         },
         {
           "action": "if",
-          "target": "label_p218"
+          "target": "l0_218"
         }
       ],
-      "next": "label_p235"
+      "next": "l0_235"
     },
     {
       "type": "simple",
-      "label": "label_p145",
+      "label": "l0_145",
       "actions": [
         {
           "action": "push",
@@ -168,11 +168,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p157"
+      "next": "l0_157"
     },
     {
       "type": "simple",
-      "label": "label_p157",
+      "label": "l0_157",
       "actions": [
         {
           "action": "push",
@@ -187,11 +187,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p235"
+      "next": "l0_235"
     },
     {
       "type": "simple",
-      "label": "label_p179",
+      "label": "l0_179",
       "actions": [
         {
           "action": "push",
@@ -206,11 +206,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p235"
+      "next": "l0_235"
     },
     {
       "type": "simple",
-      "label": "label_p196",
+      "label": "l0_196",
       "actions": [
         {
           "action": "push",
@@ -225,11 +225,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p235"
+      "next": "l0_235"
     },
     {
       "type": "simple",
-      "label": "label_p218",
+      "label": "l0_218",
       "actions": [
         {
           "action": "push",
@@ -244,11 +244,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p235"
+      "next": "l0_235"
     },
     {
       "type": "simple",
-      "label": "label_p235",
+      "label": "l0_235",
       "actions": [
         {
           "action": "push",

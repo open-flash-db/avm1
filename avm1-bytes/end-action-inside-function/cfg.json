@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "define-function",
@@ -12,7 +12,7 @@
             "blocks": [
               {
                 "type": "simple",
-                "label": "label_p9",
+                "label": "l1_9",
                 "actions": [
                   {
                     "action": "push",

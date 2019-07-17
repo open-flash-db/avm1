@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "push",
@@ -30,17 +30,17 @@
           ]
         }
       ],
-      "next": "label_p15"
+      "next": "l0_15"
     },
     {
       "type": "simple",
-      "label": "label_p15",
+      "label": "l0_15",
       "actions": [],
-      "next": "label_p38"
+      "next": "l0_38"
     },
     {
       "type": "simple",
-      "label": "label_p38",
+      "label": "l0_38",
       "actions": [
         {
           "action": "push",

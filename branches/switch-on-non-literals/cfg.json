@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -75,7 +75,7 @@
         },
         {
           "action": "if",
-          "target": "label_p205"
+          "target": "l0_205"
         },
         {
           "action": "push",
@@ -95,7 +95,7 @@
         },
         {
           "action": "if",
-          "target": "label_p211"
+          "target": "l0_211"
         },
         {
           "action": "push",
@@ -134,14 +134,14 @@
         },
         {
           "action": "if",
-          "target": "label_p222"
+          "target": "l0_222"
         }
       ],
-      "next": "label_p233"
+      "next": "l0_233"
     },
     {
       "type": "simple",
-      "label": "label_p205",
+      "label": "l0_205",
       "actions": [
         {
           "action": "push",
@@ -156,11 +156,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p211"
+      "next": "l0_211"
     },
     {
       "type": "simple",
-      "label": "label_p211",
+      "label": "l0_211",
       "actions": [
         {
           "action": "push",
@@ -175,11 +175,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p239"
+      "next": "l0_239"
     },
     {
       "type": "simple",
-      "label": "label_p222",
+      "label": "l0_222",
       "actions": [
         {
           "action": "push",
@@ -194,11 +194,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p239"
+      "next": "l0_239"
     },
     {
       "type": "simple",
-      "label": "label_p233",
+      "label": "l0_233",
       "actions": [
         {
           "action": "push",
@@ -213,11 +213,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p239"
+      "next": "l0_239"
     },
     {
       "type": "simple",
-      "label": "label_p239",
+      "label": "l0_239",
       "actions": [
         {
           "action": "push",

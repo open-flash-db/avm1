@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "try",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "define-function",
@@ -12,7 +12,7 @@
             "blocks": [
               {
                 "type": "simple",
-                "label": "label_p9",
+                "label": "l3_9",
                 "actions": [
                   {
                     "action": "push",
@@ -49,7 +49,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p40",
+            "label": "l1_40",
             "actions": [
               {
                 "action": "push",
@@ -83,7 +83,7 @@
                 "action": "trace"
               }
             ],
-            "next": "label_p94"
+            "next": "l0_94"
           }
         ]
       },
@@ -91,7 +91,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p74",
+            "label": "l2_74",
             "actions": [
               {
                 "action": "push",
@@ -121,7 +121,7 @@
                 "action": "trace"
               }
             ],
-            "next": "label_p94"
+            "next": "l0_94"
           }
         ]
       },
@@ -132,7 +132,7 @@
     },
     {
       "type": "simple",
-      "label": "label_p94",
+      "label": "l0_94",
       "actions": [
         {
           "action": "push",

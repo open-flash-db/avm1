@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -79,11 +79,11 @@
           "action": "enumerate2"
         }
       ],
-      "next": "label_p97"
+      "next": "l0_97"
     },
     {
       "type": "simple",
-      "label": "label_p97",
+      "label": "l0_97",
       "actions": [
         {
           "action": "store-register",
@@ -102,7 +102,7 @@
         },
         {
           "action": "if",
-          "target": "label_p130"
+          "target": "l0_130"
         },
         {
           "action": "push",
@@ -133,11 +133,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p97"
+      "next": "l0_97"
     },
     {
       "type": "simple",
-      "label": "label_p130",
+      "label": "l0_130",
       "actions": [
         {
           "action": "push",

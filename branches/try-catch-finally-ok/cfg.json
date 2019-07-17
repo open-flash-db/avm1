@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "try",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "push",
@@ -21,7 +21,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p44",
+            "label": "l1_44",
             "actions": [
               {
                 "action": "push",
@@ -36,7 +36,7 @@
                 "action": "trace"
               }
             ],
-            "next": "label_p75"
+            "next": "l3_75"
           }
         ]
       },
@@ -44,7 +44,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p61",
+            "label": "l2_61",
             "actions": [
               {
                 "action": "push",
@@ -59,7 +59,7 @@
                 "action": "trace"
               }
             ],
-            "next": "label_p75"
+            "next": "l3_75"
           }
         ]
       },
@@ -71,7 +71,7 @@
         "blocks": [
           {
             "type": "simple",
-            "label": "label_p75",
+            "label": "l3_75",
             "actions": [
               {
                 "action": "push",
@@ -86,14 +86,14 @@
                 "action": "trace"
               }
             ],
-            "next": "label_p91"
+            "next": "l0_91"
           }
         ]
       }
     },
     {
       "type": "simple",
-      "label": "label_p91",
+      "label": "l0_91",
       "actions": [
         {
           "action": "push",

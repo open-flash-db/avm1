@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "push",
@@ -34,7 +34,7 @@
         },
         {
           "action": "if",
-          "target": "label_p105"
+          "target": "l0_105"
         },
         {
           "action": "push",
@@ -50,7 +50,7 @@
         },
         {
           "action": "if",
-          "target": "label_p92"
+          "target": "l0_92"
         },
         {
           "action": "push",
@@ -62,11 +62,11 @@
           ]
         }
       ],
-      "next": "label_p100"
+      "next": "l0_100"
     },
     {
       "type": "simple",
-      "label": "label_p92",
+      "label": "l0_92",
       "actions": [
         {
           "action": "push",
@@ -78,17 +78,17 @@
           ]
         }
       ],
-      "next": "label_p100"
+      "next": "l0_100"
     },
     {
       "type": "simple",
-      "label": "label_p100",
+      "label": "l0_100",
       "actions": [],
-      "next": "label_p113"
+      "next": "l0_113"
     },
     {
       "type": "simple",
-      "label": "label_p105",
+      "label": "l0_105",
       "actions": [
         {
           "action": "push",
@@ -100,11 +100,11 @@
           ]
         }
       ],
-      "next": "label_p113"
+      "next": "l0_113"
     },
     {
       "type": "simple",
-      "label": "label_p113",
+      "label": "l0_113",
       "actions": [
         {
           "action": "define-local"

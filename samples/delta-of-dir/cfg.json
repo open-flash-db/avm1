@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -34,7 +34,7 @@
             "blocks": [
               {
                 "type": "simple",
-                "label": "label_p35",
+                "label": "l1_35",
                 "actions": [
                   {
                     "action": "push",
@@ -63,7 +63,7 @@
                   },
                   {
                     "action": "if",
-                    "target": "label_p115"
+                    "target": "l1_115"
                   },
                   {
                     "action": "push",
@@ -83,7 +83,7 @@
                   },
                   {
                     "action": "if",
-                    "target": "label_p146"
+                    "target": "l1_146"
                   },
                   {
                     "action": "push",
@@ -103,7 +103,7 @@
                   },
                   {
                     "action": "if",
-                    "target": "label_p177"
+                    "target": "l1_177"
                   },
                   {
                     "action": "push",
@@ -123,14 +123,14 @@
                   },
                   {
                     "action": "if",
-                    "target": "label_p208"
+                    "target": "l1_208"
                   }
                 ],
                 "next": null
               },
               {
                 "type": "simple",
-                "label": "label_p115",
+                "label": "l1_115",
                 "actions": [
                   {
                     "action": "push",
@@ -169,7 +169,7 @@
               },
               {
                 "type": "simple",
-                "label": "label_p146",
+                "label": "l1_146",
                 "actions": [
                   {
                     "action": "push",
@@ -208,7 +208,7 @@
               },
               {
                 "type": "simple",
-                "label": "label_p177",
+                "label": "l1_177",
                 "actions": [
                   {
                     "action": "push",
@@ -247,7 +247,7 @@
               },
               {
                 "type": "simple",
-                "label": "label_p208",
+                "label": "l1_208",
                 "actions": [
                   {
                     "action": "push",

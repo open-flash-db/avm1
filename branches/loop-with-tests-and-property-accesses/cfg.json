@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -68,11 +68,11 @@
           "action": "define-local"
         }
       ],
-      "next": "label_p162"
+      "next": "l0_162"
     },
     {
       "type": "simple",
-      "label": "label_p162",
+      "label": "l0_162",
       "actions": [
         {
           "action": "push",
@@ -91,7 +91,7 @@
         },
         {
           "action": "if",
-          "target": "label_p267"
+          "target": "l0_267"
         },
         {
           "action": "push",
@@ -110,7 +110,7 @@
         },
         {
           "action": "if",
-          "target": "label_p197"
+          "target": "l0_197"
         },
         {
           "action": "push",
@@ -125,11 +125,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p226"
+      "next": "l0_226"
     },
     {
       "type": "simple",
-      "label": "label_p197",
+      "label": "l0_197",
       "actions": [
         {
           "action": "push",
@@ -148,7 +148,7 @@
         },
         {
           "action": "if",
-          "target": "label_p220"
+          "target": "l0_220"
         },
         {
           "action": "push",
@@ -163,11 +163,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p226"
+      "next": "l0_226"
     },
     {
       "type": "simple",
-      "label": "label_p220",
+      "label": "l0_220",
       "actions": [
         {
           "action": "push",
@@ -182,11 +182,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p226"
+      "next": "l0_226"
     },
     {
       "type": "simple",
-      "label": "label_p226",
+      "label": "l0_226",
       "actions": [
         {
           "action": "push",
@@ -265,11 +265,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p162"
+      "next": "l0_162"
     },
     {
       "type": "simple",
-      "label": "label_p267",
+      "label": "l0_267",
       "actions": [
         {
           "action": "push",

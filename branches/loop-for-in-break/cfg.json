@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -89,11 +89,11 @@
           "action": "enumerate2"
         }
       ],
-      "next": "label_p184"
+      "next": "l0_184"
     },
     {
       "type": "simple",
-      "label": "label_p184",
+      "label": "l0_184",
       "actions": [
         {
           "action": "store-register",
@@ -112,7 +112,7 @@
         },
         {
           "action": "if",
-          "target": "label_p257"
+          "target": "l0_257"
         },
         {
           "action": "push",
@@ -171,14 +171,14 @@
         },
         {
           "action": "if",
-          "target": "label_p235"
+          "target": "l0_235"
         }
       ],
-      "next": "label_p246"
+      "next": "l0_246"
     },
     {
       "type": "simple",
-      "label": "label_p235",
+      "label": "l0_235",
       "actions": [
         {
           "action": "push",
@@ -193,11 +193,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p184"
+      "next": "l0_184"
     },
     {
       "type": "simple",
-      "label": "label_p246",
+      "label": "l0_246",
       "actions": [
         {
           "action": "push",
@@ -215,14 +215,14 @@
         },
         {
           "action": "if",
-          "target": "label_p246"
+          "target": "l0_246"
         }
       ],
-      "next": "label_p257"
+      "next": "l0_257"
     },
     {
       "type": "simple",
-      "label": "label_p257",
+      "label": "l0_257",
       "actions": [
         {
           "action": "push",

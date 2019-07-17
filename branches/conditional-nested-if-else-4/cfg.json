@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -57,7 +57,7 @@
         },
         {
           "action": "if",
-          "target": "label_p719"
+          "target": "l0_719"
         },
         {
           "action": "push",
@@ -76,7 +76,7 @@
         },
         {
           "action": "if",
-          "target": "label_p639"
+          "target": "l0_639"
         },
         {
           "action": "push",
@@ -95,7 +95,7 @@
         },
         {
           "action": "if",
-          "target": "label_p605"
+          "target": "l0_605"
         },
         {
           "action": "push",
@@ -114,7 +114,7 @@
         },
         {
           "action": "if",
-          "target": "label_p594"
+          "target": "l0_594"
         },
         {
           "action": "push",
@@ -129,11 +129,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p600"
+      "next": "l0_600"
     },
     {
       "type": "simple",
-      "label": "label_p594",
+      "label": "l0_594",
       "actions": [
         {
           "action": "push",
@@ -148,17 +148,17 @@
           "action": "trace"
         }
       ],
-      "next": "label_p600"
+      "next": "l0_600"
     },
     {
       "type": "simple",
-      "label": "label_p600",
+      "label": "l0_600",
       "actions": [],
-      "next": "label_p634"
+      "next": "l0_634"
     },
     {
       "type": "simple",
-      "label": "label_p605",
+      "label": "l0_605",
       "actions": [
         {
           "action": "push",
@@ -177,7 +177,7 @@
         },
         {
           "action": "if",
-          "target": "label_p628"
+          "target": "l0_628"
         },
         {
           "action": "push",
@@ -192,11 +192,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p634"
+      "next": "l0_634"
     },
     {
       "type": "simple",
-      "label": "label_p628",
+      "label": "l0_628",
       "actions": [
         {
           "action": "push",
@@ -211,17 +211,17 @@
           "action": "trace"
         }
       ],
-      "next": "label_p634"
+      "next": "l0_634"
     },
     {
       "type": "simple",
-      "label": "label_p634",
+      "label": "l0_634",
       "actions": [],
-      "next": "label_p714"
+      "next": "l0_714"
     },
     {
       "type": "simple",
-      "label": "label_p639",
+      "label": "l0_639",
       "actions": [
         {
           "action": "push",
@@ -240,7 +240,7 @@
         },
         {
           "action": "if",
-          "target": "label_p685"
+          "target": "l0_685"
         },
         {
           "action": "push",
@@ -259,7 +259,7 @@
         },
         {
           "action": "if",
-          "target": "label_p674"
+          "target": "l0_674"
         },
         {
           "action": "push",
@@ -274,11 +274,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p680"
+      "next": "l0_680"
     },
     {
       "type": "simple",
-      "label": "label_p674",
+      "label": "l0_674",
       "actions": [
         {
           "action": "push",
@@ -293,17 +293,17 @@
           "action": "trace"
         }
       ],
-      "next": "label_p680"
+      "next": "l0_680"
     },
     {
       "type": "simple",
-      "label": "label_p680",
+      "label": "l0_680",
       "actions": [],
-      "next": "label_p714"
+      "next": "l0_714"
     },
     {
       "type": "simple",
-      "label": "label_p685",
+      "label": "l0_685",
       "actions": [
         {
           "action": "push",
@@ -322,7 +322,7 @@
         },
         {
           "action": "if",
-          "target": "label_p708"
+          "target": "l0_708"
         },
         {
           "action": "push",
@@ -337,11 +337,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p714"
+      "next": "l0_714"
     },
     {
       "type": "simple",
-      "label": "label_p708",
+      "label": "l0_708",
       "actions": [
         {
           "action": "push",
@@ -356,17 +356,17 @@
           "action": "trace"
         }
       ],
-      "next": "label_p714"
+      "next": "l0_714"
     },
     {
       "type": "simple",
-      "label": "label_p714",
+      "label": "l0_714",
       "actions": [],
-      "next": "label_p886"
+      "next": "l0_886"
     },
     {
       "type": "simple",
-      "label": "label_p719",
+      "label": "l0_719",
       "actions": [
         {
           "action": "push",
@@ -385,7 +385,7 @@
         },
         {
           "action": "if",
-          "target": "label_p811"
+          "target": "l0_811"
         },
         {
           "action": "push",
@@ -404,7 +404,7 @@
         },
         {
           "action": "if",
-          "target": "label_p777"
+          "target": "l0_777"
         },
         {
           "action": "push",
@@ -423,7 +423,7 @@
         },
         {
           "action": "if",
-          "target": "label_p766"
+          "target": "l0_766"
         },
         {
           "action": "push",
@@ -438,11 +438,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p772"
+      "next": "l0_772"
     },
     {
       "type": "simple",
-      "label": "label_p766",
+      "label": "l0_766",
       "actions": [
         {
           "action": "push",
@@ -457,17 +457,17 @@
           "action": "trace"
         }
       ],
-      "next": "label_p772"
+      "next": "l0_772"
     },
     {
       "type": "simple",
-      "label": "label_p772",
+      "label": "l0_772",
       "actions": [],
-      "next": "label_p806"
+      "next": "l0_806"
     },
     {
       "type": "simple",
-      "label": "label_p777",
+      "label": "l0_777",
       "actions": [
         {
           "action": "push",
@@ -486,7 +486,7 @@
         },
         {
           "action": "if",
-          "target": "label_p800"
+          "target": "l0_800"
         },
         {
           "action": "push",
@@ -501,11 +501,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p806"
+      "next": "l0_806"
     },
     {
       "type": "simple",
-      "label": "label_p800",
+      "label": "l0_800",
       "actions": [
         {
           "action": "push",
@@ -520,17 +520,17 @@
           "action": "trace"
         }
       ],
-      "next": "label_p806"
+      "next": "l0_806"
     },
     {
       "type": "simple",
-      "label": "label_p806",
+      "label": "l0_806",
       "actions": [],
-      "next": "label_p886"
+      "next": "l0_886"
     },
     {
       "type": "simple",
-      "label": "label_p811",
+      "label": "l0_811",
       "actions": [
         {
           "action": "push",
@@ -549,7 +549,7 @@
         },
         {
           "action": "if",
-          "target": "label_p857"
+          "target": "l0_857"
         },
         {
           "action": "push",
@@ -568,7 +568,7 @@
         },
         {
           "action": "if",
-          "target": "label_p846"
+          "target": "l0_846"
         },
         {
           "action": "push",
@@ -583,11 +583,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p852"
+      "next": "l0_852"
     },
     {
       "type": "simple",
-      "label": "label_p846",
+      "label": "l0_846",
       "actions": [
         {
           "action": "push",
@@ -602,17 +602,17 @@
           "action": "trace"
         }
       ],
-      "next": "label_p852"
+      "next": "l0_852"
     },
     {
       "type": "simple",
-      "label": "label_p852",
+      "label": "l0_852",
       "actions": [],
-      "next": "label_p886"
+      "next": "l0_886"
     },
     {
       "type": "simple",
-      "label": "label_p857",
+      "label": "l0_857",
       "actions": [
         {
           "action": "push",
@@ -631,7 +631,7 @@
         },
         {
           "action": "if",
-          "target": "label_p880"
+          "target": "l0_880"
         },
         {
           "action": "push",
@@ -646,11 +646,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p886"
+      "next": "l0_886"
     },
     {
       "type": "simple",
-      "label": "label_p880",
+      "label": "l0_880",
       "actions": [
         {
           "action": "push",
@@ -665,11 +665,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p886"
+      "next": "l0_886"
     },
     {
       "type": "simple",
-      "label": "label_p886",
+      "label": "l0_886",
       "actions": [
         {
           "action": "push",

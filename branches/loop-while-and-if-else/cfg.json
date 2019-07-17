@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -30,11 +30,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p124"
+      "next": "l0_124"
     },
     {
       "type": "simple",
-      "label": "label_p124",
+      "label": "l0_124",
       "actions": [
         {
           "action": "push",
@@ -53,7 +53,7 @@
         },
         {
           "action": "if",
-          "target": "label_p203"
+          "target": "l0_203"
         },
         {
           "action": "push",
@@ -72,7 +72,7 @@
         },
         {
           "action": "if",
-          "target": "label_p159"
+          "target": "l0_159"
         },
         {
           "action": "push",
@@ -87,11 +87,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p188"
+      "next": "l0_188"
     },
     {
       "type": "simple",
-      "label": "label_p159",
+      "label": "l0_159",
       "actions": [
         {
           "action": "push",
@@ -110,7 +110,7 @@
         },
         {
           "action": "if",
-          "target": "label_p182"
+          "target": "l0_182"
         },
         {
           "action": "push",
@@ -125,11 +125,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p188"
+      "next": "l0_188"
     },
     {
       "type": "simple",
-      "label": "label_p182",
+      "label": "l0_182",
       "actions": [
         {
           "action": "push",
@@ -144,11 +144,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p188"
+      "next": "l0_188"
     },
     {
       "type": "simple",
-      "label": "label_p188",
+      "label": "l0_188",
       "actions": [
         {
           "action": "push",
@@ -173,11 +173,11 @@
           "action": "set-variable"
         }
       ],
-      "next": "label_p124"
+      "next": "l0_124"
     },
     {
       "type": "simple",
-      "label": "label_p203",
+      "label": "l0_203",
       "actions": [
         {
           "action": "push",

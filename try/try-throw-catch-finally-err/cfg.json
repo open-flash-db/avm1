@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "define-function",
@@ -12,7 +12,7 @@
             "blocks": [
               {
                 "type": "throw",
-                "label": "label_p9",
+                "label": "l1_9",
                 "actions": [
                   {
                     "action": "push",
@@ -48,7 +48,7 @@
             "blocks": [
               {
                 "type": "try",
-                "label": "label_p38",
+                "label": "l2_38",
                 "actions": [
                   {
                     "action": "push",
@@ -67,7 +67,7 @@
                   "blocks": [
                     {
                       "type": "throw",
-                      "label": "label_p61",
+                      "label": "l3_61",
                       "actions": [
                         {
                           "action": "push",
@@ -117,7 +117,7 @@
                   "blocks": [
                     {
                       "type": "throw",
-                      "label": "label_p105",
+                      "label": "l4_105",
                       "actions": [
                         {
                           "action": "push",
@@ -152,7 +152,7 @@
                   "blocks": [
                     {
                       "type": "throw",
-                      "label": "label_p129",
+                      "label": "l5_129",
                       "actions": [
                         {
                           "action": "push",

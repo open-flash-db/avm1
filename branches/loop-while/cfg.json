@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -42,11 +42,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p62"
+      "next": "l0_62"
     },
     {
       "type": "simple",
-      "label": "label_p62",
+      "label": "l0_62",
       "actions": [
         {
           "action": "push",
@@ -77,7 +77,7 @@
         },
         {
           "action": "if",
-          "target": "label_p104"
+          "target": "l0_104"
         },
         {
           "action": "push",
@@ -114,11 +114,11 @@
           "action": "set-variable"
         }
       ],
-      "next": "label_p62"
+      "next": "l0_62"
     },
     {
       "type": "simple",
-      "label": "label_p104",
+      "label": "l0_104",
       "actions": [
         {
           "action": "push",

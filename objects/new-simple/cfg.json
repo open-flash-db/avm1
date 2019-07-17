@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -42,7 +42,7 @@
             "blocks": [
               {
                 "type": "simple",
-                "label": "label_p49",
+                "label": "l1_49",
                 "actions": [
                   {
                     "action": "push",

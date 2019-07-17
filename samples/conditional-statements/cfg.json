@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -88,7 +88,7 @@
         },
         {
           "action": "if",
-          "target": "label_p370"
+          "target": "l0_370"
         },
         {
           "action": "push",
@@ -103,11 +103,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p370"
+      "next": "l0_370"
     },
     {
       "type": "simple",
-      "label": "label_p370",
+      "label": "l0_370",
       "actions": [
         {
           "action": "push",
@@ -150,7 +150,7 @@
         },
         {
           "action": "if",
-          "target": "label_p405"
+          "target": "l0_405"
         },
         {
           "action": "push",
@@ -165,11 +165,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p411"
+      "next": "l0_411"
     },
     {
       "type": "simple",
-      "label": "label_p405",
+      "label": "l0_405",
       "actions": [
         {
           "action": "push",
@@ -184,11 +184,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p411"
+      "next": "l0_411"
     },
     {
       "type": "simple",
-      "label": "label_p411",
+      "label": "l0_411",
       "actions": [
         {
           "action": "push",
@@ -247,7 +247,7 @@
         },
         {
           "action": "if",
-          "target": "label_p461"
+          "target": "l0_461"
         },
         {
           "action": "push",
@@ -266,7 +266,7 @@
         },
         {
           "action": "if",
-          "target": "label_p461"
+          "target": "l0_461"
         },
         {
           "action": "push",
@@ -281,11 +281,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p461"
+      "next": "l0_461"
     },
     {
       "type": "simple",
-      "label": "label_p461",
+      "label": "l0_461",
       "actions": [
         {
           "action": "push",
@@ -344,7 +344,7 @@
         },
         {
           "action": "if",
-          "target": "label_p527"
+          "target": "l0_527"
         },
         {
           "action": "push",
@@ -363,7 +363,7 @@
         },
         {
           "action": "if",
-          "target": "label_p516"
+          "target": "l0_516"
         },
         {
           "action": "push",
@@ -378,11 +378,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p522"
+      "next": "l0_522"
     },
     {
       "type": "simple",
-      "label": "label_p516",
+      "label": "l0_516",
       "actions": [
         {
           "action": "push",
@@ -397,17 +397,17 @@
           "action": "trace"
         }
       ],
-      "next": "label_p522"
+      "next": "l0_522"
     },
     {
       "type": "simple",
-      "label": "label_p522",
+      "label": "l0_522",
       "actions": [],
-      "next": "label_p556"
+      "next": "l0_556"
     },
     {
       "type": "simple",
-      "label": "label_p527",
+      "label": "l0_527",
       "actions": [
         {
           "action": "push",
@@ -426,7 +426,7 @@
         },
         {
           "action": "if",
-          "target": "label_p550"
+          "target": "l0_550"
         },
         {
           "action": "push",
@@ -441,11 +441,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p556"
+      "next": "l0_556"
     },
     {
       "type": "simple",
-      "label": "label_p550",
+      "label": "l0_550",
       "actions": [
         {
           "action": "push",
@@ -460,11 +460,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p556"
+      "next": "l0_556"
     },
     {
       "type": "simple",
-      "label": "label_p556",
+      "label": "l0_556",
       "actions": [
         {
           "action": "push",
@@ -508,7 +508,7 @@
         },
         {
           "action": "if",
-          "target": "label_p591"
+          "target": "l0_591"
         },
         {
           "action": "push",
@@ -520,11 +520,11 @@
           ]
         }
       ],
-      "next": "label_p596"
+      "next": "l0_596"
     },
     {
       "type": "simple",
-      "label": "label_p591",
+      "label": "l0_591",
       "actions": [
         {
           "action": "push",
@@ -536,11 +536,11 @@
           ]
         }
       ],
-      "next": "label_p596"
+      "next": "l0_596"
     },
     {
       "type": "simple",
-      "label": "label_p596",
+      "label": "l0_596",
       "actions": [
         {
           "action": "define-local"

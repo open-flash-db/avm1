@@ -2,7 +2,7 @@
   "blocks": [
     {
       "type": "simple",
-      "label": "label_p0",
+      "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
@@ -55,11 +55,11 @@
           "action": "set-variable"
         }
       ],
-      "next": "label_p70"
+      "next": "l0_70"
     },
     {
       "type": "simple",
-      "label": "label_p70",
+      "label": "l0_70",
       "actions": [
         {
           "action": "push",
@@ -112,7 +112,7 @@
         },
         {
           "action": "if",
-          "target": "label_p117"
+          "target": "l0_117"
         },
         {
           "action": "push",
@@ -130,11 +130,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p70"
+      "next": "l0_70"
     },
     {
       "type": "simple",
-      "label": "label_p117",
+      "label": "l0_117",
       "actions": [
         {
           "action": "push",
@@ -180,11 +180,11 @@
           "action": "set-variable"
         }
       ],
-      "next": "label_p141"
+      "next": "l0_141"
     },
     {
       "type": "simple",
-      "label": "label_p141",
+      "label": "l0_141",
       "actions": [
         {
           "action": "push",
@@ -233,7 +233,7 @@
         },
         {
           "action": "if",
-          "target": "label_p188"
+          "target": "l0_188"
         },
         {
           "action": "push",
@@ -251,11 +251,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p141"
+      "next": "l0_141"
     },
     {
       "type": "simple",
-      "label": "label_p188",
+      "label": "l0_188",
       "actions": [
         {
           "action": "push",
@@ -299,7 +299,7 @@
             "blocks": [
               {
                 "type": "simple",
-                "label": "label_p211",
+                "label": "l1_211",
                 "actions": [
                   {
                     "action": "push",
@@ -345,11 +345,11 @@
                     "action": "pop"
                   }
                 ],
-                "next": "label_p239"
+                "next": "l1_239"
               },
               {
                 "type": "simple",
-                "label": "label_p239",
+                "label": "l1_239",
                 "actions": [
                   {
                     "action": "push",
@@ -391,7 +391,7 @@
                   },
                   {
                     "action": "if",
-                    "target": "label_p282"
+                    "target": "l1_282"
                   },
                   {
                     "action": "push",
@@ -406,11 +406,11 @@
                     "action": "trace"
                   }
                 ],
-                "next": "label_p239"
+                "next": "l1_239"
               },
               {
                 "type": "simple",
-                "label": "label_p282",
+                "label": "l1_282",
                 "actions": [
                   {
                     "action": "push",
@@ -453,11 +453,11 @@
                     "action": "pop"
                   }
                 ],
-                "next": "label_p307"
+                "next": "l1_307"
               },
               {
                 "type": "simple",
-                "label": "label_p307",
+                "label": "l1_307",
                 "actions": [
                   {
                     "action": "push",
@@ -492,7 +492,7 @@
                   },
                   {
                     "action": "if",
-                    "target": "label_p347"
+                    "target": "l1_347"
                   },
                   {
                     "action": "push",
@@ -507,11 +507,11 @@
                     "action": "trace"
                   }
                 ],
-                "next": "label_p307"
+                "next": "l1_307"
               },
               {
                 "type": "simple",
-                "label": "label_p347",
+                "label": "l1_347",
                 "actions": [
                   {
                     "action": "push",
@@ -574,11 +574,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p379"
+      "next": "l0_379"
     },
     {
       "type": "simple",
-      "label": "label_p379",
+      "label": "l0_379",
       "actions": [
         {
           "action": "push",
@@ -667,7 +667,7 @@
         },
         {
           "action": "if",
-          "target": "label_p450"
+          "target": "l0_450"
         },
         {
           "action": "push",
@@ -697,11 +697,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p379"
+      "next": "l0_379"
     },
     {
       "type": "simple",
-      "label": "label_p450",
+      "label": "l0_450",
       "actions": [
         {
           "action": "push",
@@ -771,11 +771,11 @@
           "action": "set-member"
         }
       ],
-      "next": "label_p486"
+      "next": "l0_486"
     },
     {
       "type": "simple",
-      "label": "label_p486",
+      "label": "l0_486",
       "actions": [
         {
           "action": "push",
@@ -848,7 +848,7 @@
         },
         {
           "action": "if",
-          "target": "label_p551"
+          "target": "l0_551"
         },
         {
           "action": "push",
@@ -878,11 +878,11 @@
           "action": "trace"
         }
       ],
-      "next": "label_p486"
+      "next": "l0_486"
     },
     {
       "type": "simple",
-      "label": "label_p551",
+      "label": "l0_551",
       "actions": [
         {
           "action": "push",
