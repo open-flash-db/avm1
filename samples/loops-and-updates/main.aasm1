@@ -92,7 +92,6 @@ label_p188:
     label_p347:
       push(0=r:1);
       trace();
-    label_p353:
       end;
   };
   defineLocal();
@@ -162,5 +161,4 @@ label_p551:
   push(0=c:0);
   getMember();
   trace();
-label_p564:
   end;

@@ -9,14 +9,11 @@ label_p0:
       getMember();
       push(0=c:4);
       callMethod();
-      return();
       return;
   };
   setVariable();
   push(0=c:5);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=false, preloadSuper=true, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=1, parameters=[]) {
-    label_p1202:
-      end;
   };
   storeRegister(r:0);
   setVariable();
@@ -41,14 +38,11 @@ label_p0:
       push(0=c:13);
       callMethod();
       pop();
-    label_p1296:
       end;
   };
   setMember();
   push(0=c:14);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=false, preloadSuper=true, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=1, parameters=[]) {
-    label_p1313:
-      end;
   };
   storeRegister(r:0);
   setVariable();
@@ -70,7 +64,6 @@ label_p0:
       getMember();
       push(0=c:4);
       callMethod();
-      return();
       return;
   };
   setMember();
@@ -99,8 +92,6 @@ label_p1473:
   getVariable();
   push(0=c:3);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=false, preloadSuper=true, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=1, parameters=[]) {
-    label_p1496:
-      end;
   };
   storeRegister(r:0);
   setMember();
@@ -124,7 +115,6 @@ label_p1473:
       not();
       if(target=label_p1594);
       push(0=c:20);
-      return();
       return;
     label_p1594:
       push(0=r:2);
@@ -179,7 +169,6 @@ label_p1473:
       if(target=label_p2993);
       push(0=r:2, 1=1i32, 2=c:25);
       callFunction();
-      return();
       return;
     label_p1765:
       push(0=r:2, 1=c:26);
@@ -202,7 +191,6 @@ label_p1473:
       if(target=label_p1835);
       push(0=r:2, 1=0i32);
       getMember();
-      return();
       return;
     label_p1835:
       push(0=r:2, 1=0i32);
@@ -284,7 +272,6 @@ label_p1473:
     label_p2094:
       push(0=r:6, 1=c:31);
       add2();
-      return();
       return;
     label_p2103:
       push(0=r:2, 1=c:19);
@@ -353,7 +340,6 @@ label_p1473:
       storeRegister(r:8);
       pop();
       push(0=r:8);
-      return();
       return;
     label_p2325:
       push(0=0i32, 1=r:2, 2=c:34);
@@ -394,7 +380,6 @@ label_p1473:
       not();
       if(target=label_p2447);
       push(0=r:6);
-      return();
       return;
     label_p2447:
       push(0=c:37);
@@ -553,15 +538,12 @@ label_p1473:
       storeRegister(r:9);
       pop();
       push(0=r:9);
-      return();
       return;
     label_p2982:
       push(0=c:53);
-      return();
       return;
     label_p2993:
       push(0=r:2);
-      return();
       return;
   };
   setMember();
@@ -577,7 +559,6 @@ label_p1473:
       not();
       if(target=label_p3058);
       push(0=null);
-      return();
       return;
     label_p3058:
       defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=false, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=3, parameters=[]) {
@@ -596,7 +577,6 @@ label_p1473:
           getMember();
           push(0=c:59);
           callMethod();
-          return();
           return;
       };
       storeRegister(r:5);
@@ -606,7 +586,6 @@ label_p1473:
       push(0=r:5, 1=c:57, 2=r:3);
       setMember();
       push(0=r:5);
-      return();
       return;
   };
   setMember();
@@ -618,7 +597,6 @@ label_p1473:
       not();
       if(target=label_p3192);
       push(0=false);
-      return();
       return;
     label_p3192:
       push(0=r:2, 1=r:3);
@@ -634,11 +612,9 @@ label_p1473:
       getMember();
       push(0=null);
       equals2();
-      return();
       return;
     label_p3235:
       push(0=true);
-      return();
       return;
     label_p3241:
       push(0=r:3);
@@ -702,7 +678,6 @@ label_p1473:
       equals2();
       not();
     label_p3418:
-      return();
       return;
     label_p3424:
       push(0=r:2);
@@ -725,7 +700,6 @@ label_p1473:
     label_p3493:
       if(target=label_p3509);
       push(0=false);
-      return();
       return;
     label_p3509:
       push(0=r:2, 1=true);
@@ -739,7 +713,6 @@ label_p1473:
       strictEquals();
     label_p3541:
       not();
-      return();
       return;
     label_p3548:
       push(0=r:2);
@@ -748,7 +721,6 @@ label_p1473:
       pop();
       push(0=r:6, 1=c:67);
       equals2();
-      return();
       return;
     label_p3573:
       push(0=r:2, 1=true);
@@ -756,12 +728,10 @@ label_p1473:
       not();
       if(target=label_p3598);
       push(0=true);
-      return();
       return;
     label_p3598:
       push(0=r:2, 1=false);
       strictEquals();
-      return();
       return;
     label_p3612:
       push(0=r:2);
@@ -770,11 +740,9 @@ label_p1473:
       pop();
       push(0=r:6, 1=c:15);
       equals2();
-      return();
       return;
     label_p3637:
       push(0=true);
-      return();
       return;
   };
   setMember();
@@ -864,7 +832,6 @@ label_p1473:
       setMember();
     label_p3982:
       push(0=r:3);
-      return();
       return;
   };
   setMember();
@@ -885,7 +852,6 @@ label_p1473:
       getMember();
       push(0=c:83, 1=r:2);
       setMember();
-    label_p4060:
       end;
   };
   setMember();
@@ -1053,7 +1019,6 @@ label_p1473:
     label_p4614:
       push(0=r:4, 1=c:84, 2=r:9);
       setMember();
-    label_p4624:
       end;
   };
   setMember();
@@ -1094,7 +1059,7 @@ label_p1473:
       push(0=c:86);
       callMethod();
       pop();
-      next label_p4840;
+      end;
     label_p4773:
       push(0=c:16, 1=r:2, 2=2i32, 3=c:2);
       getVariable();
@@ -1113,7 +1078,6 @@ label_p1473:
       push(0=c:99);
       callMethod();
       pop();
-    label_p4840:
       end;
   };
   setMember();
@@ -1135,7 +1099,6 @@ label_p1473:
       pop();
       push(0=r:2, 1=c:84, 2=null);
       setMember();
-    label_p4911:
       end;
   };
   setMember();
@@ -1185,14 +1148,12 @@ label_p1473:
           if(target=label_p5082);
           push(0=0i32);
           initArray();
-          return();
           return;
         label_p5082:
           push(0=r:3, 1=r:2, 2=r:1, 3=3i32, 4=c:107);
           getVariable();
           push(0=c:108);
           callMethod();
-          return();
           return;
       };
       setMember();
@@ -1208,7 +1169,6 @@ label_p1473:
           push(0=c:108);
           callMethod();
           pop();
-        label_p5168:
           end;
       };
       setMember();
@@ -1247,7 +1207,6 @@ label_p1473:
           callMethod();
           pop();
           push(0=true);
-          return();
           return;
         label_p5303:
           push(0=r:3);
@@ -1257,7 +1216,6 @@ label_p1473:
           next label_p5225;
         label_p5319:
           push(0=false);
-          return();
           return;
       };
       setMember();
@@ -1317,7 +1275,6 @@ label_p1473:
           not();
           if(target=label_p5528);
           push(0=r:5);
-          return();
           return;
         label_p5528:
           push(0=r:5);
@@ -1327,7 +1284,6 @@ label_p1473:
           next label_p5471;
         label_p5544:
           push(0=-1i32);
-          return();
           return;
       };
       setMember();
@@ -1393,7 +1349,6 @@ label_p1473:
           not();
           if(target=label_p5768);
           push(0=r:5);
-          return();
           return;
         label_p5768:
           push(0=r:5);
@@ -1403,7 +1358,6 @@ label_p1473:
           next label_p5707;
         label_p5784:
           push(0=-1i32);
-          return();
           return;
       };
       setMember();
@@ -1424,7 +1378,6 @@ label_p1473:
               push(0=c:19);
               getMember();
               less2();
-              return();
               return;
           };
           push(0=c:45);
@@ -1443,12 +1396,10 @@ label_p1473:
               setMember();
               push(0=r:0);
               getMember();
-              return();
               return;
           };
           push(0=4i32);
           initObject();
-          return();
           return;
       };
       setMember();
@@ -1497,7 +1448,6 @@ label_p1473:
           next label_p6009;
         label_p6097:
           push(0=r:3);
-          return();
           return;
       };
       setMember();
@@ -1549,7 +1499,6 @@ label_p1473:
           next label_p6174;
         label_p6269:
           push(0=r:3);
-          return();
           return;
       };
       setMember();
@@ -1593,11 +1542,9 @@ label_p1473:
           not();
           if(target=label_p6428);
           push(0=null);
-          return();
           return;
         label_p6428:
           push(0=r:3);
-          return();
           return;
       };
       setMember();
@@ -1658,14 +1605,13 @@ label_p1473:
       push(0=c:16);
       equals2();
       not();
-      if(target=label_p6640);
+      if(target=@end);
       push(0=c:18);
       getVariable();
       push(0=c:73);
       getMember();
       push(0=c:123, 1=c:124);
       setMember();
-    label_p6640:
       end;
   };
   setMember();
@@ -1673,8 +1619,6 @@ label_p1473:
   getVariable();
   push(0=c:12);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=false, preloadSuper=true, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=1, parameters=[]) {
-    label_p6663:
-      end;
   };
   storeRegister(r:0);
   setMember();
@@ -1705,7 +1649,6 @@ label_p1473:
       push(0=c:16);
     label_p6784:
       getUrl2();
-    label_p6788:
       end;
   };
   setMember();
@@ -1901,7 +1844,6 @@ label_p7256:
       getVariable();
       push(0=c:136);
       callMethod();
-      return();
       return;
   };
   setMember();
@@ -1914,7 +1856,6 @@ label_p7256:
       getVariable();
       push(0=c:137);
       callMethod();
-      return();
       return;
   };
   setMember();
@@ -2054,7 +1995,7 @@ label_p7256:
   push(0=c:144);
   getMember();
   setMember();
-  try(catchTarget=r:0) {
+  try {
     label_p7963:
       push(0=c:2);
       getVariable();
@@ -2073,9 +2014,8 @@ label_p7256:
       push(0=c:9);
       callMethod();
       pop();
-    label_p8054:
       end;
-  } catch {
+  } catch(r:0) {
     label_p8028:
       push(0=r:0, 1=1i32, 2=c:2);
       getVariable();
@@ -2084,8 +2024,5 @@ label_p7256:
       push(0=c:98);
       callMethod();
       pop();
-    label_p8054:
       end;
-  };
-label_p8054:
-  end;
+  }

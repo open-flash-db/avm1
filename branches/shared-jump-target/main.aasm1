@@ -17,5 +17,4 @@ label_p97:
   if(target=label_p97);
   push(0="after bidirectionnal");
   trace();
-label_p171:
   end;

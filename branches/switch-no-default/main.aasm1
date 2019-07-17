@@ -21,5 +21,4 @@ label_p86:
 label_p103:
   push(0="after switch");
   trace();
-label_p121:
   end;

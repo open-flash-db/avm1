@@ -94,5 +94,4 @@ label_p596:
   defineLocal();
   push(0=c:21);
   trace();
-label_p603:
   end;

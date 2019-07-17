@@ -3,31 +3,34 @@ label_p0:
     label_p9:
       push(0="ok");
       trace();
-    label_p17:
       end;
   };
   push(0="start");
   trace();
-  try(catchTarget=i:"e") {
+  try {
     label_p40:
       push(0=0i32, 1="f");
       callFunction();
       pop();
       push(0="in-try");
       trace();
-    label_p65:
-      end;
-  } catch {
+      next label_p65;
+  } catch(i:"e") {
     label_p65:
       push(0="in-err");
       trace();
       push(0="e");
       getVariable();
       trace();
-    label_p85:
-      end;
-  };
+      next label_p85;
+  }
+label_p65:
+  push(0="in-err");
+  trace();
+  push(0="e");
+  getVariable();
+  trace();
+label_p85:
   push(0="end");
   trace();
-label_p94:
   end;

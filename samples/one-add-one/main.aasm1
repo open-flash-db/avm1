@@ -1,5 +1,4 @@
 label_p0:
   push(0="1 + 1 = 2");
   trace();
-label_p15:
   end;

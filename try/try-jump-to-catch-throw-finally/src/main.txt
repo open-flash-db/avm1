@@ -23,9 +23,9 @@
 
 8f_0900 (                                                  # try
   03                                                       # flags(has_catch, has_finally)
-  1900                                                     # try_size
-  0000                                                     # catch_size
-  0000                                                     # finally_size
+  1100                                                     # try_size
+  1b00                                                     # catch_size
+  1000                                                     # finally_size
   6500                                                     # catch_target ("e\0")
 ) {
   96_0800 [                                                # push

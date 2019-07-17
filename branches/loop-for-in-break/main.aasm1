@@ -36,5 +36,4 @@ label_p246:
 label_p257:
   push(0=c:8);
   trace();
-label_p263:
   end;

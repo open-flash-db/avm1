@@ -17,7 +17,6 @@ label_p0:
       callMethod();
       pop();
       push(0=undefined);
-      return();
       return;
     label_p335:
       push(0=false);
@@ -183,17 +182,14 @@ label_p0:
       callMethod();
       pop();
       push(0=undefined);
-      return();
       return;
     label_p999:
       push(0=0f64, 1=r:1, 2=c:31);
       callMethod();
       pop();
-    label_p1017:
       end;
   };
   setMember();
   push(0=c:32);
   trace();
-label_p1024:
   end;

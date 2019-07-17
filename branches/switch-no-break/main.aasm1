@@ -20,5 +20,4 @@ label_p99:
 label_p108:
   push(0="after switch without break");
   trace();
-label_p140:
   end;

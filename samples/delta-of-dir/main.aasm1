@@ -16,32 +16,30 @@ label_p0:
       push(0=r:0, 1=3i32);
       strictEquals();
       if(target=label_p208);
-      next label_p234;
+      end;
     label_p115:
       push(0=c:0, 1=1i32);
       setVariable();
       push(0=c:1, 1=0f64);
       setVariable();
-      next label_p234;
+      end;
     label_p146:
       push(0=c:0, 1=-1i32);
       setVariable();
       push(0=c:1, 1=0f64);
       setVariable();
-      next label_p234;
+      end;
     label_p177:
       push(0=c:0, 1=0f64);
       setVariable();
       push(0=c:1, 1=1i32);
       setVariable();
-      next label_p234;
+      end;
     label_p208:
       push(0=c:0, 1=0f64);
       setVariable();
       push(0=c:1, 1=-1i32);
       setVariable();
-    label_p234:
       end;
   };
-label_p234:
   end;

@@ -3,7 +3,6 @@ label_p0:
     label_p9:
       push(0="ok");
       trace();
-    label_p17:
       end;
   };
   push(0="start");
@@ -13,5 +12,4 @@ label_p0:
   pop();
   push(0="end");
   trace();
-label_p60:
   end;

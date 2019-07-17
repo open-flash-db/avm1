@@ -4,43 +4,39 @@ label_p0:
   trace();
   push(0=c:1);
   trace();
-  try(catchTarget=i:"err") {
+  try {
     label_p147:
       push(0=c:2);
       trace();
-    label_p164:
-      end;
-  } catch {
+      next label_p164;
+  } catch(i:"err") {
     label_p158:
       push(0=c:3);
       trace();
-    label_p164:
-      end;
-  };
+      next label_p164;
+  }
+label_p164:
   push(0=c:4);
   trace();
   push(0=c:5);
   trace();
-  try(catchTarget=i:"err") {
+  try {
     label_p190:
       push(0=c:2);
       trace();
-    label_p207:
-      end;
-  } catch {
+      next label_p207;
+  } catch(i:"err") {
     label_p201:
       push(0=c:3);
       trace();
-    label_p207:
-      end;
+      next label_p207;
   } finally {
     label_p207:
       push(0=c:6);
       trace();
-    label_p213:
-      end;
-  };
+      next label_p213;
+  }
+label_p213:
   push(0=c:4);
   trace();
-label_p219:
   end;

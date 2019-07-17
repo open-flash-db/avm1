@@ -10,5 +10,4 @@ label_p0:
 label_p42:
   push(0="after if");
   trace();
-label_p56:
   end;

@@ -21,5 +21,4 @@ label_p97:
 label_p130:
   push(0=c:6);
   trace();
-label_p136:
   end;

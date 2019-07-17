@@ -6,7 +6,6 @@ label_p0:
       setMember();
       push(0=r:1, 1=c:1, 2=r:2);
       setMember();
-    label_p69:
       end;
   };
   push(0=c:2);
@@ -19,5 +18,4 @@ label_p0:
   trace();
   push(0=c:5);
   trace();
-label_p112:
   end;

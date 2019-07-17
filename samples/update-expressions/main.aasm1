@@ -62,5 +62,4 @@ label_p0:
   setVariable();
   push(0=c:10);
   trace();
-label_p429:
   end;

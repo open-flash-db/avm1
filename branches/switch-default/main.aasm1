@@ -25,5 +25,4 @@ label_p111:
 label_p129:
   push(0="after switch+default");
   trace();
-label_p155:
   end;

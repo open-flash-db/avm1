@@ -130,5 +130,4 @@ label_p0:
   getVariable();
   instanceOf();
   trace();
-label_p354:
   end;

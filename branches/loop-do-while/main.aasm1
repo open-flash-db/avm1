@@ -18,5 +18,4 @@ label_p71:
   if(target=label_p71);
   push(0=c:3);
   trace();
-label_p113:
   end;

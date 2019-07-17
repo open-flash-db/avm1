@@ -28,5 +28,4 @@ label_p100:
 label_p119:
   push(0="after LOGICAL AND");
   trace();
-label_p142:
   end;

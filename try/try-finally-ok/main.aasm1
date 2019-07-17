@@ -3,28 +3,25 @@ label_p0:
     label_p9:
       push(0="ok");
       trace();
-    label_p17:
       end;
   };
   push(0="start");
   trace();
-  try(catchTarget=i:"") {
+  try {
     label_p39:
       push(0=0f64, 1="f");
       callFunction();
       pop();
       push(0="in-try");
       trace();
-    label_p68:
-      end;
+      next label_p68;
   } finally {
     label_p68:
       push(0="in-finally");
       trace();
-    label_p84:
-      end;
-  };
+      next label_p84;
+  }
+label_p84:
   push(0="end");
   trace();
-label_p93:
   end;

@@ -7,16 +7,13 @@ label_p0:
       trace();
       push(0=c:1);
       getVariable();
-      with() {
+      with {
         label_p81:
           push(0=c:0);
           getVariable();
           trace();
-        label_p88:
           end;
-      };
-    label_p88:
-      end;
+      }
   };
   push(0=c:2);
   trace();
@@ -36,5 +33,4 @@ label_p0:
   pop();
   push(0=c:8);
   trace();
-label_p166:
   end;

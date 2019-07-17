@@ -1,5 +1,4 @@
 label_p0:
   push(0="Hello, World!");
   trace();
-label_p19:
   end;

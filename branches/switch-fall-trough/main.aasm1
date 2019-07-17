@@ -44,5 +44,4 @@ label_p218:
 label_p235:
   push(0="after switch+fall-trough");
   trace();
-label_p265:
   end;

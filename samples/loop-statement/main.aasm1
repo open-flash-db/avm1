@@ -194,5 +194,4 @@ label_p1078:
 label_p1093:
   push(0=c:29);
   trace();
-label_p1099:
   end;

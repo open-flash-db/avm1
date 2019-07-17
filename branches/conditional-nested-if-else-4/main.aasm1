@@ -134,5 +134,4 @@ label_p880:
 label_p886:
   push(0=c:18);
   trace();
-label_p892:
   end;

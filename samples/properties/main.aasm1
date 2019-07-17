@@ -91,5 +91,4 @@ label_p0:
   push(0=c:10);
   getVariable();
   pop();
-label_p417:
   end;

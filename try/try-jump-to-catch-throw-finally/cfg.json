@@ -73,7 +73,11 @@
               }
             ],
             "next": "label_p73"
-          },
+          }
+        ]
+      },
+      "catch": {
+        "blocks": [
           {
             "type": "simple",
             "label": "label_p73",
@@ -86,47 +90,75 @@
                     "value": "in-catch"
                   }
                 ]
+              },
+              {
+                "action": "trace"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "sint32",
+                    "value": 0
+                  },
+                  {
+                    "type": "string",
+                    "value": "f"
+                  }
+                ]
+              },
+              {
+                "action": "call-function"
+              },
+              {
+                "action": "pop"
               }
             ],
-            "next": "label_p86"
+            "next": "label_p100"
           }
         ]
-      },
-      "catch": {
-        "blocks": []
       },
       "catch_target": {
         "type": "variable",
         "target": "e"
       },
       "finally": {
-        "blocks": []
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "label_p100",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in-finally"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "label_p116"
+          }
+        ]
       }
     },
     {
       "type": "simple",
-      "label": "label_p81",
+      "label": "label_p73",
       "actions": [
         {
-          "action": "bit-or"
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "in-catch"
+            }
+          ]
         },
-        {
-          "action": "unknown",
-          "action_code": 116
-        },
-        {
-          "action": "bit-l-shift"
-        },
-        {
-          "action": "string-greater"
-        }
-      ],
-      "next": null
-    },
-    {
-      "type": "simple",
-      "label": "label_p86",
-      "actions": [
         {
           "action": "trace"
         },
@@ -160,7 +192,14 @@
         },
         {
           "action": "trace"
-        },
+        }
+      ],
+      "next": "label_p116"
+    },
+    {
+      "type": "simple",
+      "label": "label_p116",
+      "actions": [
         {
           "action": "push",
           "values": [
