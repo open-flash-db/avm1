@@ -3,9 +3,9 @@
 
 
 "@babel/code-frame@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
-  integrity sha512-OfC2uemaknXr87bdLUkWog7nYuliM9Ij5HUcajsVcMCpQrcLmtxRbVFTIqmcSkSeYRBFBRxs2FiUqFJDLdiebA==
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
+  integrity sha512-27d4lZoomVyo51VegxI20xZPuSHusqbQag/ztrBC7wegWoQ1nLREPVSKSW8byhTlzTKyNE4ifaTA6lCp7JjpFw==
   dependencies:
     "@babel/highlight" "^7.0.0"
 
@@ -60,9 +60,9 @@
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
 "@types/node@*", "@types/node@^12.6.1":
-  version "12.6.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.1.tgz#d5544f6de0aae03eefbb63d5120f6c8be0691946"
-  integrity sha512-rp7La3m845mSESCgsJePNL/JQyhkOJA6G4vcwvVgkDAwHhGdq5GCumxmPjEk1MZf+8p5ZQAUE7tqgQRQTXN7uQ==
+  version "12.6.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.8.tgz#e469b4bf9d1c9832aee4907ba8a051494357c12c"
+  integrity sha512-aX+gFgA5GHcDi89KG5keey2zf0WfZk/HAQotEamsK2kbey+8yGKcson0hbK8E+v0NArlCJQCqMP161YhV6ZXLg==
 
 "@types/object-inspect@^1.4.0":
   version "1.4.0"
@@ -95,9 +95,9 @@ ansi-styles@^3.2.1:
     color-convert "^1.9.0"
 
 arg@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.0.tgz#583c518199419e0037abb74062c37f8519e575f0"
-  integrity sha512-ZWc51jO3qegGkVh8Hwpv636EkbesNV5ZNQPCtRa+0qytRYPEs9IYT9qITY9buezqUH5uqyzlWLcufrzU2rffdg==
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.1.tgz#485f8e7c390ce4c5f78257dbea80d4be11feda4c"
+  integrity sha512-SlmP3fEA88MBv0PypnXZ8ZfJhwmDeIE3SP71j37AiXQBXYosPV0x6uISAaHYSlSVhmHOVkomen0tbGk6Anlebw==
 
 argparse@^1.0.7:
   version "1.0.10"
@@ -106,43 +106,43 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-avm1-asm@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/avm1-asm/-/avm1-asm-0.0.3.tgz#683a3d35bb3a7767ac7016f6c5a53d015b4c2423"
-  integrity sha512-0erH4q404zTMP/+4Rz1fch113Q0pYxpYj5ocG8HvAqS9naeCGrmapPDn8MjPDa3x4RSBoVm5J2qjnGwGZjss1g==
+avm1-asm@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/avm1-asm/-/avm1-asm-0.7.0.tgz#4394563dd7d9ef7777775e507a2546f49203416a"
+  integrity sha512-wZKU6/+Mby/pK5II5HDKr2GGXkUSw6VSbalQpgrGRO6LEg3b4cd1q//f+Sj4xM11tJXb5FY/hKr4hqtURVzT0w==
   dependencies:
     "@open-flash/stream" "^0.1.1"
-    avm1-parser "^0.5.0"
-    avm1-tree "^0.5.0"
+    avm1-parser "^0.7.0"
+    avm1-tree "^0.7.0"
     incident "^3.2.0"
     kryo "^0.8.1"
     semantic-types "^0.1.1"
     swf-tree "^0.8.0"
 
-avm1-emitter@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/avm1-emitter/-/avm1-emitter-0.5.0.tgz#c701c56092a9c6c64b0f7d3088236a0b33b127c7"
-  integrity sha512-qgHRNYVT9ZWpB9vb5uYYHpbbjtuY9+kQ/YAORqXLokLziLFC5nthIDDRY6+8tAthlZOuNkH0pvchFwct6TiFYw==
+avm1-emitter@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/avm1-emitter/-/avm1-emitter-0.7.0.tgz#e2ec6535979f379c362c37eb161dd945c3a71b0e"
+  integrity sha512-CQRTK2TMRAJRMoS127ovyGwyrnJzK0dU/IeTLNGqbG9jV6dhz56FmpXxR088yyldztz8YgcT+l4GsDz4cHXVAQ==
   dependencies:
     "@open-flash/stream" "^0.1.1"
-    avm1-tree "^0.5.0"
+    avm1-tree "^0.7.0"
     incident "^3.2.0"
     semantic-types "^0.1.1"
 
-avm1-parser@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/avm1-parser/-/avm1-parser-0.5.0.tgz#bec64cae78968e7316041525e084a051a1f6e7a5"
-  integrity sha512-K0U7D6mej+reB8x6QAnHqnO5LyZOokEQyXNUugEcOsKDmNdfEmSABYXESnWc8sGRISR2jTOE7hiH/9IoMSOiug==
+avm1-parser@^0.7.0, avm1-parser@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/avm1-parser/-/avm1-parser-0.7.1.tgz#3b45fd320c5b85cfa49bbba66883ae5b713b9aca"
+  integrity sha512-XitUkqrNDijpywDN7ZBZaa51xXKFo0Q+GdVcHvKxS3teX+9awrTASti2fLz39tDOtOpzxEjoCT6uKANeaDRmDQ==
   dependencies:
     "@open-flash/stream" "^0.1.1"
-    avm1-tree "^0.5.0"
+    avm1-tree "^0.7.0"
     incident "^3.2.0"
     semantic-types "^0.1.1"
 
-avm1-tree@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/avm1-tree/-/avm1-tree-0.5.0.tgz#b8e844b59e0eb69118d12eff0d6f631c66844a74"
-  integrity sha512-6DJIE7Jp6Y7can9HaMGGBfkUq0C2MihZ42iiG3CvHsbINEfIees8kGzyaqcDke0qjjOc9uQcLmNJyrE8WNB8fQ==
+avm1-tree@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/avm1-tree/-/avm1-tree-0.7.0.tgz#47db9dfbf73eb6a8e82eaf43b35dd253a03ca14f"
+  integrity sha512-F9DNcV4R+2COx1LZchrZyAkPVaCHSiS81FDZMXr7q7lXgIjm82wOHpa+CC5HBB6AVd256VfqRz6IHUp0YwGNmQ==
   dependencies:
     incident "^3.2.0"
     kryo "^0.8.1"
