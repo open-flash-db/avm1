@@ -1,0 +1,293 @@
+{
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "B",
+            "b1",
+            "A",
+            "b2",
+            "b3",
+            "b4"
+          ]
+        },
+        {
+          "action": "define-function",
+          "name": "A",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "return",
+                "label": "l1_30",
+                "actions": [
+                  {
+                    "action": "define-function2",
+                    "name": "B",
+                    "preload_parent": false,
+                    "preload_root": false,
+                    "suppress_super": true,
+                    "preload_super": false,
+                    "suppress_arguments": true,
+                    "preload_arguments": false,
+                    "suppress_this": true,
+                    "preload_this": false,
+                    "preload_global": false,
+                    "register_count": 2,
+                    "parameters": [
+                      {
+                        "register": 1,
+                        "name": "x"
+                      }
+                    ],
+                    "body": {
+                      "blocks": [
+                        {
+                          "type": "return",
+                          "label": "l2_45",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                }
+                              ]
+                            },
+                            {
+                              "action": "multiply"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "define-function2",
+          "name": "b3",
+          "preload_parent": false,
+          "preload_root": false,
+          "suppress_super": true,
+          "preload_super": false,
+          "suppress_arguments": true,
+          "preload_arguments": false,
+          "suppress_this": true,
+          "preload_this": false,
+          "preload_global": false,
+          "register_count": 2,
+          "parameters": [
+            {
+              "register": 1,
+              "name": "x"
+            }
+          ],
+          "body": {
+            "blocks": [
+              {
+                "type": "return",
+                "label": "l3_77",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "multiply"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "define-function2",
+          "name": "b4",
+          "preload_parent": false,
+          "preload_root": false,
+          "suppress_super": true,
+          "preload_super": false,
+          "suppress_arguments": true,
+          "preload_arguments": false,
+          "suppress_this": true,
+          "preload_this": false,
+          "preload_global": false,
+          "register_count": 2,
+          "parameters": [
+            {
+              "register": 1,
+              "name": "x"
+            }
+          ],
+          "body": {
+            "blocks": [
+              {
+                "type": "return",
+                "label": "l4_102",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "multiply"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            },
+            {
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "equals2"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "equals2"
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": null
+    }
+  ]
+}

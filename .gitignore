@@ -4,3 +4,4 @@ node_modules/
 **/SymDepend.cache
 local/
 local-*
+!.log

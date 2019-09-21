@@ -1,0 +1,23 @@
+{
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "wait-for-frame",
+          "frame": 92,
+          "skip_count": 2
+        },
+        {
+          "action": "goto-label",
+          "label": "start"
+        },
+        {
+          "action": "play"
+        }
+      ],
+      "next": null
+    }
+  ]
+}

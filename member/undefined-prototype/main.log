@@ -1,0 +1,8 @@
+start
+Warning: 'foo' has no property 'prototype'
+undefined
+Warning: 'foo' has no property '__proto__'
+undefined
+Warning: 'foo' has no property 'constructor'
+undefined
+end

@@ -1,0 +1,52 @@
+l0_0:
+  constantPool(0="name", 1="foo", 2="bar", 3="start", 4="constructors", 5="Bar", 6="Foo", 7="i", 8="length", 9="end");
+  defineFunction2(name="Foo", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=2, parameters=[]) {
+    l1_72:
+      push(0=r:1, 1=c:0, 2=c:1);
+      setMember();
+      end;
+  };
+  defineFunction2(name="Bar", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=2, parameters=[]) {
+    l2_96:
+      push(0=r:1, 1=c:0, 2=c:2);
+      setMember();
+      end;
+  };
+  push(0=c:3);
+  trace();
+  push(0=c:4, 1=c:5);
+  getVariable();
+  push(0=c:6);
+  getVariable();
+  push(0=2i32);
+  initArray();
+  defineLocal();
+  push(0=c:7, 1=0f64);
+  defineLocal();
+l0_151:
+  push(0=c:7);
+  getVariable();
+  push(0=c:4);
+  getVariable();
+  push(0=c:8);
+  getMember();
+  less2();
+  not();
+  if(target=l0_220);
+  push(0=0f64, 1=c:4);
+  getVariable();
+  push(0=c:7);
+  getVariable();
+  newMethod();
+  push(0=c:0);
+  getMember();
+  trace();
+  push(0=c:7, 1=c:7);
+  getVariable();
+  increment();
+  setVariable();
+  next l0_151;
+l0_220:
+  push(0=c:9);
+  trace();
+  end;

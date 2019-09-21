@@ -1,0 +1,14 @@
+l0_0:
+  constantPool(0="start", 1="bar", 2="end");
+  push(0=c:0);
+  trace();
+  push(0=true, 1=c:1);
+  getMember();
+  trace();
+  push(0=true, 1=c:1);
+  getMember();
+  typeOf();
+  trace();
+  push(0=c:2);
+  trace();
+  end;

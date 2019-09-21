@@ -1,0 +1,5 @@
+l0_0:
+  waitForFrame();
+  gotoLabel("start");
+  play();
+  end;

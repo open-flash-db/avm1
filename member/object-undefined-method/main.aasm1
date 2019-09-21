@@ -1,0 +1,34 @@
+l0_0:
+  constantPool(0="start", 1="Object", 2="prototype", 3="bar", 4="valueOf", 5="foo", 6="end");
+  push(0=c:0);
+  trace();
+  push(0=c:1);
+  getVariable();
+  push(0=c:2);
+  getMember();
+  push(0=c:3);
+  defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=2, parameters=[]) {
+    l1_82:
+      push(0=r:1);
+      trace();
+      push(0=0f64, 1=r:1, 2=c:4);
+      callMethod();
+      not();
+      return;
+  };
+  setMember();
+  push(0=c:5, 1=undefined);
+  defineLocal();
+  push(0=c:5);
+  getVariable();
+  push(0=c:3);
+  getMember();
+  trace();
+  push(0=0f64, 1=c:5);
+  getVariable();
+  push(0=c:3);
+  callMethod();
+  trace();
+  push(0=c:6);
+  trace();
+  end;

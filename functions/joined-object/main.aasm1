@@ -1,0 +1,45 @@
+l0_0:
+  constantPool(0="B", 1="b1", 2="A", 3="b2", 4="b3", 5="b4");
+  defineFunction(name="A", parameters=[]) {
+    l1_30:
+      defineFunction2(name="B", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=true, preloadThis=false, preloadGlobal=false, registerCount=2, parameters=[r:1=i:"x"]) {
+        l2_45:
+          push(0=r:1, 1=r:1);
+          multiply();
+          return;
+      };
+      push(0=c:0);
+      getVariable();
+      return;
+  };
+  defineFunction2(name="b3", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=true, preloadThis=false, preloadGlobal=false, registerCount=2, parameters=[r:1=i:"x"]) {
+    l3_77:
+      push(0=r:1, 1=r:1);
+      multiply();
+      return;
+  };
+  defineFunction2(name="b4", preloadParent=false, preloadRoot=false, suppressSuper=true, preloadSuper=false, suppressArguments=true, preloadArguments=false, suppressThis=true, preloadThis=false, preloadGlobal=false, registerCount=2, parameters=[r:1=i:"x"]) {
+    l4_102:
+      push(0=r:1, 1=r:1);
+      multiply();
+      return;
+  };
+  push(0=c:1, 1=0f64, 2=c:2);
+  callFunction();
+  defineLocal();
+  push(0=c:3, 1=0f64, 2=c:2);
+  callFunction();
+  defineLocal();
+  push(0=c:1);
+  getVariable();
+  push(0=c:3);
+  getVariable();
+  equals2();
+  trace();
+  push(0=c:4);
+  getVariable();
+  push(0=c:5);
+  getVariable();
+  equals2();
+  trace();
+  end;
