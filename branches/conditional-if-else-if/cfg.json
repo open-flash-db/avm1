@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -30,11 +30,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_56"
-        },
+        }
+      ],
+      "if_true": "l0_56",
+      "if_false": "l0_40"
+    },
+    {
+      "type": "simple",
+      "label": "l0_40",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -51,7 +55,7 @@
       "next": "l0_90"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_56",
       "actions": [
         {
@@ -68,11 +72,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_90"
-        },
+        }
+      ],
+      "if_true": "l0_90",
+      "if_false": "l0_73"
+    },
+    {
+      "type": "simple",
+      "label": "l0_73",
+      "actions": [
         {
           "action": "push",
           "values": [

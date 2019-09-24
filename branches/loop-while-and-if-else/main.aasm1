@@ -6,11 +6,13 @@ l0_124:
   push(0=c:1);
   getVariable();
   not();
-  if(target=l0_203);
+  if ? next l0_203 : next l0_136;
+l0_136:
   push(0=c:2);
   getVariable();
   not();
-  if(target=l0_159);
+  if ? next l0_159 : next l0_148;
+l0_148:
   push(0=c:3);
   trace();
   next l0_188;
@@ -18,7 +20,8 @@ l0_159:
   push(0=c:2);
   getVariable();
   not();
-  if(target=l0_182);
+  if ? next l0_182 : next l0_171;
+l0_171:
   push(0=c:4);
   trace();
   next l0_188;

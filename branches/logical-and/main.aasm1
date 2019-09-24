@@ -5,20 +5,23 @@ l0_0:
   getVariable();
   pushDuplicate();
   not();
-  if(target=l0_53);
+  if ? next l0_53 : next l0_41;
+l0_41:
   pop();
   push(0="test2");
   getVariable();
 l0_53:
   pushDuplicate();
   not();
-  if(target=l0_72);
+  if ? next l0_72 : next l0_60;
+l0_60:
   pop();
   push(0="test3");
   getVariable();
 l0_72:
   not();
-  if(target=l0_100);
+  if ? next l0_100 : next l0_78;
+l0_78:
   push(0="in if + and");
   trace();
   next l0_119;

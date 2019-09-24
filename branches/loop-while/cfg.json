@@ -45,7 +45,7 @@
       "next": "l0_62"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_62",
       "actions": [
         {
@@ -74,11 +74,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_104"
-        },
+        }
+      ],
+      "if_true": "l0_104",
+      "if_false": "l0_83"
+    },
+    {
+      "type": "simple",
+      "label": "l0_83",
+      "actions": [
         {
           "action": "push",
           "values": [

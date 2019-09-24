@@ -3,7 +3,8 @@ l0_0:
   trace();
   push(0="foo", 1="test");
   getVariable();
-  if(target=l0_69);
+  if ? next l0_69 : next l0_56;
+l0_56:
   push(0="baz");
   next l0_77;
 l0_69:

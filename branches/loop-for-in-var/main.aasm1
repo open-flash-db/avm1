@@ -12,7 +12,8 @@ l0_136:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=l0_169);
+  if ? next l0_169 : next l0_150;
+l0_150:
   push(0=c:4, 1=r:0);
   defineLocal();
   push(0=c:5);

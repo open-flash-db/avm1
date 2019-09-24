@@ -15,7 +15,8 @@ l0_71:
   getVariable();
   push(0=2i32);
   less2();
-  if(target=l0_71);
+  if ? next l0_71 : next l0_107;
+l0_107:
   push(0=c:3);
   trace();
   end;

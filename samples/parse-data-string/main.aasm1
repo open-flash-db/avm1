@@ -10,7 +10,8 @@ l0_0:
       push(0=r:2, 1=null);
       equals2();
       not();
-      if(target=l1_335);
+      if ? next l1_335 : next l1_298;
+    l1_298:
       push(0=64i32, 1=1i32, 2=r:1, 3=c:3);
       callMethod();
       push(0=1i32, 1=r:1, 2=c:4);
@@ -20,7 +21,8 @@ l0_0:
       return;
     l1_335:
       push(0=false);
-      if(target=l1_498);
+      if ? next l1_498 : next l1_345;
+    l1_345:
       push(0=r:2, 1=c:5);
       getMember();
       push(0=1i32);
@@ -32,25 +34,29 @@ l0_0:
       push(0=r:3, 1=c:7);
       equals2();
       pushDuplicate();
-      if(target=l1_403);
+      if ? next l1_403 : next l1_394;
+    l1_394:
       pop();
       push(0=r:3, 1=c:8);
       equals2();
     l1_403:
       pushDuplicate();
-      if(target=l1_418);
+      if ? next l1_418 : next l1_409;
+    l1_409:
       pop();
       push(0=r:3, 1=c:9);
       equals2();
     l1_418:
       pushDuplicate();
-      if(target=l1_433);
+      if ? next l1_433 : next l1_424;
+    l1_424:
       pop();
       push(0=r:3, 1=c:10);
       equals2();
     l1_433:
       not();
-      if(target=l1_488);
+      if ? next l1_488 : next l1_439;
+    l1_439:
       push(0=r:2, 1=c:5);
       getMember();
       push(0=1i32);
@@ -63,7 +69,8 @@ l0_0:
     l1_488:
     l1_498:
       push(0=false);
-      if(target=l1_632);
+      if ? next l1_632 : next l1_508;
+    l1_508:
       push(0=0f64, 1=1i32, 2=r:2, 3=c:6);
       callMethod();
       storeRegister(r:4);
@@ -71,25 +78,29 @@ l0_0:
       push(0=r:4, 1=c:7);
       equals2();
       pushDuplicate();
-      if(target=l1_558);
+      if ? next l1_558 : next l1_549;
+    l1_549:
       pop();
       push(0=r:4, 1=c:8);
       equals2();
     l1_558:
       pushDuplicate();
-      if(target=l1_573);
+      if ? next l1_573 : next l1_564;
+    l1_564:
       pop();
       push(0=r:4, 1=c:9);
       equals2();
     l1_573:
       pushDuplicate();
-      if(target=l1_588);
+      if ? next l1_588 : next l1_579;
+    l1_579:
       pop();
       push(0=r:4, 1=c:10);
       equals2();
     l1_588:
       not();
-      if(target=l1_622);
+      if ? next l1_622 : next l1_594;
+    l1_594:
       push(0=1i32, 1=1i32, 2=r:2, 3=c:12);
       callMethod();
       storeRegister(r:2);
@@ -116,7 +127,8 @@ l0_0:
       push(0=r:5, 1=r:7);
       less2();
       not();
-      if(target=l1_824);
+      if ? next l1_824 : next l1_716;
+    l1_716:
       push(0=c:16, 1=1i32, 2=r:8, 3=r:5);
       getMember();
       push(0=c:14);
@@ -128,7 +140,8 @@ l0_0:
       push(0=2i32);
       equals2();
       not();
-      if(target=l1_808);
+      if ? next l1_808 : next l1_765;
+    l1_765:
       push(0=r:6, 1=1i32);
       getMember();
       push(0=c:17, 1=r:6, 2=0f64);
@@ -167,7 +180,8 @@ l0_0:
       push(0=null);
       equals2();
       pushDuplicate();
-      if(target=l1_959);
+      if ? next l1_959 : next l1_945;
+    l1_945:
       pop();
       push(0=r:1, 1=c:23);
       getMember();
@@ -175,7 +189,8 @@ l0_0:
       equals2();
     l1_959:
       not();
-      if(target=l1_999);
+      if ? next l1_999 : next l1_965;
+    l1_965:
       push(0=c:29, 1=1i32, 2=r:9, 3=c:22);
       callMethod();
       push(0=1i32, 1=r:1, 2=c:30);

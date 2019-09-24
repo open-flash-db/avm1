@@ -58,7 +58,7 @@
       "next": "l0_70"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_70",
       "actions": [
         {
@@ -109,11 +109,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_117"
-        },
+        }
+      ],
+      "if_true": "l0_117",
+      "if_false": "l0_105"
+    },
+    {
+      "type": "simple",
+      "label": "l0_105",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -183,7 +187,7 @@
       "next": "l0_141"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_141",
       "actions": [
         {
@@ -230,11 +234,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_188"
-        },
+        }
+      ],
+      "if_true": "l0_188",
+      "if_false": "l0_176"
+    },
+    {
+      "type": "simple",
+      "label": "l0_176",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -284,16 +292,16 @@
         {
           "action": "define-function2",
           "name": "",
-          "preload_parent": false,
-          "preload_root": false,
-          "suppress_super": true,
-          "preload_super": false,
-          "suppress_arguments": true,
-          "preload_arguments": false,
-          "suppress_this": true,
-          "preload_this": false,
-          "preload_global": false,
           "register_count": 2,
+          "preload_this": false,
+          "suppress_this": true,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
           "parameters": [],
           "body": {
             "blocks": [
@@ -348,7 +356,7 @@
                 "next": "l1_239"
               },
               {
-                "type": "simple",
+                "type": "if",
                 "label": "l1_239",
                 "actions": [
                   {
@@ -388,11 +396,15 @@
                   },
                   {
                     "action": "not"
-                  },
-                  {
-                    "action": "if",
-                    "target": "l1_282"
-                  },
+                  }
+                ],
+                "if_true": "l1_282",
+                "if_false": "l1_271"
+              },
+              {
+                "type": "simple",
+                "label": "l1_271",
+                "actions": [
                   {
                     "action": "push",
                     "values": [
@@ -456,7 +468,7 @@
                 "next": "l1_307"
               },
               {
-                "type": "simple",
+                "type": "if",
                 "label": "l1_307",
                 "actions": [
                   {
@@ -489,11 +501,15 @@
                   },
                   {
                     "action": "not"
-                  },
-                  {
-                    "action": "if",
-                    "target": "l1_347"
-                  },
+                  }
+                ],
+                "if_true": "l1_347",
+                "if_false": "l1_336"
+              },
+              {
+                "type": "simple",
+                "label": "l1_336",
+                "actions": [
                   {
                     "action": "push",
                     "values": [
@@ -577,7 +593,7 @@
       "next": "l0_379"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_379",
       "actions": [
         {
@@ -664,11 +680,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_450"
-        },
+        }
+      ],
+      "if_true": "l0_450",
+      "if_false": "l0_432"
+    },
+    {
+      "type": "simple",
+      "label": "l0_432",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -774,7 +794,7 @@
       "next": "l0_486"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_486",
       "actions": [
         {
@@ -845,11 +865,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_551"
-        },
+        }
+      ],
+      "if_true": "l0_551",
+      "if_false": "l0_533"
+    },
+    {
+      "type": "simple",
+      "label": "l0_533",
+      "actions": [
         {
           "action": "push",
           "values": [

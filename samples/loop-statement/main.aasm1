@@ -12,7 +12,8 @@ l0_478:
   push(0=2i32);
   less2();
   not();
-  if(target=l0_520);
+  if ? next l0_520 : next l0_499;
+l0_499:
   push(0=c:3);
   trace();
   push(0=c:1, 1=c:1);
@@ -38,7 +39,8 @@ l0_547:
   getVariable();
   push(0=2i32);
   less2();
-  if(target=l0_547);
+  if ? next l0_547 : next l0_583;
+l0_583:
   push(0=c:7);
   trace();
   push(0=c:8);
@@ -51,7 +53,8 @@ l0_610:
   push(0=2i32);
   less2();
   not();
-  if(target=l0_652);
+  if ? next l0_652 : next l0_631;
+l0_631:
   push(0=c:9);
   trace();
   push(0=c:1, 1=c:1);
@@ -74,7 +77,8 @@ l0_697:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=l0_730);
+  if ? next l0_730 : next l0_711;
+l0_711:
   push(0=c:15, 1=r:0);
   defineLocal();
   push(0=c:16);
@@ -93,7 +97,8 @@ l0_757:
   push(0=4i32);
   less2();
   not();
-  if(target=l0_826);
+  if ? next l0_826 : next l0_778;
+l0_778:
   push(0=c:19);
   trace();
   push(0=c:1, 1=c:1);
@@ -106,7 +111,8 @@ l0_757:
   less2();
   not();
   not();
-  if(target=l0_821);
+  if ? next l0_821 : next l0_816;
+l0_816:
   next l0_826;
 l0_821:
   next l0_757;
@@ -119,7 +125,8 @@ l0_826:
   trace();
 l0_853:
   push(0=false);
-  if(target=l0_911);
+  if ? next l0_911 : next l0_863;
+l0_863:
   push(0=c:22);
   trace();
   push(0=c:1, 1=c:1);
@@ -132,7 +139,8 @@ l0_853:
   less2();
   not();
   not();
-  if(target=l0_906);
+  if ? next l0_906 : next l0_901;
+l0_901:
   next l0_911;
 l0_906:
   next l0_853;
@@ -157,7 +165,8 @@ l0_938:
   less2();
   not();
   not();
-  if(target=l0_989);
+  if ? next l0_989 : next l0_984;
+l0_984:
   next l0_994;
 l0_989:
   next l0_938;
@@ -174,13 +183,15 @@ l0_1021:
   push(0=2i32);
   less2();
   not();
-  if(target=l0_1093);
+  if ? next l0_1093 : next l0_1042;
+l0_1042:
   push(0=c:1);
   getVariable();
   push(0=0f64);
   strictEquals();
   not();
-  if(target=l0_1072);
+  if ? next l0_1072 : next l0_1067;
+l0_1067:
   next l0_1078;
 l0_1072:
   push(0=c:28);

@@ -12,7 +12,8 @@ l0_97:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=l0_130);
+  if ? next l0_130 : next l0_111;
+l0_111:
   push(0=c:4, 1=r:0);
   setVariable();
   push(0=c:5);

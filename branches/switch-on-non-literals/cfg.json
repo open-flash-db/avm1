@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -72,11 +72,15 @@
         },
         {
           "action": "strict-equals"
-        },
-        {
-          "action": "if",
-          "target": "l0_205"
-        },
+        }
+      ],
+      "if_true": "l0_205",
+      "if_false": "l0_159"
+    },
+    {
+      "type": "if",
+      "label": "l0_159",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -92,11 +96,15 @@
         },
         {
           "action": "strict-equals"
-        },
-        {
-          "action": "if",
-          "target": "l0_211"
-        },
+        }
+      ],
+      "if_true": "l0_211",
+      "if_false": "l0_175"
+    },
+    {
+      "type": "if",
+      "label": "l0_175",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -131,12 +139,15 @@
         },
         {
           "action": "strict-equals"
-        },
-        {
-          "action": "if",
-          "target": "l0_222"
         }
       ],
+      "if_true": "l0_222",
+      "if_false": "l0_200"
+    },
+    {
+      "type": "simple",
+      "label": "l0_200",
+      "actions": [],
       "next": "l0_233"
     },
     {

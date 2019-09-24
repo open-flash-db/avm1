@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -31,11 +31,15 @@
         },
         {
           "action": "get-variable"
-        },
-        {
-          "action": "if",
-          "target": "l0_105"
-        },
+        }
+      ],
+      "if_true": "l0_105",
+      "if_false": "l0_63"
+    },
+    {
+      "type": "if",
+      "label": "l0_63",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -47,11 +51,15 @@
         },
         {
           "action": "get-variable"
-        },
-        {
-          "action": "if",
-          "target": "l0_92"
-        },
+        }
+      ],
+      "if_true": "l0_92",
+      "if_false": "l0_79"
+    },
+    {
+      "type": "simple",
+      "label": "l0_79",
+      "actions": [
         {
           "action": "push",
           "values": [

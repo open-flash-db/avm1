@@ -1,14 +1,17 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "wait-for-frame",
       "label": "l0_0",
+      "actions": [],
+      "frame": 92,
+      "if_loaded": "l0_6",
+      "if_not_loaded": null
+    },
+    {
+      "type": "simple",
+      "label": "l0_6",
       "actions": [
-        {
-          "action": "wait-for-frame",
-          "frame": 92,
-          "skip_count": 2
-        },
         {
           "action": "goto-label",
           "label": "start"

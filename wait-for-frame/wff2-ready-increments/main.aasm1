@@ -19,12 +19,14 @@ l0_0:
   callFunction();
   pop();
   push(0=0i32, 1=3i32);
-  waitForFrame2();
+  waitForFrame2 ? next l0_156 : next l0_151;
+l0_151:
   increment();
   increment();
   increment();
   increment();
   increment();
+l0_156:
   increment();
   increment();
   increment();

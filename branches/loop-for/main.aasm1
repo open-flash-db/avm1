@@ -10,7 +10,8 @@ l0_56:
   push(0=2i32);
   less2();
   not();
-  if(target=l0_98);
+  if ? next l0_98 : next l0_77;
+l0_77:
   push(0=c:2);
   trace();
   push(0=c:1, 1=c:1);

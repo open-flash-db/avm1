@@ -12,7 +12,8 @@ l0_184:
   storeRegister(r:0);
   push(0=null);
   equals2();
-  if(target=l0_257);
+  if ? next l0_257 : next l0_198;
+l0_198:
   push(0=c:5, 1=r:0);
   setVariable();
   push(0=c:6);
@@ -22,7 +23,8 @@ l0_184:
   push(0=c:2);
   strictEquals();
   not();
-  if(target=l0_235);
+  if ? next l0_235 : next l0_230;
+l0_230:
   next l0_246;
 l0_235:
   push(0=c:7);
@@ -32,7 +34,7 @@ l0_246:
   push(0=null);
   equals2();
   not();
-  if(target=l0_246);
+  if ? next l0_246 : next l0_257;
 l0_257:
   push(0=c:8);
   trace();

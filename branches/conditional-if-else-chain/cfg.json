@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -42,11 +42,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_140"
-        },
+        }
+      ],
+      "if_true": "l0_140",
+      "if_false": "l0_129"
+    },
+    {
+      "type": "simple",
+      "label": "l0_129",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -63,7 +67,7 @@
       "next": "l0_192"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_140",
       "actions": [
         {
@@ -80,11 +84,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_163"
-        },
+        }
+      ],
+      "if_true": "l0_163",
+      "if_false": "l0_152"
+    },
+    {
+      "type": "simple",
+      "label": "l0_152",
+      "actions": [
         {
           "action": "push",
           "values": [
@@ -101,7 +109,7 @@
       "next": "l0_192"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_163",
       "actions": [
         {
@@ -118,11 +126,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_186"
-        },
+        }
+      ],
+      "if_true": "l0_186",
+      "if_false": "l0_175"
+    },
+    {
+      "type": "simple",
+      "label": "l0_175",
+      "actions": [
         {
           "action": "push",
           "values": [

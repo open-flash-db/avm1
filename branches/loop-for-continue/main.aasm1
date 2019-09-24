@@ -10,13 +10,15 @@ l0_89:
   push(0=2i32);
   less2();
   not();
-  if(target=l0_161);
+  if ? next l0_161 : next l0_110;
+l0_110:
   push(0=c:1);
   getVariable();
   push(0=0f64);
   strictEquals();
   not();
-  if(target=l0_140);
+  if ? next l0_140 : next l0_135;
+l0_135:
   next l0_146;
 l0_140:
   push(0=c:2);

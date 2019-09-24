@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -31,11 +31,15 @@
         },
         {
           "action": "get-variable"
-        },
-        {
-          "action": "if",
-          "target": "l0_69"
-        },
+        }
+      ],
+      "if_true": "l0_69",
+      "if_false": "l0_56"
+    },
+    {
+      "type": "simple",
+      "label": "l0_56",
+      "actions": [
         {
           "action": "push",
           "values": [

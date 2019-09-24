@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -30,11 +30,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_52"
-        },
+        }
+      ],
+      "if_true": "l0_52",
+      "if_false": "l0_36"
+    },
+    {
+      "type": "simple",
+      "label": "l0_36",
+      "actions": [
         {
           "action": "push",
           "values": [

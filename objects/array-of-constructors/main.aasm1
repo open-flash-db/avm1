@@ -32,7 +32,8 @@ l0_151:
   getMember();
   less2();
   not();
-  if(target=l0_220);
+  if ? next l0_220 : next l0_176;
+l0_176:
   push(0=0f64, 1=c:4);
   getVariable();
   push(0=c:7);

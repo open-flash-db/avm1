@@ -10,16 +10,19 @@ l0_0:
   push(0=c:3);
   getMember();
   strictEquals();
-  if(target=l0_205);
+  if ? next l0_205 : next l0_159;
+l0_159:
   push(0=r:0, 1=4i32);
   strictEquals();
-  if(target=l0_211);
+  if ? next l0_211 : next l0_175;
+l0_175:
   push(0=r:0, 1=c:2);
   getVariable();
   push(0=1i32, 1=c:3);
   callFunction();
   strictEquals();
-  if(target=l0_222);
+  if ? next l0_222 : next l0_200;
+l0_200:
   next l0_233;
 l0_205:
   push(0=c:4);

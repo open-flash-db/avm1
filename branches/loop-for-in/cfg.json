@@ -82,7 +82,7 @@
       "next": "l0_97"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_97",
       "actions": [
         {
@@ -99,11 +99,15 @@
         },
         {
           "action": "equals2"
-        },
-        {
-          "action": "if",
-          "target": "l0_130"
-        },
+        }
+      ],
+      "if_true": "l0_130",
+      "if_false": "l0_111"
+    },
+    {
+      "type": "simple",
+      "label": "l0_111",
+      "actions": [
         {
           "action": "push",
           "values": [

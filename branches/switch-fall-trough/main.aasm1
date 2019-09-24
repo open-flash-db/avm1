@@ -6,22 +6,28 @@ l0_0:
   storeRegister(r:0);
   push(0=0f64);
   strictEquals();
-  if(target=l0_145);
+  if ? next l0_145 : next l0_60;
+l0_60:
   push(0=r:0, 1=1i32);
   strictEquals();
-  if(target=l0_157);
+  if ? next l0_157 : next l0_76;
+l0_76:
   push(0=r:0, 1=2i32);
   strictEquals();
-  if(target=l0_179);
+  if ? next l0_179 : next l0_92;
+l0_92:
   push(0=r:0, 1=3i32);
   strictEquals();
-  if(target=l0_196);
+  if ? next l0_196 : next l0_108;
+l0_108:
   push(0=r:0, 1=4i32);
   strictEquals();
-  if(target=l0_196);
+  if ? next l0_196 : next l0_124;
+l0_124:
   push(0=r:0, 1=5i32);
   strictEquals();
-  if(target=l0_218);
+  if ? next l0_218 : next l0_140;
+l0_140:
   next l0_235;
 l0_145:
   push(0="case 0");

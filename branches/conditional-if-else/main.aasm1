@@ -4,7 +4,8 @@ l0_0:
   push(0="test");
   getVariable();
   not();
-  if(target=l0_52);
+  if ? next l0_52 : next l0_36;
+l0_36:
   push(0="in if");
   trace();
   next l0_65;

@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -33,11 +33,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_53"
-        },
+        }
+      ],
+      "if_true": "l0_53",
+      "if_false": "l0_41"
+    },
+    {
+      "type": "simple",
+      "label": "l0_41",
+      "actions": [
         {
           "action": "pop"
         },
@@ -57,7 +61,7 @@
       "next": "l0_53"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_53",
       "actions": [
         {
@@ -65,11 +69,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_72"
-        },
+        }
+      ],
+      "if_true": "l0_72",
+      "if_false": "l0_60"
+    },
+    {
+      "type": "simple",
+      "label": "l0_60",
+      "actions": [
         {
           "action": "pop"
         },
@@ -89,16 +97,20 @@
       "next": "l0_72"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_72",
       "actions": [
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_100"
-        },
+        }
+      ],
+      "if_true": "l0_100",
+      "if_false": "l0_78"
+    },
+    {
+      "type": "simple",
+      "label": "l0_78",
+      "actions": [
         {
           "action": "push",
           "values": [

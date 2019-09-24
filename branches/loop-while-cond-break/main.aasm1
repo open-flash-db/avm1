@@ -10,7 +10,8 @@ l0_86:
   push(0=4i32);
   less2();
   not();
-  if(target=l0_155);
+  if ? next l0_155 : next l0_107;
+l0_107:
   push(0=c:2);
   trace();
   push(0=c:0, 1=c:0);
@@ -23,7 +24,8 @@ l0_86:
   less2();
   not();
   not();
-  if(target=l0_150);
+  if ? next l0_150 : next l0_145;
+l0_145:
   next l0_155;
 l0_150:
   next l0_86;

@@ -18,7 +18,8 @@ l0_95:
   less2();
   not();
   not();
-  if(target=l0_146);
+  if ? next l0_146 : next l0_141;
+l0_141:
   next l0_151;
 l0_146:
   next l0_95;

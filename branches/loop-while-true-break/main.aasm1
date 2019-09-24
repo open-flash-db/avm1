@@ -6,7 +6,8 @@ l0_0:
   trace();
 l0_103:
   push(0=false);
-  if(target=l0_161);
+  if ? next l0_161 : next l0_113;
+l0_113:
   push(0=c:2);
   trace();
   push(0=c:0, 1=c:0);
@@ -19,7 +20,8 @@ l0_103:
   less2();
   not();
   not();
-  if(target=l0_156);
+  if ? next l0_156 : next l0_151;
+l0_151:
   next l0_161;
 l0_156:
   next l0_103;

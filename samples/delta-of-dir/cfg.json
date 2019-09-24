@@ -14,16 +14,16 @@
         {
           "action": "define-function2",
           "name": "deltaOfDir",
-          "preload_parent": false,
-          "preload_root": false,
-          "suppress_super": true,
-          "preload_super": false,
-          "suppress_arguments": true,
-          "preload_arguments": false,
-          "suppress_this": true,
-          "preload_this": false,
-          "preload_global": false,
           "register_count": 2,
+          "preload_this": false,
+          "suppress_this": true,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
           "parameters": [
             {
               "register": 1,
@@ -33,7 +33,7 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
+                "type": "if",
                 "label": "l1_35",
                 "actions": [
                   {
@@ -60,11 +60,15 @@
                   },
                   {
                     "action": "strict-equals"
-                  },
-                  {
-                    "action": "if",
-                    "target": "l1_115"
-                  },
+                  }
+                ],
+                "if_true": "l1_115",
+                "if_false": "l1_62"
+              },
+              {
+                "type": "if",
+                "label": "l1_62",
+                "actions": [
                   {
                     "action": "push",
                     "values": [
@@ -80,11 +84,15 @@
                   },
                   {
                     "action": "strict-equals"
-                  },
-                  {
-                    "action": "if",
-                    "target": "l1_146"
-                  },
+                  }
+                ],
+                "if_true": "l1_146",
+                "if_false": "l1_78"
+              },
+              {
+                "type": "if",
+                "label": "l1_78",
+                "actions": [
                   {
                     "action": "push",
                     "values": [
@@ -100,11 +108,15 @@
                   },
                   {
                     "action": "strict-equals"
-                  },
-                  {
-                    "action": "if",
-                    "target": "l1_177"
-                  },
+                  }
+                ],
+                "if_true": "l1_177",
+                "if_false": "l1_94"
+              },
+              {
+                "type": "if",
+                "label": "l1_94",
+                "actions": [
                   {
                     "action": "push",
                     "values": [
@@ -120,12 +132,15 @@
                   },
                   {
                     "action": "strict-equals"
-                  },
-                  {
-                    "action": "if",
-                    "target": "l1_208"
                   }
                 ],
+                "if_true": "l1_208",
+                "if_false": "l1_110"
+              },
+              {
+                "type": "simple",
+                "label": "l1_110",
+                "actions": [],
                 "next": null
               },
               {

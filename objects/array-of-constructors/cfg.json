@@ -22,16 +22,16 @@
         {
           "action": "define-function2",
           "name": "Foo",
-          "preload_parent": false,
-          "preload_root": false,
-          "suppress_super": true,
-          "preload_super": false,
-          "suppress_arguments": true,
-          "preload_arguments": false,
-          "suppress_this": false,
-          "preload_this": true,
-          "preload_global": false,
           "register_count": 2,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
           "parameters": [],
           "body": {
             "blocks": [
@@ -68,16 +68,16 @@
         {
           "action": "define-function2",
           "name": "Bar",
-          "preload_parent": false,
-          "preload_root": false,
-          "suppress_super": true,
-          "preload_super": false,
-          "suppress_arguments": true,
-          "preload_arguments": false,
-          "suppress_this": false,
-          "preload_this": true,
-          "preload_global": false,
           "register_count": 2,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
           "parameters": [],
           "body": {
             "blocks": [
@@ -186,7 +186,7 @@
       "next": "l0_151"
     },
     {
-      "type": "simple",
+      "type": "if",
       "label": "l0_151",
       "actions": [
         {
@@ -230,11 +230,15 @@
         },
         {
           "action": "not"
-        },
-        {
-          "action": "if",
-          "target": "l0_220"
-        },
+        }
+      ],
+      "if_true": "l0_220",
+      "if_false": "l0_176"
+    },
+    {
+      "type": "simple",
+      "label": "l0_176",
+      "actions": [
         {
           "action": "push",
           "values": [

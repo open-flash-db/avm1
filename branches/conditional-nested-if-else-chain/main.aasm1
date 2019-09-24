@@ -4,11 +4,13 @@ l0_0:
   push(0="test");
   getVariable();
   not();
-  if(target=l0_144);
+  if ? next l0_144 : next l0_48;
+l0_48:
   push(0="test2");
   getVariable();
   not();
-  if(target=l0_85);
+  if ? next l0_85 : next l0_65;
+l0_65:
   push(0="in if(if)");
   trace();
   next l0_144;
@@ -16,7 +18,8 @@ l0_85:
   push(0="test3");
   getVariable();
   not();
-  if(target=l0_127);
+  if ? next l0_127 : next l0_102;
+l0_102:
   push(0="in if(else if)");
   trace();
   next l0_144;

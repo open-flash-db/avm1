@@ -12,7 +12,8 @@ l0_86:
   push(0=2i32);
   greater();
   not();
-  if(target=l0_118);
+  if ? next l0_118 : next l0_113;
+l0_113:
   next l0_138;
 l0_118:
   push(0=c:0, 1=c:0);
@@ -20,7 +21,7 @@ l0_118:
   increment();
   setVariable();
   push(0=true);
-  if(target=l0_86);
+  if ? next l0_86 : next l0_138;
 l0_138:
   push(0=c:3);
   trace();

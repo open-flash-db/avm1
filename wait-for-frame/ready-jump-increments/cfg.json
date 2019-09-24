@@ -1,7 +1,7 @@
 {
   "blocks": [
     {
-      "type": "simple",
+      "type": "wait-for-frame",
       "label": "l0_0",
       "actions": [
         {
@@ -133,13 +133,16 @@
               "value": 0
             }
           ]
-        },
-        {
-          "action": "wait-for-frame",
-          "frame": 2,
-          "skip_count": 5
         }
       ],
+      "frame": 2,
+      "if_loaded": "l0_148",
+      "if_not_loaded": "l0_157"
+    },
+    {
+      "type": "simple",
+      "label": "l0_148",
+      "actions": [],
       "next": "l0_155"
     },
     {
@@ -151,7 +154,14 @@
         },
         {
           "action": "increment"
-        },
+        }
+      ],
+      "next": "l0_157"
+    },
+    {
+      "type": "simple",
+      "label": "l0_157",
+      "actions": [
         {
           "action": "increment"
         },

@@ -16,7 +16,8 @@ l0_70:
   push(0=0f64);
   greater();
   not();
-  if(target=l0_117);
+  if ? next l0_117 : next l0_105;
+l0_105:
   push(0=c:0);
   getVariable();
   trace();
@@ -38,7 +39,8 @@ l0_141:
   push(0=r:0, 1=0f64);
   greater();
   not();
-  if(target=l0_188);
+  if ? next l0_188 : next l0_176;
+l0_176:
   push(0=c:0);
   getVariable();
   trace();
@@ -66,7 +68,8 @@ l0_188:
       push(0=0f64);
       greater();
       not();
-      if(target=l1_282);
+      if ? next l1_282 : next l1_271;
+    l1_271:
       push(0=r:1);
       trace();
       next l1_239;
@@ -85,7 +88,8 @@ l0_188:
       push(0=0f64);
       greater();
       not();
-      if(target=l1_347);
+      if ? next l1_347 : next l1_336;
+    l1_336:
       push(0=r:1);
       trace();
       next l1_307;
@@ -116,7 +120,8 @@ l0_379:
   push(0=0f64);
   greater();
   not();
-  if(target=l0_450);
+  if ? next l0_450 : next l0_432;
+l0_432:
   push(0=c:4);
   getVariable();
   push(0=c:0);
@@ -148,7 +153,8 @@ l0_486:
   push(0=r:0, 1=0f64);
   greater();
   not();
-  if(target=l0_551);
+  if ? next l0_551 : next l0_533;
+l0_533:
   push(0=c:4);
   getVariable();
   push(0=c:0);
