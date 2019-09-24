@@ -1,0 +1,83 @@
+# The goal of this test is to check how jumps are handled when ignoring actions.
+# Expected results:
+# - 4: The jump was applied during the ignore sequence
+# - 6: The jump was skipped during the ignore sequence
+# Result
+# - 6
+# Conclusion
+# `WaitForFrame` skips the actions using syntax, not semantics
+# The jumps are not applied
+
+# Throttled output:
+# ShowFrame
+# DoAction {
+# start
+# 2
+# 1
+# 4
+# 6
+# }
+# ShowFrame
+# DoAction {
+# start
+# 3
+# 2
+# 4
+# 8
+# }
+# ShowFrame
+# ShowFrame
+
+96_0700 [                                                  # push
+  00:737461727400                                          # "start\0"
+]
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+96_0f00 [                                                  # push
+  00:5f63757272656e746672616d6500                          # "_currentframe\0"
+]
+1c                                                         # getVariable
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+96_0f00 [                                                  # push
+  00:5f6672616d65736c6f6164656400                          # "_framesloaded\0"
+]
+1c                                                         # getVariable
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+96_0e00 [                                                  # push
+  00:5f746f74616c6672616d657300                            # "_totalframes\0"
+]
+1c                                                         # getVariable
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+
+96_0500 [                                                  # push
+  07:00000000                                              # 0i32
+]
+8a_0300 (                                                  # waitForFrame
+  0200                                                     # frame id (02 = 0x0002)
+  05                                                       # actions to skip (5 = 0x05)
+)
+99_0200 (                                                  # jump
+  0200                                                     # offset (02 = 0x0002)
+)
+# 5 bytes after `WaitForFrame`
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+# 5 actions after `WaitForFrame` (no jump)
+50                                                         # increment
+50                                                         # increment
+# 5 actions after `WaitForFrame` (through jump)
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+96_0500 [                                                  # push
+  00:656e6400                                              # "end\0"
+]
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());

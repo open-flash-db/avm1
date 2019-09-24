@@ -23,7 +23,9 @@ const PROJECT_ROOT = sysPath.join(meta.dirname, "..");
 const EMPTY_BUFFER: Buffer = Buffer.alloc(0);
 
 const WHITELIST: ReadonlySet<string> = new Set([
-  // "try/try-err",
+  // "wait-for-frame/ready-increments",
+  // "wait-for-frame/ready-jump-increments",
+  // "wait-for-frame/wff2-ready-increments",
   // "try/try-catch-err-no-jump",
   // "try/try-catch-err-jump-out-try",
   // "try/try-catch-err-jump-catch-try",

@@ -13,3 +13,12 @@ Some samples also provide their source code:
 Some of the samples are built manually and don't have any associated source
 code. These files usually test some edge cases related the behavior of the
 interpreter.
+
+<!--
+Throttling (Linux):
+```
+mkfifo main.fifo
+pv --rate-limit 5 main.swf > main.fifo
+flashplayerdebugger main.fifo
+```
+-->

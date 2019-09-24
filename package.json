@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "build": "node --require ts-node/register .tools/build"
+    "build": "node --require ts-node/register .tools/build.ts",
+    "serve": "node --require ts-node/register .tools/serve-throttled.ts"
   },
   "dependencies": {
     "@open-flash/stream": "^0.1.1",

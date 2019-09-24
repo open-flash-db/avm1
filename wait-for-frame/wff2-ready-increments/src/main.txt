@@ -1,0 +1,70 @@
+# The goal of this test is to check a simple case when waiting for a loaded frame
+# The action should skip half the increments and trace `5` at the end.
+
+# Throttled output:
+# ShowFrame
+# DoAction {
+# start
+# 2
+# 1
+# 4
+# 5
+# }
+# ShowFrame
+# DoAction {
+# start
+# 3
+# 2
+# 4
+# 10
+# }
+# ShowFrame
+# ShowFrame
+
+96_0700 [                                                  # push
+  00:737461727400                                          # "start\0"
+]
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+96_0f00 [                                                  # push
+  00:5f63757272656e746672616d6500                          # "_currentframe\0"
+]
+1c                                                         # getVariable
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+96_0f00 [                                                  # push
+  00:5f6672616d65736c6f6164656400                          # "_framesloaded\0"
+]
+1c                                                         # getVariable
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+96_0e00 [                                                  # push
+  00:5f746f74616c6672616d657300                            # "_totalframes\0"
+]
+1c                                                         # getVariable
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+
+96_0a00 [                                                  # push
+  07:00000000                                              # 0i32
+  07:03000000                                              # 3i32
+]
+8d_0100 (                                                  # waitForFrame2
+  05                                                       # actions to skip (5 = 0x05)
+)
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+50                                                         # increment
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());
+
+96_0500 [                                                  # push
+  00:656e6400                                              # "end\0"
+]
+96_0c00 [07:01000000, 00:7072696e7400] 3d 17               # print(stack.pop());

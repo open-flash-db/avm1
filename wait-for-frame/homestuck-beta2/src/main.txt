@@ -1,9 +1,9 @@
-8a_0300 (                                                  # WaitForFrame
-  5c00                                                     # Frame id (92 = 0x005c)
-  02                                                       # Actions to skip (2 = 0x02)
+8a_0300 (                                                  # waitForFrame
+  5c00                                                     # frame id (92 = 0x005c)
+  02                                                       # actions to skip (2 = 0x02)
 )
-8c_0600 (                                                  # GoToLabel
+8c_0600 (                                                  # goToLabel
   737461727400                                             # "start\0"
 )
-06                                                         # Play
+06                                                         # play
 00
