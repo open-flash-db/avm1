@@ -1,75 +1,74 @@
 {
-  "blocks": [
-    {
-      "type": "simple",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "start",
-            "foo",
-            "bar",
-            "end"
-          ]
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        }
-      ],
-      "next": null
-    }
-  ]
+  "head": {
+    "type": "simple",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "start",
+          "foo",
+          "bar",
+          "end"
+        ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      }
+    ],
+    "next": null
+  },
+  "tail": []
 }

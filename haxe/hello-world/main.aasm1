@@ -14,6 +14,8 @@ l0_0:
   setVariable();
   push(0=c:5);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=false, preloadSuper=true, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=1, parameters=[]) {
+    l4:
+      end;
   };
   storeRegister(r:0);
   setVariable();
@@ -43,6 +45,8 @@ l0_0:
   setMember();
   push(0=c:14);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=false, preloadSuper=true, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=1, parameters=[]) {
+    l6:
+      end;
   };
   storeRegister(r:0);
   setVariable();
@@ -93,6 +97,8 @@ l0_1473:
   getVariable();
   push(0=c:3);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=false, preloadSuper=true, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=1, parameters=[]) {
+    l8:
+      end;
   };
   storeRegister(r:0);
   setMember();
@@ -1704,6 +1710,8 @@ l0_1473:
   getVariable();
   push(0=c:12);
   defineFunction2(name="", preloadParent=false, preloadRoot=false, suppressSuper=false, preloadSuper=true, suppressArguments=true, preloadArguments=false, suppressThis=false, preloadThis=true, preloadGlobal=false, registerCount=1, parameters=[]) {
+    l30:
+      end;
   };
   storeRegister(r:0);
   setMember();

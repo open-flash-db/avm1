@@ -1,389 +1,388 @@
 {
-  "blocks": [
-    {
-      "type": "simple",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "frame 9: update expressions",
-            "i",
-            "after increment",
-            "after prefixed increment",
-            "after decrement",
-            "after prefixed decrement",
-            "j",
-            "after increment + assignment",
-            "after prefixed increment + assignment",
-            "after decrement + assignment",
-            "after prefixed decrement + assignment"
-          ]
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "increment"
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "increment"
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "decrement"
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 4
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "decrement"
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 5
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 6
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "increment"
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 7
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 6
-            },
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "increment"
-        },
-        {
-          "action": "store-register",
-          "register": 0
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "register",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 8
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 6
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "decrement"
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 9
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 6
-            },
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "decrement"
-        },
-        {
-          "action": "store-register",
-          "register": 0
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "register",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "set-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 10
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        }
-      ],
-      "next": null
-    }
-  ]
+  "head": {
+    "type": "simple",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "frame 9: update expressions",
+          "i",
+          "after increment",
+          "after prefixed increment",
+          "after decrement",
+          "after prefixed decrement",
+          "j",
+          "after increment + assignment",
+          "after prefixed increment + assignment",
+          "after decrement + assignment",
+          "after prefixed decrement + assignment"
+        ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "increment"
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "increment"
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "decrement"
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "decrement"
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 6
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "increment"
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 7
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 6
+          },
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "increment"
+      },
+      {
+        "action": "store-register",
+        "register": 0
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "register",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 8
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 6
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "decrement"
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 9
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 6
+          },
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "decrement"
+      },
+      {
+        "action": "store-register",
+        "register": 0
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "register",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "set-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      }
+    ],
+    "next": null
+  },
+  "tail": []
 }

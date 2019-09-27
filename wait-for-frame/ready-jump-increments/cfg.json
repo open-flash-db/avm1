@@ -1,144 +1,144 @@
 {
-  "blocks": [
-    {
-      "type": "wait-for-frame",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "start"
-            }
-          ]
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "sint32",
-              "value": 1
-            },
-            {
-              "type": "string",
-              "value": "print"
-            }
-          ]
-        },
-        {
-          "action": "call-function"
-        },
-        {
-          "action": "pop"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "_currentframe"
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "sint32",
-              "value": 1
-            },
-            {
-              "type": "string",
-              "value": "print"
-            }
-          ]
-        },
-        {
-          "action": "call-function"
-        },
-        {
-          "action": "pop"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "_framesloaded"
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "sint32",
-              "value": 1
-            },
-            {
-              "type": "string",
-              "value": "print"
-            }
-          ]
-        },
-        {
-          "action": "call-function"
-        },
-        {
-          "action": "pop"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "_totalframes"
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "sint32",
-              "value": 1
-            },
-            {
-              "type": "string",
-              "value": "print"
-            }
-          ]
-        },
-        {
-          "action": "call-function"
-        },
-        {
-          "action": "pop"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "sint32",
-              "value": 0
-            }
-          ]
-        }
-      ],
-      "frame": 2,
-      "if_loaded": "l0_148",
-      "if_not_loaded": "l0_157"
-    },
+  "head": {
+    "type": "wait-for-frame",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "start"
+          }
+        ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "sint32",
+            "value": 1
+          },
+          {
+            "type": "string",
+            "value": "print"
+          }
+        ]
+      },
+      {
+        "action": "call-function"
+      },
+      {
+        "action": "pop"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "_currentframe"
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "sint32",
+            "value": 1
+          },
+          {
+            "type": "string",
+            "value": "print"
+          }
+        ]
+      },
+      {
+        "action": "call-function"
+      },
+      {
+        "action": "pop"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "_framesloaded"
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "sint32",
+            "value": 1
+          },
+          {
+            "type": "string",
+            "value": "print"
+          }
+        ]
+      },
+      {
+        "action": "call-function"
+      },
+      {
+        "action": "pop"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "_totalframes"
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "sint32",
+            "value": 1
+          },
+          {
+            "type": "string",
+            "value": "print"
+          }
+        ]
+      },
+      {
+        "action": "call-function"
+      },
+      {
+        "action": "pop"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "sint32",
+            "value": 0
+          }
+        ]
+      }
+    ],
+    "frame": 2,
+    "if_loaded": "l0_148",
+    "if_not_loaded": "l0_157"
+  },
+  "tail": [
     {
       "type": "simple",
       "label": "l0_148",

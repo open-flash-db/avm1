@@ -1,13 +1,13 @@
 {
-  "blocks": [
-    {
-      "type": "wait-for-frame",
-      "label": "l0_0",
-      "actions": [],
-      "frame": 92,
-      "if_loaded": "l0_6",
-      "if_not_loaded": null
-    },
+  "head": {
+    "type": "wait-for-frame",
+    "label": "l0_0",
+    "actions": [],
+    "frame": 92,
+    "if_loaded": "l0_6",
+    "if_not_loaded": null
+  },
+  "tail": [
     {
       "type": "simple",
       "label": "l0_6",

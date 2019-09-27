@@ -1,40 +1,40 @@
 {
-  "blocks": [
-    {
-      "type": "if",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "before if/else"
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "test"
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "not"
-        }
-      ],
-      "if_true": "l0_52",
-      "if_false": "l0_36"
-    },
+  "head": {
+    "type": "if",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "before if/else"
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "test"
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "not"
+      }
+    ],
+    "if_true": "l0_52",
+    "if_false": "l0_36"
+  },
+  "tail": [
     {
       "type": "simple",
       "label": "l0_36",

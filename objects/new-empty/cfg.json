@@ -1,90 +1,95 @@
 {
-  "blocks": [
-    {
-      "type": "simple",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "start",
-            "empty",
-            "Empty",
-            "end"
-          ]
-        },
-        {
-          "action": "define-function",
-          "name": "Empty",
-          "parameters": [],
-          "body": {
-            "blocks": []
-          }
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "float64",
-              "value": 0
-            },
-            {
-              "type": "constant",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "action": "new-object"
-        },
-        {
-          "action": "define-local"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "action": "trace"
+  "head": {
+    "type": "simple",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "start",
+          "empty",
+          "Empty",
+          "end"
+        ]
+      },
+      {
+        "action": "define-function",
+        "name": "Empty",
+        "parameters": [],
+        "body": {
+          "head": {
+            "type": "simple",
+            "label": "l1",
+            "actions": [],
+            "next": null
+          },
+          "tail": []
         }
-      ],
-      "next": null
-    }
-  ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "float64",
+            "value": 0
+          },
+          {
+            "type": "constant",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "action": "new-object"
+      },
+      {
+        "action": "define-local"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      }
+    ],
+    "next": null
+  },
+  "tail": []
 }

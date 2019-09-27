@@ -1,165 +1,164 @@
 {
-  "blocks": [
-    {
-      "type": "simple",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "start",
-            "_alpha=",
-            "",
-            "blendMode=",
-            "blendMode",
-            "cacheAsBitmap=",
-            "cacheAsBitmap",
-            "_currentFrame=",
-            "end"
-          ]
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 2
-            },
-            {
-              "type": "sint32",
-              "value": 6
-            }
-          ]
-        },
-        {
-          "action": "get-property"
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 4
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 5
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 6
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 7
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 2
-            },
-            {
-              "type": "sint32",
-              "value": 4
-            }
-          ]
-        },
-        {
-          "action": "get-property"
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 8
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        }
-      ],
-      "next": null
-    }
-  ]
+  "head": {
+    "type": "simple",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "start",
+          "_alpha=",
+          "",
+          "blendMode=",
+          "blendMode",
+          "cacheAsBitmap=",
+          "cacheAsBitmap",
+          "_currentFrame=",
+          "end"
+        ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 2
+          },
+          {
+            "type": "sint32",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "action": "get-property"
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 7
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 2
+          },
+          {
+            "type": "sint32",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "action": "get-property"
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 8
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      }
+    ],
+    "next": null
+  },
+  "tail": []
 }

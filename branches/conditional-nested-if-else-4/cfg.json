@@ -1,64 +1,64 @@
 {
-  "blocks": [
-    {
-      "type": "if",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "before hyper-nested if/else",
-            "test",
-            "in hyper-nested if/else 1111",
-            "in hyper-nested if/else 1110",
-            "in hyper-nested if/else 1101",
-            "in hyper-nested if/else 1100",
-            "in hyper-nested if/else 1011",
-            "in hyper-nested if/else 1010",
-            "in hyper-nested if/else 1001",
-            "in hyper-nested if/else 1000",
-            "in hyper-nested if/else 0111",
-            "in hyper-nested if/else 0110",
-            "in hyper-nested if/else 0101",
-            "in hyper-nested if/else 0100",
-            "in hyper-nested if/else 0011",
-            "in hyper-nested if/else 0010",
-            "in hyper-nested if/else 0001",
-            "in hyper-nested if/else 0000",
-            "after hyper-nested if/else"
-          ]
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "not"
-        }
-      ],
-      "if_true": "l0_719",
-      "if_false": "l0_547"
-    },
+  "head": {
+    "type": "if",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "before hyper-nested if/else",
+          "test",
+          "in hyper-nested if/else 1111",
+          "in hyper-nested if/else 1110",
+          "in hyper-nested if/else 1101",
+          "in hyper-nested if/else 1100",
+          "in hyper-nested if/else 1011",
+          "in hyper-nested if/else 1010",
+          "in hyper-nested if/else 1001",
+          "in hyper-nested if/else 1000",
+          "in hyper-nested if/else 0111",
+          "in hyper-nested if/else 0110",
+          "in hyper-nested if/else 0101",
+          "in hyper-nested if/else 0100",
+          "in hyper-nested if/else 0011",
+          "in hyper-nested if/else 0010",
+          "in hyper-nested if/else 0001",
+          "in hyper-nested if/else 0000",
+          "after hyper-nested if/else"
+        ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "not"
+      }
+    ],
+    "if_true": "l0_719",
+    "if_false": "l0_547"
+  },
+  "tail": [
     {
       "type": "if",
       "label": "l0_547",

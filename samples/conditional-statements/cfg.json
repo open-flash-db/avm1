@@ -1,95 +1,95 @@
 {
-  "blocks": [
-    {
-      "type": "if",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "frame 3: conditionnal statements",
-            "test",
-            "before if",
-            "in if",
-            "after if",
-            "before if/else",
-            "in else",
-            "after if/else",
-            "before nested if",
-            "in nested if",
-            "after nested if",
-            "test2",
-            "before nested if/else",
-            "in nested if/else 1",
-            "in nested if/else 2",
-            "in nested if/else 3",
-            "in nested if/else 4",
-            "before conditionnal expression",
-            "foo",
-            "baz",
-            "bar",
-            "after conditionnal expression"
-          ]
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "boolean",
-              "value": true
-            }
-          ]
-        },
-        {
-          "action": "define-local"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "not"
-        }
-      ],
-      "if_true": "l0_370",
-      "if_false": "l0_364"
-    },
+  "head": {
+    "type": "if",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "frame 3: conditionnal statements",
+          "test",
+          "before if",
+          "in if",
+          "after if",
+          "before if/else",
+          "in else",
+          "after if/else",
+          "before nested if",
+          "in nested if",
+          "after nested if",
+          "test2",
+          "before nested if/else",
+          "in nested if/else 1",
+          "in nested if/else 2",
+          "in nested if/else 3",
+          "in nested if/else 4",
+          "before conditionnal expression",
+          "foo",
+          "baz",
+          "bar",
+          "after conditionnal expression"
+        ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "boolean",
+            "value": true
+          }
+        ]
+      },
+      {
+        "action": "define-local"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "not"
+      }
+    ],
+    "if_true": "l0_370",
+    "if_false": "l0_364"
+  },
+  "tail": [
     {
       "type": "simple",
       "label": "l0_364",

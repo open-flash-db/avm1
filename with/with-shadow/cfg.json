@@ -1,35 +1,66 @@
 {
-  "blocks": [
-    {
-      "type": "simple",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "x",
-            "o",
-            "start",
-            "shadow",
-            "inner",
-            "outer",
-            "f",
-            "no-shadow",
-            "end"
-          ]
-        },
-        {
-          "action": "define-function",
-          "name": "f",
-          "parameters": [
-            "x",
-            "o"
-          ],
-          "body": {
-            "blocks": [
+  "head": {
+    "type": "simple",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "x",
+          "o",
+          "start",
+          "shadow",
+          "inner",
+          "outer",
+          "f",
+          "no-shadow",
+          "end"
+        ]
+      },
+      {
+        "action": "define-function",
+        "name": "f",
+        "parameters": [
+          "x",
+          "o"
+        ],
+        "body": {
+          "head": {
+            "type": "with",
+            "label": "l1_63",
+            "actions": [
               {
-                "type": "with",
-                "label": "l1_63",
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "trace"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              }
+            ],
+            "with": {
+              "head": {
+                "type": "simple",
+                "label": "l2_81",
                 "actions": [
                   {
                     "action": "push",
@@ -45,178 +76,144 @@
                   },
                   {
                     "action": "trace"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 1
-                      }
-                    ]
-                  },
-                  {
-                    "action": "get-variable"
                   }
                 ],
-                "with": {
-                  "blocks": [
-                    {
-                      "type": "simple",
-                      "label": "l2_81",
-                      "actions": [
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "constant",
-                              "value": 0
-                            }
-                          ]
-                        },
-                        {
-                          "action": "get-variable"
-                        },
-                        {
-                          "action": "trace"
-                        }
-                      ],
-                      "next": null
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 2
+                "next": null
+              },
+              "tail": []
             }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            },
-            {
-              "type": "constant",
-              "value": 4
-            },
-            {
-              "type": "sint32",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "init-object"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 5
-            },
-            {
-              "type": "sint32",
-              "value": 2
-            },
-            {
-              "type": "constant",
-              "value": 6
-            }
-          ]
-        },
-        {
-          "action": "call-function"
-        },
-        {
-          "action": "pop"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 7
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "float64",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "init-object"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 5
-            },
-            {
-              "type": "sint32",
-              "value": 2
-            },
-            {
-              "type": "constant",
-              "value": 6
-            }
-          ]
-        },
-        {
-          "action": "call-function"
-        },
-        {
-          "action": "pop"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 8
-            }
-          ]
-        },
-        {
-          "action": "trace"
+          },
+          "tail": []
         }
-      ],
-      "next": null
-    }
-  ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          },
+          {
+            "type": "constant",
+            "value": 4
+          },
+          {
+            "type": "sint32",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "init-object"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 5
+          },
+          {
+            "type": "sint32",
+            "value": 2
+          },
+          {
+            "type": "constant",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "action": "call-function"
+      },
+      {
+        "action": "pop"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 7
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "float64",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "init-object"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 5
+          },
+          {
+            "type": "sint32",
+            "value": 2
+          },
+          {
+            "type": "constant",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "action": "call-function"
+      },
+      {
+        "action": "pop"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 8
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      }
+    ],
+    "next": null
+  },
+  "tail": []
 }

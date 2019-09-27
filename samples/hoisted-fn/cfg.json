@@ -1,116 +1,114 @@
 {
-  "blocks": [
-    {
-      "type": "simple",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "main",
-            "start",
-            "before-call",
-            "after-call",
-            "end"
-          ]
-        },
-        {
-          "action": "define-function",
-          "name": "main",
-          "parameters": [],
-          "body": {
-            "blocks": [
+  "head": {
+    "type": "simple",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "main",
+          "start",
+          "before-call",
+          "after-call",
+          "end"
+        ]
+      },
+      {
+        "action": "define-function",
+        "name": "main",
+        "parameters": [],
+        "body": {
+          "head": {
+            "type": "simple",
+            "label": "l1_55",
+            "actions": [
               {
-                "type": "simple",
-                "label": "l1_55",
-                "actions": [
+                "action": "push",
+                "values": [
                   {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "constant",
-                        "value": 0
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
+                    "type": "constant",
+                    "value": 0
                   }
-                ],
-                "next": null
+                ]
+              },
+              {
+                "action": "trace"
               }
-            ]
-          }
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "float64",
-              "value": 0
-            },
-            {
-              "type": "constant",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "call-function"
-        },
-        {
-          "action": "pop"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 4
-            }
-          ]
-        },
-        {
-          "action": "trace"
+            ],
+            "next": null
+          },
+          "tail": []
         }
-      ],
-      "next": null
-    }
-  ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "float64",
+            "value": 0
+          },
+          {
+            "type": "constant",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "call-function"
+      },
+      {
+        "action": "pop"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      }
+    ],
+    "next": null
+  },
+  "tail": []
 }

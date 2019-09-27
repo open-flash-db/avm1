@@ -1,72 +1,89 @@
 {
-  "blocks": [
-    {
-      "type": "try",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "define-function",
-          "name": "f",
-          "parameters": [],
-          "body": {
-            "blocks": [
+  "head": {
+    "type": "try",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "define-function",
+        "name": "f",
+        "parameters": [],
+        "body": {
+          "head": {
+            "type": "throw",
+            "label": "l4_9",
+            "actions": [
               {
-                "type": "throw",
-                "label": "l4_9",
-                "actions": [
+                "action": "push",
+                "values": [
                   {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "err"
-                      }
-                    ]
-                  },
+                    "type": "string",
+                    "value": "err"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              },
+              {
+                "action": "push",
+                "values": [
                   {
-                    "action": "trace"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "err-value"
-                      }
-                    ]
+                    "type": "string",
+                    "value": "err-value"
                   }
                 ]
               }
             ]
-          }
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "start"
-            }
-          ]
-        },
-        {
-          "action": "trace"
+          },
+          "tail": []
         }
-      ],
-      "try": {
-        "blocks": []
       },
-      "catch": {
-        "blocks": []
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "start"
+          }
+        ]
       },
-      "catch_target": {
-        "type": "variable",
-        "target": "e"
-      },
-      "finally": {
-        "blocks": []
+      {
+        "action": "trace"
       }
+    ],
+    "try": {
+      "head": {
+        "type": "simple",
+        "label": "l1",
+        "actions": [],
+        "next": "l0_56"
+      },
+      "tail": []
     },
+    "catch": {
+      "head": {
+        "type": "simple",
+        "label": "l2",
+        "actions": [],
+        "next": "l0_56"
+      },
+      "tail": []
+    },
+    "catch_target": {
+      "type": "variable",
+      "target": "e"
+    },
+    "finally": {
+      "head": {
+        "type": "simple",
+        "label": "l3",
+        "actions": [],
+        "next": "l0_56"
+      },
+      "tail": []
+    }
+  },
+  "tail": [
     {
       "type": "simple",
       "label": "l0_56",

@@ -1,53 +1,53 @@
 {
-  "blocks": [
-    {
-      "type": "if",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "before switch+default"
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "i"
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "store-register",
-          "register": 0
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "float64",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "strict-equals"
-        }
-      ],
-      "if_true": "l0_77",
-      "if_false": "l0_56"
-    },
+  "head": {
+    "type": "if",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "before switch+default"
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "i"
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "store-register",
+        "register": 0
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "float64",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "strict-equals"
+      }
+    ],
+    "if_true": "l0_77",
+    "if_false": "l0_56"
+  },
+  "tail": [
     {
       "type": "if",
       "label": "l0_56",

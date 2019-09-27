@@ -15,7 +15,11 @@ l0_0:
       push(0="in-catch");
       next l0_81;
   } catch(i:"e") {
+    l2:
+      next l0_81;
   } finally {
+    l3:
+      next l0_81;
   }
 l0_81:
   trace();

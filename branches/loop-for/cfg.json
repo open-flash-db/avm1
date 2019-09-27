@@ -1,49 +1,49 @@
 {
-  "blocks": [
-    {
-      "type": "simple",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "before for",
-            "i",
-            "in for",
-            "after for"
-          ]
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "float64",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "set-variable"
-        }
-      ],
-      "next": "l0_56"
-    },
+  "head": {
+    "type": "simple",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "before for",
+          "i",
+          "in for",
+          "after for"
+        ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "float64",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "set-variable"
+      }
+    ],
+    "next": "l0_56"
+  },
+  "tail": [
     {
       "type": "if",
       "label": "l0_56",

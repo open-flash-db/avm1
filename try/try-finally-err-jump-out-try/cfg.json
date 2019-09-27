@@ -1,84 +1,23 @@
 {
-  "blocks": [
-    {
-      "type": "try",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "define-function",
-          "name": "f",
-          "parameters": [],
-          "body": {
-            "blocks": [
-              {
-                "type": "throw",
-                "label": "l3_9",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "err"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "err-value"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "start"
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        }
-      ],
-      "try": {
-        "blocks": [
-          {
-            "type": "simple",
-            "label": "l1_56",
-            "actions": [],
-            "next": "l0_115"
-          }
-        ]
-      },
-      "catch_target": {
-        "type": "variable",
-        "target": "e"
-      },
-      "finally": {
-        "blocks": [
-          {
-            "type": "simple",
-            "label": "l2_86",
+  "head": {
+    "type": "try",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "define-function",
+        "name": "f",
+        "parameters": [],
+        "body": {
+          "head": {
+            "type": "throw",
+            "label": "l3_9",
             "actions": [
               {
                 "action": "push",
                 "values": [
                   {
                     "type": "string",
-                    "value": "in-finally"
+                    "value": "err"
                   }
                 ]
               },
@@ -90,22 +29,80 @@
                 "values": [
                   {
                     "type": "string",
-                    "value": "e"
+                    "value": "err-value"
                   }
                 ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "trace"
               }
-            ],
-            "next": "l0_110"
+            ]
+          },
+          "tail": []
+        }
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "start"
           }
         ]
+      },
+      {
+        "action": "trace"
       }
+    ],
+    "try": {
+      "head": {
+        "type": "simple",
+        "label": "l1_56",
+        "actions": [],
+        "next": "l0_115"
+      },
+      "tail": []
     },
+    "catch_target": {
+      "type": "variable",
+      "target": "e"
+    },
+    "finally": {
+      "head": {
+        "type": "simple",
+        "label": "l2_86",
+        "actions": [
+          {
+            "action": "push",
+            "values": [
+              {
+                "type": "string",
+                "value": "in-finally"
+              }
+            ]
+          },
+          {
+            "action": "trace"
+          },
+          {
+            "action": "push",
+            "values": [
+              {
+                "type": "string",
+                "value": "e"
+              }
+            ]
+          },
+          {
+            "action": "get-variable"
+          },
+          {
+            "action": "trace"
+          }
+        ],
+        "next": "l0_110"
+      },
+      "tail": []
+    }
+  },
+  "tail": [
     {
       "type": "simple",
       "label": "l0_61",

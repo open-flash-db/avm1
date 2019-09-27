@@ -1,86 +1,86 @@
 {
-  "blocks": [
-    {
-      "type": "simple",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "constant-pool",
-          "constant_pool": [
-            "map",
-            "foo",
-            "bar",
-            "before for/in + assignment",
-            "key",
-            "in for/in + assignment",
-            "after for/in + assignment"
-          ]
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            },
-            {
-              "type": "constant",
-              "value": 1
-            },
-            {
-              "type": "sint32",
-              "value": 1
-            },
-            {
-              "type": "constant",
-              "value": 2
-            },
-            {
-              "type": "sint32",
-              "value": 2
-            },
-            {
-              "type": "sint32",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "action": "init-object"
-        },
-        {
-          "action": "define-local"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "enumerate2"
-        }
-      ],
-      "next": "l0_136"
-    },
+  "head": {
+    "type": "simple",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "map",
+          "foo",
+          "bar",
+          "before for/in + assignment",
+          "key",
+          "in for/in + assignment",
+          "after for/in + assignment"
+        ]
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          },
+          {
+            "type": "constant",
+            "value": 1
+          },
+          {
+            "type": "sint32",
+            "value": 1
+          },
+          {
+            "type": "constant",
+            "value": 2
+          },
+          {
+            "type": "sint32",
+            "value": 2
+          },
+          {
+            "type": "sint32",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "action": "init-object"
+      },
+      {
+        "action": "define-local"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "constant",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "action": "get-variable"
+      },
+      {
+        "action": "enumerate2"
+      }
+    ],
+    "next": "l0_136"
+  },
+  "tail": [
     {
       "type": "if",
       "label": "l0_136",

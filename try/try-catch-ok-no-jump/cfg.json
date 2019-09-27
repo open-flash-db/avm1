@@ -1,135 +1,132 @@
 {
-  "blocks": [
-    {
-      "type": "try",
-      "label": "l0_0",
-      "actions": [
-        {
-          "action": "define-function",
-          "name": "f",
-          "parameters": [],
-          "body": {
-            "blocks": [
+  "head": {
+    "type": "try",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "define-function",
+        "name": "f",
+        "parameters": [],
+        "body": {
+          "head": {
+            "type": "simple",
+            "label": "l3_9",
+            "actions": [
               {
-                "type": "simple",
-                "label": "l3_9",
-                "actions": [
+                "action": "push",
+                "values": [
                   {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "ok"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
+                    "type": "string",
+                    "value": "ok"
                   }
-                ],
-                "next": null
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": null
+          },
+          "tail": []
+        }
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "string",
+            "value": "start"
+          }
+        ]
+      },
+      {
+        "action": "trace"
+      }
+    ],
+    "try": {
+      "head": {
+        "type": "simple",
+        "label": "l1_40",
+        "actions": [
+          {
+            "action": "push",
+            "values": [
+              {
+                "type": "sint32",
+                "value": 0
+              },
+              {
+                "type": "string",
+                "value": "f"
               }
             ]
-          }
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "string",
-              "value": "start"
-            }
-          ]
-        },
-        {
-          "action": "trace"
-        }
-      ],
-      "try": {
-        "blocks": [
+          },
           {
-            "type": "simple",
-            "label": "l1_40",
-            "actions": [
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "sint32",
-                    "value": 0
-                  },
-                  {
-                    "type": "string",
-                    "value": "f"
-                  }
-                ]
-              },
-              {
-                "action": "call-function"
-              },
-              {
-                "action": "pop"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "string",
-                    "value": "in-try"
-                  }
-                ]
-              },
-              {
-                "action": "trace"
-              }
-            ],
-            "next": "l0_65"
-          }
-        ]
-      },
-      "catch": {
-        "blocks": [
+            "action": "call-function"
+          },
           {
-            "type": "simple",
-            "label": "l2_65",
-            "actions": [
+            "action": "pop"
+          },
+          {
+            "action": "push",
+            "values": [
               {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "string",
-                    "value": "in-err"
-                  }
-                ]
-              },
-              {
-                "action": "trace"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "string",
-                    "value": "e"
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "trace"
+                "type": "string",
+                "value": "in-try"
               }
-            ],
-            "next": "l0_85"
+            ]
+          },
+          {
+            "action": "trace"
           }
-        ]
+        ],
+        "next": "l0_65"
       },
-      "catch_target": {
-        "type": "variable",
-        "target": "e"
-      }
+      "tail": []
     },
+    "catch": {
+      "head": {
+        "type": "simple",
+        "label": "l2_65",
+        "actions": [
+          {
+            "action": "push",
+            "values": [
+              {
+                "type": "string",
+                "value": "in-err"
+              }
+            ]
+          },
+          {
+            "action": "trace"
+          },
+          {
+            "action": "push",
+            "values": [
+              {
+                "type": "string",
+                "value": "e"
+              }
+            ]
+          },
+          {
+            "action": "get-variable"
+          },
+          {
+            "action": "trace"
+          }
+        ],
+        "next": "l0_85"
+      },
+      "tail": []
+    },
+    "catch_target": {
+      "type": "variable",
+      "target": "e"
+    }
+  },
+  "tail": [
     {
       "type": "simple",
       "label": "l0_65",
