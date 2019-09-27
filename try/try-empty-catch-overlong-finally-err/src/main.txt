@@ -1,4 +1,4 @@
-# Try with an empty catch.
+# Try with an empty catch and a finally declared to be 256 bytes long while only 16 bytes in reality.
 
 9b_0600 (                                                  # defineFunction
   6600                                                     # "f\0"
@@ -21,10 +21,10 @@
 26                                                         # trace
 
 8f_0900 (                                                  # try
-  01                                                       # flags(has_catch)
+  02                                                       # flags(has_finally)
   0d00                                                     # try_size
   0000                                                     # catch_size
-  0000                                                     # finally_size
+  0001                                                     # finally_size (overlong)
   6500                                                     # catch_target ("e\0")
 ) {
   96_0800 [                                                # push
@@ -35,7 +35,12 @@
   17                                                       # pop
 } {
                                                            # empty catch
-}
+} {
+   96_0c00 [                                               # push
+     00:696e2d66696e616c6c7900                             # "in-finally\0"
+   ]
+   26                                                      # trace
+ }
 
 96_0500 [                                                  # push
   00:656e6400                                              # "end\0"

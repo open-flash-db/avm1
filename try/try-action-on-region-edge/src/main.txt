@@ -1,0 +1,260 @@
+# Check if the action at the edge the `finally` is executed
+# This is tested using a `jump` action on the edge, it tries to jump back inside `finally`
+# Case 0: action fully inside the region (reference: always executed)
+# Case 1: action fully outside (reference: always ignored)
+# Case 2: action header inside, action data outside
+# Case 3: action code inside, action length and data outside
+
+# main0
+9b_0a00 (                                                  # defineFunction
+  6d61696e3000                                             # "main0\0"
+  0000                                                     # parameter_count
+  6b00                                                     # body_size
+) {
+  96_0700 [                                                # push
+    00:737461727400                                        # "start\0"
+  ]
+  26                                                       # trace
+
+  8f_0900 (                                                # try
+    02                                                     # flags(has_finally)
+    1600                                                   # try_size
+    0000                                                   # catch_size
+    3500                                                   # finally_size (53 real / 53 declared)
+    6500                                                   # catch_target ("e\0")
+  ) {
+    96_0800 [                                              # push
+      00:696e2d74727900                                    # "in-try\0"
+    ]
+    26                                                     # trace
+    96_0600 [                                              # push
+      00:7472657300                                        # "tres\0"
+    ]
+    3e                                                     # return
+  } {
+    96_0c00 [                                              # push
+      00:696e2d66696e616c6c7900                            # "in-finally\0"
+    ]
+    26                                                     # trace
+    99_0200(1b00)                                          # jump(edge)
+
+    # back:
+    96_1200 [                                              # push
+      00:7374696c6c2d696e2d66696e616c6c7900                # "still-in-finally\0"
+    ]
+    26                                                     # trace
+    99_0200(0500)                                          # jump(out)
+
+    # 5 bytes remaining for `finally_size`
+
+    # edge:
+    99_0200(e0ff)                                          # jump(back)
+  }
+
+  # out:
+  96_0500 [                                                # push
+    00:656e6400                                            # "end\0"
+  ]
+  26                                                       # trace
+}
+
+# main1
+9b_0a00 (                                                  # defineFunction
+  6d61696e3100                                             # "main1\0"
+  0000                                                     # parameter_count
+  6b00                                                     # body_size
+) {
+  96_0700 [                                                # push
+    00:737461727400                                        # "start\0"
+  ]
+  26                                                       # trace
+
+  8f_0900 (                                                # try
+    02                                                     # flags(has_finally)
+    1600                                                   # try_size
+    0000                                                   # catch_size
+    3000                                                   # finally_size (53 real / 48 declared)
+    6500                                                   # catch_target ("e\0")
+  ) {
+    96_0800 [                                              # push
+      00:696e2d74727900                                    # "in-try\0"
+    ]
+    26                                                     # trace
+    96_0600 [                                              # push
+      00:7472657300                                        # "tres\0"
+    ]
+    3e                                                     # return
+  } {
+    96_0c00 [                                              # push
+      00:696e2d66696e616c6c7900                            # "in-finally\0"
+    ]
+    26                                                     # trace
+    99_0200(1b00)                                          # jump(edge)
+
+    # back:
+    96_1200 [                                              # push
+      00:7374696c6c2d696e2d66696e616c6c7900                # "still-in-finally\0"
+    ]
+    26                                                     # trace
+    99_0200(0500)                                          # jump(out)
+
+    # 0 bytes remaining for `finally_size`
+
+    # edge:
+    99_0200(e0ff)                                          # jump(back)
+  }
+
+  # out:
+  96_0500 [                                                # push
+    00:656e6400                                            # "end\0"
+  ]
+  26                                                       # trace
+}
+
+# main2
+9b_0a00 (                                                  # defineFunction
+  6d61696e3200                                             # "main2\0"
+  0000                                                     # parameter_count
+  6b00                                                     # body_size
+) {
+  96_0700 [                                                # push
+    00:737461727400                                        # "start\0"
+  ]
+  26                                                       # trace
+
+  8f_0900 (                                                # try
+    02                                                     # flags(has_finally)
+    1600                                                   # try_size
+    0000                                                   # catch_size
+    3200                                                   # finally_size (53 real / 50 declared)
+    6500                                                   # catch_target ("e\0")
+  ) {
+    96_0800 [                                              # push
+      00:696e2d74727900                                    # "in-try\0"
+    ]
+    26                                                     # trace
+    96_0600 [                                              # push
+      00:7472657300                                        # "tres\0"
+    ]
+    3e                                                     # return
+  } {
+    96_0c00 [                                              # push
+      00:696e2d66696e616c6c7900                            # "in-finally\0"
+    ]
+    26                                                     # trace
+    99_0200(1b00)                                          # jump(edge)
+
+    # back:
+    96_1200 [                                              # push
+      00:7374696c6c2d696e2d66696e616c6c7900                # "still-in-finally\0"
+    ]
+    26                                                     # trace
+    99_0200(0500)                                          # jump(out)
+
+    # 2 bytes remaining for `finally_size`
+
+    # edge:
+    99_0200(e0ff)                                          # jump(back)
+  }
+
+  # out:
+  96_0500 [                                                # push
+    00:656e6400                                            # "end\0"
+  ]
+  26                                                       # trace
+}
+
+# main3
+9b_0a00 (                                                  # defineFunction
+  6d61696e3300                                             # "main3\0"
+  0000                                                     # parameter_count
+  6b00                                                     # body_size
+) {
+  96_0700 [                                                # push
+    00:737461727400                                        # "start\0"
+  ]
+  26                                                       # trace
+
+  8f_0900 (                                                # try
+    02                                                     # flags(has_finally)
+    1600                                                   # try_size
+    0000                                                   # catch_size
+    3100                                                   # finally_size (53 real / 49 declared)
+    6500                                                   # catch_target ("e\0")
+  ) {
+    96_0800 [                                              # push
+      00:696e2d74727900                                    # "in-try\0"
+    ]
+    26                                                     # trace
+    96_0600 [                                              # push
+      00:7472657300                                        # "tres\0"
+    ]
+    3e                                                     # return
+  } {
+    96_0c00 [                                              # push
+      00:696e2d66696e616c6c7900                            # "in-finally\0"
+    ]
+    26                                                     # trace
+    99_0200(1b00)                                          # jump(edge)
+
+    # back:
+    96_1200 [                                              # push
+      00:7374696c6c2d696e2d66696e616c6c7900                # "still-in-finally\0"
+    ]
+    26                                                     # trace
+    99_0200(0500)                                          # jump(out)
+
+    # 1 byte remaining for `finally_size`
+
+    # edge:
+    99_0200(e0ff)                                          # jump(back)
+  }
+
+  # out:
+  96_0500 [                                                # push
+    00:656e6400                                            # "end\0"
+  ]
+  26                                                       # trace
+}
+
+# Run
+
+# main0
+96_0c00 [                                                  # push
+  07:00000000                                              # 0i32
+  00:6d61696e3000                                          # "main0\0"
+]
+4c                                                         # pushDuplicate
+26                                                         # trace
+3d                                                         # callFunction
+17                                                         # pop
+
+# main1
+96_0c00 [                                                  # push
+  07:00000000                                              # 0i32
+  00:6d61696e3100                                          # "main1\0"
+]
+4c                                                         # pushDuplicate
+26                                                         # trace
+3d                                                         # callFunction
+17                                                         # pop
+
+# main2
+96_0c00 [                                                  # push
+  07:00000000                                              # 0i32
+  00:6d61696e3200                                          # "main2\0"
+]
+4c                                                         # pushDuplicate
+26                                                         # trace
+3d                                                         # callFunction
+17                                                         # pop
+
+# main3
+96_0c00 [                                                  # push
+  07:00000000                                              # 0i32
+  00:6d61696e3300                                          # "main3\0"
+]
+4c                                                         # pushDuplicate
+26                                                         # trace
+3d                                                         # callFunction
+17                                                         # pop

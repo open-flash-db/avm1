@@ -1,4 +1,4 @@
-# Try with an empty catch.
+# Try with all bodies empty
 
 9b_0600 (                                                  # defineFunction
   6600                                                     # "f\0"
@@ -21,20 +21,17 @@
 26                                                         # trace
 
 8f_0900 (                                                  # try
-  01                                                       # flags(has_catch)
-  0d00                                                     # try_size
+  03                                                       # flags(has_catch, has_finally)
+  0000                                                     # try_size
   0000                                                     # catch_size
   0000                                                     # finally_size
   6500                                                     # catch_target ("e\0")
 ) {
-  96_0800 [                                                # push
-    07:00000000                                            # 0i32
-    00:6600                                                # "f\0"
-  ]
-  3d                                                       # callFunction
-  17                                                       # pop
+                                                           # empty try
 } {
                                                            # empty catch
+} {
+                                                           # empty finally
 }
 
 96_0500 [                                                  # push

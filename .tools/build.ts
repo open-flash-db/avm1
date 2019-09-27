@@ -31,6 +31,7 @@ const WHITELIST: ReadonlySet<string> = new Set([
   // "try/try-catch-err-jump-catch-try",
   // "try/try-return-finally-ok",
   // "try/try-finally-err-jump-out-try",
+  // "try/try-action-on-region-edge",
   // "avm1-bytes/end-action-inside-function",
 ]);
 
@@ -112,10 +113,14 @@ export async function build(): Promise<void> {
         continue;
       }
       promises.push(readTextFile(item.src.path).then(async (sourceText: string) => {
-        const avm1Bytes: Uint8Array = bytesFromSource(sourceText);
-        await outputFile(item.avm1Path, avm1Bytes);
-        const swfBytes: Uint8Array = avm1BytesToSwf(avm1Bytes);
-        await outputFile(item.swfPath, swfBytes);
+        try {
+          const avm1Bytes: Uint8Array = bytesFromSource(sourceText);
+          await outputFile(item.avm1Path, avm1Bytes);
+          const swfBytes: Uint8Array = avm1BytesToSwf(avm1Bytes);
+          await outputFile(item.swfPath, swfBytes);
+        } catch (e) {
+          throw Incident(e, "BuildTxtBytesError", {path: item.root});
+        }
       }));
     }
     return Promise.all(promises);

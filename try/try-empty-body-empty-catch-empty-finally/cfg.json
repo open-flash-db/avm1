@@ -1,0 +1,90 @@
+{
+  "blocks": [
+    {
+      "type": "try",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "define-function",
+          "name": "f",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "throw",
+                "label": "l4_9",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "err"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "err-value"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "start"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "try": {
+        "blocks": []
+      },
+      "catch": {
+        "blocks": []
+      },
+      "catch_target": {
+        "type": "variable",
+        "target": "e"
+      },
+      "finally": {
+        "blocks": []
+      }
+    },
+    {
+      "type": "simple",
+      "label": "l0_56",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "end"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": null
+    }
+  ]
+}

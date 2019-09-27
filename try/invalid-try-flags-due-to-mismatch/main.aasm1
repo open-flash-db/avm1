@@ -1,0 +1,22 @@
+l0_0:
+  defineFunction(name="main", parameters=[]) {
+    l1_12:
+      push(0="start");
+      trace();
+      try {
+        l2_35:
+          push(0="in-try");
+          trace();
+          push(0="tres");
+          return;
+      } catch(i:"e") {
+      }
+    l1_57:
+      push(0="in-finally");
+      trace();
+      end;
+  };
+  push(0=0i32, 1="main");
+  callFunction();
+  trace();
+  end;

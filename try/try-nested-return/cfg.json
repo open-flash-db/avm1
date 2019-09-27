@@ -1,0 +1,175 @@
+{
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "define-function",
+          "name": "f",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "throw",
+                "label": "l1_9",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "err-value"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "define-function",
+          "name": "main",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "try",
+                "label": "l2_36",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "start"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "try": {
+                  "blocks": [
+                    {
+                      "type": "try",
+                      "label": "l3_59",
+                      "actions": [],
+                      "try": {
+                        "blocks": [
+                          {
+                            "type": "return",
+                            "label": "l4_70",
+                            "actions": [
+                              {
+                                "action": "push",
+                                "values": [
+                                  {
+                                    "type": "string",
+                                    "value": "ok"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "catch_target": {
+                        "type": "variable",
+                        "target": ""
+                      },
+                      "finally": {
+                        "blocks": [
+                          {
+                            "type": "simple",
+                            "label": "l5_78",
+                            "actions": [
+                              {
+                                "action": "push",
+                                "values": [
+                                  {
+                                    "type": "float64",
+                                    "value": 0
+                                  },
+                                  {
+                                    "type": "string",
+                                    "value": "f"
+                                  }
+                                ]
+                              },
+                              {
+                                "action": "call-function"
+                              },
+                              {
+                                "action": "pop"
+                              }
+                            ],
+                            "next": "l3_95"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "simple",
+                      "label": "l3_95",
+                      "actions": [],
+                      "next": "l2_100"
+                    }
+                  ]
+                },
+                "catch": {
+                  "blocks": []
+                },
+                "catch_target": {
+                  "type": "variable",
+                  "target": "e"
+                }
+              },
+              {
+                "type": "simple",
+                "label": "l2_100",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "end"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": null
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "string",
+              "value": "main"
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": null
+    }
+  ]
+}

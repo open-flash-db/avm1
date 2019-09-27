@@ -1,0 +1,123 @@
+{
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "define-function",
+          "name": "main",
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "try",
+                "label": "l1_12",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "start"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "try": {
+                  "blocks": [
+                    {
+                      "type": "return",
+                      "label": "l2_34",
+                      "actions": [
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "string",
+                              "value": "in-try"
+                            }
+                          ]
+                        },
+                        {
+                          "action": "trace"
+                        },
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "string",
+                              "value": "tres"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "catch_target": {
+                  "type": "variable",
+                  "target": ""
+                },
+                "finally": {
+                  "blocks": [
+                    {
+                      "type": "return",
+                      "label": "l3_56",
+                      "actions": [
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "string",
+                              "value": "in-finally"
+                            }
+                          ]
+                        },
+                        {
+                          "action": "trace"
+                        },
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "string",
+                              "value": "fres"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "string",
+              "value": "main"
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": null
+    }
+  ]
+}

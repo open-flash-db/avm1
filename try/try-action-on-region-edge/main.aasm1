@@ -1,0 +1,130 @@
+l0_0:
+  defineFunction(name="main0", parameters=[]) {
+    l1_13:
+      push(0="start");
+      trace();
+      try {
+        l2_36:
+          push(0="in-try");
+          trace();
+          push(0="tres");
+          return;
+      } finally {
+        l3_58:
+          push(0="in-finally");
+          trace();
+          next l3_106;
+        l3_79:
+          push(0="still-in-finally");
+          trace();
+          next l1_111;
+        l3_106:
+          next l3_79;
+      }
+    l1_111:
+      push(0="end");
+      trace();
+      end;
+  };
+  defineFunction(name="main1", parameters=[]) {
+    l4_133:
+      push(0="start");
+      trace();
+      try {
+        l5_156:
+          push(0="in-try");
+          trace();
+          push(0="tres");
+          return;
+      } finally {
+        l6_178:
+          push(0="in-finally");
+          trace();
+          next l4_226;
+      }
+    l4_199:
+      push(0="still-in-finally");
+      trace();
+      next l4_231;
+    l4_226:
+      next l4_199;
+    l4_231:
+      push(0="end");
+      trace();
+      end;
+  };
+  defineFunction(name="main2", parameters=[]) {
+    l7_253:
+      push(0="start");
+      trace();
+      try {
+        l8_276:
+          push(0="in-try");
+          trace();
+          push(0="tres");
+          return;
+      } finally {
+        l9_298:
+          push(0="in-finally");
+          trace();
+          next l9_346;
+        l9_319:
+          push(0="still-in-finally");
+          trace();
+          next l7_351;
+        l9_346:
+          next l9_319;
+      }
+    l7_351:
+      push(0="end");
+      trace();
+      end;
+  };
+  defineFunction(name="main3", parameters=[]) {
+    l10_373:
+      push(0="start");
+      trace();
+      try {
+        l11_396:
+          push(0="in-try");
+          trace();
+          push(0="tres");
+          return;
+      } finally {
+        l12_418:
+          push(0="in-finally");
+          trace();
+          next l12_466;
+        l12_439:
+          push(0="still-in-finally");
+          trace();
+          next l10_471;
+        l12_466:
+          next l12_439;
+      }
+    l10_471:
+      push(0="end");
+      trace();
+      end;
+  };
+  push(0=0i32, 1="main0");
+  pushDuplicate();
+  trace();
+  callFunction();
+  pop();
+  push(0=0i32, 1="main1");
+  pushDuplicate();
+  trace();
+  callFunction();
+  pop();
+  push(0=0i32, 1="main2");
+  pushDuplicate();
+  trace();
+  callFunction();
+  pop();
+  push(0=0i32, 1="main3");
+  pushDuplicate();
+  trace();
+  callFunction();
+  pop();
+  end;

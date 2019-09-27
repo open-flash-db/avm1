@@ -1,0 +1,27 @@
+l0_0:
+  defineFunction(name="f", parameters=[]) {
+    l4_9:
+      push(0="err");
+      trace();
+      push(0="err-value");
+      throw;
+  };
+  push(0="start");
+  trace();
+  try {
+    l1_56:
+      push(0=0i32, 1="f");
+      callFunction();
+      pop();
+      next l3_69;
+  } catch(i:"e") {
+  } finally {
+    l3_69:
+      push(0="in-finally");
+      trace();
+      next l0_85;
+  }
+l0_85:
+  push(0="end");
+  trace();
+  end;

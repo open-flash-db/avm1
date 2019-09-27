@@ -79,7 +79,11 @@ var data = {
   "\"try/try-catch-ok/src/main.as\"": "file:///try/try-catch-ok/main.swf",
   "\"try/try-finally-err/src/main.as\"": "file:///try/try-finally-err/main.swf",
   "\"try/try-finally-ok/src/main.as\"": "file:///try/try-finally-ok/main.swf",
+  "\"try/try-nested-return/src/main.as\"": "file:///try/try-nested-return/main.swf",
+  "\"try/try-return-catch-finally-err/src/main.as\"": "file:///try/try-return-catch-finally-err/main.swf",
+  "\"try/try-return-finally-err/src/main.as\"": "file:///try/try-return-finally-err/main.swf",
   "\"try/try-return-finally-ok/src/main.as\"": "file:///try/try-return-finally-ok/main.swf",
+  "\"try/try-return-finally-ok-simple/src/main.as\"": "file:///try/try-return-finally-ok-simple/main.swf",
   "\"try/try-throw-catch-finally-err/src/main.as\"": "file:///try/try-throw-catch-finally-err/main.swf",
   "\"try/try-throw-finally-err/src/main.as\"": "file:///try/try-throw-finally-err/main.swf",
   "\"with/with-shadow/src/main.as\"": "file:///with/with-shadow/main.swf"
