@@ -54,18 +54,18 @@
     "try": {
       "head": {
         "type": "simple",
-        "label": "l1",
+        "label": "l1_56",
         "actions": [],
-        "next": "l0_56"
+        "next": "l3_56"
       },
       "tail": []
     },
     "catch": {
       "head": {
         "type": "simple",
-        "label": "l2",
+        "label": "l2_56",
         "actions": [],
-        "next": "l0_56"
+        "next": "l3_56"
       },
       "tail": []
     },
@@ -76,7 +76,7 @@
     "finally": {
       "head": {
         "type": "simple",
-        "label": "l3",
+        "label": "l3_56",
         "actions": [],
         "next": "l0_56"
       },

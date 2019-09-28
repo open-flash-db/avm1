@@ -15,7 +15,7 @@ l0_0:
       pop();
       next l0_69;
   } catch(i:"e") {
-    l2:
+    l2_69:
       next l0_69;
   }
 l0_69:

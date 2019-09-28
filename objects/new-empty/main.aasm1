@@ -1,7 +1,7 @@
 l0_0:
   constantPool(0="start", 1="empty", 2="Empty", 3="end");
   defineFunction(name="Empty", parameters=[]) {
-    l1:
+    l1_40:
       end;
   };
   push(0=c:0);

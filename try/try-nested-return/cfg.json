@@ -117,7 +117,7 @@
             "catch": {
               "head": {
                 "type": "simple",
-                "label": "l6",
+                "label": "l6_100",
                 "actions": [],
                 "next": "l2_100"
               },

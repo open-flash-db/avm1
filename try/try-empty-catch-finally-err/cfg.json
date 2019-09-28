@@ -83,7 +83,7 @@
     "catch": {
       "head": {
         "type": "simple",
-        "label": "l2",
+        "label": "l2_69",
         "actions": [],
         "next": "l3_69"
       },

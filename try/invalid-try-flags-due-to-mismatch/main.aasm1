@@ -10,7 +10,7 @@ l0_0:
           push(0="tres");
           return;
       } catch(i:"e") {
-        l3:
+        l3_57:
           next l1_57;
       }
     l1_57:

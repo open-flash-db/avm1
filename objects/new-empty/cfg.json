@@ -19,7 +19,7 @@
         "body": {
           "head": {
             "type": "simple",
-            "label": "l1",
+            "label": "l1_40",
             "actions": [],
             "next": null
           },

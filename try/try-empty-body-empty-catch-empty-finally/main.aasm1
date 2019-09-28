@@ -9,13 +9,13 @@ l0_0:
   push(0="start");
   trace();
   try {
-    l1:
-      next l0_56;
+    l1_56:
+      next l3_56;
   } catch(i:"e") {
-    l2:
-      next l0_56;
+    l2_56:
+      next l3_56;
   } finally {
-    l3:
+    l3_56:
       next l0_56;
   }
 l0_56:
