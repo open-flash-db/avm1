@@ -32,6 +32,10 @@ const WHITELIST: ReadonlySet<string> = new Set([
   // "try/try-return-finally-ok",
   // "try/try-finally-err-jump-out-try",
   // "try/try-action-on-region-edge",
+  // "try/try-nested-return",
+  // "try/try-nested-return-direct-err",
+  // "try/try-nested-return-indirect",
+  // "try/try-nested-return-with-more-traces",
   // "avm1-bytes/end-action-inside-function",
 ]);
 

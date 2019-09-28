@@ -1,0 +1,31 @@
+l0_0:
+  constantPool(0="start", 1="ok", 2="err-value", 3="end", 4="main");
+  defineFunction(name="main", parameters=[]) {
+    l1_45:
+      push(0=c:0);
+      trace();
+      try {
+        l2_63:
+          try {
+            l3_74:
+              push(0=c:1);
+              return;
+          } finally {
+            l4_80:
+              push(0=c:2);
+              throw;
+          }
+      } catch(i:"e") {
+        l5_91:
+          next l1_91;
+      }
+    l1_91:
+      push(0=c:3);
+      trace();
+      push(0=c:3);
+      return;
+  };
+  push(0=0f64, 1=c:4);
+  callFunction();
+  trace();
+  end;

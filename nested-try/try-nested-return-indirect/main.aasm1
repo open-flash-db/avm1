@@ -1,0 +1,53 @@
+l0_0:
+  constantPool(0="err-value", 1="start", 2="in-outer-try", 3="in-inner-try", 4="ok", 5="in-inner-finally", 6="f", 7="in-outer-catch", 8="in-outer-finally", 9="end", 10="main");
+  defineFunction(name="f", parameters=[]) {
+    l1_119:
+      push(0=c:0);
+      throw;
+  };
+  defineFunction(name="main", parameters=[]) {
+    l2_137:
+      push(0=c:1);
+      trace();
+      try {
+        l3_155:
+          push(0=c:2);
+          trace();
+          try {
+            l4_172:
+              push(0=c:3);
+              trace();
+              push(0=c:4);
+              return;
+          } finally {
+            l5_184:
+              push(0=c:5);
+              trace();
+              push(0=0f64, 1=c:6);
+              callFunction();
+              pop();
+              next l3_206;
+          }
+        l3_206:
+          next l7_217;
+      } catch(i:"e") {
+        l6_211:
+          push(0=c:7);
+          trace();
+          next l7_217;
+      } finally {
+        l7_217:
+          push(0=c:8);
+          trace();
+          next l2_223;
+      }
+    l2_223:
+      push(0=c:9);
+      trace();
+      push(0=c:9);
+      return;
+  };
+  push(0=0f64, 1=c:10);
+  callFunction();
+  trace();
+  end;

@@ -1,0 +1,231 @@
+{
+  "head": {
+    "type": "simple",
+    "label": "l0_0",
+    "actions": [
+      {
+        "action": "constant-pool",
+        "constant_pool": [
+          "start",
+          "in-outer-try",
+          "in-inner-try",
+          "ok",
+          "in-inner-finally",
+          "err-value",
+          "in-outer-catch",
+          "in-outer-finally",
+          "end",
+          "main"
+        ]
+      },
+      {
+        "action": "define-function",
+        "name": "main",
+        "parameters": [],
+        "body": {
+          "head": {
+            "type": "try",
+            "label": "l1_120",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "try": {
+              "head": {
+                "type": "try",
+                "label": "l2_138",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "try": {
+                  "head": {
+                    "type": "return",
+                    "label": "l3_155",
+                    "actions": [
+                      {
+                        "action": "push",
+                        "values": [
+                          {
+                            "type": "constant",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "action": "trace"
+                      },
+                      {
+                        "action": "push",
+                        "values": [
+                          {
+                            "type": "constant",
+                            "value": 3
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "tail": []
+                },
+                "catch_target": {
+                  "type": "variable",
+                  "target": ""
+                },
+                "finally": {
+                  "head": {
+                    "type": "throw",
+                    "label": "l4_167",
+                    "actions": [
+                      {
+                        "action": "push",
+                        "values": [
+                          {
+                            "type": "constant",
+                            "value": 4
+                          }
+                        ]
+                      },
+                      {
+                        "action": "trace"
+                      },
+                      {
+                        "action": "push",
+                        "values": [
+                          {
+                            "type": "constant",
+                            "value": 5
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "tail": []
+                }
+              },
+              "tail": []
+            },
+            "catch": {
+              "head": {
+                "type": "simple",
+                "label": "l5_184",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 6
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "l6_190"
+              },
+              "tail": []
+            },
+            "catch_target": {
+              "type": "variable",
+              "target": "e"
+            },
+            "finally": {
+              "head": {
+                "type": "simple",
+                "label": "l6_190",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 7
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  }
+                ],
+                "next": "l1_196"
+              },
+              "tail": []
+            }
+          },
+          "tail": [
+            {
+              "type": "return",
+              "label": "l1_196",
+              "actions": [
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "constant",
+                      "value": 8
+                    }
+                  ]
+                },
+                {
+                  "action": "trace"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "constant",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "action": "push",
+        "values": [
+          {
+            "type": "float64",
+            "value": 0
+          },
+          {
+            "type": "constant",
+            "value": 9
+          }
+        ]
+      },
+      {
+        "action": "call-function"
+      },
+      {
+        "action": "trace"
+      }
+    ],
+    "next": null
+  },
+  "tail": []
+}

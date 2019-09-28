@@ -1,0 +1,8 @@
+start
+try
+try-try
+try-finally
+try-finally-try
+try-finally-finally
+finally
+ok
