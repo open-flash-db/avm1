@@ -1,6 +1,6 @@
 import { toAasm } from "avm1-asm/to-aasm";
 import { cfgFromBytes } from "avm1-parser";
-import { $Cfg, Cfg } from "avm1-tree/cfg";
+import { $Cfg, Cfg } from "avm1-types/cfg";
 import fs from "fs";
 import { Incident } from "incident";
 import { JsonValueWriter } from "kryo/writers/json-value";
