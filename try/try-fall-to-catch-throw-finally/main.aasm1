@@ -12,22 +12,30 @@ l0_0:
     l1_56:
       push(0="in-try");
       trace();
-      push(0="in-catch");
-      next l0_81;
+      next l0_68;
   } catch(i:"e") {
-    l2:
-      next l0_81;
+    l2_68:
+      push(0="in-catch");
+      trace();
+      push(0=0i32, 1="f");
+      callFunction();
+      pop();
+      next l3_95;
   } finally {
-    l3:
-      next l0_81;
+    l3_95:
+      push(0="in-finally");
+      trace();
+      next l0_111;
   }
-l0_81:
+l0_68:
+  push(0="in-catch");
   trace();
   push(0=0i32, 1="f");
   callFunction();
   pop();
   push(0="in-finally");
   trace();
+l0_111:
   push(0="end");
   trace();
   end;
