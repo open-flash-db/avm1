@@ -1,71 +1,73 @@
 {
-  "head": {
-    "type": "try",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "push",
-        "values": [
+  "blocks": [
+    {
+      "type": "try",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before try/catch"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "try": {
+        "blocks": [
           {
-            "type": "string",
-            "value": "before try/catch"
+            "type": "simple",
+            "label": "l1_36",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in try"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "l0_67"
           }
         ]
       },
-      {
-        "action": "trace"
+      "catch": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "l2_53",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in catch"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "l0_67"
+          }
+        ]
+      },
+      "catch_target": {
+        "type": "variable",
+        "target": "err"
       }
-    ],
-    "try": {
-      "head": {
-        "type": "simple",
-        "label": "l1_36",
-        "actions": [
-          {
-            "action": "push",
-            "values": [
-              {
-                "type": "string",
-                "value": "in try"
-              }
-            ]
-          },
-          {
-            "action": "trace"
-          }
-        ],
-        "next": "l0_67"
-      },
-      "tail": []
     },
-    "catch": {
-      "head": {
-        "type": "simple",
-        "label": "l2_53",
-        "actions": [
-          {
-            "action": "push",
-            "values": [
-              {
-                "type": "string",
-                "value": "in catch"
-              }
-            ]
-          },
-          {
-            "action": "trace"
-          }
-        ],
-        "next": "l0_67"
-      },
-      "tail": []
-    },
-    "catch_target": {
-      "type": "variable",
-      "target": "err"
-    }
-  },
-  "tail": [
     {
       "type": "simple",
       "label": "l0_67",

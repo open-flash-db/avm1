@@ -1,58 +1,42 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "start",
-          "try",
-          "try-try",
-          "ok",
-          "try-finally",
-          "try-finally-try",
-          "err-value",
-          "try-finally-finally",
-          "catch",
-          "finally",
-          "end",
-          "main"
-        ]
-      },
-      {
-        "action": "define-function",
-        "name": "main",
-        "parameters": [],
-        "body": {
-          "head": {
-            "type": "try",
-            "label": "l1_119",
-            "actions": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "start",
+            "try",
+            "try-try",
+            "ok",
+            "try-finally",
+            "try-finally-try",
+            "err-value",
+            "try-finally-finally",
+            "catch",
+            "finally",
+            "end",
+            "main"
+          ]
+        },
+        {
+          "action": "define-function",
+          "name": "main",
+          "parameters": [],
+          "body": {
+            "blocks": [
               {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 0
-                  }
-                ]
-              },
-              {
-                "action": "trace"
-              }
-            ],
-            "try": {
-              "head": {
                 "type": "try",
-                "label": "l3_137",
+                "label": "l1_119",
                 "actions": [
                   {
                     "action": "push",
                     "values": [
                       {
                         "type": "constant",
-                        "value": 1
+                        "value": 0
                       }
                     ]
                   },
@@ -61,227 +45,250 @@
                   }
                 ],
                 "try": {
-                  "head": {
-                    "type": "return",
-                    "label": "l7_154",
-                    "actions": [
-                      {
-                        "action": "push",
-                        "values": [
+                  "blocks": [
+                    {
+                      "type": "try",
+                      "label": "l3_137",
+                      "actions": [
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "constant",
+                              "value": 1
+                            }
+                          ]
+                        },
+                        {
+                          "action": "trace"
+                        }
+                      ],
+                      "try": {
+                        "blocks": [
                           {
-                            "type": "constant",
-                            "value": 2
+                            "type": "return",
+                            "label": "l7_154",
+                            "actions": [
+                              {
+                                "action": "push",
+                                "values": [
+                                  {
+                                    "type": "constant",
+                                    "value": 2
+                                  }
+                                ]
+                              },
+                              {
+                                "action": "trace"
+                              },
+                              {
+                                "action": "push",
+                                "values": [
+                                  {
+                                    "type": "constant",
+                                    "value": 3
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       },
-                      {
-                        "action": "trace"
+                      "catch_target": {
+                        "type": "variable",
+                        "target": ""
                       },
-                      {
-                        "action": "push",
-                        "values": [
+                      "finally": {
+                        "blocks": [
                           {
-                            "type": "constant",
-                            "value": 3
+                            "type": "try",
+                            "label": "l4_166",
+                            "actions": [
+                              {
+                                "action": "push",
+                                "values": [
+                                  {
+                                    "type": "constant",
+                                    "value": 4
+                                  }
+                                ]
+                              },
+                              {
+                                "action": "trace"
+                              }
+                            ],
+                            "try": {
+                              "blocks": [
+                                {
+                                  "type": "throw",
+                                  "label": "l6_183",
+                                  "actions": [
+                                    {
+                                      "action": "push",
+                                      "values": [
+                                        {
+                                          "type": "constant",
+                                          "value": 5
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "action": "trace"
+                                    },
+                                    {
+                                      "action": "push",
+                                      "values": [
+                                        {
+                                          "type": "constant",
+                                          "value": 6
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "catch_target": {
+                              "type": "variable",
+                              "target": ""
+                            },
+                            "finally": {
+                              "blocks": [
+                                {
+                                  "type": "simple",
+                                  "label": "l5_195",
+                                  "actions": [
+                                    {
+                                      "action": "push",
+                                      "values": [
+                                        {
+                                          "type": "constant",
+                                          "value": 7
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "action": "trace"
+                                    }
+                                  ],
+                                  "next": "l3_201"
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
-                    ]
-                  },
-                  "tail": []
+                    },
+                    {
+                      "type": "simple",
+                      "label": "l3_201",
+                      "actions": [],
+                      "next": "l2_212"
+                    }
+                  ]
+                },
+                "catch": {
+                  "blocks": [
+                    {
+                      "type": "simple",
+                      "label": "l8_206",
+                      "actions": [
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "constant",
+                              "value": 8
+                            }
+                          ]
+                        },
+                        {
+                          "action": "trace"
+                        }
+                      ],
+                      "next": "l2_212"
+                    }
+                  ]
                 },
                 "catch_target": {
                   "type": "variable",
-                  "target": ""
+                  "target": "e"
                 },
                 "finally": {
-                  "head": {
-                    "type": "try",
-                    "label": "l4_166",
-                    "actions": [
-                      {
-                        "action": "push",
-                        "values": [
-                          {
-                            "type": "constant",
-                            "value": 4
-                          }
-                        ]
-                      },
-                      {
-                        "action": "trace"
-                      }
-                    ],
-                    "try": {
-                      "head": {
-                        "type": "throw",
-                        "label": "l6_183",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 5
-                              }
-                            ]
-                          },
-                          {
-                            "action": "trace"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 6
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      "tail": []
-                    },
-                    "catch_target": {
-                      "type": "variable",
-                      "target": ""
-                    },
-                    "finally": {
-                      "head": {
-                        "type": "simple",
-                        "label": "l5_195",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 7
-                              }
-                            ]
-                          },
-                          {
-                            "action": "trace"
-                          }
-                        ],
-                        "next": "l3_201"
-                      },
-                      "tail": []
+                  "blocks": [
+                    {
+                      "type": "simple",
+                      "label": "l2_212",
+                      "actions": [
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "constant",
+                              "value": 9
+                            }
+                          ]
+                        },
+                        {
+                          "action": "trace"
+                        }
+                      ],
+                      "next": "l1_218"
                     }
-                  },
-                  "tail": []
+                  ]
                 }
               },
-              "tail": [
-                {
-                  "type": "simple",
-                  "label": "l3_201",
-                  "actions": [],
-                  "next": "l2_212"
-                }
-              ]
-            },
-            "catch": {
-              "head": {
-                "type": "simple",
-                "label": "l8_206",
+              {
+                "type": "return",
+                "label": "l1_218",
                 "actions": [
                   {
                     "action": "push",
                     "values": [
                       {
                         "type": "constant",
-                        "value": 8
+                        "value": 10
                       }
                     ]
                   },
                   {
                     "action": "trace"
-                  }
-                ],
-                "next": "l2_212"
-              },
-              "tail": []
-            },
-            "catch_target": {
-              "type": "variable",
-              "target": "e"
-            },
-            "finally": {
-              "head": {
-                "type": "simple",
-                "label": "l2_212",
-                "actions": [
+                  },
                   {
                     "action": "push",
                     "values": [
                       {
                         "type": "constant",
-                        "value": 9
+                        "value": 10
                       }
                     ]
-                  },
-                  {
-                    "action": "trace"
                   }
-                ],
-                "next": "l1_218"
-              },
-              "tail": []
-            }
-          },
-          "tail": [
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
             {
-              "type": "return",
-              "label": "l1_218",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 10
-                    }
-                  ]
-                },
-                {
-                  "action": "trace"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 10
-                    }
-                  ]
-                }
-              ]
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 11
             }
           ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "trace"
         }
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "float64",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 11
-          }
-        ]
-      },
-      {
-        "action": "call-function"
-      },
-      {
-        "action": "trace"
-      }
-    ],
-    "next": null
-  },
-  "tail": []
+      ],
+      "next": null
+    }
+  ]
 }

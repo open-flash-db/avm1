@@ -1,308 +1,309 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "dx",
-          "dy"
-        ]
-      },
-      {
-        "action": "define-function2",
-        "name": "deltaOfDir",
-        "register_count": 2,
-        "preload_this": false,
-        "suppress_this": true,
-        "preload_arguments": false,
-        "suppress_arguments": true,
-        "preload_super": false,
-        "suppress_super": true,
-        "preload_root": false,
-        "preload_parent": false,
-        "preload_global": false,
-        "parameters": [
-          {
-            "register": 1,
-            "name": "d"
-          }
-        ],
-        "body": {
-          "head": {
-            "type": "if",
-            "label": "l1_35",
-            "actions": [
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "register",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "action": "store-register",
-                "register": 0
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "float64",
-                    "value": 0
-                  }
-                ]
-              },
-              {
-                "action": "strict-equals"
-              }
-            ],
-            "if_true": "l1_115",
-            "if_false": "l1_62"
-          },
-          "tail": [
-            {
-              "type": "if",
-              "label": "l1_62",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 0
-                    },
-                    {
-                      "type": "sint32",
-                      "value": 1
-                    }
-                  ]
-                },
-                {
-                  "action": "strict-equals"
-                }
-              ],
-              "if_true": "l1_146",
-              "if_false": "l1_78"
-            },
-            {
-              "type": "if",
-              "label": "l1_78",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 0
-                    },
-                    {
-                      "type": "sint32",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "strict-equals"
-                }
-              ],
-              "if_true": "l1_177",
-              "if_false": "l1_94"
-            },
-            {
-              "type": "if",
-              "label": "l1_94",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 0
-                    },
-                    {
-                      "type": "sint32",
-                      "value": 3
-                    }
-                  ]
-                },
-                {
-                  "action": "strict-equals"
-                }
-              ],
-              "if_true": "l1_208",
-              "if_false": "l1_110"
-            },
-            {
-              "type": "simple",
-              "label": "l1_110",
-              "actions": [],
-              "next": null
-            },
-            {
-              "type": "simple",
-              "label": "l1_115",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 0
-                    },
-                    {
-                      "type": "sint32",
-                      "value": 1
-                    }
-                  ]
-                },
-                {
-                  "action": "set-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 1
-                    },
-                    {
-                      "type": "float64",
-                      "value": 0
-                    }
-                  ]
-                },
-                {
-                  "action": "set-variable"
-                }
-              ],
-              "next": null
-            },
-            {
-              "type": "simple",
-              "label": "l1_146",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 0
-                    },
-                    {
-                      "type": "sint32",
-                      "value": -1
-                    }
-                  ]
-                },
-                {
-                  "action": "set-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 1
-                    },
-                    {
-                      "type": "float64",
-                      "value": 0
-                    }
-                  ]
-                },
-                {
-                  "action": "set-variable"
-                }
-              ],
-              "next": null
-            },
-            {
-              "type": "simple",
-              "label": "l1_177",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 0
-                    },
-                    {
-                      "type": "float64",
-                      "value": 0
-                    }
-                  ]
-                },
-                {
-                  "action": "set-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 1
-                    },
-                    {
-                      "type": "sint32",
-                      "value": 1
-                    }
-                  ]
-                },
-                {
-                  "action": "set-variable"
-                }
-              ],
-              "next": null
-            },
-            {
-              "type": "simple",
-              "label": "l1_208",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 0
-                    },
-                    {
-                      "type": "float64",
-                      "value": 0
-                    }
-                  ]
-                },
-                {
-                  "action": "set-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 1
-                    },
-                    {
-                      "type": "sint32",
-                      "value": -1
-                    }
-                  ]
-                },
-                {
-                  "action": "set-variable"
-                }
-              ],
-              "next": null
-            }
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "dx",
+            "dy"
           ]
+        },
+        {
+          "action": "define-function2",
+          "name": "deltaOfDir",
+          "register_count": 2,
+          "preload_this": false,
+          "suppress_this": true,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
+          "parameters": [
+            {
+              "register": 1,
+              "name": "d"
+            }
+          ],
+          "body": {
+            "blocks": [
+              {
+                "type": "if",
+                "label": "l1_35",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 0
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "strict-equals"
+                  }
+                ],
+                "if_true": "l1_115",
+                "if_false": "l1_62"
+              },
+              {
+                "type": "if",
+                "label": "l1_62",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "strict-equals"
+                  }
+                ],
+                "if_true": "l1_146",
+                "if_false": "l1_78"
+              },
+              {
+                "type": "if",
+                "label": "l1_78",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "strict-equals"
+                  }
+                ],
+                "if_true": "l1_177",
+                "if_false": "l1_94"
+              },
+              {
+                "type": "if",
+                "label": "l1_94",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "strict-equals"
+                  }
+                ],
+                "if_true": "l1_208",
+                "if_false": "l1_110"
+              },
+              {
+                "type": "simple",
+                "label": "l1_110",
+                "actions": [],
+                "next": null
+              },
+              {
+                "type": "simple",
+                "label": "l1_115",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  }
+                ],
+                "next": null
+              },
+              {
+                "type": "simple",
+                "label": "l1_146",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": -1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  }
+                ],
+                "next": null
+              },
+              {
+                "type": "simple",
+                "label": "l1_177",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  }
+                ],
+                "next": null
+              },
+              {
+                "type": "simple",
+                "label": "l1_208",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "float64",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "sint32",
+                        "value": -1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-variable"
+                  }
+                ],
+                "next": null
+              }
+            ]
+          }
         }
-      }
-    ],
-    "next": null
-  },
-  "tail": []
+      ],
+      "next": null
+    }
+  ]
 }

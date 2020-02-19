@@ -1,41 +1,41 @@
 {
-  "head": {
-    "type": "if",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "before nested conditionnal expression"
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "foo"
-          },
-          {
-            "type": "string",
-            "value": "test"
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      }
-    ],
-    "if_true": "l0_105",
-    "if_false": "l0_63"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "if",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before nested conditionnal expression"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "foo"
+            },
+            {
+              "type": "string",
+              "value": "test"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        }
+      ],
+      "if_true": "l0_105",
+      "if_false": "l0_63"
+    },
     {
       "type": "if",
       "label": "l0_63",

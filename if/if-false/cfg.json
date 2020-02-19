@@ -1,34 +1,35 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "start"
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "end"
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      }
-    ],
-    "next": null
-  },
-  "tail": []
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "start"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "end"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": null
+    }
+  ]
 }

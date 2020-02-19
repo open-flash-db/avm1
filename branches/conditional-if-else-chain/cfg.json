@@ -1,52 +1,52 @@
 {
-  "head": {
-    "type": "if",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "before if/else if/else if/else",
-          "test",
-          "in if",
-          "in else if",
-          "in else if (2)",
-          "in else",
-          "after if/else if/else if/else"
-        ]
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "not"
-      }
-    ],
-    "if_true": "l0_140",
-    "if_false": "l0_129"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "if",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "before if/else if/else if/else",
+            "test",
+            "in if",
+            "in else if",
+            "in else if (2)",
+            "in else",
+            "after if/else if/else if/else"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        }
+      ],
+      "if_true": "l0_140",
+      "if_false": "l0_129"
+    },
     {
       "type": "simple",
       "label": "l0_129",

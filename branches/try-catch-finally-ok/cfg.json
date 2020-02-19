@@ -1,93 +1,96 @@
 {
-  "head": {
-    "type": "try",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "push",
-        "values": [
+  "blocks": [
+    {
+      "type": "try",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before try/catch/finally"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "try": {
+        "blocks": [
           {
-            "type": "string",
-            "value": "before try/catch/finally"
+            "type": "simple",
+            "label": "l2_44",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in try"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "l1_75"
           }
         ]
       },
-      {
-        "action": "trace"
+      "catch": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "l3_61",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in catch"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "l1_75"
+          }
+        ]
+      },
+      "catch_target": {
+        "type": "variable",
+        "target": "err"
+      },
+      "finally": {
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "l1_75",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "string",
+                    "value": "in finally"
+                  }
+                ]
+              },
+              {
+                "action": "trace"
+              }
+            ],
+            "next": "l0_91"
+          }
+        ]
       }
-    ],
-    "try": {
-      "head": {
-        "type": "simple",
-        "label": "l2_44",
-        "actions": [
-          {
-            "action": "push",
-            "values": [
-              {
-                "type": "string",
-                "value": "in try"
-              }
-            ]
-          },
-          {
-            "action": "trace"
-          }
-        ],
-        "next": "l1_75"
-      },
-      "tail": []
     },
-    "catch": {
-      "head": {
-        "type": "simple",
-        "label": "l3_61",
-        "actions": [
-          {
-            "action": "push",
-            "values": [
-              {
-                "type": "string",
-                "value": "in catch"
-              }
-            ]
-          },
-          {
-            "action": "trace"
-          }
-        ],
-        "next": "l1_75"
-      },
-      "tail": []
-    },
-    "catch_target": {
-      "type": "variable",
-      "target": "err"
-    },
-    "finally": {
-      "head": {
-        "type": "simple",
-        "label": "l1_75",
-        "actions": [
-          {
-            "action": "push",
-            "values": [
-              {
-                "type": "string",
-                "value": "in finally"
-              }
-            ]
-          },
-          {
-            "action": "trace"
-          }
-        ],
-        "next": "l0_91"
-      },
-      "tail": []
-    }
-  },
-  "tail": [
     {
       "type": "simple",
       "label": "l0_91",

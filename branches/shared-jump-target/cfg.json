@@ -1,52 +1,52 @@
 {
-  "head": {
-    "type": "if",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "bidirectionnal label"
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "before bidirectionnal"
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "test"
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "not"
-      }
-    ],
-    "if_true": "l0_97",
-    "if_false": "l0_69"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "if",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "bidirectionnal label"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before bidirectionnal"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "not"
+        }
+      ],
+      "if_true": "l0_97",
+      "if_false": "l0_69"
+    },
     {
       "type": "simple",
       "label": "l0_69",

@@ -1,53 +1,53 @@
 {
-  "head": {
-    "type": "if",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "before switch without break"
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "discriminant"
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "store-register",
-        "register": 0
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "sint32",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "action": "strict-equals"
-      }
-    ],
-    "if_true": "l0_90",
-    "if_false": "l0_69"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "if",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before switch without break"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "discriminant"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "strict-equals"
+        }
+      ],
+      "if_true": "l0_90",
+      "if_false": "l0_69"
+    },
     {
       "type": "if",
       "label": "l0_69",

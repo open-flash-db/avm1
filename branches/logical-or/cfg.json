@@ -1,40 +1,40 @@
 {
-  "head": {
-    "type": "if",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "before LOGICAL OR"
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "test"
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push-duplicate"
-      }
-    ],
-    "if_true": "l0_51",
-    "if_false": "l0_39"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "if",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "before LOGICAL OR"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "test"
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push-duplicate"
+        }
+      ],
+      "if_true": "l0_51",
+      "if_false": "l0_39"
+    },
     {
       "type": "simple",
       "label": "l0_39",

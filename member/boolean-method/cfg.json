@@ -1,329 +1,331 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "start",
-          "Boolean",
-          "prototype",
-          "not",
-          "valueOf",
-          "falsy",
-          "truthy",
-          "end"
-        ]
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "action": "get-member"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "action": "define-function2",
-        "name": "",
-        "register_count": 2,
-        "preload_this": true,
-        "suppress_this": false,
-        "preload_arguments": false,
-        "suppress_arguments": true,
-        "preload_super": false,
-        "suppress_super": true,
-        "preload_root": false,
-        "preload_parent": false,
-        "preload_global": false,
-        "parameters": [],
-        "body": {
-          "head": {
-            "type": "return",
-            "label": "l1_92",
-            "actions": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "start",
+            "Boolean",
+            "prototype",
+            "not",
+            "valueOf",
+            "falsy",
+            "truthy",
+            "end"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "",
+          "register_count": 2,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
+          "parameters": [],
+          "body": {
+            "blocks": [
               {
-                "action": "push",
-                "values": [
+                "type": "return",
+                "label": "l1_92",
+                "actions": [
                   {
-                    "type": "register",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "action": "trace"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "float64",
-                    "value": 0
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      }
+                    ]
                   },
                   {
-                    "type": "register",
-                    "value": 1
+                    "action": "trace"
                   },
                   {
-                    "type": "constant",
-                    "value": 4
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "float64",
+                        "value": 0
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "not"
                   }
                 ]
-              },
-              {
-                "action": "call-method"
-              },
-              {
-                "action": "not"
               }
             ]
-          },
-          "tail": []
+          }
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            },
+            {
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 6
+            },
+            {
+              "type": "boolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "call-method"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "call-method"
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "trace"
         }
-      },
-      {
-        "action": "set-member"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 5
-          },
-          {
-            "type": "boolean",
-            "value": false
-          }
-        ]
-      },
-      {
-        "action": "define-local"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 6
-          },
-          {
-            "type": "boolean",
-            "value": true
-          }
-        ]
-      },
-      {
-        "action": "define-local"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "action": "get-member"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "action": "get-member"
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "action": "get-member"
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 6
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "action": "get-member"
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "float64",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "action": "call-method"
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "float64",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 6
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "action": "call-method"
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 7
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      }
-    ],
-    "next": null
-  },
-  "tail": []
+      ],
+      "next": null
+    }
+  ]
 }

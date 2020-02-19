@@ -1,87 +1,87 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "frame 7: loop statements",
-          "i",
-          "before while",
-          "in while",
-          "after while",
-          "before do/while",
-          "in do/while",
-          "after do/while",
-          "before for",
-          "in for",
-          "after for",
-          "map",
-          "foo",
-          "bar",
-          "before for/in",
-          "key",
-          "in for/in",
-          "after for/in",
-          "before while + break",
-          "in while + break",
-          "after while + break",
-          "before  while/true + break",
-          "in  while/true + break",
-          "after while/true + break",
-          "before for/true + break",
-          "in for/true + break",
-          "after for/true + break",
-          "before for + continue",
-          "in for + continue",
-          "after for + continue"
-        ]
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "float64",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "define-local"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      }
-    ],
-    "next": "l0_478"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "frame 7: loop statements",
+            "i",
+            "before while",
+            "in while",
+            "after while",
+            "before do/while",
+            "in do/while",
+            "after do/while",
+            "before for",
+            "in for",
+            "after for",
+            "map",
+            "foo",
+            "bar",
+            "before for/in",
+            "key",
+            "in for/in",
+            "after for/in",
+            "before while + break",
+            "in while + break",
+            "after while + break",
+            "before  while/true + break",
+            "in  while/true + break",
+            "after while/true + break",
+            "before for/true + break",
+            "in for/true + break",
+            "after for/true + break",
+            "before for + continue",
+            "in for + continue",
+            "after for + continue"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "l0_478"
+    },
     {
       "type": "if",
       "label": "l0_478",

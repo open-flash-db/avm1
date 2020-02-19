@@ -1,569 +1,570 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "properties",
-          "",
-          "not properties",
-          "_accProps",
-          "_lockroot",
-          "_global",
-          "_level",
-          "_parent",
-          "_root",
-          "this",
-          "scroll"
-        ]
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "float64",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 4
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 6
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 7
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 8
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 9
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 10
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 11
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 12
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 13
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 14
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 16
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 17
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 18
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 19
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 20
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "sint32",
-            "value": 21
-          }
-        ]
-      },
-      {
-        "action": "get-property"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 4
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 6
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 7
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 8
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 9
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 10
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "pop"
-      }
-    ],
-    "next": null
-  },
-  "tail": []
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "properties",
+            "",
+            "not properties",
+            "_accProps",
+            "_lockroot",
+            "_global",
+            "_level",
+            "_parent",
+            "_root",
+            "this",
+            "scroll"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 12
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 13
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 14
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 16
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 17
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 18
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 19
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "sint32",
+              "value": 21
+            }
+          ]
+        },
+        {
+          "action": "get-property"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "pop"
+        }
+      ],
+      "next": null
+    }
+  ]
 }

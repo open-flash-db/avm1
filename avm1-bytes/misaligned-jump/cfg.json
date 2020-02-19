@@ -1,37 +1,37 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "string",
-            "value": "start"
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "sint32",
-            "value": 301990553
-          },
-          {
-            "type": "string",
-            "value": ""
-          }
-        ]
-      }
-    ],
-    "next": "l0_15"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "string",
+              "value": "start"
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 301990553
+            },
+            {
+              "type": "string",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "next": "l0_15"
+    },
     {
       "type": "simple",
       "label": "l0_15",

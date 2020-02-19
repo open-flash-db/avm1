@@ -1,188 +1,190 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "name",
-          "foo",
-          "bar",
-          "start",
-          "constructors",
-          "Bar",
-          "Foo",
-          "i",
-          "length",
-          "end"
-        ]
-      },
-      {
-        "action": "define-function2",
-        "name": "Foo",
-        "register_count": 2,
-        "preload_this": true,
-        "suppress_this": false,
-        "preload_arguments": false,
-        "suppress_arguments": true,
-        "preload_super": false,
-        "suppress_super": true,
-        "preload_root": false,
-        "preload_parent": false,
-        "preload_global": false,
-        "parameters": [],
-        "body": {
-          "head": {
-            "type": "simple",
-            "label": "l1_72",
-            "actions": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "name",
+            "foo",
+            "bar",
+            "start",
+            "constructors",
+            "Bar",
+            "Foo",
+            "i",
+            "length",
+            "end"
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "Foo",
+          "register_count": 2,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
+          "parameters": [],
+          "body": {
+            "blocks": [
               {
-                "action": "push",
-                "values": [
+                "type": "simple",
+                "label": "l1_72",
+                "actions": [
                   {
-                    "type": "register",
-                    "value": 1
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "constant",
+                        "value": 1
+                      }
+                    ]
                   },
                   {
-                    "type": "constant",
-                    "value": 0
-                  },
-                  {
-                    "type": "constant",
-                    "value": 1
+                    "action": "set-member"
                   }
-                ]
-              },
-              {
-                "action": "set-member"
+                ],
+                "next": null
               }
-            ],
-            "next": null
-          },
-          "tail": []
-        }
-      },
-      {
-        "action": "define-function2",
-        "name": "Bar",
-        "register_count": 2,
-        "preload_this": true,
-        "suppress_this": false,
-        "preload_arguments": false,
-        "suppress_arguments": true,
-        "preload_super": false,
-        "suppress_super": true,
-        "preload_root": false,
-        "preload_parent": false,
-        "preload_global": false,
-        "parameters": [],
-        "body": {
-          "head": {
-            "type": "simple",
-            "label": "l2_96",
-            "actions": [
+            ]
+          }
+        },
+        {
+          "action": "define-function2",
+          "name": "Bar",
+          "register_count": 2,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
+          "parameters": [],
+          "body": {
+            "blocks": [
               {
-                "action": "push",
-                "values": [
+                "type": "simple",
+                "label": "l2_96",
+                "actions": [
                   {
-                    "type": "register",
-                    "value": 1
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 0
+                      },
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
                   },
                   {
-                    "type": "constant",
-                    "value": 0
-                  },
-                  {
-                    "type": "constant",
-                    "value": 2
+                    "action": "set-member"
                   }
-                ]
-              },
-              {
-                "action": "set-member"
+                ],
+                "next": null
               }
-            ],
-            "next": null
-          },
-          "tail": []
+            ]
+          }
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 4
+            },
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "init-array"
+        },
+        {
+          "action": "define-local"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 7
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "define-local"
         }
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 3
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 4
-          },
-          {
-            "type": "constant",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 6
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "sint32",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "action": "init-array"
-      },
-      {
-        "action": "define-local"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 7
-          },
-          {
-            "type": "float64",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "define-local"
-      }
-    ],
-    "next": "l0_151"
-  },
-  "tail": [
+      ],
+      "next": "l0_151"
+    },
     {
       "type": "if",
       "label": "l0_151",

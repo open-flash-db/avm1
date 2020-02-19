@@ -1,75 +1,75 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "before while(if/else if/else if/else)",
-          "map",
-          "foo",
-          "bar",
-          "test2",
-          "test",
-          "in if",
-          "in else if",
-          "in else",
-          "i",
-          "after while(if/else if/else if/else)"
-        ]
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          },
-          {
-            "type": "constant",
-            "value": 2
-          },
-          {
-            "type": "sint32",
-            "value": 1
-          },
-          {
-            "type": "constant",
-            "value": 3
-          },
-          {
-            "type": "sint32",
-            "value": 2
-          },
-          {
-            "type": "sint32",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "action": "init-object"
-      },
-      {
-        "action": "define-local"
-      }
-    ],
-    "next": "l0_162"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "before while(if/else if/else if/else)",
+            "map",
+            "foo",
+            "bar",
+            "test2",
+            "test",
+            "in if",
+            "in else if",
+            "in else",
+            "i",
+            "after while(if/else if/else if/else)"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 3
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "init-object"
+        },
+        {
+          "action": "define-local"
+        }
+      ],
+      "next": "l0_162"
+    },
     {
       "type": "if",
       "label": "l0_162",

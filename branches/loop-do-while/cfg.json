@@ -1,49 +1,49 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "i",
-          "before do/while",
-          "in do/while",
-          "after do/while"
-        ]
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          },
-          {
-            "type": "float64",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "set-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      }
-    ],
-    "next": "l0_71"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "i",
+            "before do/while",
+            "in do/while",
+            "after do/while"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "float64",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "l0_71"
+    },
     {
       "type": "if",
       "label": "l0_71",

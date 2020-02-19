@@ -1,718 +1,723 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "@estr",
-          "xx",
-          "flash",
-          "Boot",
-          "__string_rec",
-          "Main",
-          "__name__",
-          "prototype",
-          "__class__",
-          "main",
-          "Hello, World!",
-          "quit",
-          "Lib",
-          "fscommand",
-          "Std",
-          "string",
-          "",
-          "Object",
-          "_global",
-          "length",
-          "<...>",
-          "movieclip",
-          "function",
-          "__ename__",
-          "object",
-          "String",
-          "Array",
-          "__enum__",
-          "(",
-          "    ",
-          ",",
-          ")",
-          "[",
-          "]",
-          "toString",
-          "[object Object]",
-          "[type Function]",
-          "{\n",
-          "typeof",
-          "_name",
-          "MC(",
-          ") ",
-          "push",
-          "iterator",
-          "hasNext",
-          "next",
-          "__super__",
-          "__interfaces__",
-          ",\n",
-          " : ",
-          "substring",
-          "\n",
-          "}",
-          "<function>",
-          "__closure",
-          "arguments",
-          "callee",
-          "o",
-          "f",
-          "apply",
-          "__instanceof",
-          "Int",
-          "Float",
-          "Bool",
-          "Dynamic",
-          "Class",
-          "Enum",
-          "number",
-          "Math",
-          "ceil",
-          "getTrace",
-          "current",
-          "__trace_txt",
-          "Stage",
-          "width",
-          "height",
-          "createTextField",
-          "getTextFormat",
-          "font",
-          "_sans",
-          "setNewTextFormat",
-          "selectable",
-          "textColor",
-          "def_color",
-          "__trace_lines",
-          "__set_trace_color",
-          "__trace",
-          "fileName",
-          "lineNumber",
-          ":",
-          ": ",
-          "customParams",
-          "split",
-          "concat",
-          "join",
-          "text",
-          "textHeight",
-          "shift",
-          "__exc",
-          "onerror",
-          "(uncaught exception)",
-          "__clear_trace",
-          "removeTextField",
-          "__init",
-          "haxeInitDone",
-          "copy",
-          "slice",
-          "splice",
-          "call",
-          "insert",
-          "remove",
-          "indexOf",
-          "lastIndexOf",
-          "cur",
-          "arr",
-          "map",
-          "filter",
-          "ASSetPropFlags",
-          "charCodeAt",
-          "cca",
-          "_root",
-          "@instanceof",
-          "@closure",
-          "align",
-          "LT",
-          "FSCommand:",
-          "_MovieClip",
-          "display",
-          "filters",
-          "geom",
-          "haxe",
-          "this",
-          "NaN",
-          "Number",
-          "NEGATIVE_INFINITY",
-          "POSITIVE_INFINITY",
-          "isFinite",
-          "isNaN",
-          "g",
-          "Void",
-          "MovieClip",
-          "TextField",
-          "TextFormat",
-          "TextSnapshot",
-          "StyleSheet",
-          "exception"
-        ]
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "define-function2",
-        "name": "",
-        "register_count": 2,
-        "preload_this": true,
-        "suppress_this": false,
-        "preload_arguments": false,
-        "suppress_arguments": true,
-        "preload_super": false,
-        "suppress_super": true,
-        "preload_root": false,
-        "preload_parent": false,
-        "preload_global": false,
-        "parameters": [],
-        "body": {
-          "head": {
-            "type": "return",
-            "label": "l1_1157",
-            "actions": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "@estr",
+            "xx",
+            "flash",
+            "Boot",
+            "__string_rec",
+            "Main",
+            "__name__",
+            "prototype",
+            "__class__",
+            "main",
+            "Hello, World!",
+            "quit",
+            "Lib",
+            "fscommand",
+            "Std",
+            "string",
+            "",
+            "Object",
+            "_global",
+            "length",
+            "<...>",
+            "movieclip",
+            "function",
+            "__ename__",
+            "object",
+            "String",
+            "Array",
+            "__enum__",
+            "(",
+            "    ",
+            ",",
+            ")",
+            "[",
+            "]",
+            "toString",
+            "[object Object]",
+            "[type Function]",
+            "{\n",
+            "typeof",
+            "_name",
+            "MC(",
+            ") ",
+            "push",
+            "iterator",
+            "hasNext",
+            "next",
+            "__super__",
+            "__interfaces__",
+            ",\n",
+            " : ",
+            "substring",
+            "\n",
+            "}",
+            "<function>",
+            "__closure",
+            "arguments",
+            "callee",
+            "o",
+            "f",
+            "apply",
+            "__instanceof",
+            "Int",
+            "Float",
+            "Bool",
+            "Dynamic",
+            "Class",
+            "Enum",
+            "number",
+            "Math",
+            "ceil",
+            "getTrace",
+            "current",
+            "__trace_txt",
+            "Stage",
+            "width",
+            "height",
+            "createTextField",
+            "getTextFormat",
+            "font",
+            "_sans",
+            "setNewTextFormat",
+            "selectable",
+            "textColor",
+            "def_color",
+            "__trace_lines",
+            "__set_trace_color",
+            "__trace",
+            "fileName",
+            "lineNumber",
+            ":",
+            ": ",
+            "customParams",
+            "split",
+            "concat",
+            "join",
+            "text",
+            "textHeight",
+            "shift",
+            "__exc",
+            "onerror",
+            "(uncaught exception)",
+            "__clear_trace",
+            "removeTextField",
+            "__init",
+            "haxeInitDone",
+            "copy",
+            "slice",
+            "splice",
+            "call",
+            "insert",
+            "remove",
+            "indexOf",
+            "lastIndexOf",
+            "cur",
+            "arr",
+            "map",
+            "filter",
+            "ASSetPropFlags",
+            "charCodeAt",
+            "cca",
+            "_root",
+            "@instanceof",
+            "@closure",
+            "align",
+            "LT",
+            "FSCommand:",
+            "_MovieClip",
+            "display",
+            "filters",
+            "geom",
+            "haxe",
+            "this",
+            "NaN",
+            "Number",
+            "NEGATIVE_INFINITY",
+            "POSITIVE_INFINITY",
+            "isFinite",
+            "isNaN",
+            "g",
+            "Void",
+            "MovieClip",
+            "TextField",
+            "TextFormat",
+            "TextSnapshot",
+            "StyleSheet",
+            "exception"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "",
+          "register_count": 2,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
+          "parameters": [],
+          "body": {
+            "blocks": [
               {
-                "action": "push",
-                "values": [
+                "type": "return",
+                "label": "l1_1157",
+                "actions": [
                   {
-                    "type": "constant",
-                    "value": 1
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      },
+                      {
+                        "type": "register",
+                        "value": 1
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
                   },
                   {
-                    "type": "register",
-                    "value": 1
+                    "action": "get-variable"
                   },
                   {
-                    "type": "sint32",
-                    "value": 2
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
                   },
                   {
-                    "type": "constant",
-                    "value": 2
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "push",
-                "values": [
+                    "action": "get-member"
+                  },
                   {
-                    "type": "constant",
-                    "value": 3
-                  }
-                ]
-              },
-              {
-                "action": "get-member"
-              },
-              {
-                "action": "push",
-                "values": [
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 4
+                      }
+                    ]
+                  },
                   {
-                    "type": "constant",
-                    "value": 4
+                    "action": "call-method"
                   }
                 ]
-              },
-              {
-                "action": "call-method"
               }
             ]
-          },
-          "tail": []
-        }
-      },
-      {
-        "action": "set-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 5
           }
-        ]
-      },
-      {
-        "action": "define-function2",
-        "name": "",
-        "register_count": 1,
-        "preload_this": true,
-        "suppress_this": false,
-        "preload_arguments": false,
-        "suppress_arguments": true,
-        "preload_super": true,
-        "suppress_super": false,
-        "preload_root": false,
-        "preload_parent": false,
-        "preload_global": false,
-        "parameters": [],
-        "body": {
-          "head": {
-            "type": "simple",
-            "label": "l2_1202",
-            "actions": [],
-            "next": null
-          },
-          "tail": []
-        }
-      },
-      {
-        "action": "store-register",
-        "register": 0
-      },
-      {
-        "action": "set-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "register",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 6
-          },
-          {
-            "type": "constant",
-            "value": 5
-          },
-          {
-            "type": "sint32",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "action": "init-array"
-      },
-      {
-        "action": "set-member"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "register",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 7
-          }
-        ]
-      },
-      {
-        "action": "get-member"
-      },
-      {
-        "action": "store-register",
-        "register": 1
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "register",
-            "value": 1
-          },
-          {
-            "type": "constant",
-            "value": 8
-          },
-          {
-            "type": "register",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "set-member"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "register",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 9
-          }
-        ]
-      },
-      {
-        "action": "define-function2",
-        "name": "",
-        "register_count": 2,
-        "preload_this": true,
-        "suppress_this": false,
-        "preload_arguments": false,
-        "suppress_arguments": true,
-        "preload_super": false,
-        "suppress_super": true,
-        "preload_root": false,
-        "preload_parent": false,
-        "preload_global": false,
-        "parameters": [],
-        "body": {
-          "head": {
-            "type": "simple",
-            "label": "l3_1264",
-            "actions": [
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "",
+          "register_count": 1,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": true,
+          "suppress_super": false,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
+          "parameters": [],
+          "body": {
+            "blocks": [
               {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 10
-                  }
-                ]
-              },
-              {
-                "action": "trace"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 11
-                  },
-                  {
-                    "type": "sint32",
-                    "value": 1
-                  },
-                  {
-                    "type": "constant",
-                    "value": 2
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 12
-                  }
-                ]
-              },
-              {
-                "action": "get-member"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 13
-                  }
-                ]
-              },
-              {
-                "action": "call-method"
-              },
-              {
-                "action": "pop"
-              }
-            ],
-            "next": null
-          },
-          "tail": []
-        }
-      },
-      {
-        "action": "set-member"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 14
-          }
-        ]
-      },
-      {
-        "action": "define-function2",
-        "name": "",
-        "register_count": 1,
-        "preload_this": true,
-        "suppress_this": false,
-        "preload_arguments": false,
-        "suppress_arguments": true,
-        "preload_super": true,
-        "suppress_super": false,
-        "preload_root": false,
-        "preload_parent": false,
-        "preload_global": false,
-        "parameters": [],
-        "body": {
-          "head": {
-            "type": "simple",
-            "label": "l4_1313",
-            "actions": [],
-            "next": null
-          },
-          "tail": []
-        }
-      },
-      {
-        "action": "store-register",
-        "register": 0
-      },
-      {
-        "action": "set-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "register",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 6
-          },
-          {
-            "type": "constant",
-            "value": 14
-          },
-          {
-            "type": "sint32",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "action": "init-array"
-      },
-      {
-        "action": "set-member"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "register",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 7
-          }
-        ]
-      },
-      {
-        "action": "get-member"
-      },
-      {
-        "action": "store-register",
-        "register": 1
-      },
-      {
-        "action": "pop"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "register",
-            "value": 1
-          },
-          {
-            "type": "constant",
-            "value": 8
-          },
-          {
-            "type": "register",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "set-member"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "register",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 15
-          }
-        ]
-      },
-      {
-        "action": "define-function2",
-        "name": "",
-        "register_count": 3,
-        "preload_this": true,
-        "suppress_this": false,
-        "preload_arguments": false,
-        "suppress_arguments": true,
-        "preload_super": false,
-        "suppress_super": true,
-        "preload_root": false,
-        "preload_parent": false,
-        "preload_global": false,
-        "parameters": [
-          {
-            "register": 2,
-            "name": ""
-          }
-        ],
-        "body": {
-          "head": {
-            "type": "return",
-            "label": "l5_1377",
-            "actions": [
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 16
-                  },
-                  {
-                    "type": "register",
-                    "value": 2
-                  },
-                  {
-                    "type": "sint32",
-                    "value": 2
-                  },
-                  {
-                    "type": "constant",
-                    "value": 2
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 3
-                  }
-                ]
-              },
-              {
-                "action": "get-member"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 4
-                  }
-                ]
-              },
-              {
-                "action": "call-method"
+                "type": "simple",
+                "label": "l2_1202",
+                "actions": [],
+                "next": null
               }
             ]
-          },
-          "tail": []
+          }
+        },
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 6
+            },
+            {
+              "type": "constant",
+              "value": 5
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "init-array"
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "store-register",
+          "register": 1
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 8
+            },
+            {
+              "type": "register",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "",
+          "register_count": 2,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "l3_1264",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 11
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 12
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 13
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "pop"
+                  }
+                ],
+                "next": null
+              }
+            ]
+          }
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 14
+            }
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "",
+          "register_count": 1,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": true,
+          "suppress_super": false,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
+          "parameters": [],
+          "body": {
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "l4_1313",
+                "actions": [],
+                "next": null
+              }
+            ]
+          }
+        },
+        {
+          "action": "store-register",
+          "register": 0
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 6
+            },
+            {
+              "type": "constant",
+              "value": 14
+            },
+            {
+              "type": "sint32",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "init-array"
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "store-register",
+          "register": 1
+        },
+        {
+          "action": "pop"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 1
+            },
+            {
+              "type": "constant",
+              "value": 8
+            },
+            {
+              "type": "register",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "register",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 15
+            }
+          ]
+        },
+        {
+          "action": "define-function2",
+          "name": "",
+          "register_count": 3,
+          "preload_this": true,
+          "suppress_this": false,
+          "preload_arguments": false,
+          "suppress_arguments": true,
+          "preload_super": false,
+          "suppress_super": true,
+          "preload_root": false,
+          "preload_parent": false,
+          "preload_global": false,
+          "parameters": [
+            {
+              "register": 2,
+              "name": ""
+            }
+          ],
+          "body": {
+            "blocks": [
+              {
+                "type": "return",
+                "label": "l5_1377",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 16
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "action": "set-member"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            },
+            {
+              "type": "sint32",
+              "value": 0
+            },
+            {
+              "type": "constant",
+              "value": 17
+            }
+          ]
+        },
+        {
+          "action": "new-object"
+        },
+        {
+          "action": "store-register",
+          "register": 1
+        },
+        {
+          "action": "set-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 18
+            }
+          ]
+        },
+        {
+          "action": "get-variable"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "get-member"
+        },
+        {
+          "action": "store-register",
+          "register": 2
+        },
+        {
+          "action": "enumerate2"
         }
-      },
-      {
-        "action": "set-member"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 2
-          },
-          {
-            "type": "sint32",
-            "value": 0
-          },
-          {
-            "type": "constant",
-            "value": 17
-          }
-        ]
-      },
-      {
-        "action": "new-object"
-      },
-      {
-        "action": "store-register",
-        "register": 1
-      },
-      {
-        "action": "set-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 18
-          }
-        ]
-      },
-      {
-        "action": "get-variable"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 2
-          }
-        ]
-      },
-      {
-        "action": "get-member"
-      },
-      {
-        "action": "store-register",
-        "register": 2
-      },
-      {
-        "action": "enumerate2"
-      }
-    ],
-    "next": "l0_1441"
-  },
-  "tail": [
+      ],
+      "next": "l0_1441"
+    },
     {
       "type": "if",
       "label": "l0_1441",
@@ -813,13 +818,14 @@
           "preload_global": false,
           "parameters": [],
           "body": {
-            "head": {
-              "type": "simple",
-              "label": "l6_1496",
-              "actions": [],
-              "next": null
-            },
-            "tail": []
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "l6_1496",
+                "actions": [],
+                "next": null
+              }
+            ]
           }
         },
         {
@@ -940,49 +946,49 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "if",
-              "label": "l7_1564",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 3
-                    },
-                    {
-                      "type": "constant",
-                      "value": 19
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "sint32",
-                      "value": 20
-                    }
-                  ]
-                },
-                {
-                  "action": "less2"
-                },
-                {
-                  "action": "not"
-                },
-                {
-                  "action": "not"
-                }
-              ],
-              "if_true": "l7_1594",
-              "if_false": "l7_1588"
-            },
-            "tail": [
+            "blocks": [
+              {
+                "type": "if",
+                "label": "l7_1564",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "constant",
+                        "value": 19
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 20
+                      }
+                    ]
+                  },
+                  {
+                    "action": "less2"
+                  },
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "not"
+                  }
+                ],
+                "if_true": "l7_1594",
+                "if_false": "l7_1588"
+              },
               {
                 "type": "return",
                 "label": "l7_1588",
@@ -3597,56 +3603,56 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "if",
-              "label": "l8_3027",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 3
-                    },
-                    {
-                      "type": "register",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "store-register",
-                  "register": 4
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 4
-                    },
-                    {
-                      "type": "null"
-                    }
-                  ]
-                },
-                {
-                  "action": "equals2"
-                },
-                {
-                  "action": "not"
-                }
-              ],
-              "if_true": "l8_3058",
-              "if_false": "l8_3053"
-            },
-            "tail": [
+            "blocks": [
+              {
+                "type": "if",
+                "label": "l8_3027",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 4
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 4
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  },
+                  {
+                    "action": "not"
+                  }
+                ],
+                "if_true": "l8_3058",
+                "if_false": "l8_3053"
+              },
               {
                 "type": "return",
                 "label": "l8_3053",
@@ -3680,104 +3686,105 @@
                     "preload_global": false,
                     "parameters": [],
                     "body": {
-                      "head": {
-                        "type": "return",
-                        "label": "l9_3069",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 55
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-variable"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 56
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-member"
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 2
-                          },
-                          {
-                            "action": "pop"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 55
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-variable"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 2
-                              },
-                              {
-                                "type": "constant",
-                                "value": 57
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-member"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "sint32",
-                                "value": 2
-                              },
-                              {
-                                "type": "register",
-                                "value": 2
-                              },
-                              {
-                                "type": "constant",
-                                "value": 58
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-member"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 59
-                              }
-                            ]
-                          },
-                          {
-                            "action": "call-method"
-                          }
-                        ]
-                      },
-                      "tail": []
+                      "blocks": [
+                        {
+                          "type": "return",
+                          "label": "l9_3069",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "constant",
+                                  "value": 55
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-variable"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "constant",
+                                  "value": 56
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-member"
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 2
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "constant",
+                                  "value": 55
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-variable"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 2
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 57
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-member"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "sint32",
+                                  "value": 2
+                                },
+                                {
+                                  "type": "register",
+                                  "value": 2
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 58
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-member"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "constant",
+                                  "value": 59
+                                }
+                              ]
+                            },
+                            {
+                              "action": "call-method"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   },
                   {
@@ -3881,30 +3888,30 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "if",
-              "label": "l10_3174",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 3
-                    }
-                  ]
-                },
-                {
-                  "action": "not"
-                },
-                {
-                  "action": "not"
-                }
-              ],
-              "if_true": "l10_3192",
-              "if_false": "l10_3186"
-            },
-            "tail": [
+            "blocks": [
+              {
+                "type": "if",
+                "label": "l10_3174",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "not"
+                  }
+                ],
+                "if_true": "l10_3192",
+                "if_false": "l10_3186"
+              },
               {
                 "type": "return",
                 "label": "l10_3186",
@@ -4801,99 +4808,99 @@
           "preload_global": false,
           "parameters": [],
           "body": {
-            "head": {
-              "type": "if",
-              "label": "l11_3667",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 12
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 71
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "store-register",
-                  "register": 2
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 2
-                    },
-                    {
-                      "type": "constant",
-                      "value": 72
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "store-register",
-                  "register": 3
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 3
-                    },
-                    {
-                      "type": "null"
-                    }
-                  ]
-                },
-                {
-                  "action": "equals2"
-                },
-                {
-                  "action": "not"
-                }
-              ],
-              "if_true": "l11_3982",
-              "if_false": "l11_3716"
-            },
-            "tail": [
+            "blocks": [
+              {
+                "type": "if",
+                "label": "l11_3667",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 12
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 71
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 2
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 72
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 3
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  },
+                  {
+                    "action": "not"
+                  }
+                ],
+                "if_true": "l11_3982",
+                "if_false": "l11_3716"
+              },
               {
                 "type": "if",
                 "label": "l11_3716",
@@ -5407,110 +5414,111 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "simple",
-              "label": "l12_4009",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "sint32",
-                      "value": 0
-                    },
-                    {
-                      "type": "constant",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 3
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 70
-                    }
-                  ]
-                },
-                {
-                  "action": "call-method"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 82
-                    },
-                    {
-                      "type": "register",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "set-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 3
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 83
-                    },
-                    {
-                      "type": "register",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "set-member"
-                }
-              ],
-              "next": null
-            },
-            "tail": []
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "l12_4009",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 0
+                      },
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 70
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 82
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 83
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-member"
+                  }
+                ],
+                "next": null
+              }
+            ]
           }
         },
         {
@@ -5553,203 +5561,203 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "if",
-              "label": "l13_4083",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 12
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 71
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "store-register",
-                  "register": 4
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "sint32",
-                      "value": 0
-                    },
-                    {
-                      "type": "constant",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 3
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 70
-                    }
-                  ]
-                },
-                {
-                  "action": "call-method"
-                },
-                {
-                  "action": "store-register",
-                  "register": 5
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 16
-                    },
-                    {
-                      "type": "register",
-                      "value": 2
-                    },
-                    {
-                      "type": "sint32",
-                      "value": 2
-                    },
-                    {
-                      "type": "constant",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 3
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 4
-                    }
-                  ]
-                },
-                {
-                  "action": "call-method"
-                },
-                {
-                  "action": "store-register",
-                  "register": 6
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 3
-                    },
-                    {
-                      "type": "constant",
-                      "value": 87
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 3
-                    },
-                    {
-                      "type": "constant",
-                      "value": 88
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "null"
-                    }
-                  ]
-                },
-                {
-                  "action": "equals2"
-                }
-              ],
-              "if_true": "l13_4208",
-              "if_false": "l13_4192"
-            },
-            "tail": [
+            "blocks": [
+              {
+                "type": "if",
+                "label": "l13_4083",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 12
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 71
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 4
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 0
+                      },
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 70
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 5
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 16
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 6
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "constant",
+                        "value": 87
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "constant",
+                        "value": 88
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  }
+                ],
+                "if_true": "l13_4208",
+                "if_false": "l13_4192"
+              },
               {
                 "type": "simple",
                 "label": "l13_4192",
@@ -6598,81 +6606,81 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "if",
-              "label": "l14_4645",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 16
-                    }
-                  ]
-                },
-                {
-                  "action": "store-register",
-                  "register": 3
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 12
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 99
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "null"
-                    }
-                  ]
-                },
-                {
-                  "action": "equals2"
-                },
-                {
-                  "action": "not"
-                }
-              ],
-              "if_true": "l14_4773",
-              "if_false": "l14_4684"
-            },
-            "tail": [
+            "blocks": [
+              {
+                "type": "if",
+                "label": "l14_4645",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 16
+                      }
+                    ]
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 3
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 12
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 99
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  },
+                  {
+                    "action": "not"
+                  }
+                ],
+                "if_true": "l14_4773",
+                "if_false": "l14_4684"
+              },
               {
                 "type": "simple",
                 "label": "l14_4684",
@@ -6980,111 +6988,112 @@
           "preload_global": false,
           "parameters": [],
           "body": {
-            "head": {
-              "type": "simple",
-              "label": "l15_4859",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 12
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 71
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "store-register",
-                  "register": 2
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "sint32",
-                      "value": 0
-                    },
-                    {
-                      "type": "register",
-                      "value": 2
-                    },
-                    {
-                      "type": "constant",
-                      "value": 72
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 102
-                    }
-                  ]
-                },
-                {
-                  "action": "call-method"
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 2
-                    },
-                    {
-                      "type": "constant",
-                      "value": 84
-                    },
-                    {
-                      "type": "null"
-                    }
-                  ]
-                },
-                {
-                  "action": "set-member"
-                }
-              ],
-              "next": null
-            },
-            "tail": []
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "l15_4859",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 12
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 71
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 2
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 0
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 72
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 102
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "constant",
+                        "value": 84
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "set-member"
+                  }
+                ],
+                "next": null
+              }
+            ]
           }
         },
         {
@@ -7123,56 +7132,56 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "if",
-              "label": "l16_4932",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 18
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "store-register",
-                  "register": 3
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 3
-                    },
-                    {
-                      "type": "constant",
-                      "value": 104
-                    }
-                  ]
-                },
-                {
-                  "action": "get-member"
-                },
-                {
-                  "action": "not"
-                },
-                {
-                  "action": "not"
-                }
-              ],
-              "if_true": "l16_6476",
-              "if_false": "l16_4958"
-            },
-            "tail": [
+            "blocks": [
+              {
+                "type": "if",
+                "label": "l16_4932",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 18
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 3
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "constant",
+                        "value": 104
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-member"
+                  },
+                  {
+                    "action": "not"
+                  },
+                  {
+                    "action": "not"
+                  }
+                ],
+                "if_true": "l16_6476",
+                "if_false": "l16_4958"
+              },
               {
                 "type": "if",
                 "label": "l16_4958",
@@ -7364,37 +7373,37 @@
                       }
                     ],
                     "body": {
-                      "head": {
-                        "type": "if",
-                        "label": "l17_5054",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 3
-                              },
-                              {
-                                "type": "sint32",
-                                "value": 0
-                              }
-                            ]
-                          },
-                          {
-                            "action": "greater"
-                          },
-                          {
-                            "action": "not"
-                          },
-                          {
-                            "action": "not"
-                          }
-                        ],
-                        "if_true": "l17_5082",
-                        "if_false": "l17_5072"
-                      },
-                      "tail": [
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "label": "l17_5054",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 3
+                                },
+                                {
+                                  "type": "sint32",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            {
+                              "action": "greater"
+                            },
+                            {
+                              "action": "not"
+                            },
+                            {
+                              "action": "not"
+                            }
+                          ],
+                          "if_true": "l17_5082",
+                          "if_false": "l17_5072"
+                        },
                         {
                           "type": "return",
                           "label": "l17_5072",
@@ -7522,61 +7531,62 @@
                       }
                     ],
                     "body": {
-                      "head": {
-                        "type": "simple",
-                        "label": "l18_5139",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 3
-                              },
-                              {
-                                "type": "sint32",
-                                "value": 0
-                              },
-                              {
-                                "type": "register",
-                                "value": 2
-                              },
-                              {
-                                "type": "register",
-                                "value": 1
-                              },
-                              {
-                                "type": "sint32",
-                                "value": 4
-                              },
-                              {
-                                "type": "constant",
-                                "value": 107
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-variable"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 108
-                              }
-                            ]
-                          },
-                          {
-                            "action": "call-method"
-                          },
-                          {
-                            "action": "pop"
-                          }
-                        ],
-                        "next": null
-                      },
-                      "tail": []
+                      "blocks": [
+                        {
+                          "type": "simple",
+                          "label": "l18_5139",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 3
+                                },
+                                {
+                                  "type": "sint32",
+                                  "value": 0
+                                },
+                                {
+                                  "type": "register",
+                                  "value": 2
+                                },
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "sint32",
+                                  "value": 4
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 107
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-variable"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "constant",
+                                  "value": 108
+                                }
+                              ]
+                            },
+                            {
+                              "action": "call-method"
+                            },
+                            {
+                              "action": "pop"
+                            }
+                          ],
+                          "next": null
+                        }
+                      ]
                     }
                   },
                   {
@@ -7635,53 +7645,53 @@
                       }
                     ],
                     "body": {
-                      "head": {
-                        "type": "simple",
-                        "label": "l19_5199",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "sint32",
-                                "value": 0
-                              }
-                            ]
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 3
-                          },
-                          {
-                            "action": "pop"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 1
-                              },
-                              {
-                                "type": "constant",
-                                "value": 19
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-member"
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 4
-                          },
-                          {
-                            "action": "pop"
-                          }
-                        ],
-                        "next": "l19_5225"
-                      },
-                      "tail": [
+                      "blocks": [
+                        {
+                          "type": "simple",
+                          "label": "l19_5199",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "sint32",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 3
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 19
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-member"
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 4
+                            },
+                            {
+                              "action": "pop"
+                            }
+                          ],
+                          "next": "l19_5225"
+                        },
                         {
                           "type": "if",
                           "label": "l19_5225",
@@ -7927,53 +7937,53 @@
                       }
                     ],
                     "body": {
-                      "head": {
-                        "type": "if",
-                        "label": "l20_5358",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 1
-                              },
-                              {
-                                "type": "constant",
-                                "value": 19
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-member"
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 4
-                          },
-                          {
-                            "action": "pop"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 3
-                              },
-                              {
-                                "type": "null"
-                              }
-                            ]
-                          },
-                          {
-                            "action": "equals2"
-                          }
-                        ],
-                        "if_true": "l20_5398",
-                        "if_false": "l20_5383"
-                      },
-                      "tail": [
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "label": "l20_5358",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 19
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-member"
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 4
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 3
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            {
+                              "action": "equals2"
+                            }
+                          ],
+                          "if_true": "l20_5398",
+                          "if_false": "l20_5383"
+                        },
                         {
                           "type": "simple",
                           "label": "l20_5383",
@@ -8334,53 +8344,53 @@
                       }
                     ],
                     "body": {
-                      "head": {
-                        "type": "if",
-                        "label": "l21_5586",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 1
-                              },
-                              {
-                                "type": "constant",
-                                "value": 19
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-member"
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 4
-                          },
-                          {
-                            "action": "pop"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 3
-                              },
-                              {
-                                "type": "null"
-                              }
-                            ]
-                          },
-                          {
-                            "action": "equals2"
-                          }
-                        ],
-                        "if_true": "l21_5626",
-                        "if_false": "l21_5611"
-                      },
-                      "tail": [
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "label": "l21_5586",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 19
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-member"
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 4
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 3
+                                },
+                                {
+                                  "type": "null"
+                                }
+                              ]
+                            },
+                            {
+                              "action": "equals2"
+                            }
+                          ],
+                          "if_true": "l21_5626",
+                          "if_false": "l21_5611"
+                        },
                         {
                           "type": "simple",
                           "label": "l21_5611",
@@ -8762,228 +8772,231 @@
                     "preload_global": false,
                     "parameters": [],
                     "body": {
-                      "head": {
-                        "type": "return",
-                        "label": "l22_5822",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 113
-                              },
-                              {
-                                "type": "sint32",
-                                "value": 0
-                              },
-                              {
-                                "type": "constant",
-                                "value": 114
-                              },
-                              {
-                                "type": "register",
-                                "value": 1
-                              },
-                              {
-                                "type": "constant",
-                                "value": 44
-                              }
-                            ]
-                          },
-                          {
-                            "action": "define-function2",
-                            "name": "",
-                            "register_count": 2,
-                            "preload_this": true,
-                            "suppress_this": false,
-                            "preload_arguments": false,
-                            "suppress_arguments": true,
-                            "preload_super": false,
-                            "suppress_super": true,
-                            "preload_root": false,
-                            "preload_parent": false,
-                            "preload_global": false,
-                            "parameters": [],
-                            "body": {
-                              "head": {
-                                "type": "return",
-                                "label": "l23_5849",
-                                "actions": [
+                      "blocks": [
+                        {
+                          "type": "return",
+                          "label": "l22_5822",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "constant",
+                                  "value": 113
+                                },
+                                {
+                                  "type": "sint32",
+                                  "value": 0
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 114
+                                },
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 44
+                                }
+                              ]
+                            },
+                            {
+                              "action": "define-function2",
+                              "name": "",
+                              "register_count": 2,
+                              "preload_this": true,
+                              "suppress_this": false,
+                              "preload_arguments": false,
+                              "suppress_arguments": true,
+                              "preload_super": false,
+                              "suppress_super": true,
+                              "preload_root": false,
+                              "preload_parent": false,
+                              "preload_global": false,
+                              "parameters": [],
+                              "body": {
+                                "blocks": [
                                   {
-                                    "action": "push",
-                                    "values": [
+                                    "type": "return",
+                                    "label": "l23_5849",
+                                    "actions": [
                                       {
-                                        "type": "register",
-                                        "value": 1
+                                        "action": "push",
+                                        "values": [
+                                          {
+                                            "type": "register",
+                                            "value": 1
+                                          },
+                                          {
+                                            "type": "constant",
+                                            "value": 113
+                                          }
+                                        ]
                                       },
                                       {
-                                        "type": "constant",
-                                        "value": 113
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "action": "get-member"
-                                  },
-                                  {
-                                    "action": "push",
-                                    "values": [
-                                      {
-                                        "type": "register",
-                                        "value": 1
+                                        "action": "get-member"
                                       },
                                       {
-                                        "type": "constant",
-                                        "value": 114
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "action": "get-member"
-                                  },
-                                  {
-                                    "action": "push",
-                                    "values": [
+                                        "action": "push",
+                                        "values": [
+                                          {
+                                            "type": "register",
+                                            "value": 1
+                                          },
+                                          {
+                                            "type": "constant",
+                                            "value": 114
+                                          }
+                                        ]
+                                      },
                                       {
-                                        "type": "constant",
-                                        "value": 19
+                                        "action": "get-member"
+                                      },
+                                      {
+                                        "action": "push",
+                                        "values": [
+                                          {
+                                            "type": "constant",
+                                            "value": 19
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "action": "get-member"
+                                      },
+                                      {
+                                        "action": "less2"
                                       }
                                     ]
-                                  },
-                                  {
-                                    "action": "get-member"
-                                  },
-                                  {
-                                    "action": "less2"
                                   }
                                 ]
-                              },
-                              "tail": []
-                            }
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "constant",
-                                "value": 45
                               }
-                            ]
-                          },
-                          {
-                            "action": "define-function2",
-                            "name": "",
-                            "register_count": 2,
-                            "preload_this": true,
-                            "suppress_this": false,
-                            "preload_arguments": false,
-                            "suppress_arguments": true,
-                            "preload_super": false,
-                            "suppress_super": true,
-                            "preload_root": false,
-                            "preload_parent": false,
-                            "preload_global": false,
-                            "parameters": [],
-                            "body": {
-                              "head": {
-                                "type": "return",
-                                "label": "l24_5889",
-                                "actions": [
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "constant",
+                                  "value": 45
+                                }
+                              ]
+                            },
+                            {
+                              "action": "define-function2",
+                              "name": "",
+                              "register_count": 2,
+                              "preload_this": true,
+                              "suppress_this": false,
+                              "preload_arguments": false,
+                              "suppress_arguments": true,
+                              "preload_super": false,
+                              "suppress_super": true,
+                              "preload_root": false,
+                              "preload_parent": false,
+                              "preload_global": false,
+                              "parameters": [],
+                              "body": {
+                                "blocks": [
                                   {
-                                    "action": "push",
-                                    "values": [
+                                    "type": "return",
+                                    "label": "l24_5889",
+                                    "actions": [
                                       {
-                                        "type": "register",
-                                        "value": 1
+                                        "action": "push",
+                                        "values": [
+                                          {
+                                            "type": "register",
+                                            "value": 1
+                                          },
+                                          {
+                                            "type": "constant",
+                                            "value": 114
+                                          }
+                                        ]
                                       },
                                       {
-                                        "type": "constant",
-                                        "value": 114
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "action": "get-member"
-                                  },
-                                  {
-                                    "action": "push",
-                                    "values": [
+                                        "action": "get-member"
+                                      },
                                       {
-                                        "type": "register",
-                                        "value": 1
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "action": "push-duplicate"
-                                  },
-                                  {
-                                    "action": "push",
-                                    "values": [
+                                        "action": "push",
+                                        "values": [
+                                          {
+                                            "type": "register",
+                                            "value": 1
+                                          }
+                                        ]
+                                      },
                                       {
-                                        "type": "constant",
-                                        "value": 113
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "action": "stack-swap"
-                                  },
-                                  {
-                                    "action": "push",
-                                    "values": [
+                                        "action": "push-duplicate"
+                                      },
                                       {
-                                        "type": "constant",
-                                        "value": 113
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "action": "get-member"
-                                  },
-                                  {
-                                    "action": "store-register",
-                                    "register": 0
-                                  },
-                                  {
-                                    "action": "increment"
-                                  },
-                                  {
-                                    "action": "set-member"
-                                  },
-                                  {
-                                    "action": "push",
-                                    "values": [
+                                        "action": "push",
+                                        "values": [
+                                          {
+                                            "type": "constant",
+                                            "value": 113
+                                          }
+                                        ]
+                                      },
                                       {
-                                        "type": "register",
-                                        "value": 0
+                                        "action": "stack-swap"
+                                      },
+                                      {
+                                        "action": "push",
+                                        "values": [
+                                          {
+                                            "type": "constant",
+                                            "value": 113
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "action": "get-member"
+                                      },
+                                      {
+                                        "action": "store-register",
+                                        "register": 0
+                                      },
+                                      {
+                                        "action": "increment"
+                                      },
+                                      {
+                                        "action": "set-member"
+                                      },
+                                      {
+                                        "action": "push",
+                                        "values": [
+                                          {
+                                            "type": "register",
+                                            "value": 0
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "action": "get-member"
                                       }
                                     ]
-                                  },
-                                  {
-                                    "action": "get-member"
                                   }
                                 ]
-                              },
-                              "tail": []
-                            }
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "sint32",
-                                "value": 4
                               }
-                            ]
-                          },
-                          {
-                            "action": "init-object"
-                          }
-                        ]
-                      },
-                      "tail": []
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "sint32",
+                                  "value": 4
+                                }
+                              ]
+                            },
+                            {
+                              "action": "init-object"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   },
                   {
@@ -9042,72 +9055,72 @@
                       }
                     ],
                     "body": {
-                      "head": {
-                        "type": "simple",
-                        "label": "l25_5969",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "sint32",
-                                "value": 0
-                              }
-                            ]
-                          },
-                          {
-                            "action": "init-array"
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 3
-                          },
-                          {
-                            "action": "pop"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "sint32",
-                                "value": 0
-                              }
-                            ]
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 4
-                          },
-                          {
-                            "action": "pop"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 1
-                              },
-                              {
-                                "type": "constant",
-                                "value": 19
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-member"
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 5
-                          },
-                          {
-                            "action": "pop"
-                          }
-                        ],
-                        "next": "l25_6009"
-                      },
-                      "tail": [
+                      "blocks": [
+                        {
+                          "type": "simple",
+                          "label": "l25_5969",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "sint32",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            {
+                              "action": "init-array"
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 3
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "sint32",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 4
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 19
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-member"
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 5
+                            },
+                            {
+                              "action": "pop"
+                            }
+                          ],
+                          "next": "l25_6009"
+                        },
                         {
                           "type": "if",
                           "label": "l25_6009",
@@ -9333,72 +9346,72 @@
                       }
                     ],
                     "body": {
-                      "head": {
-                        "type": "simple",
-                        "label": "l26_6134",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "sint32",
-                                "value": 0
-                              }
-                            ]
-                          },
-                          {
-                            "action": "init-array"
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 3
-                          },
-                          {
-                            "action": "pop"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "sint32",
-                                "value": 0
-                              }
-                            ]
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 4
-                          },
-                          {
-                            "action": "pop"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 1
-                              },
-                              {
-                                "type": "constant",
-                                "value": 19
-                              }
-                            ]
-                          },
-                          {
-                            "action": "get-member"
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 5
-                          },
-                          {
-                            "action": "pop"
-                          }
-                        ],
-                        "next": "l26_6174"
-                      },
-                      "tail": [
+                      "blocks": [
+                        {
+                          "type": "simple",
+                          "label": "l26_6134",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "sint32",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            {
+                              "action": "init-array"
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 3
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "sint32",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 4
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 19
+                                }
+                              ]
+                            },
+                            {
+                              "action": "get-member"
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 5
+                            },
+                            {
+                              "action": "pop"
+                            }
+                          ],
+                          "next": "l26_6174"
+                        },
                         {
                           "type": "if",
                           "label": "l26_6174",
@@ -9792,68 +9805,68 @@
                       }
                     ],
                     "body": {
-                      "head": {
-                        "type": "if",
-                        "label": "l27_6385",
-                        "actions": [
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 2
-                              },
-                              {
-                                "type": "sint32",
-                                "value": 1
-                              },
-                              {
-                                "type": "register",
-                                "value": 1
-                              },
-                              {
-                                "type": "constant",
-                                "value": 119
-                              }
-                            ]
-                          },
-                          {
-                            "action": "call-method"
-                          },
-                          {
-                            "action": "store-register",
-                            "register": 3
-                          },
-                          {
-                            "action": "pop"
-                          },
-                          {
-                            "action": "push",
-                            "values": [
-                              {
-                                "type": "register",
-                                "value": 3
-                              },
-                              {
-                                "type": "sint32",
-                                "value": 0
-                              }
-                            ]
-                          },
-                          {
-                            "action": "greater"
-                          },
-                          {
-                            "action": "not"
-                          },
-                          {
-                            "action": "not"
-                          }
-                        ],
-                        "if_true": "l27_6428",
-                        "if_false": "l27_6423"
-                      },
-                      "tail": [
+                      "blocks": [
+                        {
+                          "type": "if",
+                          "label": "l27_6385",
+                          "actions": [
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 2
+                                },
+                                {
+                                  "type": "sint32",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "register",
+                                  "value": 1
+                                },
+                                {
+                                  "type": "constant",
+                                  "value": 119
+                                }
+                              ]
+                            },
+                            {
+                              "action": "call-method"
+                            },
+                            {
+                              "action": "store-register",
+                              "register": 3
+                            },
+                            {
+                              "action": "pop"
+                            },
+                            {
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "register",
+                                  "value": 3
+                                },
+                                {
+                                  "type": "sint32",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            {
+                              "action": "greater"
+                            },
+                            {
+                              "action": "not"
+                            },
+                            {
+                              "action": "not"
+                            }
+                          ],
+                          "if_true": "l27_6428",
+                          "if_false": "l27_6423"
+                        },
                         {
                           "type": "return",
                           "label": "l27_6423",
@@ -10349,13 +10362,14 @@
           "preload_global": false,
           "parameters": [],
           "body": {
-            "head": {
-              "type": "simple",
-              "label": "l28_6663",
-              "actions": [],
-              "next": null
-            },
-            "tail": []
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "l28_6663",
+                "actions": [],
+                "next": null
+              }
+            ]
           }
         },
         {
@@ -10514,46 +10528,46 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "if",
-              "label": "l29_6749",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 125
-                    },
-                    {
-                      "type": "register",
-                      "value": 2
-                    }
-                  ]
-                },
-                {
-                  "action": "add2"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 3
-                    },
-                    {
-                      "type": "null"
-                    }
-                  ]
-                },
-                {
-                  "action": "equals2"
-                }
-              ],
-              "if_true": "l29_6779",
-              "if_false": "l29_6769"
-            },
-            "tail": [
+            "blocks": [
+              {
+                "type": "if",
+                "label": "l29_6749",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 125
+                      },
+                      {
+                        "type": "register",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "action": "add2"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 3
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "equals2"
+                  }
+                ],
+                "if_true": "l29_6779",
+                "if_false": "l29_6769"
+              },
               {
                 "type": "simple",
                 "label": "l29_6769",
@@ -11746,45 +11760,46 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "return",
-              "label": "l30_7401",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 2
-                    },
-                    {
-                      "type": "sint32",
-                      "value": 1
-                    },
-                    {
-                      "type": "constant",
-                      "value": 18
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 136
-                    }
-                  ]
-                },
-                {
-                  "action": "call-method"
-                }
-              ]
-            },
-            "tail": []
+            "blocks": [
+              {
+                "type": "return",
+                "label": "l30_7401",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 18
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 136
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -11831,45 +11846,46 @@
             }
           ],
           "body": {
-            "head": {
-              "type": "return",
-              "label": "l31_7446",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "register",
-                      "value": 2
-                    },
-                    {
-                      "type": "sint32",
-                      "value": 1
-                    },
-                    {
-                      "type": "constant",
-                      "value": 18
-                    }
-                  ]
-                },
-                {
-                  "action": "get-variable"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 137
-                    }
-                  ]
-                },
-                {
-                  "action": "call-method"
-                }
-              ]
-            },
-            "tail": []
+            "blocks": [
+              {
+                "type": "return",
+                "label": "l31_7446",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 2
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 18
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 137
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -12772,181 +12788,183 @@
         }
       ],
       "try": {
-        "head": {
-          "type": "simple",
-          "label": "l32_7963",
-          "actions": [
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "constant",
-                  "value": 2
-                }
-              ]
-            },
-            {
-              "action": "get-variable"
-            },
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "constant",
-                  "value": 3
-                }
-              ]
-            },
-            {
-              "action": "get-member"
-            },
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "constant",
-                  "value": 83
-                },
-                {
-                  "type": "sint32",
-                  "value": 0
-                }
-              ]
-            },
-            {
-              "action": "set-member"
-            },
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "constant",
-                  "value": 2
-                }
-              ]
-            },
-            {
-              "action": "get-variable"
-            },
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "constant",
-                  "value": 3
-                }
-              ]
-            },
-            {
-              "action": "get-member"
-            },
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "constant",
-                  "value": 145
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            {
-              "action": "set-member"
-            },
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "sint32",
-                  "value": 0
-                },
-                {
-                  "type": "constant",
-                  "value": 5
-                }
-              ]
-            },
-            {
-              "action": "get-variable"
-            },
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "constant",
-                  "value": 9
-                }
-              ]
-            },
-            {
-              "action": "call-method"
-            },
-            {
-              "action": "pop"
-            }
-          ],
-          "next": null
-        },
-        "tail": []
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "l32_7963",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "action": "get-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 83
+                  },
+                  {
+                    "type": "sint32",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "action": "set-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "action": "get-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 145
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              {
+                "action": "set-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "sint32",
+                    "value": 0
+                  },
+                  {
+                    "type": "constant",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 9
+                  }
+                ]
+              },
+              {
+                "action": "call-method"
+              },
+              {
+                "action": "pop"
+              }
+            ],
+            "next": null
+          }
+        ]
       },
       "catch": {
-        "head": {
-          "type": "simple",
-          "label": "l33_8028",
-          "actions": [
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "register",
-                  "value": 0
-                },
-                {
-                  "type": "sint32",
-                  "value": 1
-                },
-                {
-                  "type": "constant",
-                  "value": 2
-                }
-              ]
-            },
-            {
-              "action": "get-variable"
-            },
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "constant",
-                  "value": 3
-                }
-              ]
-            },
-            {
-              "action": "get-member"
-            },
-            {
-              "action": "push",
-              "values": [
-                {
-                  "type": "constant",
-                  "value": 98
-                }
-              ]
-            },
-            {
-              "action": "call-method"
-            },
-            {
-              "action": "pop"
-            }
-          ],
-          "next": null
-        },
-        "tail": []
+        "blocks": [
+          {
+            "type": "simple",
+            "label": "l33_8028",
+            "actions": [
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "register",
+                    "value": 0
+                  },
+                  {
+                    "type": "sint32",
+                    "value": 1
+                  },
+                  {
+                    "type": "constant",
+                    "value": 2
+                  }
+                ]
+              },
+              {
+                "action": "get-variable"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "action": "get-member"
+              },
+              {
+                "action": "push",
+                "values": [
+                  {
+                    "type": "constant",
+                    "value": 98
+                  }
+                ]
+              },
+              {
+                "action": "call-method"
+              },
+              {
+                "action": "pop"
+              }
+            ],
+            "next": null
+          }
+        ]
       },
       "catch_target": {
         "type": "register",

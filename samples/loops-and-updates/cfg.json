@@ -1,62 +1,62 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "i",
-          "decrement suffix",
-          "decrement prefix",
-          "a",
-          "map"
-        ]
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "define-local2"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 1
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          },
-          {
-            "type": "sint32",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "action": "set-variable"
-      }
-    ],
-    "next": "l0_70"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "i",
+            "decrement suffix",
+            "decrement prefix",
+            "a",
+            "map"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "define-local2"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            },
+            {
+              "type": "sint32",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "set-variable"
+        }
+      ],
+      "next": "l0_70"
+    },
     {
       "type": "if",
       "label": "l0_70",
@@ -304,57 +304,57 @@
           "preload_global": false,
           "parameters": [],
           "body": {
-            "head": {
-              "type": "simple",
-              "label": "l1_211",
-              "actions": [
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "undefined"
-                    }
-                  ]
-                },
-                {
-                  "action": "store-register",
-                  "register": 1
-                },
-                {
-                  "action": "pop"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "constant",
-                      "value": 1
-                    }
-                  ]
-                },
-                {
-                  "action": "trace"
-                },
-                {
-                  "action": "push",
-                  "values": [
-                    {
-                      "type": "sint32",
-                      "value": 5
-                    }
-                  ]
-                },
-                {
-                  "action": "store-register",
-                  "register": 1
-                },
-                {
-                  "action": "pop"
-                }
-              ],
-              "next": "l1_239"
-            },
-            "tail": [
+            "blocks": [
+              {
+                "type": "simple",
+                "label": "l1_211",
+                "actions": [
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "undefined"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 1
+                  },
+                  {
+                    "action": "pop"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
+                  },
+                  {
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "sint32",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "action": "store-register",
+                    "register": 1
+                  },
+                  {
+                    "action": "pop"
+                  }
+                ],
+                "next": "l1_239"
+              },
               {
                 "type": "if",
                 "label": "l1_239",

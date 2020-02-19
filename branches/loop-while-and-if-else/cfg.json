@@ -1,37 +1,37 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "constant-pool",
-        "constant_pool": [
-          "before while(if/else if/else if/else)",
-          "test2",
-          "test",
-          "in if",
-          "in else if",
-          "in else",
-          "i",
-          "after while(if/else if/else if/else)"
-        ]
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "constant",
-            "value": 0
-          }
-        ]
-      },
-      {
-        "action": "trace"
-      }
-    ],
-    "next": "l0_124"
-  },
-  "tail": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "constant-pool",
+          "constant_pool": [
+            "before while(if/else if/else if/else)",
+            "test2",
+            "test",
+            "in if",
+            "in else if",
+            "in else",
+            "i",
+            "after while(if/else if/else if/else)"
+          ]
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": "l0_124"
+    },
     {
       "type": "if",
       "label": "l0_124",

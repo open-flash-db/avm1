@@ -1,119 +1,123 @@
 {
-  "head": {
-    "type": "simple",
-    "label": "l0_0",
-    "actions": [
-      {
-        "action": "define-function",
-        "name": "main",
-        "parameters": [],
-        "body": {
-          "head": {
-            "type": "try",
-            "label": "l1_12",
-            "actions": [
+  "blocks": [
+    {
+      "type": "simple",
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "define-function",
+          "name": "main",
+          "parameters": [],
+          "body": {
+            "blocks": [
               {
-                "action": "push",
-                "values": [
+                "type": "try",
+                "label": "l1_12",
+                "actions": [
                   {
-                    "type": "string",
-                    "value": "start"
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "start"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "trace"
                   }
-                ]
-              },
-              {
-                "action": "trace"
+                ],
+                "try": {
+                  "blocks": [
+                    {
+                      "type": "return",
+                      "label": "l3_34",
+                      "actions": [
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "string",
+                              "value": "in-try"
+                            }
+                          ]
+                        },
+                        {
+                          "action": "trace"
+                        },
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "string",
+                              "value": "tres"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "catch_target": {
+                  "type": "variable",
+                  "target": ""
+                },
+                "finally": {
+                  "blocks": [
+                    {
+                      "type": "return",
+                      "label": "l2_56",
+                      "actions": [
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "string",
+                              "value": "in-finally"
+                            }
+                          ]
+                        },
+                        {
+                          "action": "trace"
+                        },
+                        {
+                          "action": "push",
+                          "values": [
+                            {
+                              "type": "string",
+                              "value": "fres"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               }
-            ],
-            "try": {
-              "head": {
-                "type": "return",
-                "label": "l3_34",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "in-try"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "tres"
-                      }
-                    ]
-                  }
-                ]
-              },
-              "tail": []
-            },
-            "catch_target": {
-              "type": "variable",
-              "target": ""
-            },
-            "finally": {
-              "head": {
-                "type": "return",
-                "label": "l2_56",
-                "actions": [
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "in-finally"
-                      }
-                    ]
-                  },
-                  {
-                    "action": "trace"
-                  },
-                  {
-                    "action": "push",
-                    "values": [
-                      {
-                        "type": "string",
-                        "value": "fres"
-                      }
-                    ]
-                  }
-                ]
-              },
-              "tail": []
-            }
-          },
-          "tail": []
-        }
-      },
-      {
-        "action": "push",
-        "values": [
-          {
-            "type": "float64",
-            "value": 0
-          },
-          {
-            "type": "string",
-            "value": "main"
+            ]
           }
-        ]
-      },
-      {
-        "action": "call-function"
-      },
-      {
-        "action": "trace"
-      }
-    ],
-    "next": null
-  },
-  "tail": []
+        },
+        {
+          "action": "push",
+          "values": [
+            {
+              "type": "float64",
+              "value": 0
+            },
+            {
+              "type": "string",
+              "value": "main"
+            }
+          ]
+        },
+        {
+          "action": "call-function"
+        },
+        {
+          "action": "trace"
+        }
+      ],
+      "next": null
+    }
+  ]
 }
