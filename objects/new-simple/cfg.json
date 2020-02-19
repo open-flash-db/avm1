@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "x",
             "y",
             "start",
@@ -41,7 +40,6 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
                 "label": "l1_49",
                 "actions": [
                   {
@@ -85,7 +83,10 @@
                     "action": "set-member"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -161,7 +162,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "before for + continue",
             "i",
             "in for + continue",
@@ -42,10 +41,12 @@
           "action": "set-variable"
         }
       ],
-      "next": "l0_89"
+      "flow": {
+        "type": "simple",
+        "next": "l0_89"
+      }
     },
     {
-      "type": "if",
       "label": "l0_89",
       "actions": [
         {
@@ -76,11 +77,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_161",
-      "if_false": "l0_110"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_161",
+        "false_target": "l0_110"
+      }
     },
     {
-      "type": "if",
       "label": "l0_110",
       "actions": [
         {
@@ -111,17 +114,21 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_140",
-      "if_false": "l0_135"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_140",
+        "false_target": "l0_135"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_135",
       "actions": [],
-      "next": "l0_146"
+      "flow": {
+        "type": "simple",
+        "next": "l0_146"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_140",
       "actions": [
         {
@@ -137,10 +144,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_146"
+      "flow": {
+        "type": "simple",
+        "next": "l0_146"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_146",
       "actions": [
         {
@@ -166,10 +175,12 @@
           "action": "set-variable"
         }
       ],
-      "next": "l0_89"
+      "flow": {
+        "type": "simple",
+        "next": "l0_89"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_161",
       "actions": [
         {
@@ -185,7 +196,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

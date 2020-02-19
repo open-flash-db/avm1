@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -35,11 +34,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_53",
-      "if_false": "l0_41"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_53",
+        "false_target": "l0_41"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_41",
       "actions": [
         {
@@ -58,10 +59,12 @@
           "action": "get-variable"
         }
       ],
-      "next": "l0_53"
+      "flow": {
+        "type": "simple",
+        "next": "l0_53"
+      }
     },
     {
-      "type": "if",
       "label": "l0_53",
       "actions": [
         {
@@ -71,11 +74,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_72",
-      "if_false": "l0_60"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_72",
+        "false_target": "l0_60"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_60",
       "actions": [
         {
@@ -94,21 +99,25 @@
           "action": "get-variable"
         }
       ],
-      "next": "l0_72"
+      "flow": {
+        "type": "simple",
+        "next": "l0_72"
+      }
     },
     {
-      "type": "if",
       "label": "l0_72",
       "actions": [
         {
           "action": "not"
         }
       ],
-      "if_true": "l0_100",
-      "if_false": "l0_78"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_100",
+        "false_target": "l0_78"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_78",
       "actions": [
         {
@@ -124,10 +133,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_119"
+      "flow": {
+        "type": "simple",
+        "next": "l0_119"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_100",
       "actions": [
         {
@@ -143,10 +154,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_119"
+      "flow": {
+        "type": "simple",
+        "next": "l0_119"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_119",
       "actions": [
         {
@@ -162,7 +175,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

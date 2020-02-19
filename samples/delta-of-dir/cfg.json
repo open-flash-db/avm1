@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "dx",
             "dy"
           ]
@@ -33,7 +32,6 @@
           "body": {
             "blocks": [
               {
-                "type": "if",
                 "label": "l1_35",
                 "actions": [
                   {
@@ -62,11 +60,13 @@
                     "action": "strict-equals"
                   }
                 ],
-                "if_true": "l1_115",
-                "if_false": "l1_62"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l1_115",
+                  "false_target": "l1_62"
+                }
               },
               {
-                "type": "if",
                 "label": "l1_62",
                 "actions": [
                   {
@@ -86,11 +86,13 @@
                     "action": "strict-equals"
                   }
                 ],
-                "if_true": "l1_146",
-                "if_false": "l1_78"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l1_146",
+                  "false_target": "l1_78"
+                }
               },
               {
-                "type": "if",
                 "label": "l1_78",
                 "actions": [
                   {
@@ -110,11 +112,13 @@
                     "action": "strict-equals"
                   }
                 ],
-                "if_true": "l1_177",
-                "if_false": "l1_94"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l1_177",
+                  "false_target": "l1_94"
+                }
               },
               {
-                "type": "if",
                 "label": "l1_94",
                 "actions": [
                   {
@@ -134,17 +138,21 @@
                     "action": "strict-equals"
                   }
                 ],
-                "if_true": "l1_208",
-                "if_false": "l1_110"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l1_208",
+                  "false_target": "l1_110"
+                }
               },
               {
-                "type": "simple",
                 "label": "l1_110",
                 "actions": [],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               },
               {
-                "type": "simple",
                 "label": "l1_115",
                 "actions": [
                   {
@@ -180,10 +188,12 @@
                     "action": "set-variable"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               },
               {
-                "type": "simple",
                 "label": "l1_146",
                 "actions": [
                   {
@@ -219,10 +229,12 @@
                     "action": "set-variable"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               },
               {
-                "type": "simple",
                 "label": "l1_177",
                 "actions": [
                   {
@@ -258,10 +270,12 @@
                     "action": "set-variable"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               },
               {
-                "type": "simple",
                 "label": "l1_208",
                 "actions": [
                   {
@@ -297,13 +311,19 @@
                     "action": "set-variable"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

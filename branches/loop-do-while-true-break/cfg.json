@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "i",
             "before do/while/true",
             "in do/while/true",
@@ -42,10 +41,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_86"
+      "flow": {
+        "type": "simple",
+        "next": "l0_86"
+      }
     },
     {
-      "type": "if",
       "label": "l0_86",
       "actions": [
         {
@@ -88,17 +89,21 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_118",
-      "if_false": "l0_113"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_118",
+        "false_target": "l0_113"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_113",
       "actions": [],
-      "next": "l0_138"
+      "flow": {
+        "type": "simple",
+        "next": "l0_138"
+      }
     },
     {
-      "type": "if",
       "label": "l0_118",
       "actions": [
         {
@@ -133,11 +138,13 @@
           ]
         }
       ],
-      "if_true": "l0_86",
-      "if_false": "l0_138"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_86",
+        "false_target": "l0_138"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_138",
       "actions": [
         {
@@ -153,7 +160,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

@@ -1,15 +1,16 @@
 {
   "blocks": [
     {
-      "type": "wait-for-frame",
       "label": "l0_0",
       "actions": [],
-      "frame": 92,
-      "if_loaded": "l0_6",
-      "if_not_loaded": null
+      "flow": {
+        "type": "wait-for-frame",
+        "frame": 92,
+        "ready_target": "l0_6",
+        "loading_target": "l0_16"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_6",
       "actions": [
         {
@@ -20,7 +21,18 @@
           "action": "play"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": "l0_16"
+      }
+    },
+    {
+      "label": "l0_16",
+      "actions": [],
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

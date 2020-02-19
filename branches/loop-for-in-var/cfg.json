@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "map",
             "foo",
             "bar",
@@ -79,10 +78,12 @@
           "action": "enumerate2"
         }
       ],
-      "next": "l0_136"
+      "flow": {
+        "type": "simple",
+        "next": "l0_136"
+      }
     },
     {
-      "type": "if",
       "label": "l0_136",
       "actions": [
         {
@@ -101,11 +102,13 @@
           "action": "equals2"
         }
       ],
-      "if_true": "l0_169",
-      "if_false": "l0_150"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_169",
+        "false_target": "l0_150"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_150",
       "actions": [
         {
@@ -137,10 +140,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_136"
+      "flow": {
+        "type": "simple",
+        "next": "l0_136"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_169",
       "actions": [
         {
@@ -156,7 +161,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

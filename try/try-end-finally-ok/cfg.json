@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
@@ -11,7 +10,6 @@
           "body": {
             "blocks": [
               {
-                "type": "try",
                 "label": "l1_12",
                 "actions": [
                   {
@@ -27,59 +25,61 @@
                     "action": "trace"
                   }
                 ],
-                "try": {
-                  "blocks": [
-                    {
-                      "type": "simple",
-                      "label": "l3_35",
-                      "actions": [
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "string",
-                              "value": "in-try"
-                            }
-                          ]
-                        },
-                        {
-                          "action": "trace"
+                "flow": {
+                  "type": "try",
+                  "try": {
+                    "blocks": [
+                      {
+                        "label": "l3_35",
+                        "actions": [
+                          {
+                            "action": "push",
+                            "values": [
+                              {
+                                "type": "string",
+                                "value": "in-try"
+                              }
+                            ]
+                          },
+                          {
+                            "action": "trace"
+                          }
+                        ],
+                        "flow": {
+                          "type": "simple",
+                          "next": null
                         }
-                      ],
-                      "next": null
-                    }
-                  ]
-                },
-                "catch_target": {
-                  "type": "variable",
-                  "target": "e"
-                },
-                "finally": {
-                  "blocks": [
-                    {
-                      "type": "simple",
-                      "label": "l2_48",
-                      "actions": [
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "string",
-                              "value": "in-finally"
-                            }
-                          ]
-                        },
-                        {
-                          "action": "trace"
+                      }
+                    ]
+                  },
+                  "finally": {
+                    "blocks": [
+                      {
+                        "label": "l2_48",
+                        "actions": [
+                          {
+                            "action": "push",
+                            "values": [
+                              {
+                                "type": "string",
+                                "value": "in-finally"
+                              }
+                            ]
+                          },
+                          {
+                            "action": "trace"
+                          }
+                        ],
+                        "flow": {
+                          "type": "simple",
+                          "next": "l1_64"
                         }
-                      ],
-                      "next": "l1_64"
-                    }
-                  ]
+                      }
+                    ]
+                  }
                 }
               },
               {
-                "type": "simple",
                 "label": "l1_64",
                 "actions": [
                   {
@@ -95,7 +95,10 @@
                     "action": "trace"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -120,7 +123,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

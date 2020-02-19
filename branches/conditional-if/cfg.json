@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -32,11 +31,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_42",
-      "if_false": "l0_31"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_42",
+        "false_target": "l0_31"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_31",
       "actions": [
         {
@@ -52,10 +53,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_42"
+      "flow": {
+        "type": "simple",
+        "next": "l0_42"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_42",
       "actions": [
         {
@@ -71,7 +74,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

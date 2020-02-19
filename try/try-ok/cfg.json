@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "try",
       "label": "l0_0",
       "actions": [
         {
@@ -11,7 +10,6 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
                 "label": "l1_9",
                 "actions": [
                   {
@@ -27,7 +25,10 @@
                     "action": "trace"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -45,55 +46,55 @@
           "action": "trace"
         }
       ],
-      "try": {
-        "blocks": [
-          {
-            "type": "simple",
-            "label": "l2_40",
-            "actions": [
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "sint32",
-                    "value": 0
-                  },
-                  {
-                    "type": "string",
-                    "value": "f"
-                  }
-                ]
-              },
-              {
-                "action": "call-function"
-              },
-              {
-                "action": "pop"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "string",
-                    "value": "in-try"
-                  }
-                ]
-              },
-              {
-                "action": "trace"
+      "flow": {
+        "type": "try",
+        "try": {
+          "blocks": [
+            {
+              "label": "l2_40",
+              "actions": [
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "sint32",
+                      "value": 0
+                    },
+                    {
+                      "type": "string",
+                      "value": "f"
+                    }
+                  ]
+                },
+                {
+                  "action": "call-function"
+                },
+                {
+                  "action": "pop"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "string",
+                      "value": "in-try"
+                    }
+                  ]
+                },
+                {
+                  "action": "trace"
+                }
+              ],
+              "flow": {
+                "type": "simple",
+                "next": "l0_65"
               }
-            ],
-            "next": "l0_65"
-          }
-        ]
-      },
-      "catch_target": {
-        "type": "variable",
-        "target": "e"
+            }
+          ]
+        }
       }
     },
     {
-      "type": "simple",
       "label": "l0_65",
       "actions": [
         {
@@ -109,7 +110,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

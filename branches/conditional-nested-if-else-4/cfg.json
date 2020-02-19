@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "if",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "before hyper-nested if/else",
             "test",
             "in hyper-nested if/else 1111",
@@ -56,11 +55,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_719",
-      "if_false": "l0_547"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_719",
+        "false_target": "l0_547"
+      }
     },
     {
-      "type": "if",
       "label": "l0_547",
       "actions": [
         {
@@ -79,11 +80,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_639",
-      "if_false": "l0_559"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_639",
+        "false_target": "l0_559"
+      }
     },
     {
-      "type": "if",
       "label": "l0_559",
       "actions": [
         {
@@ -102,11 +105,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_605",
-      "if_false": "l0_571"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_605",
+        "false_target": "l0_571"
+      }
     },
     {
-      "type": "if",
       "label": "l0_571",
       "actions": [
         {
@@ -125,11 +130,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_594",
-      "if_false": "l0_583"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_594",
+        "false_target": "l0_583"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_583",
       "actions": [
         {
@@ -145,10 +152,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_600"
+      "flow": {
+        "type": "simple",
+        "next": "l0_600"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_594",
       "actions": [
         {
@@ -164,16 +173,20 @@
           "action": "trace"
         }
       ],
-      "next": "l0_600"
+      "flow": {
+        "type": "simple",
+        "next": "l0_600"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_600",
       "actions": [],
-      "next": "l0_634"
+      "flow": {
+        "type": "simple",
+        "next": "l0_634"
+      }
     },
     {
-      "type": "if",
       "label": "l0_605",
       "actions": [
         {
@@ -192,11 +205,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_628",
-      "if_false": "l0_617"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_628",
+        "false_target": "l0_617"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_617",
       "actions": [
         {
@@ -212,10 +227,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_634"
+      "flow": {
+        "type": "simple",
+        "next": "l0_634"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_628",
       "actions": [
         {
@@ -231,16 +248,20 @@
           "action": "trace"
         }
       ],
-      "next": "l0_634"
+      "flow": {
+        "type": "simple",
+        "next": "l0_634"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_634",
       "actions": [],
-      "next": "l0_714"
+      "flow": {
+        "type": "simple",
+        "next": "l0_714"
+      }
     },
     {
-      "type": "if",
       "label": "l0_639",
       "actions": [
         {
@@ -259,11 +280,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_685",
-      "if_false": "l0_651"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_685",
+        "false_target": "l0_651"
+      }
     },
     {
-      "type": "if",
       "label": "l0_651",
       "actions": [
         {
@@ -282,11 +305,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_674",
-      "if_false": "l0_663"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_674",
+        "false_target": "l0_663"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_663",
       "actions": [
         {
@@ -302,10 +327,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_680"
+      "flow": {
+        "type": "simple",
+        "next": "l0_680"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_674",
       "actions": [
         {
@@ -321,16 +348,20 @@
           "action": "trace"
         }
       ],
-      "next": "l0_680"
+      "flow": {
+        "type": "simple",
+        "next": "l0_680"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_680",
       "actions": [],
-      "next": "l0_714"
+      "flow": {
+        "type": "simple",
+        "next": "l0_714"
+      }
     },
     {
-      "type": "if",
       "label": "l0_685",
       "actions": [
         {
@@ -349,11 +380,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_708",
-      "if_false": "l0_697"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_708",
+        "false_target": "l0_697"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_697",
       "actions": [
         {
@@ -369,10 +402,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_714"
+      "flow": {
+        "type": "simple",
+        "next": "l0_714"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_708",
       "actions": [
         {
@@ -388,16 +423,20 @@
           "action": "trace"
         }
       ],
-      "next": "l0_714"
+      "flow": {
+        "type": "simple",
+        "next": "l0_714"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_714",
       "actions": [],
-      "next": "l0_886"
+      "flow": {
+        "type": "simple",
+        "next": "l0_886"
+      }
     },
     {
-      "type": "if",
       "label": "l0_719",
       "actions": [
         {
@@ -416,11 +455,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_811",
-      "if_false": "l0_731"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_811",
+        "false_target": "l0_731"
+      }
     },
     {
-      "type": "if",
       "label": "l0_731",
       "actions": [
         {
@@ -439,11 +480,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_777",
-      "if_false": "l0_743"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_777",
+        "false_target": "l0_743"
+      }
     },
     {
-      "type": "if",
       "label": "l0_743",
       "actions": [
         {
@@ -462,11 +505,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_766",
-      "if_false": "l0_755"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_766",
+        "false_target": "l0_755"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_755",
       "actions": [
         {
@@ -482,10 +527,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_772"
+      "flow": {
+        "type": "simple",
+        "next": "l0_772"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_766",
       "actions": [
         {
@@ -501,16 +548,20 @@
           "action": "trace"
         }
       ],
-      "next": "l0_772"
+      "flow": {
+        "type": "simple",
+        "next": "l0_772"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_772",
       "actions": [],
-      "next": "l0_806"
+      "flow": {
+        "type": "simple",
+        "next": "l0_806"
+      }
     },
     {
-      "type": "if",
       "label": "l0_777",
       "actions": [
         {
@@ -529,11 +580,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_800",
-      "if_false": "l0_789"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_800",
+        "false_target": "l0_789"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_789",
       "actions": [
         {
@@ -549,10 +602,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_806"
+      "flow": {
+        "type": "simple",
+        "next": "l0_806"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_800",
       "actions": [
         {
@@ -568,16 +623,20 @@
           "action": "trace"
         }
       ],
-      "next": "l0_806"
+      "flow": {
+        "type": "simple",
+        "next": "l0_806"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_806",
       "actions": [],
-      "next": "l0_886"
+      "flow": {
+        "type": "simple",
+        "next": "l0_886"
+      }
     },
     {
-      "type": "if",
       "label": "l0_811",
       "actions": [
         {
@@ -596,11 +655,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_857",
-      "if_false": "l0_823"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_857",
+        "false_target": "l0_823"
+      }
     },
     {
-      "type": "if",
       "label": "l0_823",
       "actions": [
         {
@@ -619,11 +680,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_846",
-      "if_false": "l0_835"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_846",
+        "false_target": "l0_835"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_835",
       "actions": [
         {
@@ -639,10 +702,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_852"
+      "flow": {
+        "type": "simple",
+        "next": "l0_852"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_846",
       "actions": [
         {
@@ -658,16 +723,20 @@
           "action": "trace"
         }
       ],
-      "next": "l0_852"
+      "flow": {
+        "type": "simple",
+        "next": "l0_852"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_852",
       "actions": [],
-      "next": "l0_886"
+      "flow": {
+        "type": "simple",
+        "next": "l0_886"
+      }
     },
     {
-      "type": "if",
       "label": "l0_857",
       "actions": [
         {
@@ -686,11 +755,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_880",
-      "if_false": "l0_869"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_880",
+        "false_target": "l0_869"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_869",
       "actions": [
         {
@@ -706,10 +777,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_886"
+      "flow": {
+        "type": "simple",
+        "next": "l0_886"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_880",
       "actions": [
         {
@@ -725,10 +798,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_886"
+      "flow": {
+        "type": "simple",
+        "next": "l0_886"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_886",
       "actions": [
         {
@@ -744,7 +819,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

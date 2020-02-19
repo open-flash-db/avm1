@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "try",
       "label": "l0_0",
       "actions": [
         {
@@ -11,7 +10,6 @@
           "body": {
             "blocks": [
               {
-                "type": "throw",
                 "label": "l1_9",
                 "actions": [
                   {
@@ -35,7 +33,10 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "throw"
+                }
               }
             ]
           }
@@ -53,93 +54,101 @@
           "action": "trace"
         }
       ],
-      "try": {
-        "blocks": [
-          {
-            "type": "simple",
-            "label": "l2_56",
-            "actions": [
+      "flow": {
+        "type": "try",
+        "try": {
+          "blocks": [
+            {
+              "label": "l2_56",
+              "actions": [
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "float64",
+                      "value": 0
+                    },
+                    {
+                      "type": "string",
+                      "value": "f"
+                    }
+                  ]
+                },
+                {
+                  "action": "call-function"
+                },
+                {
+                  "action": "pop"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "string",
+                      "value": "in-try"
+                    }
+                  ]
+                },
+                {
+                  "action": "trace"
+                }
+              ],
+              "flow": {
+                "type": "simple",
+                "next": "l0_110"
+              }
+            }
+          ]
+        },
+        "catch": {
+          "target": {
+            "type": "variable",
+            "target": "e"
+          },
+          "body": {
+            "blocks": [
               {
-                "action": "push",
-                "values": [
+                "label": "l3_90",
+                "actions": [
                   {
-                    "type": "float64",
-                    "value": 0
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "in-err"
+                      }
+                    ]
                   },
                   {
-                    "type": "string",
-                    "value": "f"
-                  }
-                ]
-              },
-              {
-                "action": "call-function"
-              },
-              {
-                "action": "pop"
-              },
-              {
-                "action": "push",
-                "values": [
+                    "action": "trace"
+                  },
                   {
-                    "type": "string",
-                    "value": "in-try"
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "string",
+                        "value": "e"
+                      }
+                    ]
+                  },
+                  {
+                    "action": "get-variable"
+                  },
+                  {
+                    "action": "trace"
                   }
-                ]
-              },
-              {
-                "action": "trace"
+                ],
+                "flow": {
+                  "type": "simple",
+                  "next": "l0_110"
+                }
               }
-            ],
-            "next": "l0_110"
+            ]
           }
-        ]
-      },
-      "catch": {
-        "blocks": [
-          {
-            "type": "simple",
-            "label": "l3_90",
-            "actions": [
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "string",
-                    "value": "in-err"
-                  }
-                ]
-              },
-              {
-                "action": "trace"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "string",
-                    "value": "e"
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "trace"
-              }
-            ],
-            "next": "l0_110"
-          }
-        ]
-      },
-      "catch_target": {
-        "type": "variable",
-        "target": "e"
+        }
       }
     },
     {
-      "type": "simple",
       "label": "l0_110",
       "actions": [
         {
@@ -155,7 +164,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "wait-for-frame2",
       "label": "l0_0",
       "actions": [
         {
@@ -139,11 +138,13 @@
           ]
         }
       ],
-      "if_loaded": "l0_151",
-      "if_not_loaded": "l0_156"
+      "flow": {
+        "type": "wait-for-frame2",
+        "ready_target": "l0_151",
+        "loading_target": "l0_156"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_151",
       "actions": [
         {
@@ -162,10 +163,12 @@
           "action": "increment"
         }
       ],
-      "next": "l0_156"
+      "flow": {
+        "type": "simple",
+        "next": "l0_156"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_156",
       "actions": [
         {
@@ -231,7 +234,10 @@
           "action": "pop"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

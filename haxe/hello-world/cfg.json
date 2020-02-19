@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "@estr",
             "xx",
             "flash",
@@ -181,7 +180,6 @@
           "body": {
             "blocks": [
               {
-                "type": "return",
                 "label": "l1_1157",
                 "actions": [
                   {
@@ -232,7 +230,10 @@
                   {
                     "action": "call-method"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -266,10 +267,12 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
                 "label": "l2_1202",
                 "actions": [],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -381,7 +384,6 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
                 "label": "l3_1264",
                 "actions": [
                   {
@@ -444,7 +446,10 @@
                     "action": "pop"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -478,10 +483,12 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
                 "label": "l4_1313",
                 "actions": [],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -598,7 +605,6 @@
           "body": {
             "blocks": [
               {
-                "type": "return",
                 "label": "l5_1377",
                 "actions": [
                   {
@@ -649,7 +655,10 @@
                   {
                     "action": "call-method"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -716,10 +725,12 @@
           "action": "enumerate2"
         }
       ],
-      "next": "l0_1441"
+      "flow": {
+        "type": "simple",
+        "next": "l0_1441"
+      }
     },
     {
-      "type": "if",
       "label": "l0_1441",
       "actions": [
         {
@@ -738,11 +749,13 @@
           "action": "equals2"
         }
       ],
-      "if_true": "l0_1473",
-      "if_false": "l0_1455"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_1473",
+        "false_target": "l0_1455"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_1455",
       "actions": [
         {
@@ -773,10 +786,12 @@
           "action": "set-member"
         }
       ],
-      "next": "l0_1441"
+      "flow": {
+        "type": "simple",
+        "next": "l0_1441"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_1473",
       "actions": [
         {
@@ -820,10 +835,12 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
                 "label": "l6_1496",
                 "actions": [],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -948,7 +965,6 @@
           "body": {
             "blocks": [
               {
-                "type": "if",
                 "label": "l7_1564",
                 "actions": [
                   {
@@ -986,11 +1002,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_1594",
-                "if_false": "l7_1588"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_1594",
+                  "false_target": "l7_1588"
+                }
               },
               {
-                "type": "return",
                 "label": "l7_1588",
                 "actions": [
                   {
@@ -1002,10 +1020,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1594",
                 "actions": [
                   {
@@ -1044,11 +1064,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l7_1690",
-                "if_false": "l7_1618"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_1690",
+                  "false_target": "l7_1618"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1618",
                 "actions": [
                   {
@@ -1074,11 +1096,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_1669",
-                "if_false": "l7_1633"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_1669",
+                  "false_target": "l7_1633"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1633",
                 "actions": [
                   {
@@ -1118,11 +1142,13 @@
                     "action": "push-duplicate"
                   }
                 ],
-                "if_true": "l7_1669",
-                "if_false": "l7_1654"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_1669",
+                  "false_target": "l7_1654"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_1654",
                 "actions": [
                   {
@@ -1159,21 +1185,25 @@
                     "action": "not"
                   }
                 ],
-                "next": "l7_1669"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_1669"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1669",
                 "actions": [
                   {
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_1685",
-                "if_false": "l7_1675"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_1685",
+                  "false_target": "l7_1675"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_1675",
                 "actions": [
                   {
@@ -1193,16 +1223,20 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_1685"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_1685"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_1685",
                 "actions": [],
-                "next": "l7_1700"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_1700"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_1690",
                 "actions": [
                   {
@@ -1222,10 +1256,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_1700"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_1700"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1700",
                 "actions": [
                   {
@@ -1254,11 +1290,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l7_1765",
-                "if_false": "l7_1720"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_1765",
+                  "false_target": "l7_1720"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1720",
                 "actions": [
                   {
@@ -1278,11 +1316,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l7_2982",
-                "if_false": "l7_1733"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2982",
+                  "false_target": "l7_1733"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1733",
                 "actions": [
                   {
@@ -1302,11 +1342,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l7_2993",
-                "if_false": "l7_1746"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2993",
+                  "false_target": "l7_1746"
+                }
               },
               {
-                "type": "return",
                 "label": "l7_1746",
                 "actions": [
                   {
@@ -1329,10 +1371,12 @@
                   {
                     "action": "call-function"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1765",
                 "actions": [
                   {
@@ -1358,11 +1402,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2325",
-                "if_false": "l7_1780"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2325",
+                  "false_target": "l7_1780"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1780",
                 "actions": [
                   {
@@ -1399,11 +1445,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2103",
-                "if_false": "l7_1800"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2103",
+                  "false_target": "l7_1800"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1800",
                 "actions": [
                   {
@@ -1438,11 +1486,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_1835",
-                "if_false": "l7_1823"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_1835",
+                  "false_target": "l7_1823"
+                }
               },
               {
-                "type": "return",
                 "label": "l7_1823",
                 "actions": [
                   {
@@ -1461,10 +1511,12 @@
                   {
                     "action": "get-member"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_1835",
                 "actions": [
                   {
@@ -1565,10 +1617,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_1896"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_1896"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1896",
                 "actions": [
                   {
@@ -1584,11 +1638,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2094",
-                "if_false": "l7_1907"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2094",
+                  "false_target": "l7_1907"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1907",
                 "actions": [
                   {
@@ -1614,17 +1670,21 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_1927",
-                "if_false": "l7_1922"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_1927",
+                  "false_target": "l7_1922"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_1922",
                 "actions": [],
-                "next": "l7_2094"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2094"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_1927",
                 "actions": [
                   {
@@ -1686,11 +1746,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2025",
-                "if_false": "l7_1969"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2025",
+                  "false_target": "l7_1969"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_1969",
                 "actions": [
                   {
@@ -1784,10 +1846,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2089"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2089"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2025",
                 "actions": [
                   {
@@ -1904,16 +1968,20 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2089"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2089"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2089",
                 "actions": [],
-                "next": "l7_1896"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_1896"
+                }
               },
               {
-                "type": "return",
                 "label": "l7_2094",
                 "actions": [
                   {
@@ -1932,10 +2000,12 @@
                   {
                     "action": "add2"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2103",
                 "actions": [
                   {
@@ -2017,10 +2087,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2152"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2152"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2152",
                 "actions": [
                   {
@@ -2036,11 +2108,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2306",
-                "if_false": "l7_2163"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2306",
+                  "false_target": "l7_2163"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2163",
                 "actions": [
                   {
@@ -2066,17 +2140,21 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2183",
-                "if_false": "l7_2178"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2183",
+                  "false_target": "l7_2178"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2178",
                 "actions": [],
-                "next": "l7_2306"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2306"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2183",
                 "actions": [
                   {
@@ -2202,11 +2280,13 @@
                     "action": "greater"
                   }
                 ],
-                "if_true": "l7_2272",
-                "if_false": "l7_2262"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2272",
+                  "false_target": "l7_2262"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2262",
                 "actions": [
                   {
@@ -2219,10 +2299,12 @@
                     ]
                   }
                 ],
-                "next": "l7_2277"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2277"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2272",
                 "actions": [
                   {
@@ -2235,10 +2317,12 @@
                     ]
                   }
                 ],
-                "next": "l7_2277"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2277"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2277",
                 "actions": [
                   {
@@ -2284,10 +2368,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2152"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2152"
+                }
               },
               {
-                "type": "return",
                 "label": "l7_2306",
                 "actions": [
                   {
@@ -2322,10 +2408,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2325",
                 "actions": [
                   {
@@ -2394,11 +2482,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2378",
-                "if_false": "l7_2368"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2378",
+                  "false_target": "l7_2368"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2368",
                 "actions": [
                   {
@@ -2411,10 +2501,12 @@
                     ]
                   }
                 ],
-                "next": "l7_2387"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2387"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2378",
                 "actions": [
                   {
@@ -2437,17 +2529,21 @@
                     "action": "instance-of"
                   }
                 ],
-                "next": "l7_2387"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2387"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2387",
                 "actions": [],
-                "if_true": "l7_2402",
-                "if_false": "l7_2392"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2402",
+                  "false_target": "l7_2392"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2392",
                 "actions": [
                   {
@@ -2460,10 +2556,12 @@
                     ]
                   }
                 ],
-                "next": "l7_2411"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2411"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2402",
                 "actions": [
                   {
@@ -2486,17 +2584,21 @@
                     "action": "not"
                   }
                 ],
-                "next": "l7_2411"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2411"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2411",
                 "actions": [],
-                "if_true": "l7_2426",
-                "if_false": "l7_2416"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2426",
+                  "false_target": "l7_2416"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2416",
                 "actions": [
                   {
@@ -2509,10 +2611,12 @@
                     ]
                   }
                 ],
-                "next": "l7_2435"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2435"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2426",
                 "actions": [
                   {
@@ -2535,21 +2639,25 @@
                     "action": "not"
                   }
                 ],
-                "next": "l7_2435"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2435"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2435",
                 "actions": [
                   {
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2447",
-                "if_false": "l7_2441"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2447",
+                  "false_target": "l7_2441"
+                }
               },
               {
-                "type": "return",
                 "label": "l7_2441",
                 "actions": [
                   {
@@ -2561,10 +2669,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2447",
                 "actions": [
                   {
@@ -2630,11 +2740,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2568",
-                "if_false": "l7_2489"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2568",
+                  "false_target": "l7_2489"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2489",
                 "actions": [
                   {
@@ -2774,10 +2886,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2568"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2568"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2568",
                 "actions": [
                   {
@@ -2839,10 +2953,12 @@
                     "action": "enumerate2"
                   }
                 ],
-                "next": "l7_2603"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2603"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2603",
                 "actions": [
                   {
@@ -2861,11 +2977,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l7_2638",
-                "if_false": "l7_2617"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2638",
+                  "false_target": "l7_2617"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2617",
                 "actions": [
                   {
@@ -2896,10 +3014,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2603"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2603"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2638",
                 "actions": [
                   {
@@ -2946,10 +3066,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2666"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2666"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2666",
                 "actions": [
                   {
@@ -2976,11 +3098,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2885",
-                "if_false": "l7_2685"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2885",
+                  "false_target": "l7_2685"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2685",
                 "actions": [
                   {
@@ -3030,11 +3154,13 @@
                     "action": "push-duplicate"
                   }
                 ],
-                "if_true": "l7_2726",
-                "if_false": "l7_2717"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2726",
+                  "false_target": "l7_2717"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2717",
                 "actions": [
                   {
@@ -3057,21 +3183,25 @@
                     "action": "equals2"
                   }
                 ],
-                "next": "l7_2726"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2726"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2726",
                 "actions": [
                   {
                     "action": "push-duplicate"
                   }
                 ],
-                "if_true": "l7_2741",
-                "if_false": "l7_2732"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2741",
+                  "false_target": "l7_2732"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2732",
                 "actions": [
                   {
@@ -3094,21 +3224,25 @@
                     "action": "equals2"
                   }
                 ],
-                "next": "l7_2741"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2741"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2741",
                 "actions": [
                   {
                     "action": "push-duplicate"
                   }
                 ],
-                "if_true": "l7_2756",
-                "if_false": "l7_2747"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2756",
+                  "false_target": "l7_2747"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2747",
                 "actions": [
                   {
@@ -3131,27 +3265,33 @@
                     "action": "equals2"
                   }
                 ],
-                "next": "l7_2756"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2756"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2756",
                 "actions": [
                   {
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2767",
-                "if_false": "l7_2762"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2767",
+                  "false_target": "l7_2762"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2762",
                 "actions": [],
-                "next": "l7_2666"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2666"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2767",
                 "actions": [
                   {
@@ -3189,11 +3329,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2804",
-                "if_false": "l7_2791"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2804",
+                  "false_target": "l7_2791"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2791",
                 "actions": [
                   {
@@ -3220,10 +3362,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2804"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2804"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2804",
                 "actions": [
                   {
@@ -3364,10 +3508,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2666"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2666"
+                }
               },
               {
-                "type": "if",
                 "label": "l7_2885",
                 "actions": [
                   {
@@ -3452,11 +3598,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l7_2955",
-                "if_false": "l7_2942"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l7_2955",
+                  "false_target": "l7_2942"
+                }
               },
               {
-                "type": "simple",
                 "label": "l7_2942",
                 "actions": [
                   {
@@ -3483,10 +3631,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l7_2955"
+                "flow": {
+                  "type": "simple",
+                  "next": "l7_2955"
+                }
               },
               {
-                "type": "return",
                 "label": "l7_2955",
                 "actions": [
                   {
@@ -3528,10 +3678,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "return",
                 "label": "l7_2982",
                 "actions": [
                   {
@@ -3543,10 +3695,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "return",
                 "label": "l7_2993",
                 "actions": [
                   {
@@ -3558,7 +3712,10 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -3605,7 +3762,6 @@
           "body": {
             "blocks": [
               {
-                "type": "if",
                 "label": "l8_3027",
                 "actions": [
                   {
@@ -3650,11 +3806,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l8_3058",
-                "if_false": "l8_3053"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l8_3058",
+                  "false_target": "l8_3053"
+                }
               },
               {
-                "type": "return",
                 "label": "l8_3053",
                 "actions": [
                   {
@@ -3665,10 +3823,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "return",
                 "label": "l8_3058",
                 "actions": [
                   {
@@ -3688,7 +3848,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "return",
                           "label": "l9_3069",
                           "actions": [
                             {
@@ -3782,7 +3941,10 @@
                             {
                               "action": "call-method"
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -3843,7 +4005,10 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -3890,7 +4055,6 @@
           "body": {
             "blocks": [
               {
-                "type": "if",
                 "label": "l10_3174",
                 "actions": [
                   {
@@ -3909,11 +4073,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l10_3192",
-                "if_false": "l10_3186"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3192",
+                  "false_target": "l10_3186"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3186",
                 "actions": [
                   {
@@ -3925,10 +4091,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3192",
                 "actions": [
                   {
@@ -3951,11 +4119,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l10_3241",
-                "if_false": "l10_3206"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3241",
+                  "false_target": "l10_3206"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3206",
                 "actions": [
                   {
@@ -3981,11 +4151,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l10_3235",
-                "if_false": "l10_3221"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3235",
+                  "false_target": "l10_3221"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3221",
                 "actions": [
                   {
@@ -4015,10 +4187,12 @@
                   {
                     "action": "equals2"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3235",
                 "actions": [
                   {
@@ -4030,10 +4204,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3241",
                 "actions": [
                   {
@@ -4081,11 +4257,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l10_3424",
-                "if_false": "l10_3272"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3424",
+                  "false_target": "l10_3272"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3272",
                 "actions": [
                   {
@@ -4108,11 +4286,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l10_3548",
-                "if_false": "l10_3286"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3548",
+                  "false_target": "l10_3286"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3286",
                 "actions": [
                   {
@@ -4135,11 +4315,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l10_3573",
-                "if_false": "l10_3300"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3573",
+                  "false_target": "l10_3300"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3300",
                 "actions": [
                   {
@@ -4162,11 +4344,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l10_3612",
-                "if_false": "l10_3314"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3612",
+                  "false_target": "l10_3314"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3314",
                 "actions": [
                   {
@@ -4189,11 +4373,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l10_3637",
-                "if_false": "l10_3328"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3637",
+                  "false_target": "l10_3328"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3328",
                 "actions": [
                   {
@@ -4228,11 +4414,13 @@
                     "action": "push-duplicate"
                   }
                 ],
-                "if_true": "l10_3380",
-                "if_false": "l10_3348"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3380",
+                  "false_target": "l10_3348"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3348",
                 "actions": [
                   {
@@ -4264,11 +4452,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l10_3380",
-                "if_false": "l10_3365"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3380",
+                  "false_target": "l10_3365"
+                }
               },
               {
-                "type": "simple",
                 "label": "l10_3365",
                 "actions": [
                   {
@@ -4305,21 +4495,25 @@
                     "action": "not"
                   }
                 ],
-                "next": "l10_3380"
+                "flow": {
+                  "type": "simple",
+                  "next": "l10_3380"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3380",
                 "actions": [
                   {
                     "action": "push-duplicate"
                   }
                 ],
-                "if_true": "l10_3418",
-                "if_false": "l10_3386"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3418",
+                  "false_target": "l10_3386"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3386",
                 "actions": [
                   {
@@ -4351,11 +4545,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l10_3418",
-                "if_false": "l10_3403"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3418",
+                  "false_target": "l10_3403"
+                }
               },
               {
-                "type": "simple",
                 "label": "l10_3403",
                 "actions": [
                   {
@@ -4392,15 +4588,19 @@
                     "action": "not"
                   }
                 ],
-                "next": "l10_3418"
+                "flow": {
+                  "type": "simple",
+                  "next": "l10_3418"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3418",
-                "actions": []
+                "actions": [],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3424",
                 "actions": [
                   {
@@ -4439,11 +4639,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l10_3458",
-                "if_false": "l10_3448"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3458",
+                  "false_target": "l10_3448"
+                }
               },
               {
-                "type": "simple",
                 "label": "l10_3448",
                 "actions": [
                   {
@@ -4456,10 +4658,12 @@
                     ]
                   }
                 ],
-                "next": "l10_3493"
+                "flow": {
+                  "type": "simple",
+                  "next": "l10_3493"
+                }
               },
               {
-                "type": "simple",
                 "label": "l10_3458",
                 "actions": [
                   {
@@ -4514,17 +4718,21 @@
                     "action": "strict-equals"
                   }
                 ],
-                "next": "l10_3493"
+                "flow": {
+                  "type": "simple",
+                  "next": "l10_3493"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3493",
                 "actions": [],
-                "if_true": "l10_3509",
-                "if_false": "l10_3498"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3509",
+                  "false_target": "l10_3498"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3498",
                 "actions": [
                   {
@@ -4536,10 +4744,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3509",
                 "actions": [
                   {
@@ -4562,11 +4772,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l10_3533",
-                "if_false": "l10_3523"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3533",
+                  "false_target": "l10_3523"
+                }
               },
               {
-                "type": "simple",
                 "label": "l10_3523",
                 "actions": [
                   {
@@ -4579,10 +4791,12 @@
                     ]
                   }
                 ],
-                "next": "l10_3541"
+                "flow": {
+                  "type": "simple",
+                  "next": "l10_3541"
+                }
               },
               {
-                "type": "simple",
                 "label": "l10_3533",
                 "actions": [
                   {
@@ -4602,19 +4816,23 @@
                     "action": "strict-equals"
                   }
                 ],
-                "next": "l10_3541"
+                "flow": {
+                  "type": "simple",
+                  "next": "l10_3541"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3541",
                 "actions": [
                   {
                     "action": "not"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3548",
                 "actions": [
                   {
@@ -4652,10 +4870,12 @@
                   {
                     "action": "equals2"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "if",
                 "label": "l10_3573",
                 "actions": [
                   {
@@ -4678,11 +4898,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l10_3598",
-                "if_false": "l10_3587"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l10_3598",
+                  "false_target": "l10_3587"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3587",
                 "actions": [
                   {
@@ -4694,10 +4916,12 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3598",
                 "actions": [
                   {
@@ -4716,10 +4940,12 @@
                   {
                     "action": "strict-equals"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3612",
                 "actions": [
                   {
@@ -4757,10 +4983,12 @@
                   {
                     "action": "equals2"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               },
               {
-                "type": "return",
                 "label": "l10_3637",
                 "actions": [
                   {
@@ -4772,7 +5000,10 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -4810,7 +5041,6 @@
           "body": {
             "blocks": [
               {
-                "type": "if",
                 "label": "l11_3667",
                 "actions": [
                   {
@@ -4898,11 +5128,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l11_3982",
-                "if_false": "l11_3716"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l11_3982",
+                  "false_target": "l11_3716"
+                }
               },
               {
-                "type": "if",
                 "label": "l11_3716",
                 "actions": [
                   {
@@ -5011,11 +5243,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l11_3792",
-                "if_false": "l11_3779"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l11_3792",
+                  "false_target": "l11_3779"
+                }
               },
               {
-                "type": "simple",
                 "label": "l11_3779",
                 "actions": [
                   {
@@ -5035,10 +5269,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l11_3792"
+                "flow": {
+                  "type": "simple",
+                  "next": "l11_3792"
+                }
               },
               {
-                "type": "if",
                 "label": "l11_3792",
                 "actions": [
                   {
@@ -5061,11 +5297,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l11_3822",
-                "if_false": "l11_3809"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l11_3822",
+                  "false_target": "l11_3809"
+                }
               },
               {
-                "type": "simple",
                 "label": "l11_3809",
                 "actions": [
                   {
@@ -5085,10 +5323,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l11_3822"
+                "flow": {
+                  "type": "simple",
+                  "next": "l11_3822"
+                }
               },
               {
-                "type": "simple",
                 "label": "l11_3822",
                 "actions": [
                   {
@@ -5358,10 +5598,12 @@
                     "action": "set-member"
                   }
                 ],
-                "next": "l11_3982"
+                "flow": {
+                  "type": "simple",
+                  "next": "l11_3982"
+                }
               },
               {
-                "type": "return",
                 "label": "l11_3982",
                 "actions": [
                   {
@@ -5373,7 +5615,10 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -5416,7 +5661,6 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
                 "label": "l12_4009",
                 "actions": [
                   {
@@ -5516,7 +5760,10 @@
                     "action": "set-member"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -5563,7 +5810,6 @@
           "body": {
             "blocks": [
               {
-                "type": "if",
                 "label": "l13_4083",
                 "actions": [
                   {
@@ -5755,11 +6001,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l13_4208",
-                "if_false": "l13_4192"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l13_4208",
+                  "false_target": "l13_4192"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4192",
                 "actions": [
                   {
@@ -5786,10 +6034,12 @@
                     "action": "add2"
                   }
                 ],
-                "next": "l13_4213"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4213"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4208",
                 "actions": [
                   {
@@ -5802,10 +6052,12 @@
                     ]
                   }
                 ],
-                "next": "l13_4213"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4213"
+                }
               },
               {
-                "type": "if",
                 "label": "l13_4213",
                 "actions": [
                   {
@@ -5867,11 +6119,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l13_4261",
-                "if_false": "l13_4246"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l13_4261",
+                  "false_target": "l13_4246"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4246",
                 "actions": [
                   {
@@ -5908,21 +6162,25 @@
                     "action": "not"
                   }
                 ],
-                "next": "l13_4261"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4261"
+                }
               },
               {
-                "type": "if",
                 "label": "l13_4261",
                 "actions": [
                   {
                     "action": "not"
                   }
                 ],
-                "if_true": "l13_4414",
-                "if_false": "l13_4267"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l13_4414",
+                  "false_target": "l13_4267"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4267",
                 "actions": [
                   {
@@ -5965,10 +6223,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l13_4293"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4293"
+                }
               },
               {
-                "type": "if",
                 "label": "l13_4293",
                 "actions": [
                   {
@@ -5984,11 +6244,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l13_4414",
-                "if_false": "l13_4304"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l13_4414",
+                  "false_target": "l13_4304"
+                }
               },
               {
-                "type": "if",
                 "label": "l13_4304",
                 "actions": [
                   {
@@ -6021,17 +6283,21 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l13_4327",
-                "if_false": "l13_4322"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l13_4327",
+                  "false_target": "l13_4322"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4322",
                 "actions": [],
-                "next": "l13_4414"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4414"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4327",
                 "actions": [
                   {
@@ -6178,10 +6444,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": "l13_4293"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4293"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4414",
                 "actions": [
                   {
@@ -6310,10 +6578,12 @@
                     "action": "set-member"
                   }
                 ],
-                "next": "l13_4490"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4490"
+                }
               },
               {
-                "type": "if",
                 "label": "l13_4490",
                 "actions": [
                   {
@@ -6329,11 +6599,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l13_4614",
-                "if_false": "l13_4501"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l13_4614",
+                  "false_target": "l13_4501"
+                }
               },
               {
-                "type": "if",
                 "label": "l13_4501",
                 "actions": [
                   {
@@ -6371,11 +6643,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l13_4553",
-                "if_false": "l13_4525"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l13_4553",
+                  "false_target": "l13_4525"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4525",
                 "actions": [
                   {
@@ -6437,10 +6711,12 @@
                     "action": "greater"
                   }
                 ],
-                "next": "l13_4553"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4553"
+                }
               },
               {
-                "type": "if",
                 "label": "l13_4553",
                 "actions": [
                   {
@@ -6450,17 +6726,21 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l13_4565",
-                "if_false": "l13_4560"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l13_4565",
+                  "false_target": "l13_4560"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4560",
                 "actions": [],
-                "next": "l13_4614"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4614"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4565",
                 "actions": [
                   {
@@ -6538,10 +6818,12 @@
                     "action": "set-member"
                   }
                 ],
-                "next": "l13_4490"
+                "flow": {
+                  "type": "simple",
+                  "next": "l13_4490"
+                }
               },
               {
-                "type": "simple",
                 "label": "l13_4614",
                 "actions": [
                   {
@@ -6565,7 +6847,10 @@
                     "action": "set-member"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -6608,7 +6893,6 @@
           "body": {
             "blocks": [
               {
-                "type": "if",
                 "label": "l14_4645",
                 "actions": [
                   {
@@ -6678,11 +6962,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l14_4773",
-                "if_false": "l14_4684"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l14_4773",
+                  "false_target": "l14_4684"
+                }
               },
               {
-                "type": "simple",
                 "label": "l14_4684",
                 "actions": [
                   {
@@ -6831,10 +7117,12 @@
                     "action": "pop"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               },
               {
-                "type": "simple",
                 "label": "l14_4773",
                 "actions": [
                   {
@@ -6952,7 +7240,10 @@
                     "action": "pop"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -6990,7 +7281,6 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
                 "label": "l15_4859",
                 "actions": [
                   {
@@ -7091,7 +7381,10 @@
                     "action": "set-member"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -7134,7 +7427,6 @@
           "body": {
             "blocks": [
               {
-                "type": "if",
                 "label": "l16_4932",
                 "actions": [
                   {
@@ -7179,11 +7471,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l16_6476",
-                "if_false": "l16_4958"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l16_6476",
+                  "false_target": "l16_4958"
+                }
               },
               {
-                "type": "if",
                 "label": "l16_4958",
                 "actions": [
                   {
@@ -7375,7 +7669,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "if",
                           "label": "l17_5054",
                           "actions": [
                             {
@@ -7401,11 +7694,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l17_5082",
-                          "if_false": "l17_5072"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l17_5082",
+                            "false_target": "l17_5072"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l17_5072",
                           "actions": [
                             {
@@ -7420,10 +7715,12 @@
                             {
                               "action": "init-array"
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l17_5082",
                           "actions": [
                             {
@@ -7466,7 +7763,10 @@
                             {
                               "action": "call-method"
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -7533,7 +7833,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "simple",
                           "label": "l18_5139",
                           "actions": [
                             {
@@ -7584,7 +7883,10 @@
                               "action": "pop"
                             }
                           ],
-                          "next": null
+                          "flow": {
+                            "type": "simple",
+                            "next": null
+                          }
                         }
                       ]
                     }
@@ -7647,7 +7949,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "simple",
                           "label": "l19_5199",
                           "actions": [
                             {
@@ -7690,10 +7991,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l19_5225"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l19_5225"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l19_5225",
                           "actions": [
                             {
@@ -7709,11 +8012,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l19_5319",
-                          "if_false": "l19_5236"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l19_5319",
+                            "false_target": "l19_5236"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l19_5236",
                           "actions": [
                             {
@@ -7739,17 +8044,21 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l19_5256",
-                          "if_false": "l19_5251"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l19_5256",
+                            "false_target": "l19_5251"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l19_5251",
                           "actions": [],
-                          "next": "l19_5319"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l19_5319"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l19_5256",
                           "actions": [
                             {
@@ -7784,11 +8093,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l19_5303",
-                          "if_false": "l19_5276"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l19_5303",
+                            "false_target": "l19_5276"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l19_5276",
                           "actions": [
                             {
@@ -7831,10 +8142,12 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l19_5303",
                           "actions": [
                             {
@@ -7857,10 +8170,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l19_5225"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l19_5225"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l19_5319",
                           "actions": [
                             {
@@ -7872,7 +8187,10 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -7939,7 +8257,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "if",
                           "label": "l20_5358",
                           "actions": [
                             {
@@ -7981,11 +8298,13 @@
                               "action": "equals2"
                             }
                           ],
-                          "if_true": "l20_5398",
-                          "if_false": "l20_5383"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l20_5398",
+                            "false_target": "l20_5383"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l20_5383",
                           "actions": [
                             {
@@ -8005,10 +8324,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l20_5411"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l20_5411"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l20_5398",
                           "actions": [
                             {
@@ -8028,10 +8349,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l20_5411"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l20_5411"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l20_5411",
                           "actions": [
                             {
@@ -8054,11 +8377,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l20_5471",
-                          "if_false": "l20_5428"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l20_5471",
+                            "false_target": "l20_5428"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l20_5428",
                           "actions": [
                             {
@@ -8104,11 +8429,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l20_5471",
-                          "if_false": "l20_5458"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l20_5471",
+                            "false_target": "l20_5458"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l20_5458",
                           "actions": [
                             {
@@ -8128,10 +8455,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l20_5471"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l20_5471"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l20_5471",
                           "actions": [
                             {
@@ -8147,11 +8476,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l20_5544",
-                          "if_false": "l20_5482"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l20_5544",
+                            "false_target": "l20_5482"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l20_5482",
                           "actions": [
                             {
@@ -8177,17 +8508,21 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l20_5502",
-                          "if_false": "l20_5497"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l20_5502",
+                            "false_target": "l20_5497"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l20_5497",
                           "actions": [],
-                          "next": "l20_5544"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l20_5544"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l20_5502",
                           "actions": [
                             {
@@ -8222,11 +8557,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l20_5528",
-                          "if_false": "l20_5522"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l20_5528",
+                            "false_target": "l20_5522"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l20_5522",
                           "actions": [
                             {
@@ -8238,10 +8575,12 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l20_5528",
                           "actions": [
                             {
@@ -8264,10 +8603,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l20_5471"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l20_5471"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l20_5544",
                           "actions": [
                             {
@@ -8279,7 +8620,10 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -8346,7 +8690,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "if",
                           "label": "l21_5586",
                           "actions": [
                             {
@@ -8388,11 +8731,13 @@
                               "action": "equals2"
                             }
                           ],
-                          "if_true": "l21_5626",
-                          "if_false": "l21_5611"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l21_5626",
+                            "false_target": "l21_5611"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l21_5611",
                           "actions": [
                             {
@@ -8412,10 +8757,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l21_5642"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l21_5642"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l21_5626",
                           "actions": [
                             {
@@ -8442,10 +8789,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l21_5642"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l21_5642"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l21_5642",
                           "actions": [
                             {
@@ -8468,11 +8817,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l21_5691",
-                          "if_false": "l21_5656"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l21_5691",
+                            "false_target": "l21_5656"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l21_5656",
                           "actions": [
                             {
@@ -8495,11 +8846,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l21_5686",
-                          "if_false": "l21_5673"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l21_5686",
+                            "false_target": "l21_5673"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l21_5673",
                           "actions": [
                             {
@@ -8526,16 +8879,20 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l21_5686"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l21_5686"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l21_5686",
                           "actions": [],
-                          "next": "l21_5707"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l21_5707"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l21_5691",
                           "actions": [
                             {
@@ -8562,10 +8919,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l21_5707"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l21_5707"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l21_5707",
                           "actions": [
                             {
@@ -8581,11 +8940,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l21_5784",
-                          "if_false": "l21_5718"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l21_5784",
+                            "false_target": "l21_5718"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l21_5718",
                           "actions": [
                             {
@@ -8614,17 +8975,21 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l21_5742",
-                          "if_false": "l21_5737"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l21_5742",
+                            "false_target": "l21_5737"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l21_5737",
                           "actions": [],
-                          "next": "l21_5784"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l21_5784"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l21_5742",
                           "actions": [
                             {
@@ -8659,11 +9024,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l21_5768",
-                          "if_false": "l21_5762"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l21_5768",
+                            "false_target": "l21_5762"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l21_5762",
                           "actions": [
                             {
@@ -8675,10 +9042,12 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l21_5768",
                           "actions": [
                             {
@@ -8701,10 +9070,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l21_5707"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l21_5707"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l21_5784",
                           "actions": [
                             {
@@ -8716,7 +9087,10 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -8774,7 +9148,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "return",
                           "label": "l22_5822",
                           "actions": [
                             {
@@ -8819,7 +9192,6 @@
                               "body": {
                                 "blocks": [
                                   {
-                                    "type": "return",
                                     "label": "l23_5849",
                                     "actions": [
                                       {
@@ -8869,7 +9241,10 @@
                                       {
                                         "action": "less2"
                                       }
-                                    ]
+                                    ],
+                                    "flow": {
+                                      "type": "return"
+                                    }
                                   }
                                 ]
                               }
@@ -8900,7 +9275,6 @@
                               "body": {
                                 "blocks": [
                                   {
-                                    "type": "return",
                                     "label": "l24_5889",
                                     "actions": [
                                       {
@@ -8977,7 +9351,10 @@
                                       {
                                         "action": "get-member"
                                       }
-                                    ]
+                                    ],
+                                    "flow": {
+                                      "type": "return"
+                                    }
                                   }
                                 ]
                               }
@@ -8994,7 +9371,10 @@
                             {
                               "action": "init-object"
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -9057,7 +9437,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "simple",
                           "label": "l25_5969",
                           "actions": [
                             {
@@ -9119,10 +9498,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l25_6009"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l25_6009"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l25_6009",
                           "actions": [
                             {
@@ -9138,11 +9519,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l25_6097",
-                          "if_false": "l25_6020"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l25_6097",
+                            "false_target": "l25_6020"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l25_6020",
                           "actions": [
                             {
@@ -9168,17 +9551,21 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l25_6040",
-                          "if_false": "l25_6035"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l25_6040",
+                            "false_target": "l25_6035"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l25_6035",
                           "actions": [],
-                          "next": "l25_6097"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l25_6097"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l25_6040",
                           "actions": [
                             {
@@ -9270,10 +9657,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l25_6009"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l25_6009"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l25_6097",
                           "actions": [
                             {
@@ -9285,7 +9674,10 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -9348,7 +9740,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "simple",
                           "label": "l26_6134",
                           "actions": [
                             {
@@ -9410,10 +9801,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l26_6174"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l26_6174"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l26_6174",
                           "actions": [
                             {
@@ -9429,11 +9822,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l26_6269",
-                          "if_false": "l26_6185"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l26_6269",
+                            "false_target": "l26_6185"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l26_6185",
                           "actions": [
                             {
@@ -9459,17 +9854,21 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l26_6205",
-                          "if_false": "l26_6200"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l26_6205",
+                            "false_target": "l26_6200"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l26_6200",
                           "actions": [],
-                          "next": "l26_6269"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l26_6269"
+                          }
                         },
                         {
-                          "type": "if",
                           "label": "l26_6205",
                           "actions": [
                             {
@@ -9511,11 +9910,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l26_6253",
-                          "if_false": "l26_6231"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l26_6253",
+                            "false_target": "l26_6231"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l26_6231",
                           "actions": [
                             {
@@ -9558,10 +9959,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l26_6253"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l26_6253"
+                          }
                         },
                         {
-                          "type": "simple",
                           "label": "l26_6253",
                           "actions": [
                             {
@@ -9584,10 +9987,12 @@
                               "action": "pop"
                             }
                           ],
-                          "next": "l26_6174"
+                          "flow": {
+                            "type": "simple",
+                            "next": "l26_6174"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l26_6269",
                           "actions": [
                             {
@@ -9599,7 +10004,10 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -9807,7 +10215,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "if",
                           "label": "l27_6385",
                           "actions": [
                             {
@@ -9864,11 +10271,13 @@
                               "action": "not"
                             }
                           ],
-                          "if_true": "l27_6428",
-                          "if_false": "l27_6423"
+                          "flow": {
+                            "type": "if",
+                            "true_target": "l27_6428",
+                            "false_target": "l27_6423"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l27_6423",
                           "actions": [
                             {
@@ -9879,10 +10288,12 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         },
                         {
-                          "type": "return",
                           "label": "l27_6428",
                           "actions": [
                             {
@@ -9894,7 +10305,10 @@
                                 }
                               ]
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -9941,11 +10355,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": "l16_6476",
-                "if_false": "l16_6458"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l16_6476",
+                  "false_target": "l16_6458"
+                }
               },
               {
-                "type": "simple",
                 "label": "l16_6458",
                 "actions": [
                   {
@@ -9980,10 +10396,12 @@
                     "action": "set-member"
                   }
                 ],
-                "next": "l16_6476"
+                "flow": {
+                  "type": "simple",
+                  "next": "l16_6476"
+                }
               },
               {
-                "type": "if",
                 "label": "l16_6476",
                 "actions": [
                   {
@@ -10270,11 +10688,13 @@
                     "action": "not"
                   }
                 ],
-                "if_true": null,
-                "if_false": "l16_6620"
+                "flow": {
+                  "type": "if",
+                  "true_target": null,
+                  "false_target": "l16_6620"
+                }
               },
               {
-                "type": "simple",
                 "label": "l16_6620",
                 "actions": [
                   {
@@ -10318,7 +10738,10 @@
                     "action": "set-member"
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -10364,10 +10787,12 @@
           "body": {
             "blocks": [
               {
-                "type": "simple",
                 "label": "l28_6663",
                 "actions": [],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -10530,7 +10955,6 @@
           "body": {
             "blocks": [
               {
-                "type": "if",
                 "label": "l29_6749",
                 "actions": [
                   {
@@ -10565,11 +10989,13 @@
                     "action": "equals2"
                   }
                 ],
-                "if_true": "l29_6779",
-                "if_false": "l29_6769"
+                "flow": {
+                  "type": "if",
+                  "true_target": "l29_6779",
+                  "false_target": "l29_6769"
+                }
               },
               {
-                "type": "simple",
                 "label": "l29_6769",
                 "actions": [
                   {
@@ -10582,10 +11008,12 @@
                     ]
                   }
                 ],
-                "next": "l29_6784"
+                "flow": {
+                  "type": "simple",
+                  "next": "l29_6784"
+                }
               },
               {
-                "type": "simple",
                 "label": "l29_6779",
                 "actions": [
                   {
@@ -10598,10 +11026,12 @@
                     ]
                   }
                 ],
-                "next": "l29_6784"
+                "flow": {
+                  "type": "simple",
+                  "next": "l29_6784"
+                }
               },
               {
-                "type": "simple",
                 "label": "l29_6784",
                 "actions": [
                   {
@@ -10611,7 +11041,10 @@
                     "load_variables": false
                   }
                 ],
-                "next": null
+                "flow": {
+                  "type": "simple",
+                  "next": null
+                }
               }
             ]
           }
@@ -10702,10 +11135,12 @@
           "action": "enumerate2"
         }
       ],
-      "next": "l0_6836"
+      "flow": {
+        "type": "simple",
+        "next": "l0_6836"
+      }
     },
     {
-      "type": "if",
       "label": "l0_6836",
       "actions": [
         {
@@ -10724,11 +11159,13 @@
           "action": "equals2"
         }
       ],
-      "if_true": "l0_6868",
-      "if_false": "l0_6850"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_6868",
+        "false_target": "l0_6850"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_6850",
       "actions": [
         {
@@ -10759,10 +11196,12 @@
           "action": "set-member"
         }
       ],
-      "next": "l0_6836"
+      "flow": {
+        "type": "simple",
+        "next": "l0_6836"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_6868",
       "actions": [
         {
@@ -10851,10 +11290,12 @@
           "action": "enumerate2"
         }
       ],
-      "next": "l0_6916"
+      "flow": {
+        "type": "simple",
+        "next": "l0_6916"
+      }
     },
     {
-      "type": "if",
       "label": "l0_6916",
       "actions": [
         {
@@ -10873,11 +11314,13 @@
           "action": "equals2"
         }
       ],
-      "if_true": "l0_6948",
-      "if_false": "l0_6930"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_6948",
+        "false_target": "l0_6930"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_6930",
       "actions": [
         {
@@ -10908,10 +11351,12 @@
           "action": "set-member"
         }
       ],
-      "next": "l0_6916"
+      "flow": {
+        "type": "simple",
+        "next": "l0_6916"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_6948",
       "actions": [
         {
@@ -11000,10 +11445,12 @@
           "action": "enumerate2"
         }
       ],
-      "next": "l0_6996"
+      "flow": {
+        "type": "simple",
+        "next": "l0_6996"
+      }
     },
     {
-      "type": "if",
       "label": "l0_6996",
       "actions": [
         {
@@ -11022,11 +11469,13 @@
           "action": "equals2"
         }
       ],
-      "if_true": "l0_7028",
-      "if_false": "l0_7010"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_7028",
+        "false_target": "l0_7010"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_7010",
       "actions": [
         {
@@ -11057,10 +11506,12 @@
           "action": "set-member"
         }
       ],
-      "next": "l0_6996"
+      "flow": {
+        "type": "simple",
+        "next": "l0_6996"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_7028",
       "actions": [
         {
@@ -11149,10 +11600,12 @@
           "action": "enumerate2"
         }
       ],
-      "next": "l0_7076"
+      "flow": {
+        "type": "simple",
+        "next": "l0_7076"
+      }
     },
     {
-      "type": "if",
       "label": "l0_7076",
       "actions": [
         {
@@ -11171,11 +11624,13 @@
           "action": "equals2"
         }
       ],
-      "if_true": "l0_7108",
-      "if_false": "l0_7090"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_7108",
+        "false_target": "l0_7090"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_7090",
       "actions": [
         {
@@ -11206,10 +11661,12 @@
           "action": "set-member"
         }
       ],
-      "next": "l0_7076"
+      "flow": {
+        "type": "simple",
+        "next": "l0_7076"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_7108",
       "actions": [
         {
@@ -11298,10 +11755,12 @@
           "action": "enumerate2"
         }
       ],
-      "next": "l0_7156"
+      "flow": {
+        "type": "simple",
+        "next": "l0_7156"
+      }
     },
     {
-      "type": "if",
       "label": "l0_7156",
       "actions": [
         {
@@ -11320,11 +11779,13 @@
           "action": "equals2"
         }
       ],
-      "if_true": "l0_7188",
-      "if_false": "l0_7170"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_7188",
+        "false_target": "l0_7170"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_7170",
       "actions": [
         {
@@ -11355,10 +11816,12 @@
           "action": "set-member"
         }
       ],
-      "next": "l0_7156"
+      "flow": {
+        "type": "simple",
+        "next": "l0_7156"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_7188",
       "actions": [
         {
@@ -11423,10 +11886,12 @@
           "action": "enumerate2"
         }
       ],
-      "next": "l0_7224"
+      "flow": {
+        "type": "simple",
+        "next": "l0_7224"
+      }
     },
     {
-      "type": "if",
       "label": "l0_7224",
       "actions": [
         {
@@ -11445,11 +11910,13 @@
           "action": "equals2"
         }
       ],
-      "if_true": "l0_7256",
-      "if_false": "l0_7238"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_7256",
+        "false_target": "l0_7238"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_7238",
       "actions": [
         {
@@ -11480,10 +11947,12 @@
           "action": "set-member"
         }
       ],
-      "next": "l0_7224"
+      "flow": {
+        "type": "simple",
+        "next": "l0_7224"
+      }
     },
     {
-      "type": "try",
       "label": "l0_7256",
       "actions": [
         {
@@ -11762,7 +12231,6 @@
           "body": {
             "blocks": [
               {
-                "type": "return",
                 "label": "l30_7401",
                 "actions": [
                   {
@@ -11797,7 +12265,10 @@
                   {
                     "action": "call-method"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -11848,7 +12319,6 @@
           "body": {
             "blocks": [
               {
-                "type": "return",
                 "label": "l31_7446",
                 "actions": [
                   {
@@ -11883,7 +12353,10 @@
                   {
                     "action": "call-method"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -12787,188 +13260,205 @@
           "action": "set-member"
         }
       ],
-      "try": {
-        "blocks": [
-          {
-            "type": "simple",
-            "label": "l32_7963",
-            "actions": [
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 2
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 3
-                  }
-                ]
-              },
-              {
-                "action": "get-member"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 83
-                  },
-                  {
-                    "type": "sint32",
-                    "value": 0
-                  }
-                ]
-              },
-              {
-                "action": "set-member"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 2
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 3
-                  }
-                ]
-              },
-              {
-                "action": "get-member"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 145
-                  },
-                  {
-                    "type": "null"
-                  }
-                ]
-              },
-              {
-                "action": "set-member"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "sint32",
-                    "value": 0
-                  },
-                  {
-                    "type": "constant",
-                    "value": 5
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "push",
-                "values": [
-                  {
-                    "type": "constant",
-                    "value": 9
-                  }
-                ]
-              },
-              {
-                "action": "call-method"
-              },
-              {
-                "action": "pop"
+      "flow": {
+        "type": "try",
+        "try": {
+          "blocks": [
+            {
+              "label": "l32_7963",
+              "actions": [
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "constant",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "action": "get-variable"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "constant",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "action": "get-member"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "constant",
+                      "value": 83
+                    },
+                    {
+                      "type": "sint32",
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "action": "set-member"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "constant",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "action": "get-variable"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "constant",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "action": "get-member"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "constant",
+                      "value": 145
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                {
+                  "action": "set-member"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "sint32",
+                      "value": 0
+                    },
+                    {
+                      "type": "constant",
+                      "value": 5
+                    }
+                  ]
+                },
+                {
+                  "action": "get-variable"
+                },
+                {
+                  "action": "push",
+                  "values": [
+                    {
+                      "type": "constant",
+                      "value": 9
+                    }
+                  ]
+                },
+                {
+                  "action": "call-method"
+                },
+                {
+                  "action": "pop"
+                }
+              ],
+              "flow": {
+                "type": "simple",
+                "next": "l0_8054"
               }
-            ],
-            "next": null
-          }
-        ]
-      },
-      "catch": {
-        "blocks": [
-          {
-            "type": "simple",
-            "label": "l33_8028",
-            "actions": [
+            }
+          ]
+        },
+        "catch": {
+          "target": {
+            "type": "register",
+            "target": 0
+          },
+          "body": {
+            "blocks": [
               {
-                "action": "push",
-                "values": [
+                "label": "l33_8028",
+                "actions": [
                   {
-                    "type": "register",
-                    "value": 0
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "register",
+                        "value": 0
+                      },
+                      {
+                        "type": "sint32",
+                        "value": 1
+                      },
+                      {
+                        "type": "constant",
+                        "value": 2
+                      }
+                    ]
                   },
                   {
-                    "type": "sint32",
-                    "value": 1
+                    "action": "get-variable"
                   },
                   {
-                    "type": "constant",
-                    "value": 2
-                  }
-                ]
-              },
-              {
-                "action": "get-variable"
-              },
-              {
-                "action": "push",
-                "values": [
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 3
+                      }
+                    ]
+                  },
                   {
-                    "type": "constant",
-                    "value": 3
-                  }
-                ]
-              },
-              {
-                "action": "get-member"
-              },
-              {
-                "action": "push",
-                "values": [
+                    "action": "get-member"
+                  },
                   {
-                    "type": "constant",
-                    "value": 98
+                    "action": "push",
+                    "values": [
+                      {
+                        "type": "constant",
+                        "value": 98
+                      }
+                    ]
+                  },
+                  {
+                    "action": "call-method"
+                  },
+                  {
+                    "action": "pop"
                   }
-                ]
-              },
-              {
-                "action": "call-method"
-              },
-              {
-                "action": "pop"
+                ],
+                "flow": {
+                  "type": "simple",
+                  "next": "l0_8054"
+                }
               }
-            ],
-            "next": null
+            ]
           }
-        ]
-      },
-      "catch_target": {
-        "type": "register",
-        "target": 0
+        }
+      }
+    },
+    {
+      "label": "l0_8054",
+      "actions": [],
+      "flow": {
+        "type": "simple",
+        "next": null
       }
     }
   ]

@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "x",
             "o",
             "start",
@@ -28,7 +27,6 @@
           "body": {
             "blocks": [
               {
-                "type": "with",
                 "label": "l1_63",
                 "actions": [
                   {
@@ -59,31 +57,36 @@
                     "action": "get-variable"
                   }
                 ],
-                "with": {
-                  "blocks": [
-                    {
-                      "type": "simple",
-                      "label": "l2_81",
-                      "actions": [
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "constant",
-                              "value": 0
-                            }
-                          ]
-                        },
-                        {
-                          "action": "get-variable"
-                        },
-                        {
-                          "action": "trace"
+                "flow": {
+                  "type": "with",
+                  "body": {
+                    "blocks": [
+                      {
+                        "label": "l2_81",
+                        "actions": [
+                          {
+                            "action": "push",
+                            "values": [
+                              {
+                                "type": "constant",
+                                "value": 0
+                              }
+                            ]
+                          },
+                          {
+                            "action": "get-variable"
+                          },
+                          {
+                            "action": "trace"
+                          }
+                        ],
+                        "flow": {
+                          "type": "simple",
+                          "next": null
                         }
-                      ],
-                      "next": null
-                    }
-                  ]
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -216,7 +219,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

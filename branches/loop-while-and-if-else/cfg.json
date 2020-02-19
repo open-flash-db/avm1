@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "before while(if/else if/else if/else)",
             "test2",
             "test",
@@ -30,10 +29,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_124"
+      "flow": {
+        "type": "simple",
+        "next": "l0_124"
+      }
     },
     {
-      "type": "if",
       "label": "l0_124",
       "actions": [
         {
@@ -52,11 +53,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_203",
-      "if_false": "l0_136"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_203",
+        "false_target": "l0_136"
+      }
     },
     {
-      "type": "if",
       "label": "l0_136",
       "actions": [
         {
@@ -75,11 +78,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_159",
-      "if_false": "l0_148"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_159",
+        "false_target": "l0_148"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_148",
       "actions": [
         {
@@ -95,10 +100,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_188"
+      "flow": {
+        "type": "simple",
+        "next": "l0_188"
+      }
     },
     {
-      "type": "if",
       "label": "l0_159",
       "actions": [
         {
@@ -117,11 +124,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_182",
-      "if_false": "l0_171"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_182",
+        "false_target": "l0_171"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_171",
       "actions": [
         {
@@ -137,10 +146,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_188"
+      "flow": {
+        "type": "simple",
+        "next": "l0_188"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_182",
       "actions": [
         {
@@ -156,10 +167,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_188"
+      "flow": {
+        "type": "simple",
+        "next": "l0_188"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_188",
       "actions": [
         {
@@ -185,10 +198,12 @@
           "action": "set-variable"
         }
       ],
-      "next": "l0_124"
+      "flow": {
+        "type": "simple",
+        "next": "l0_124"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_203",
       "actions": [
         {
@@ -204,7 +219,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

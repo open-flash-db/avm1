@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
@@ -11,7 +10,6 @@
           "body": {
             "blocks": [
               {
-                "type": "throw",
                 "label": "l1_9",
                 "actions": [
                   {
@@ -23,7 +21,10 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "throw"
+                }
               }
             ]
           }
@@ -35,7 +36,6 @@
           "body": {
             "blocks": [
               {
-                "type": "try",
                 "label": "l2_36",
                 "actions": [
                   {
@@ -51,90 +51,93 @@
                     "action": "trace"
                   }
                 ],
-                "try": {
-                  "blocks": [
-                    {
-                      "type": "return",
-                      "label": "l4_58",
-                      "actions": [
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "float64",
-                              "value": 0
-                            },
-                            {
-                              "type": "string",
-                              "value": "f"
-                            }
-                          ]
-                        },
-                        {
-                          "action": "call-function"
-                        },
-                        {
-                          "action": "pop"
-                        },
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "string",
-                              "value": "in-try"
-                            }
-                          ]
-                        },
-                        {
-                          "action": "trace"
-                        },
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "string",
-                              "value": "tres"
-                            }
-                          ]
+                "flow": {
+                  "type": "try",
+                  "try": {
+                    "blocks": [
+                      {
+                        "label": "l4_58",
+                        "actions": [
+                          {
+                            "action": "push",
+                            "values": [
+                              {
+                                "type": "float64",
+                                "value": 0
+                              },
+                              {
+                                "type": "string",
+                                "value": "f"
+                              }
+                            ]
+                          },
+                          {
+                            "action": "call-function"
+                          },
+                          {
+                            "action": "pop"
+                          },
+                          {
+                            "action": "push",
+                            "values": [
+                              {
+                                "type": "string",
+                                "value": "in-try"
+                              }
+                            ]
+                          },
+                          {
+                            "action": "trace"
+                          },
+                          {
+                            "action": "push",
+                            "values": [
+                              {
+                                "type": "string",
+                                "value": "tres"
+                              }
+                            ]
+                          }
+                        ],
+                        "flow": {
+                          "type": "return"
                         }
-                      ]
-                    }
-                  ]
-                },
-                "catch_target": {
-                  "type": "variable",
-                  "target": ""
-                },
-                "finally": {
-                  "blocks": [
-                    {
-                      "type": "return",
-                      "label": "l3_97",
-                      "actions": [
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "string",
-                              "value": "in-finally"
-                            }
-                          ]
-                        },
-                        {
-                          "action": "trace"
-                        },
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "string",
-                              "value": "fres"
-                            }
-                          ]
+                      }
+                    ]
+                  },
+                  "finally": {
+                    "blocks": [
+                      {
+                        "label": "l3_97",
+                        "actions": [
+                          {
+                            "action": "push",
+                            "values": [
+                              {
+                                "type": "string",
+                                "value": "in-finally"
+                              }
+                            ]
+                          },
+                          {
+                            "action": "trace"
+                          },
+                          {
+                            "action": "push",
+                            "values": [
+                              {
+                                "type": "string",
+                                "value": "fres"
+                              }
+                            ]
+                          }
+                        ],
+                        "flow": {
+                          "type": "return"
                         }
-                      ]
-                    }
-                  ]
+                      }
+                    ]
+                  }
                 }
               }
             ]
@@ -160,7 +163,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

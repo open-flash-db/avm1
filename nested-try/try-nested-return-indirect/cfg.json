@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "err-value",
             "start",
             "in-outer-try",
@@ -27,7 +26,6 @@
           "body": {
             "blocks": [
               {
-                "type": "throw",
                 "label": "l1_119",
                 "actions": [
                   {
@@ -39,7 +37,10 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "throw"
+                }
               }
             ]
           }
@@ -51,7 +52,6 @@
           "body": {
             "blocks": [
               {
-                "type": "try",
                 "label": "l2_137",
                 "actions": [
                   {
@@ -67,164 +67,176 @@
                     "action": "trace"
                   }
                 ],
-                "try": {
-                  "blocks": [
-                    {
-                      "type": "try",
-                      "label": "l4_155",
-                      "actions": [
-                        {
-                          "action": "push",
-                          "values": [
-                            {
-                              "type": "constant",
-                              "value": 2
-                            }
-                          ]
-                        },
-                        {
-                          "action": "trace"
-                        }
-                      ],
-                      "try": {
-                        "blocks": [
+                "flow": {
+                  "type": "try",
+                  "try": {
+                    "blocks": [
+                      {
+                        "label": "l4_155",
+                        "actions": [
                           {
-                            "type": "return",
-                            "label": "l6_172",
-                            "actions": [
+                            "action": "push",
+                            "values": [
                               {
-                                "action": "push",
-                                "values": [
+                                "type": "constant",
+                                "value": 2
+                              }
+                            ]
+                          },
+                          {
+                            "action": "trace"
+                          }
+                        ],
+                        "flow": {
+                          "type": "try",
+                          "try": {
+                            "blocks": [
+                              {
+                                "label": "l6_172",
+                                "actions": [
                                   {
-                                    "type": "constant",
-                                    "value": 3
-                                  }
-                                ]
-                              },
-                              {
-                                "action": "trace"
-                              },
-                              {
-                                "action": "push",
-                                "values": [
+                                    "action": "push",
+                                    "values": [
+                                      {
+                                        "type": "constant",
+                                        "value": 3
+                                      }
+                                    ]
+                                  },
                                   {
-                                    "type": "constant",
-                                    "value": 4
+                                    "action": "trace"
+                                  },
+                                  {
+                                    "action": "push",
+                                    "values": [
+                                      {
+                                        "type": "constant",
+                                        "value": 4
+                                      }
+                                    ]
                                   }
-                                ]
+                                ],
+                                "flow": {
+                                  "type": "return"
+                                }
+                              }
+                            ]
+                          },
+                          "finally": {
+                            "blocks": [
+                              {
+                                "label": "l5_184",
+                                "actions": [
+                                  {
+                                    "action": "push",
+                                    "values": [
+                                      {
+                                        "type": "constant",
+                                        "value": 5
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "action": "trace"
+                                  },
+                                  {
+                                    "action": "push",
+                                    "values": [
+                                      {
+                                        "type": "float64",
+                                        "value": 0
+                                      },
+                                      {
+                                        "type": "constant",
+                                        "value": 6
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "action": "call-function"
+                                  },
+                                  {
+                                    "action": "pop"
+                                  }
+                                ],
+                                "flow": {
+                                  "type": "simple",
+                                  "next": "l4_206"
+                                }
                               }
                             ]
                           }
-                        ]
+                        }
                       },
-                      "catch_target": {
-                        "type": "variable",
-                        "target": ""
-                      },
-                      "finally": {
-                        "blocks": [
-                          {
-                            "type": "simple",
-                            "label": "l5_184",
-                            "actions": [
-                              {
-                                "action": "push",
-                                "values": [
-                                  {
-                                    "type": "constant",
-                                    "value": 5
-                                  }
-                                ]
-                              },
-                              {
-                                "action": "trace"
-                              },
-                              {
-                                "action": "push",
-                                "values": [
-                                  {
-                                    "type": "float64",
-                                    "value": 0
-                                  },
-                                  {
-                                    "type": "constant",
-                                    "value": 6
-                                  }
-                                ]
-                              },
-                              {
-                                "action": "call-function"
-                              },
-                              {
-                                "action": "pop"
-                              }
-                            ],
-                            "next": "l4_206"
-                          }
-                        ]
+                      {
+                        "label": "l4_206",
+                        "actions": [],
+                        "flow": {
+                          "type": "simple",
+                          "next": "l3_217"
+                        }
                       }
+                    ]
+                  },
+                  "catch": {
+                    "target": {
+                      "type": "variable",
+                      "target": "e"
                     },
-                    {
-                      "type": "simple",
-                      "label": "l4_206",
-                      "actions": [],
-                      "next": "l3_217"
-                    }
-                  ]
-                },
-                "catch": {
-                  "blocks": [
-                    {
-                      "type": "simple",
-                      "label": "l7_211",
-                      "actions": [
+                    "body": {
+                      "blocks": [
                         {
-                          "action": "push",
-                          "values": [
+                          "label": "l7_211",
+                          "actions": [
                             {
-                              "type": "constant",
-                              "value": 7
-                            }
-                          ]
-                        },
-                        {
-                          "action": "trace"
-                        }
-                      ],
-                      "next": "l3_217"
-                    }
-                  ]
-                },
-                "catch_target": {
-                  "type": "variable",
-                  "target": "e"
-                },
-                "finally": {
-                  "blocks": [
-                    {
-                      "type": "simple",
-                      "label": "l3_217",
-                      "actions": [
-                        {
-                          "action": "push",
-                          "values": [
+                              "action": "push",
+                              "values": [
+                                {
+                                  "type": "constant",
+                                  "value": 7
+                                }
+                              ]
+                            },
                             {
-                              "type": "constant",
-                              "value": 8
+                              "action": "trace"
                             }
-                          ]
-                        },
-                        {
-                          "action": "trace"
+                          ],
+                          "flow": {
+                            "type": "simple",
+                            "next": "l3_217"
+                          }
                         }
-                      ],
-                      "next": "l2_223"
+                      ]
                     }
-                  ]
+                  },
+                  "finally": {
+                    "blocks": [
+                      {
+                        "label": "l3_217",
+                        "actions": [
+                          {
+                            "action": "push",
+                            "values": [
+                              {
+                                "type": "constant",
+                                "value": 8
+                              }
+                            ]
+                          },
+                          {
+                            "action": "trace"
+                          }
+                        ],
+                        "flow": {
+                          "type": "simple",
+                          "next": "l2_223"
+                        }
+                      }
+                    ]
+                  }
                 }
               },
               {
-                "type": "return",
                 "label": "l2_223",
                 "actions": [
                   {
@@ -248,7 +260,10 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -273,7 +288,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -32,11 +31,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_60",
-      "if_false": "l0_44"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_60",
+        "false_target": "l0_44"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_44",
       "actions": [
         {
@@ -52,10 +53,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_111"
+      "flow": {
+        "type": "simple",
+        "next": "l0_111"
+      }
     },
     {
-      "type": "if",
       "label": "l0_60",
       "actions": [
         {
@@ -74,11 +77,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_98",
-      "if_false": "l0_77"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_98",
+        "false_target": "l0_77"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_77",
       "actions": [
         {
@@ -94,10 +99,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_111"
+      "flow": {
+        "type": "simple",
+        "next": "l0_111"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_98",
       "actions": [
         {
@@ -113,10 +120,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_111"
+      "flow": {
+        "type": "simple",
+        "next": "l0_111"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_111",
       "actions": [
         {
@@ -132,7 +141,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

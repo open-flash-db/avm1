@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -32,11 +31,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_144",
-      "if_false": "l0_48"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_144",
+        "false_target": "l0_48"
+      }
     },
     {
-      "type": "if",
       "label": "l0_48",
       "actions": [
         {
@@ -55,11 +56,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_85",
-      "if_false": "l0_65"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_85",
+        "false_target": "l0_65"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_65",
       "actions": [
         {
@@ -75,10 +78,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_144"
+      "flow": {
+        "type": "simple",
+        "next": "l0_144"
+      }
     },
     {
-      "type": "if",
       "label": "l0_85",
       "actions": [
         {
@@ -97,11 +102,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_127",
-      "if_false": "l0_102"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_127",
+        "false_target": "l0_102"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_102",
       "actions": [
         {
@@ -117,10 +124,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_144"
+      "flow": {
+        "type": "simple",
+        "next": "l0_144"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_127",
       "actions": [
         {
@@ -136,10 +145,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_144"
+      "flow": {
+        "type": "simple",
+        "next": "l0_144"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_144",
       "actions": [
         {
@@ -155,7 +166,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

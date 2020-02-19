@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "if",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "before if/else if/else if/else",
             "test",
             "in if",
@@ -44,11 +43,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_140",
-      "if_false": "l0_129"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_140",
+        "false_target": "l0_129"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_129",
       "actions": [
         {
@@ -64,10 +65,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_192"
+      "flow": {
+        "type": "simple",
+        "next": "l0_192"
+      }
     },
     {
-      "type": "if",
       "label": "l0_140",
       "actions": [
         {
@@ -86,11 +89,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_163",
-      "if_false": "l0_152"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_163",
+        "false_target": "l0_152"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_152",
       "actions": [
         {
@@ -106,10 +111,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_192"
+      "flow": {
+        "type": "simple",
+        "next": "l0_192"
+      }
     },
     {
-      "type": "if",
       "label": "l0_163",
       "actions": [
         {
@@ -128,11 +135,13 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_186",
-      "if_false": "l0_175"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_186",
+        "false_target": "l0_175"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_175",
       "actions": [
         {
@@ -148,10 +157,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_192"
+      "flow": {
+        "type": "simple",
+        "next": "l0_192"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_186",
       "actions": [
         {
@@ -167,10 +178,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_192"
+      "flow": {
+        "type": "simple",
+        "next": "l0_192"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_192",
       "actions": [
         {
@@ -186,7 +199,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

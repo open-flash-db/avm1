@@ -1,7 +1,6 @@
 {
   "blocks": [
     {
-      "type": "if",
       "label": "l0_0",
       "actions": [
         {
@@ -45,11 +44,13 @@
           "action": "strict-equals"
         }
       ],
-      "if_true": "l0_77",
-      "if_false": "l0_56"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_77",
+        "false_target": "l0_56"
+      }
     },
     {
-      "type": "if",
       "label": "l0_56",
       "actions": [
         {
@@ -69,17 +70,21 @@
           "action": "strict-equals"
         }
       ],
-      "if_true": "l0_94",
-      "if_false": "l0_72"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_94",
+        "false_target": "l0_72"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_72",
       "actions": [],
-      "next": "l0_111"
+      "flow": {
+        "type": "simple",
+        "next": "l0_111"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_77",
       "actions": [
         {
@@ -95,10 +100,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_129"
+      "flow": {
+        "type": "simple",
+        "next": "l0_129"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_94",
       "actions": [
         {
@@ -114,10 +121,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_129"
+      "flow": {
+        "type": "simple",
+        "next": "l0_129"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_111",
       "actions": [
         {
@@ -133,10 +142,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_129"
+      "flow": {
+        "type": "simple",
+        "next": "l0_129"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_129",
       "actions": [
         {
@@ -152,7 +163,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

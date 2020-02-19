@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "i",
             "before for/true + break",
             "in for/true + break",
@@ -42,10 +41,12 @@
           "action": "trace"
         }
       ],
-      "next": "l0_95"
+      "flow": {
+        "type": "simple",
+        "next": "l0_95"
+      }
     },
     {
-      "type": "if",
       "label": "l0_95",
       "actions": [
         {
@@ -122,23 +123,29 @@
           "action": "not"
         }
       ],
-      "if_true": "l0_146",
-      "if_false": "l0_141"
+      "flow": {
+        "type": "if",
+        "true_target": "l0_146",
+        "false_target": "l0_141"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_141",
       "actions": [],
-      "next": "l0_151"
+      "flow": {
+        "type": "simple",
+        "next": "l0_151"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_146",
       "actions": [],
-      "next": "l0_95"
+      "flow": {
+        "type": "simple",
+        "next": "l0_95"
+      }
     },
     {
-      "type": "simple",
       "label": "l0_151",
       "actions": [
         {
@@ -154,7 +161,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }

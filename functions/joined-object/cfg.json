@@ -1,12 +1,11 @@
 {
   "blocks": [
     {
-      "type": "simple",
       "label": "l0_0",
       "actions": [
         {
           "action": "constant-pool",
-          "constant_pool": [
+          "pool": [
             "B",
             "b1",
             "A",
@@ -22,7 +21,6 @@
           "body": {
             "blocks": [
               {
-                "type": "return",
                 "label": "l1_30",
                 "actions": [
                   {
@@ -47,7 +45,6 @@
                     "body": {
                       "blocks": [
                         {
-                          "type": "return",
                           "label": "l2_45",
                           "actions": [
                             {
@@ -66,7 +63,10 @@
                             {
                               "action": "multiply"
                             }
-                          ]
+                          ],
+                          "flow": {
+                            "type": "return"
+                          }
                         }
                       ]
                     }
@@ -83,7 +83,10 @@
                   {
                     "action": "get-variable"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -110,7 +113,6 @@
           "body": {
             "blocks": [
               {
-                "type": "return",
                 "label": "l3_77",
                 "actions": [
                   {
@@ -129,7 +131,10 @@
                   {
                     "action": "multiply"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -156,7 +161,6 @@
           "body": {
             "blocks": [
               {
-                "type": "return",
                 "label": "l4_102",
                 "actions": [
                   {
@@ -175,7 +179,10 @@
                   {
                     "action": "multiply"
                   }
-                ]
+                ],
+                "flow": {
+                  "type": "return"
+                }
               }
             ]
           }
@@ -287,7 +294,10 @@
           "action": "trace"
         }
       ],
-      "next": null
+      "flow": {
+        "type": "simple",
+        "next": null
+      }
     }
   ]
 }
