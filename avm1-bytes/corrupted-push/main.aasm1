@@ -1,12 +1,12 @@
 l0_0:
   defineFunction(name="f", parameters=[]) {
-    l2_9:
+    l1_9:
       error;
   };
   push(0="start");
   trace();
   try {
-    l1_40:
+    l2_40:
       push(0=0i32, 1="f");
       callFunction();
       pop();

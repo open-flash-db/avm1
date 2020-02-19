@@ -4,22 +4,22 @@ l0_0:
       push(0="start");
       trace();
       try {
-        l2_36:
+        l3_36:
           push(0="in-try");
           trace();
           push(0="tres");
           return;
       } finally {
-        l3_58:
+        l2_58:
           push(0="in-finally");
           trace();
-          next l3_106;
-        l3_79:
+          next l2_106;
+        l2_79:
           push(0="still-in-finally");
           trace();
           next l1_111;
-        l3_106:
-          next l3_79;
+        l2_106:
+          next l2_79;
       }
     l1_111:
       push(0="end");
@@ -31,13 +31,13 @@ l0_0:
       push(0="start");
       trace();
       try {
-        l5_156:
+        l6_156:
           push(0="in-try");
           trace();
           push(0="tres");
           return;
       } finally {
-        l6_178:
+        l5_178:
           push(0="in-finally");
           trace();
           next l4_226;
@@ -58,22 +58,22 @@ l0_0:
       push(0="start");
       trace();
       try {
-        l8_276:
+        l9_276:
           push(0="in-try");
           trace();
           push(0="tres");
           return;
       } finally {
-        l9_298:
+        l8_298:
           push(0="in-finally");
           trace();
-          next l9_346;
-        l9_319:
+          next l8_346;
+        l8_319:
           push(0="still-in-finally");
           trace();
           next l7_351;
-        l9_346:
-          next l9_319;
+        l8_346:
+          next l8_319;
       }
     l7_351:
       push(0="end");
@@ -85,22 +85,22 @@ l0_0:
       push(0="start");
       trace();
       try {
-        l11_396:
+        l12_396:
           push(0="in-try");
           trace();
           push(0="tres");
           return;
       } finally {
-        l12_418:
+        l11_418:
           push(0="in-finally");
           trace();
-          next l12_466;
-        l12_439:
+          next l11_466;
+        l11_439:
           push(0="still-in-finally");
           trace();
           next l10_471;
-        l12_466:
-          next l12_439;
+        l11_466:
+          next l11_439;
       }
     l10_471:
       push(0="end");

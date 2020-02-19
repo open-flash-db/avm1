@@ -4,13 +4,13 @@ l0_0:
       push(0="start");
       trace();
       try {
-        l2_35:
+        l3_35:
           push(0="in-try");
           trace();
           push(0="tres");
           return;
       } finally {
-        l3_57:
+        l2_57:
           push(0="in-finally");
           trace();
           next l1_78;

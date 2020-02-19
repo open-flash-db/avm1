@@ -45,7 +45,7 @@
             "try": {
               "head": {
                 "type": "try",
-                "label": "l2_137",
+                "label": "l3_137",
                 "actions": [
                   {
                     "action": "push",
@@ -63,7 +63,7 @@
                 "try": {
                   "head": {
                     "type": "return",
-                    "label": "l3_154",
+                    "label": "l7_154",
                     "actions": [
                       {
                         "action": "push",
@@ -115,7 +115,7 @@
                     "try": {
                       "head": {
                         "type": "throw",
-                        "label": "l5_183",
+                        "label": "l6_183",
                         "actions": [
                           {
                             "action": "push",
@@ -149,7 +149,7 @@
                     "finally": {
                       "head": {
                         "type": "simple",
-                        "label": "l6_195",
+                        "label": "l5_195",
                         "actions": [
                           {
                             "action": "push",
@@ -164,7 +164,7 @@
                             "action": "trace"
                           }
                         ],
-                        "next": "l2_201"
+                        "next": "l3_201"
                       },
                       "tail": []
                     }
@@ -175,16 +175,16 @@
               "tail": [
                 {
                   "type": "simple",
-                  "label": "l2_201",
+                  "label": "l3_201",
                   "actions": [],
-                  "next": "l8_212"
+                  "next": "l2_212"
                 }
               ]
             },
             "catch": {
               "head": {
                 "type": "simple",
-                "label": "l7_206",
+                "label": "l8_206",
                 "actions": [
                   {
                     "action": "push",
@@ -199,7 +199,7 @@
                     "action": "trace"
                   }
                 ],
-                "next": "l8_212"
+                "next": "l2_212"
               },
               "tail": []
             },
@@ -210,7 +210,7 @@
             "finally": {
               "head": {
                 "type": "simple",
-                "label": "l8_212",
+                "label": "l2_212",
                 "actions": [
                   {
                     "action": "push",

@@ -21,17 +21,17 @@ l0_164:
   push(0=c:5);
   trace();
   try {
-    l3_190:
+    l4_190:
       push(0=c:2);
       trace();
-      next l5_207;
+      next l3_207;
   } catch(i:"err") {
-    l4_201:
+    l5_201:
       push(0=c:3);
       trace();
-      next l5_207;
+      next l3_207;
   } finally {
-    l5_207:
+    l3_207:
       push(0=c:6);
       trace();
       next l0_213;

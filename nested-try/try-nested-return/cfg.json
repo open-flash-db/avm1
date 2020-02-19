@@ -56,7 +56,7 @@
                 "try": {
                   "head": {
                     "type": "return",
-                    "label": "l4_70",
+                    "label": "l5_70",
                     "actions": [
                       {
                         "action": "push",
@@ -78,7 +78,7 @@
                 "finally": {
                   "head": {
                     "type": "simple",
-                    "label": "l5_78",
+                    "label": "l4_78",
                     "actions": [
                       {
                         "action": "push",

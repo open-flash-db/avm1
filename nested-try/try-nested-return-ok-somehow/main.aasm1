@@ -5,11 +5,11 @@ l0_0:
       push(0=c:0);
       trace();
       try {
-        l2_137:
+        l3_137:
           push(0=c:1);
           trace();
           try {
-            l3_154:
+            l7_154:
               push(0=c:2);
               trace();
               push(0=c:3);
@@ -19,27 +19,27 @@ l0_0:
               push(0=c:4);
               trace();
               try {
-                l5_183:
+                l6_183:
                   push(0=c:5);
                   trace();
                   push(0=c:6);
                   throw;
               } finally {
-                l6_195:
+                l5_195:
                   push(0=c:7);
                   trace();
-                  next l2_201;
+                  next l3_201;
               }
           }
-        l2_201:
-          next l8_212;
+        l3_201:
+          next l2_212;
       } catch(i:"e") {
-        l7_206:
+        l8_206:
           push(0=c:8);
           trace();
-          next l8_212;
+          next l2_212;
       } finally {
-        l8_212:
+        l2_212:
           push(0=c:9);
           trace();
           next l1_218;

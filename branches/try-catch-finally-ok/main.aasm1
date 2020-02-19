@@ -2,17 +2,17 @@ l0_0:
   push(0="before try/catch/finally");
   trace();
   try {
-    l1_44:
+    l2_44:
       push(0="in try");
       trace();
-      next l3_75;
+      next l1_75;
   } catch(i:"err") {
-    l2_61:
+    l3_61:
       push(0="in catch");
       trace();
-      next l3_75;
+      next l1_75;
   } finally {
-    l3_75:
+    l1_75:
       push(0="in finally");
       trace();
       next l0_91;

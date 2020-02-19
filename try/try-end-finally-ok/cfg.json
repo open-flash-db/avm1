@@ -28,7 +28,7 @@
             "try": {
               "head": {
                 "type": "simple",
-                "label": "l2_35",
+                "label": "l3_35",
                 "actions": [
                   {
                     "action": "push",
@@ -54,7 +54,7 @@
             "finally": {
               "head": {
                 "type": "simple",
-                "label": "l3_48",
+                "label": "l2_48",
                 "actions": [
                   {
                     "action": "push",

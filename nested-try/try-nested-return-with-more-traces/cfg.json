@@ -43,7 +43,7 @@
             "try": {
               "head": {
                 "type": "try",
-                "label": "l2_138",
+                "label": "l3_138",
                 "actions": [
                   {
                     "action": "push",
@@ -61,7 +61,7 @@
                 "try": {
                   "head": {
                     "type": "return",
-                    "label": "l3_155",
+                    "label": "l5_155",
                     "actions": [
                       {
                         "action": "push",
@@ -128,7 +128,7 @@
             "catch": {
               "head": {
                 "type": "simple",
-                "label": "l5_184",
+                "label": "l6_184",
                 "actions": [
                   {
                     "action": "push",
@@ -143,7 +143,7 @@
                     "action": "trace"
                   }
                 ],
-                "next": "l6_190"
+                "next": "l2_190"
               },
               "tail": []
             },
@@ -154,7 +154,7 @@
             "finally": {
               "head": {
                 "type": "simple",
-                "label": "l6_190",
+                "label": "l2_190",
                 "actions": [
                   {
                     "action": "push",

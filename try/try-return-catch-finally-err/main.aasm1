@@ -9,7 +9,7 @@ l0_0:
       push(0="start");
       trace();
       try {
-        l3_59:
+        l4_59:
           push(0=0f64, 1="f");
           callFunction();
           pop();
@@ -18,13 +18,13 @@ l0_0:
           push(0="tres");
           return;
       } catch(i:"e") {
-        l4_103:
+        l5_103:
           push(0="in-catch");
           trace();
           push(0="cres");
           return;
       } finally {
-        l5_127:
+        l3_127:
           push(0="in-finally");
           trace();
           push(0="fres");

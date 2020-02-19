@@ -10,7 +10,7 @@
         "body": {
           "head": {
             "type": "throw",
-            "label": "l3_9",
+            "label": "l1_9",
             "actions": [
               {
                 "action": "push",
@@ -54,7 +54,7 @@
     "try": {
       "head": {
         "type": "simple",
-        "label": "l1_56",
+        "label": "l2_56",
         "actions": [
           {
             "action": "push",
@@ -95,7 +95,7 @@
     "catch": {
       "head": {
         "type": "simple",
-        "label": "l2_81",
+        "label": "l3_81",
         "actions": [
           {
             "action": "push",

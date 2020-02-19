@@ -7,11 +7,11 @@ l0_0:
       try {
         l2_63:
           try {
-            l3_74:
+            l4_74:
               push(0=c:1);
               return;
           } finally {
-            l4_80:
+            l3_80:
               push(0=c:2);
               throw;
           }

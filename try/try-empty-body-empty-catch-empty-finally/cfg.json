@@ -10,7 +10,7 @@
         "body": {
           "head": {
             "type": "throw",
-            "label": "l4_9",
+            "label": "l1_9",
             "actions": [
               {
                 "action": "push",
@@ -54,18 +54,18 @@
     "try": {
       "head": {
         "type": "simple",
-        "label": "l1_56",
+        "label": "l3_56",
         "actions": [],
-        "next": "l3_56"
+        "next": "l2_56"
       },
       "tail": []
     },
     "catch": {
       "head": {
         "type": "simple",
-        "label": "l2_56",
+        "label": "l4_56",
         "actions": [],
-        "next": "l3_56"
+        "next": "l2_56"
       },
       "tail": []
     },
@@ -76,7 +76,7 @@
     "finally": {
       "head": {
         "type": "simple",
-        "label": "l3_56",
+        "label": "l2_56",
         "actions": [],
         "next": "l0_56"
       },

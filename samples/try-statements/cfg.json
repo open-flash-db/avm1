@@ -122,7 +122,7 @@
       "try": {
         "head": {
           "type": "simple",
-          "label": "l3_190",
+          "label": "l4_190",
           "actions": [
             {
               "action": "push",
@@ -137,14 +137,14 @@
               "action": "trace"
             }
           ],
-          "next": "l5_207"
+          "next": "l3_207"
         },
         "tail": []
       },
       "catch": {
         "head": {
           "type": "simple",
-          "label": "l4_201",
+          "label": "l5_201",
           "actions": [
             {
               "action": "push",
@@ -159,7 +159,7 @@
               "action": "trace"
             }
           ],
-          "next": "l5_207"
+          "next": "l3_207"
         },
         "tail": []
       },
@@ -170,7 +170,7 @@
       "finally": {
         "head": {
           "type": "simple",
-          "label": "l5_207",
+          "label": "l3_207",
           "actions": [
             {
               "action": "push",

@@ -28,7 +28,7 @@
             "try": {
               "head": {
                 "type": "return",
-                "label": "l2_34",
+                "label": "l3_34",
                 "actions": [
                   {
                     "action": "push",
@@ -62,7 +62,7 @@
             "finally": {
               "head": {
                 "type": "return",
-                "label": "l3_56",
+                "label": "l2_56",
                 "actions": [
                   {
                     "action": "push",

@@ -43,7 +43,7 @@
                 "try": {
                   "head": {
                     "type": "return",
-                    "label": "l3_74",
+                    "label": "l4_74",
                     "actions": [
                       {
                         "action": "push",
@@ -65,7 +65,7 @@
                 "finally": {
                   "head": {
                     "type": "throw",
-                    "label": "l4_80",
+                    "label": "l3_80",
                     "actions": [
                       {
                         "action": "push",

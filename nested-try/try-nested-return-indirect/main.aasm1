@@ -10,11 +10,11 @@ l0_0:
       push(0=c:1);
       trace();
       try {
-        l3_155:
+        l4_155:
           push(0=c:2);
           trace();
           try {
-            l4_172:
+            l6_172:
               push(0=c:3);
               trace();
               push(0=c:4);
@@ -26,17 +26,17 @@ l0_0:
               push(0=0f64, 1=c:6);
               callFunction();
               pop();
-              next l3_206;
+              next l4_206;
           }
-        l3_206:
-          next l7_217;
+        l4_206:
+          next l3_217;
       } catch(i:"e") {
-        l6_211:
+        l7_211:
           push(0=c:7);
           trace();
-          next l7_217;
+          next l3_217;
       } finally {
-        l7_217:
+        l3_217:
           push(0=c:8);
           trace();
           next l2_223;

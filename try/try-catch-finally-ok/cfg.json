@@ -10,7 +10,7 @@
         "body": {
           "head": {
             "type": "simple",
-            "label": "l4_9",
+            "label": "l1_9",
             "actions": [
               {
                 "action": "push",
@@ -46,7 +46,7 @@
     "try": {
       "head": {
         "type": "simple",
-        "label": "l1_40",
+        "label": "l3_40",
         "actions": [
           {
             "action": "push",
@@ -80,14 +80,14 @@
             "action": "trace"
           }
         ],
-        "next": "l3_94"
+        "next": "l2_94"
       },
       "tail": []
     },
     "catch": {
       "head": {
         "type": "simple",
-        "label": "l2_74",
+        "label": "l4_74",
         "actions": [
           {
             "action": "push",
@@ -117,7 +117,7 @@
             "action": "trace"
           }
         ],
-        "next": "l3_94"
+        "next": "l2_94"
       },
       "tail": []
     },
@@ -128,7 +128,7 @@
     "finally": {
       "head": {
         "type": "simple",
-        "label": "l3_94",
+        "label": "l2_94",
         "actions": [
           {
             "action": "push",

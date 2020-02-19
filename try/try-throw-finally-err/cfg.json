@@ -55,7 +55,7 @@
             "try": {
               "head": {
                 "type": "throw",
-                "label": "l3_51",
+                "label": "l4_51",
                 "actions": [
                   {
                     "action": "push",
@@ -108,7 +108,7 @@
             "finally": {
               "head": {
                 "type": "throw",
-                "label": "l4_90",
+                "label": "l3_90",
                 "actions": [
                   {
                     "action": "push",

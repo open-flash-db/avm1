@@ -11,11 +11,11 @@ l0_0:
       try {
         l3_59:
           try {
-            l4_70:
+            l5_70:
               push(0="ok");
               return;
           } finally {
-            l5_78:
+            l4_78:
               push(0=0f64, 1="f");
               callFunction();
               pop();

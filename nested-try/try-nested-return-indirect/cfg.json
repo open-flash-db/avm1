@@ -67,7 +67,7 @@
             "try": {
               "head": {
                 "type": "try",
-                "label": "l3_155",
+                "label": "l4_155",
                 "actions": [
                   {
                     "action": "push",
@@ -85,7 +85,7 @@
                 "try": {
                   "head": {
                     "type": "return",
-                    "label": "l4_172",
+                    "label": "l6_172",
                     "actions": [
                       {
                         "action": "push",
@@ -153,7 +153,7 @@
                         "action": "pop"
                       }
                     ],
-                    "next": "l3_206"
+                    "next": "l4_206"
                   },
                   "tail": []
                 }
@@ -161,16 +161,16 @@
               "tail": [
                 {
                   "type": "simple",
-                  "label": "l3_206",
+                  "label": "l4_206",
                   "actions": [],
-                  "next": "l7_217"
+                  "next": "l3_217"
                 }
               ]
             },
             "catch": {
               "head": {
                 "type": "simple",
-                "label": "l6_211",
+                "label": "l7_211",
                 "actions": [
                   {
                     "action": "push",
@@ -185,7 +185,7 @@
                     "action": "trace"
                   }
                 ],
-                "next": "l7_217"
+                "next": "l3_217"
               },
               "tail": []
             },
@@ -196,7 +196,7 @@
             "finally": {
               "head": {
                 "type": "simple",
-                "label": "l7_217",
+                "label": "l3_217",
                 "actions": [
                   {
                     "action": "push",

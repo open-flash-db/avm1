@@ -1,6 +1,6 @@
 l0_0:
   defineFunction(name="f", parameters=[]) {
-    l3_9:
+    l1_9:
       push(0="err");
       trace();
       push(0="err-value");
@@ -9,7 +9,7 @@ l0_0:
   push(0="start");
   trace();
   try {
-    l1_56:
+    l2_56:
       push(0=0i32, 1="f");
       callFunction();
       pop();
@@ -17,7 +17,7 @@ l0_0:
       trace();
       next l0_81;
   } catch(i:"e") {
-    l2_81:
+    l3_81:
       push(0="in-err");
       trace();
       push(0="e");

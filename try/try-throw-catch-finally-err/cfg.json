@@ -63,7 +63,7 @@
             "try": {
               "head": {
                 "type": "throw",
-                "label": "l3_61",
+                "label": "l4_61",
                 "actions": [
                   {
                     "action": "push",
@@ -112,7 +112,7 @@
             "catch": {
               "head": {
                 "type": "throw",
-                "label": "l4_105",
+                "label": "l5_105",
                 "actions": [
                   {
                     "action": "push",
@@ -146,7 +146,7 @@
             "finally": {
               "head": {
                 "type": "throw",
-                "label": "l5_129",
+                "label": "l3_129",
                 "actions": [
                   {
                     "action": "push",
