@@ -2114,7 +2114,7 @@ l0_7256:
       push(0=c:9);
       callMethod();
       pop();
-      end;
+      next l0_8054;
   } catch(r:0) {
     l33_8028:
       push(0=r:0, 1=1i32, 2=c:2);
@@ -2124,5 +2124,7 @@ l0_7256:
       push(0=c:98);
       callMethod();
       pop();
-      end;
+      next l0_8054;
   }
+l0_8054:
+  end;

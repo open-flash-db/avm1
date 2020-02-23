@@ -1,6 +1,7 @@
 l0_0:
-  waitForFrame(92) ? end : next l0_6;
+  waitForFrame(92) ? next l0_16 : next l0_6;
 l0_6:
   gotoLabel("start");
   play();
+l0_16:
   end;
