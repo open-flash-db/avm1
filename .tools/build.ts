@@ -1,6 +1,6 @@
 import { toAasm } from "avm1-asm/to-aasm";
-import { cfgFromBytes } from "avm1-parser";
-import { $Cfg, Cfg } from "avm1-types/cfg";
+import { parseCfg } from "avm1-parser";
+import { $Cfg, Cfg } from "avm1-types/cfg/cfg";
 import fs from "fs";
 import { Incident } from "incident";
 import { JsonValueWriter } from "kryo/writers/json-value";
@@ -76,7 +76,7 @@ export async function build(): Promise<void> {
   }
 
   async function buildHxItems(): Promise<any> {
-    const promises: Array<Promise<void>> = [];
+    const promises: Promise<void>[] = [];
     for (const item of testItems) {
       if (item.src === undefined || item.src.type !== "haxe") {
         continue;
@@ -96,7 +96,7 @@ export async function build(): Promise<void> {
   }
 
   async function buildTsBytesItems(): Promise<any> {
-    const promises: Array<Promise<void>> = [];
+    const promises: Promise<void>[] = [];
     for (const item of testItems) {
       if (item.src === undefined || item.src.type !== "ts-bytes") {
         continue;
@@ -111,7 +111,7 @@ export async function build(): Promise<void> {
   }
 
   async function buildTxtBytesItems(): Promise<any> {
-    const promises: Array<Promise<void>> = [];
+    const promises: Promise<void>[] = [];
     for (const item of testItems) {
       if (item.src === undefined || item.src.type !== "txt-bytes") {
         continue;
@@ -137,7 +137,7 @@ export async function build(): Promise<void> {
     await outputFile(item.logPath, logBuffer);
     const avm1Bytes: Uint8Array = await readFile(item.avm1Path);
     try {
-      const cfg: Cfg = cfgFromBytes(avm1Bytes);
+      const cfg: Cfg = parseCfg(avm1Bytes);
       const cfgJson: string = JSON.stringify($Cfg.write(JSON_VALUE_WRITER, cfg), null, 2);
       await writeTextFile(item.cfgPath, `${cfgJson}\n`);
       const aasm1: string = toAasm(cfg);

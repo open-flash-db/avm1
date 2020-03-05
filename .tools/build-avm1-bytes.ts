@@ -1,34 +1,35 @@
-import { Avm1Emitter } from "avm1-emitter";
+import { emitAction } from "avm1-emitter";
 import { ActionType } from "avm1-types/action-type";
 import { GetUrl } from "avm1-types/actions/get-url";
-import { ValueType } from "avm1-types/value-type";
-import { movieToBytes } from "swf-emitter";
-import { Header, Movie, Tag, TagType, Ufixed8P8 } from "swf-tree";
-import { Sfixed16P16 } from "swf-tree/fixed-point/sfixed16p16";
-import { TextAlignment } from "swf-tree/text";
+import { PushValueType } from "avm1-types/push-value-type";
+import { emitSwf } from "swf-emitter";
+import { Header, Movie, Tag, TagType, Ufixed8P8 } from "swf-types";
+import { Sfixed16P16 } from "swf-types/fixed-point/sfixed16p16";
+import { TextAlignment } from "swf-types/text";
+import { WritableStream } from "@open-flash/stream";
 
 export async function getAvm1Bytes(tsModulePath: string): Promise<Uint8Array> {
   return (await import(tsModulePath)).default;
 }
 
 const PRINT_TRACE_AVM1_BYTES: Uint8Array = ((): Uint8Array => {
-  const emitter = new Avm1Emitter();
-  emitter.writeAction({
+  const avm1Stream = new WritableStream();
+  emitAction(avm1Stream, {
     action: ActionType.DefineFunction,
     name: "print",
     parameters: ["msg"],
     bodySize: 10,
   });
-  emitter.writeAction({ // Size 8
+  emitAction(avm1Stream, { // Size 8
     action: ActionType.Push,
     values: [
-      {type: ValueType.String, value: "msg"}, // Size 5
+      {type: PushValueType.String, value: "msg"}, // Size 5
     ],
   });
-  emitter.writeAction({action: ActionType.GetVariable}); // Size 1
-  emitter.writeAction({action: ActionType.Trace}); // Size 1
-  (emitter as any).stream.writeBytes(new Uint8Array([0x00]));
-  return emitter.getBytes();
+  emitAction(avm1Stream, {action: ActionType.GetVariable}); // Size 1
+  emitAction(avm1Stream, {action: ActionType.Trace}); // Size 1
+  avm1Stream.writeBytes(new Uint8Array([0x00]));
+  return avm1Stream.getBytes();
 })();
 
 const QUIT_AVM1_BYTES: Uint8Array = ((): Uint8Array => {
@@ -37,60 +38,60 @@ const QUIT_AVM1_BYTES: Uint8Array = ((): Uint8Array => {
     url: "fscommand:quit",
     target: "",
   };
-  const emitter = new Avm1Emitter();
-  emitter.writeAction(quitAction);
-  (emitter as any).stream.writeBytes(new Uint8Array([0x00]));
-  return emitter.getBytes();
+  const avm1Stream = new WritableStream();
+  emitAction(avm1Stream, quitAction);
+  avm1Stream.writeBytes(new Uint8Array([0x00]));
+  return avm1Stream.getBytes();
 })();
 
 const PRINT_AVM1_BYTES: Uint8Array = ((): Uint8Array => {
-  const emitter = new Avm1Emitter();
-  emitter.writeAction({
+  const avm1Stream = new WritableStream();
+  emitAction(avm1Stream, {
     action: ActionType.DefineFunction,
     name: "print",
     parameters: ["msg"],
     bodySize: 59,
   });
-  emitter.writeAction({ // Size 11
+  emitAction(avm1Stream, { // Size 11
     action: ActionType.Push,
-    values: [{type: ValueType.String, value: "stdout"}], // Size 8
+    values: [{type: PushValueType.String, value: "stdout"}], // Size 8
   });
-  emitter.writeAction({action: ActionType.GetVariable}); // Size 1
-  emitter.writeAction({ // Size 9
+  emitAction(avm1Stream, {action: ActionType.GetVariable}); // Size 1
+  emitAction(avm1Stream, { // Size 9
     action: ActionType.Push,
-    values: [{type: ValueType.String, value: "text"}], // Size 6
+    values: [{type: PushValueType.String, value: "text"}], // Size 6
   });
-  emitter.writeAction({ // Size 11
+  emitAction(avm1Stream, { // Size 11
     action: ActionType.Push,
-    values: [{type: ValueType.String, value: "stdout"}], // Size 8
+    values: [{type: PushValueType.String, value: "stdout"}], // Size 8
   });
-  emitter.writeAction({action: ActionType.GetVariable}); // Size 1
-  emitter.writeAction({ // Size 9
+  emitAction(avm1Stream, {action: ActionType.GetVariable}); // Size 1
+  emitAction(avm1Stream, { // Size 9
     action: ActionType.Push,
-    values: [{type: ValueType.String, value: "text"}], // Size 6
+    values: [{type: PushValueType.String, value: "text"}], // Size 6
   });
-  emitter.writeAction({action: ActionType.GetMember}); // Size 1
-  emitter.writeAction({ // Size 10
+  emitAction(avm1Stream, {action: ActionType.GetMember}); // Size 1
+  emitAction(avm1Stream, { // Size 10
     action: ActionType.Push,
     values: [
-      {type: ValueType.String, value: "\n"}, // Size 2
-      {type: ValueType.String, value: "msg"}, // Size 5
+      {type: PushValueType.String, value: "\n"}, // Size 2
+      {type: PushValueType.String, value: "msg"}, // Size 5
     ],
   });
-  emitter.writeAction({action: ActionType.GetVariable}); // Size 1
-  emitter.writeAction({action: ActionType.StackSwap}); // Size 1
-  emitter.writeAction({action: ActionType.Add2}); // Size 1
-  emitter.writeAction({action: ActionType.Add2}); // Size 1
-  emitter.writeAction({action: ActionType.SetMember}); // Size 1
-  (emitter as any).stream.writeBytes(new Uint8Array([0x00]));
-  return emitter.getBytes();
+  emitAction(avm1Stream, {action: ActionType.GetVariable}); // Size 1
+  emitAction(avm1Stream, {action: ActionType.StackSwap}); // Size 1
+  emitAction(avm1Stream, {action: ActionType.Add2}); // Size 1
+  emitAction(avm1Stream, {action: ActionType.Add2}); // Size 1
+  emitAction(avm1Stream, {action: ActionType.SetMember}); // Size 1
+  avm1Stream.writeBytes(new Uint8Array([0x00]));
+  return avm1Stream.getBytes();
 })();
 
 const STOP_AVM1_BYTES: Uint8Array = ((): Uint8Array => {
-  const emitter = new Avm1Emitter();
-  emitter.writeAction({action: ActionType.Stop});
-  (emitter as any).stream.writeBytes(new Uint8Array([0x00]));
-  return emitter.getBytes();
+  const avm1Stream = new WritableStream();
+  emitAction(avm1Stream, {action: ActionType.Stop});
+  avm1Stream.writeBytes(new Uint8Array([0x00]));
+  return avm1Stream.getBytes();
 })();
 
 const HEADER: Header = {
@@ -130,7 +131,7 @@ export function avm1BytesToSwf(avm1Bytes: Uint8Array): Uint8Array {
     ],
   };
 
-  return movieToBytes(movie);
+  return emitSwf(movie);
 }
 
 export function avm1BytesToThrottledSwf(avm1Bytes: Uint8Array): Uint8Array {
@@ -226,5 +227,5 @@ export function avm1BytesToThrottledSwf(avm1Bytes: Uint8Array): Uint8Array {
     tags,
   };
 
-  return movieToBytes(movie);
+  return emitSwf(movie);
 }

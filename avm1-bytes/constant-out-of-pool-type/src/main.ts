@@ -23,40 +23,41 @@
  * - true/false: The placeholder constant is the `undefined` value.
  */
 
-import { Avm1Emitter } from "avm1-emitter";
+import { emitAction } from "avm1-emitter";
 import { ActionType } from "avm1-types/action-type";
-import { ValueType } from "avm1-types/value-type";
+import { PushValueType } from "avm1-types/push-value-type";
+import { WritableStream } from "@open-flash/stream";
 
-const emitter = new Avm1Emitter();
+const avm1Stream = new WritableStream();
 
-emitter.writeAction({
+emitAction(avm1Stream, {
   action: ActionType.ConstantPool,
-  constantPool: ["foo"],
+  pool: ["foo"],
 });
-emitter.writeAction({
+emitAction(avm1Stream, {
   action: ActionType.Push,
   values: [
-    {type: ValueType.Constant, value: 1},
-    {type: ValueType.Undefined},
+    {type: PushValueType.Constant, value: 1},
+    {type: PushValueType.Undefined},
   ],
 });
-emitter.writeAction({action: ActionType.StrictEquals});
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.StrictEquals});
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.Push,
   values: [
-    {type: ValueType.Constant, value: 1},
-    {type: ValueType.String, value: "undefined"},
+    {type: PushValueType.Constant, value: 1},
+    {type: PushValueType.String, value: "undefined"},
   ],
 });
-emitter.writeAction({action: ActionType.StrictEquals});
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.StrictEquals});
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.String, value: "end"}],
+  values: [{type: PushValueType.String, value: "end"}],
 });
-emitter.writeAction({action: ActionType.Trace});
+emitAction(avm1Stream, {action: ActionType.Trace});
 
-(emitter as any).stream.writeBytes(new Uint8Array([0x00]));
+avm1Stream.writeBytes(new Uint8Array([0x00]));
 
-export default emitter.getBytes();
+export default avm1Stream.getBytes();

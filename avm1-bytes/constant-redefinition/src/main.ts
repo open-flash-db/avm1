@@ -28,66 +28,67 @@
  * - foo/bar/baz/undefined: The redefinition replaces the whole pool.
  */
 
-import { Avm1Emitter } from "avm1-emitter";
+import { emitAction } from "avm1-emitter";
 import { ActionType } from "avm1-types/action-type";
-import { ValueType } from "avm1-types/value-type";
+import { PushValueType } from "avm1-types/push-value-type";
+import { WritableStream } from "@open-flash/stream";
 
-const emitter = new Avm1Emitter();
+const avm1Stream = new WritableStream();
 
-emitter.writeAction({
+emitAction(avm1Stream, {
   action: ActionType.ConstantPool,
-  constantPool: ["foo", "bar"],
+  pool: ["foo", "bar"],
 });
-emitter.writeAction({
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.String, value: "trace(c:0)"}],
+  values: [{type: PushValueType.String, value: "trace(c:0)"}],
 });
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.Constant, value: 0}],
+  values: [{type: PushValueType.Constant, value: 0}],
 });
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.String, value: "trace(c:1)"}],
+  values: [{type: PushValueType.String, value: "trace(c:1)"}],
 });
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.Constant, value: 1}],
+  values: [{type: PushValueType.Constant, value: 1}],
 });
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.ConstantPool,
-  constantPool: ["baz"],
+  pool: ["baz"],
 });
-emitter.writeAction({
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.String, value: "trace(c:0)"}],
+  values: [{type: PushValueType.String, value: "trace(c:0)"}],
 });
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.Constant, value: 0}],
+  values: [{type: PushValueType.Constant, value: 0}],
 });
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.String, value: "trace(c:1)"}],
+  values: [{type: PushValueType.String, value: "trace(c:1)"}],
 });
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.Constant, value: 1}],
+  values: [{type: PushValueType.Constant, value: 1}],
 });
-emitter.writeAction({action: ActionType.Trace});
-emitter.writeAction({
+emitAction(avm1Stream, {action: ActionType.Trace});
+emitAction(avm1Stream, {
   action: ActionType.Push,
-  values: [{type: ValueType.String, value: "end"}],
+  values: [{type: PushValueType.String, value: "end"}],
 });
-emitter.writeAction({action: ActionType.Trace});
+emitAction(avm1Stream, {action: ActionType.Trace});
 
-(emitter as any).stream.writeBytes(new Uint8Array([0x00]));
+avm1Stream.writeBytes(new Uint8Array([0x00]));
 
-export default emitter.getBytes();
+export default avm1Stream.getBytes();
