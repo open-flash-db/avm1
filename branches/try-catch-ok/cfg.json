@@ -4,40 +4,40 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "before try/catch"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "try",
+        "type": "Try",
         "try": {
           "blocks": [
             {
               "label": "l1_36",
               "actions": [
                 {
-                  "action": "push",
+                  "action": "Push",
                   "values": [
                     {
-                      "type": "string",
+                      "type": "String",
                       "value": "in try"
                     }
                   ]
                 },
                 {
-                  "action": "trace"
+                  "action": "Trace"
                 }
               ],
               "flow": {
-                "type": "simple",
+                "type": "Simple",
                 "next": "l0_67"
               }
             }
@@ -45,7 +45,7 @@
         },
         "catch": {
           "target": {
-            "type": "variable",
+            "type": "Variable",
             "target": "err"
           },
           "body": {
@@ -54,20 +54,20 @@
                 "label": "l2_53",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "string",
+                        "type": "String",
                         "value": "in catch"
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l0_67"
                 }
               }
@@ -80,20 +80,20 @@
       "label": "l0_67",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "after try/catch"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

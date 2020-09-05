@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "i",
             "before  while/true + break",
@@ -13,36 +13,36 @@
           ]
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             }
           ]
         },
         {
-          "action": "set-variable"
+          "action": "SetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_103"
       }
     },
@@ -50,17 +50,17 @@
       "label": "l0_103",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "boolean",
+              "type": "Boolean",
               "value": false
             }
           ]
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_161",
         "false_target": "l0_113"
       }
@@ -69,72 +69,72 @@
       "label": "l0_113",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "increment"
+          "action": "Increment"
         },
         {
-          "action": "set-variable"
+          "action": "SetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 2
             }
           ]
         },
         {
-          "action": "less2"
+          "action": "Less2"
         },
         {
-          "action": "not"
+          "action": "Not"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_156",
         "false_target": "l0_151"
       }
@@ -143,7 +143,7 @@
       "label": "l0_151",
       "actions": [],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_161"
       }
     },
@@ -151,7 +151,7 @@
       "label": "l0_156",
       "actions": [],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_103"
       }
     },
@@ -159,20 +159,20 @@
       "label": "l0_161",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 3
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

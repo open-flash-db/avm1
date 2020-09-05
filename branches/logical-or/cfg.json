@@ -4,35 +4,35 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "before LOGICAL OR"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "test"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push-duplicate"
+          "action": "PushDuplicate"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_51",
         "false_target": "l0_39"
       }
@@ -41,23 +41,23 @@
       "label": "l0_39",
       "actions": [
         {
-          "action": "pop"
+          "action": "Pop"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "test2"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_51"
       }
     },
@@ -65,11 +65,11 @@
       "label": "l0_51",
       "actions": [
         {
-          "action": "push-duplicate"
+          "action": "PushDuplicate"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_69",
         "false_target": "l0_57"
       }
@@ -78,23 +78,23 @@
       "label": "l0_57",
       "actions": [
         {
-          "action": "pop"
+          "action": "Pop"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "test3"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_69"
       }
     },
@@ -102,11 +102,11 @@
       "label": "l0_69",
       "actions": [
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_96",
         "false_target": "l0_75"
       }
@@ -115,20 +115,20 @@
       "label": "l0_75",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "in if + or"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_114"
       }
     },
@@ -136,20 +136,20 @@
       "label": "l0_96",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "in else + or"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_114"
       }
     },
@@ -157,20 +157,20 @@
       "label": "l0_114",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "after LOGICAL OR"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

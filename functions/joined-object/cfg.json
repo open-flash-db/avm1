@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "B",
             "b1",
@@ -15,7 +15,7 @@
           ]
         },
         {
-          "action": "define-function",
+          "action": "DefineFunction",
           "name": "A",
           "parameters": [],
           "body": {
@@ -24,7 +24,7 @@
                 "label": "l1_30",
                 "actions": [
                   {
-                    "action": "define-function2",
+                    "action": "DefineFunction2",
                     "name": "B",
                     "register_count": 2,
                     "preload_this": false,
@@ -48,51 +48,51 @@
                           "label": "l2_45",
                           "actions": [
                             {
-                              "action": "push",
+                              "action": "Push",
                               "values": [
                                 {
-                                  "type": "register",
+                                  "type": "Register",
                                   "value": 1
                                 },
                                 {
-                                  "type": "register",
+                                  "type": "Register",
                                   "value": 1
                                 }
                               ]
                             },
                             {
-                              "action": "multiply"
+                              "action": "Multiply"
                             }
                           ],
                           "flow": {
-                            "type": "return"
+                            "type": "Return"
                           }
                         }
                       ]
                     }
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "get-variable"
+                    "action": "GetVariable"
                   }
                 ],
                 "flow": {
-                  "type": "return"
+                  "type": "Return"
                 }
               }
             ]
           }
         },
         {
-          "action": "define-function2",
+          "action": "DefineFunction2",
           "name": "b3",
           "register_count": 2,
           "preload_this": false,
@@ -116,31 +116,31 @@
                 "label": "l3_77",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "multiply"
+                    "action": "Multiply"
                   }
                 ],
                 "flow": {
-                  "type": "return"
+                  "type": "Return"
                 }
               }
             ]
           }
         },
         {
-          "action": "define-function2",
+          "action": "DefineFunction2",
           "name": "b4",
           "register_count": 2,
           "preload_this": false,
@@ -164,138 +164,138 @@
                 "label": "l4_102",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "multiply"
+                    "action": "Multiply"
                   }
                 ],
                 "flow": {
-                  "type": "return"
+                  "type": "Return"
                 }
               }
             ]
           }
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             },
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "define-local"
+          "action": "DefineLocal"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 3
             },
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "define-local"
+          "action": "DefineLocal"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 3
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "equals2"
+          "action": "Equals2"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 5
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "equals2"
+          "action": "Equals2"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

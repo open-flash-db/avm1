@@ -4,48 +4,48 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "before switch without break"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "discriminant"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "store-register",
+          "action": "StoreRegister",
           "register": 0
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             }
           ]
         },
         {
-          "action": "strict-equals"
+          "action": "StrictEquals"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_90",
         "false_target": "l0_69"
       }
@@ -54,24 +54,24 @@
       "label": "l0_69",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "register",
+              "type": "Register",
               "value": 0
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 2
             }
           ]
         },
         {
-          "action": "strict-equals"
+          "action": "StrictEquals"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_99",
         "false_target": "l0_85"
       }
@@ -80,7 +80,7 @@
       "label": "l0_85",
       "actions": [],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_108"
       }
     },
@@ -88,20 +88,20 @@
       "label": "l0_90",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "foo"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_99"
       }
     },
@@ -109,20 +109,20 @@
       "label": "l0_99",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "bar"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_108"
       }
     },
@@ -130,20 +130,20 @@
       "label": "l0_108",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "after switch without break"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

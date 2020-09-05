@@ -4,14 +4,14 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "dx",
             "dy"
           ]
         },
         {
-          "action": "define-function2",
+          "action": "DefineFunction2",
           "name": "deltaOfDir",
           "register_count": 2,
           "preload_this": false,
@@ -35,33 +35,33 @@
                 "label": "l1_35",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 0
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "strict-equals"
+                    "action": "StrictEquals"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_115",
                   "false_target": "l1_62"
                 }
@@ -70,24 +70,24 @@
                 "label": "l1_62",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 0
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "strict-equals"
+                    "action": "StrictEquals"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_146",
                   "false_target": "l1_78"
                 }
@@ -96,24 +96,24 @@
                 "label": "l1_78",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 0
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 2
                       }
                     ]
                   },
                   {
-                    "action": "strict-equals"
+                    "action": "StrictEquals"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_177",
                   "false_target": "l1_94"
                 }
@@ -122,24 +122,24 @@
                 "label": "l1_94",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 0
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 3
                       }
                     ]
                   },
                   {
-                    "action": "strict-equals"
+                    "action": "StrictEquals"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_208",
                   "false_target": "l1_110"
                 }
@@ -148,7 +148,7 @@
                 "label": "l1_110",
                 "actions": [],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": null
                 }
               },
@@ -156,40 +156,40 @@
                 "label": "l1_115",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 0
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "set-variable"
+                    "action": "SetVariable"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 1
                       },
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "set-variable"
+                    "action": "SetVariable"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": null
                 }
               },
@@ -197,40 +197,40 @@
                 "label": "l1_146",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 0
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": -1
                       }
                     ]
                   },
                   {
-                    "action": "set-variable"
+                    "action": "SetVariable"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 1
                       },
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "set-variable"
+                    "action": "SetVariable"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": null
                 }
               },
@@ -238,40 +238,40 @@
                 "label": "l1_177",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 0
                       },
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "set-variable"
+                    "action": "SetVariable"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 1
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "set-variable"
+                    "action": "SetVariable"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": null
                 }
               },
@@ -279,40 +279,40 @@
                 "label": "l1_208",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 0
                       },
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "set-variable"
+                    "action": "SetVariable"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 1
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": -1
                       }
                     ]
                   },
                   {
-                    "action": "set-variable"
+                    "action": "SetVariable"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": null
                 }
               }
@@ -321,7 +321,7 @@
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

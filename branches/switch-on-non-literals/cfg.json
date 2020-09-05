@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "before switch on non-literals",
             "discriminant",
@@ -18,63 +18,63 @@
           ]
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "store-register",
+          "action": "StoreRegister",
           "register": 0
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 3
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "strict-equals"
+          "action": "StrictEquals"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_205",
         "false_target": "l0_159"
       }
@@ -83,24 +83,24 @@
       "label": "l0_159",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "register",
+              "type": "Register",
               "value": 0
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 4
             }
           ]
         },
         {
-          "action": "strict-equals"
+          "action": "StrictEquals"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_211",
         "false_target": "l0_175"
       }
@@ -109,43 +109,43 @@
       "label": "l0_175",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "register",
+              "type": "Register",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 3
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "strict-equals"
+          "action": "StrictEquals"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_222",
         "false_target": "l0_200"
       }
@@ -154,7 +154,7 @@
       "label": "l0_200",
       "actions": [],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_233"
       }
     },
@@ -162,20 +162,20 @@
       "label": "l0_205",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_211"
       }
     },
@@ -183,20 +183,20 @@
       "label": "l0_211",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 5
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_239"
       }
     },
@@ -204,20 +204,20 @@
       "label": "l0_222",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 6
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_239"
       }
     },
@@ -225,20 +225,20 @@
       "label": "l0_233",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 7
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_239"
       }
     },
@@ -246,20 +246,20 @@
       "label": "l0_239",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 8
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

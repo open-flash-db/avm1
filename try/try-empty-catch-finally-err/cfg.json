@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "define-function",
+          "action": "DefineFunction",
           "name": "f",
           "parameters": [],
           "body": {
@@ -13,76 +13,76 @@
                 "label": "l1_9",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "string",
+                        "type": "String",
                         "value": "err"
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "string",
+                        "type": "String",
                         "value": "err-value"
                       }
                     ]
                   }
                 ],
                 "flow": {
-                  "type": "throw"
+                  "type": "Throw"
                 }
               }
             ]
           }
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "start"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "try",
+        "type": "Try",
         "try": {
           "blocks": [
             {
               "label": "l3_56",
               "actions": [
                 {
-                  "action": "push",
+                  "action": "Push",
                   "values": [
                     {
-                      "type": "sint32",
+                      "type": "Sint32",
                       "value": 0
                     },
                     {
-                      "type": "string",
+                      "type": "String",
                       "value": "f"
                     }
                   ]
                 },
                 {
-                  "action": "call-function"
+                  "action": "CallFunction"
                 },
                 {
-                  "action": "pop"
+                  "action": "Pop"
                 }
               ],
               "flow": {
-                "type": "simple",
+                "type": "Simple",
                 "next": "l2_69"
               }
             }
@@ -90,7 +90,7 @@
         },
         "catch": {
           "target": {
-            "type": "variable",
+            "type": "Variable",
             "target": "e"
           },
           "body": {
@@ -99,7 +99,7 @@
                 "label": "l4_69",
                 "actions": [],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l2_69"
                 }
               }
@@ -112,20 +112,20 @@
               "label": "l2_69",
               "actions": [
                 {
-                  "action": "push",
+                  "action": "Push",
                   "values": [
                     {
-                      "type": "string",
+                      "type": "String",
                       "value": "in-finally"
                     }
                   ]
                 },
                 {
-                  "action": "trace"
+                  "action": "Trace"
                 }
               ],
               "flow": {
-                "type": "simple",
+                "type": "Simple",
                 "next": "l0_85"
               }
             }
@@ -137,20 +137,20 @@
       "label": "l0_85",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "end"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "before nested if",
             "test",
@@ -13,35 +13,35 @@
           ]
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_92",
         "false_target": "l0_74"
       }
@@ -50,23 +50,23 @@
       "label": "l0_74",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_92",
         "false_target": "l0_86"
       }
@@ -75,20 +75,20 @@
       "label": "l0_86",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_92"
       }
     },
@@ -96,20 +96,20 @@
       "label": "l0_92",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 3
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

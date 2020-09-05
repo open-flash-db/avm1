@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "i",
             "decrement suffix",
@@ -14,48 +14,48 @@
           ]
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "define-local2"
+          "action": "DefineLocal2"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 5
             }
           ]
         },
         {
-          "action": "set-variable"
+          "action": "SetVariable"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_70"
       }
     },
@@ -63,57 +63,57 @@
       "label": "l0_70",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "decrement"
+          "action": "Decrement"
         },
         {
-          "action": "set-variable"
+          "action": "SetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             }
           ]
         },
         {
-          "action": "greater"
+          "action": "Greater"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_117",
         "false_target": "l0_105"
       }
@@ -122,23 +122,23 @@
       "label": "l0_105",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_70"
       }
     },
@@ -146,51 +146,51 @@
       "label": "l0_117",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 5
             }
           ]
         },
         {
-          "action": "set-variable"
+          "action": "SetVariable"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_141"
       }
     },
@@ -198,53 +198,53 @@
       "label": "l0_141",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "decrement"
+          "action": "Decrement"
         },
         {
-          "action": "store-register",
+          "action": "StoreRegister",
           "register": 0
         },
         {
-          "action": "set-variable"
+          "action": "SetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "register",
+              "type": "Register",
               "value": 0
             },
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             }
           ]
         },
         {
-          "action": "greater"
+          "action": "Greater"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_188",
         "false_target": "l0_176"
       }
@@ -253,23 +253,23 @@
       "label": "l0_176",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_141"
       }
     },
@@ -277,31 +277,31 @@
       "label": "l0_188",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 3
             }
           ]
         },
         {
-          "action": "define-function2",
+          "action": "DefineFunction2",
           "name": "",
           "register_count": 2,
           "preload_this": false,
@@ -320,51 +320,51 @@
                 "label": "l1_211",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "undefined"
+                        "type": "Undefined"
                       }
                     ]
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 1
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 5
                       }
                     ]
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 1
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_239"
                 }
               },
@@ -372,46 +372,46 @@
                 "label": "l1_239",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "decrement"
+                    "action": "Decrement"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 1
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "greater"
+                    "action": "Greater"
                   },
                   {
-                    "action": "not"
+                    "action": "Not"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_282",
                   "false_target": "l1_271"
                 }
@@ -420,20 +420,20 @@
                 "label": "l1_271",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_239"
                 }
               },
@@ -441,48 +441,48 @@
                 "label": "l1_282",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 2
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 5
                       }
                     ]
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 1
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_307"
                 }
               },
@@ -490,39 +490,39 @@
                 "label": "l1_307",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "decrement"
+                    "action": "Decrement"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 1
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "greater"
+                    "action": "Greater"
                   },
                   {
-                    "action": "not"
+                    "action": "Not"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_347",
                   "false_target": "l1_336"
                 }
@@ -531,20 +531,20 @@
                 "label": "l1_336",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_307"
                 }
               },
@@ -552,20 +552,20 @@
                 "label": "l1_347",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": null
                 }
               }
@@ -573,50 +573,50 @@
           }
         },
         {
-          "action": "define-local"
+          "action": "DefineLocal"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 5
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             }
           ]
         },
         {
-          "action": "init-object"
+          "action": "InitObject"
         },
         {
-          "action": "define-local"
+          "action": "DefineLocal"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_379"
       }
     },
@@ -624,93 +624,93 @@
       "label": "l0_379",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "decrement"
+          "action": "Decrement"
         },
         {
-          "action": "set-member"
+          "action": "SetMember"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             }
           ]
         },
         {
-          "action": "greater"
+          "action": "Greater"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_450",
         "false_target": "l0_432"
       }
@@ -719,35 +719,35 @@
       "label": "l0_432",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_379"
       }
     },
@@ -755,75 +755,75 @@
       "label": "l0_450",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 5
             }
           ]
         },
         {
-          "action": "set-member"
+          "action": "SetMember"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_486"
       }
     },
@@ -831,77 +831,77 @@
       "label": "l0_486",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "decrement"
+          "action": "Decrement"
         },
         {
-          "action": "store-register",
+          "action": "StoreRegister",
           "register": 0
         },
         {
-          "action": "set-member"
+          "action": "SetMember"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "register",
+              "type": "Register",
               "value": 0
             },
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             }
           ]
         },
         {
-          "action": "greater"
+          "action": "Greater"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_551",
         "false_target": "l0_533"
       }
@@ -910,35 +910,35 @@
       "label": "l0_533",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_486"
       }
     },
@@ -946,35 +946,35 @@
       "label": "l0_551",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

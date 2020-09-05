@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "map",
             "foo",
@@ -18,78 +18,78 @@
           ]
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 2
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 3
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 3
             },
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 3
             }
           ]
         },
         {
-          "action": "init-object"
+          "action": "InitObject"
         },
         {
-          "action": "define-local"
+          "action": "DefineLocal"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "enumerate2"
+          "action": "Enumerate2"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_184"
       }
     },
@@ -97,23 +97,23 @@
       "label": "l0_184",
       "actions": [
         {
-          "action": "store-register",
+          "action": "StoreRegister",
           "register": 0
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "null"
+              "type": "Null"
             }
           ]
         },
         {
-          "action": "equals2"
+          "action": "Equals2"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_257",
         "false_target": "l0_198"
       }
@@ -122,63 +122,63 @@
       "label": "l0_198",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 5
             },
             {
-              "type": "register",
+              "type": "Register",
               "value": 0
             }
           ]
         },
         {
-          "action": "set-variable"
+          "action": "SetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 6
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 5
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "strict-equals"
+          "action": "StrictEquals"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_235",
         "false_target": "l0_230"
       }
@@ -187,7 +187,7 @@
       "label": "l0_230",
       "actions": [],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_246"
       }
     },
@@ -195,20 +195,20 @@
       "label": "l0_235",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 7
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_184"
       }
     },
@@ -216,22 +216,22 @@
       "label": "l0_246",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "null"
+              "type": "Null"
             }
           ]
         },
         {
-          "action": "equals2"
+          "action": "Equals2"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_246",
         "false_target": "l0_257"
       }
@@ -240,20 +240,20 @@
       "label": "l0_257",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 8
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

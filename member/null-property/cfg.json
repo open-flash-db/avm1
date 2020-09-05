@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "start",
             "bar",
@@ -13,143 +13,143 @@
           ]
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "null"
+              "type": "Null"
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "null"
+              "type": "Null"
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "type-of"
+          "action": "TypeOf"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             },
             {
-              "type": "null"
+              "type": "Null"
             }
           ]
         },
         {
-          "action": "define-local"
+          "action": "DefineLocal"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "action": "get-variable"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "action": "get-member"
-        },
-        {
-          "action": "trace"
-        },
-        {
-          "action": "push",
-          "values": [
-            {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "get-member"
+          "action": "GetMember"
         },
         {
-          "action": "type-of"
+          "action": "Trace"
         },
         {
-          "action": "trace"
-        },
-        {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetMember"
+        },
+        {
+          "action": "TypeOf"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
               "value": 3
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

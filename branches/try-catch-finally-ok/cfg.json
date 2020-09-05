@@ -4,40 +4,40 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "before try/catch/finally"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "try",
+        "type": "Try",
         "try": {
           "blocks": [
             {
               "label": "l2_44",
               "actions": [
                 {
-                  "action": "push",
+                  "action": "Push",
                   "values": [
                     {
-                      "type": "string",
+                      "type": "String",
                       "value": "in try"
                     }
                   ]
                 },
                 {
-                  "action": "trace"
+                  "action": "Trace"
                 }
               ],
               "flow": {
-                "type": "simple",
+                "type": "Simple",
                 "next": "l1_75"
               }
             }
@@ -45,7 +45,7 @@
         },
         "catch": {
           "target": {
-            "type": "variable",
+            "type": "Variable",
             "target": "err"
           },
           "body": {
@@ -54,20 +54,20 @@
                 "label": "l3_61",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "string",
+                        "type": "String",
                         "value": "in catch"
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_75"
                 }
               }
@@ -80,20 +80,20 @@
               "label": "l1_75",
               "actions": [
                 {
-                  "action": "push",
+                  "action": "Push",
                   "values": [
                     {
-                      "type": "string",
+                      "type": "String",
                       "value": "in finally"
                     }
                   ]
                 },
                 {
-                  "action": "trace"
+                  "action": "Trace"
                 }
               ],
               "flow": {
-                "type": "simple",
+                "type": "Simple",
                 "next": "l0_91"
               }
             }
@@ -105,20 +105,20 @@
       "label": "l0_91",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "after try/catch/finally"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

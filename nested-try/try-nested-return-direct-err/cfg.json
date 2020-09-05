@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "start",
             "ok",
@@ -14,7 +14,7 @@
           ]
         },
         {
-          "action": "define-function",
+          "action": "DefineFunction",
           "name": "main",
           "parameters": [],
           "body": {
@@ -23,44 +23,44 @@
                 "label": "l1_45",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   }
                 ],
                 "flow": {
-                  "type": "try",
+                  "type": "Try",
                   "try": {
                     "blocks": [
                       {
                         "label": "l2_63",
                         "actions": [],
                         "flow": {
-                          "type": "try",
+                          "type": "Try",
                           "try": {
                             "blocks": [
                               {
                                 "label": "l4_74",
                                 "actions": [
                                   {
-                                    "action": "push",
+                                    "action": "Push",
                                     "values": [
                                       {
-                                        "type": "constant",
+                                        "type": "Constant",
                                         "value": 1
                                       }
                                     ]
                                   }
                                 ],
                                 "flow": {
-                                  "type": "return"
+                                  "type": "Return"
                                 }
                               }
                             ]
@@ -71,17 +71,17 @@
                                 "label": "l3_80",
                                 "actions": [
                                   {
-                                    "action": "push",
+                                    "action": "Push",
                                     "values": [
                                       {
-                                        "type": "constant",
+                                        "type": "Constant",
                                         "value": 2
                                       }
                                     ]
                                   }
                                 ],
                                 "flow": {
-                                  "type": "throw"
+                                  "type": "Throw"
                                 }
                               }
                             ]
@@ -92,7 +92,7 @@
                   },
                   "catch": {
                     "target": {
-                      "type": "variable",
+                      "type": "Variable",
                       "target": "e"
                     },
                     "body": {
@@ -101,7 +101,7 @@
                           "label": "l5_91",
                           "actions": [],
                           "flow": {
-                            "type": "simple",
+                            "type": "Simple",
                             "next": "l1_91"
                           }
                         }
@@ -114,56 +114,56 @@
                 "label": "l1_91",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 3
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 3
                       }
                     ]
                   }
                 ],
                 "flow": {
-                  "type": "return"
+                  "type": "Return"
                 }
               }
             ]
           }
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 4
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

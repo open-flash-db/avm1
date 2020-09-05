@@ -4,36 +4,36 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "before nested conditionnal expression"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "foo"
             },
             {
-              "type": "string",
+              "type": "String",
               "value": "test"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_105",
         "false_target": "l0_63"
       }
@@ -42,20 +42,20 @@
       "label": "l0_63",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "test2"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_92",
         "false_target": "l0_79"
       }
@@ -64,17 +64,17 @@
       "label": "l0_79",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "fuz"
             }
           ]
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_100"
       }
     },
@@ -82,17 +82,17 @@
       "label": "l0_92",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "baz"
             }
           ]
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_100"
       }
     },
@@ -100,7 +100,7 @@
       "label": "l0_100",
       "actions": [],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_113"
       }
     },
@@ -108,17 +108,17 @@
       "label": "l0_105",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "bar"
             }
           ]
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_113"
       }
     },
@@ -126,23 +126,23 @@
       "label": "l0_113",
       "actions": [
         {
-          "action": "define-local"
+          "action": "DefineLocal"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "after nested conditionnal expression"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

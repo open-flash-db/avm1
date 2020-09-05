@@ -4,38 +4,38 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "before LOGICAL AND"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "test"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push-duplicate"
+          "action": "PushDuplicate"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_53",
         "false_target": "l0_41"
       }
@@ -44,23 +44,23 @@
       "label": "l0_41",
       "actions": [
         {
-          "action": "pop"
+          "action": "Pop"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "test2"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_53"
       }
     },
@@ -68,14 +68,14 @@
       "label": "l0_53",
       "actions": [
         {
-          "action": "push-duplicate"
+          "action": "PushDuplicate"
         },
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_72",
         "false_target": "l0_60"
       }
@@ -84,23 +84,23 @@
       "label": "l0_60",
       "actions": [
         {
-          "action": "pop"
+          "action": "Pop"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "test3"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_72"
       }
     },
@@ -108,11 +108,11 @@
       "label": "l0_72",
       "actions": [
         {
-          "action": "not"
+          "action": "Not"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_100",
         "false_target": "l0_78"
       }
@@ -121,20 +121,20 @@
       "label": "l0_78",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "in if + and"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_119"
       }
     },
@@ -142,20 +142,20 @@
       "label": "l0_100",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "in else + and"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_119"
       }
     },
@@ -163,20 +163,20 @@
       "label": "l0_119",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "after LOGICAL AND"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

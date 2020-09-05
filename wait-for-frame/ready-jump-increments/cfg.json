@@ -4,138 +4,138 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "start"
             }
           ]
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             },
             {
-              "type": "string",
+              "type": "String",
               "value": "print"
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "pop"
+          "action": "Pop"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "_currentframe"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             },
             {
-              "type": "string",
+              "type": "String",
               "value": "print"
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "pop"
+          "action": "Pop"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "_framesloaded"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             },
             {
-              "type": "string",
+              "type": "String",
               "value": "print"
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "pop"
+          "action": "Pop"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "_totalframes"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             },
             {
-              "type": "string",
+              "type": "String",
               "value": "print"
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "pop"
+          "action": "Pop"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 0
             }
           ]
         }
       ],
       "flow": {
-        "type": "wait-for-frame",
+        "type": "WaitForFrame",
         "frame": 2,
         "ready_target": "l0_148",
         "loading_target": "l0_157"
@@ -145,7 +145,7 @@
       "label": "l0_148",
       "actions": [],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_155"
       }
     },
@@ -153,14 +153,14 @@
       "label": "l0_155",
       "actions": [
         {
-          "action": "increment"
+          "action": "Increment"
         },
         {
-          "action": "increment"
+          "action": "Increment"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_157"
       }
     },
@@ -168,73 +168,73 @@
       "label": "l0_157",
       "actions": [
         {
-          "action": "increment"
+          "action": "Increment"
         },
         {
-          "action": "increment"
+          "action": "Increment"
         },
         {
-          "action": "increment"
+          "action": "Increment"
         },
         {
-          "action": "increment"
+          "action": "Increment"
         },
         {
-          "action": "increment"
+          "action": "Increment"
         },
         {
-          "action": "increment"
+          "action": "Increment"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             },
             {
-              "type": "string",
+              "type": "String",
               "value": "print"
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "pop"
+          "action": "Pop"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "end"
             }
           ]
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "sint32",
+              "type": "Sint32",
               "value": 1
             },
             {
-              "type": "string",
+              "type": "String",
               "value": "print"
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "pop"
+          "action": "Pop"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

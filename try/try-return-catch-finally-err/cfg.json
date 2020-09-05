@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "define-function",
+          "action": "DefineFunction",
           "name": "f",
           "parameters": [],
           "body": {
@@ -13,24 +13,24 @@
                 "label": "l1_9",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "string",
+                        "type": "String",
                         "value": "err-value"
                       }
                     ]
                   }
                 ],
                 "flow": {
-                  "type": "throw"
+                  "type": "Throw"
                 }
               }
             ]
           }
         },
         {
-          "action": "define-function",
+          "action": "DefineFunction",
           "name": "main",
           "parameters": [],
           "body": {
@@ -39,75 +39,75 @@
                 "label": "l2_36",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "string",
+                        "type": "String",
                         "value": "start"
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   }
                 ],
                 "flow": {
-                  "type": "try",
+                  "type": "Try",
                   "try": {
                     "blocks": [
                       {
                         "label": "l4_59",
                         "actions": [
                           {
-                            "action": "push",
+                            "action": "Push",
                             "values": [
                               {
-                                "type": "float64",
+                                "type": "Float64",
                                 "value": 0
                               },
                               {
-                                "type": "string",
+                                "type": "String",
                                 "value": "f"
                               }
                             ]
                           },
                           {
-                            "action": "call-function"
+                            "action": "CallFunction"
                           },
                           {
-                            "action": "pop"
+                            "action": "Pop"
                           },
                           {
-                            "action": "push",
+                            "action": "Push",
                             "values": [
                               {
-                                "type": "string",
+                                "type": "String",
                                 "value": "in-try"
                               }
                             ]
                           },
                           {
-                            "action": "trace"
+                            "action": "Trace"
                           },
                           {
-                            "action": "push",
+                            "action": "Push",
                             "values": [
                               {
-                                "type": "string",
+                                "type": "String",
                                 "value": "tres"
                               }
                             ]
                           }
                         ],
                         "flow": {
-                          "type": "return"
+                          "type": "Return"
                         }
                       }
                     ]
                   },
                   "catch": {
                     "target": {
-                      "type": "variable",
+                      "type": "Variable",
                       "target": "e"
                     },
                     "body": {
@@ -116,29 +116,29 @@
                           "label": "l5_103",
                           "actions": [
                             {
-                              "action": "push",
+                              "action": "Push",
                               "values": [
                                 {
-                                  "type": "string",
+                                  "type": "String",
                                   "value": "in-catch"
                                 }
                               ]
                             },
                             {
-                              "action": "trace"
+                              "action": "Trace"
                             },
                             {
-                              "action": "push",
+                              "action": "Push",
                               "values": [
                                 {
-                                  "type": "string",
+                                  "type": "String",
                                   "value": "cres"
                                 }
                               ]
                             }
                           ],
                           "flow": {
-                            "type": "return"
+                            "type": "Return"
                           }
                         }
                       ]
@@ -150,29 +150,29 @@
                         "label": "l3_127",
                         "actions": [
                           {
-                            "action": "push",
+                            "action": "Push",
                             "values": [
                               {
-                                "type": "string",
+                                "type": "String",
                                 "value": "in-finally"
                               }
                             ]
                           },
                           {
-                            "action": "trace"
+                            "action": "Trace"
                           },
                           {
-                            "action": "push",
+                            "action": "Push",
                             "values": [
                               {
-                                "type": "string",
+                                "type": "String",
                                 "value": "fres"
                               }
                             ]
                           }
                         ],
                         "flow": {
-                          "type": "return"
+                          "type": "Return"
                         }
                       }
                     ]
@@ -183,27 +183,27 @@
           }
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             },
             {
-              "type": "string",
+              "type": "String",
               "value": "main"
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

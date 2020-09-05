@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [],
       "flow": {
-        "type": "wait-for-frame",
+        "type": "WaitForFrame",
         "frame": 92,
         "ready_target": "l0_6",
         "loading_target": "l0_16"
@@ -14,15 +14,15 @@
       "label": "l0_6",
       "actions": [
         {
-          "action": "goto-label",
+          "action": "GotoLabel",
           "label": "start"
         },
         {
-          "action": "play"
+          "action": "Play"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_16"
       }
     },
@@ -30,7 +30,7 @@
       "label": "l0_16",
       "actions": [],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

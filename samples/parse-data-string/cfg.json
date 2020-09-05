@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "before parseDataString",
             "lproto",
@@ -42,40 +42,40 @@
           ]
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 0
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 1
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 2
             }
           ]
         },
         {
-          "action": "define-function2",
+          "action": "DefineFunction2",
           "name": "",
           "register_count": 10,
           "preload_this": true,
@@ -99,26 +99,26 @@
                 "label": "l1_285",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 2
                       },
                       {
-                        "type": "null"
+                        "type": "Null"
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   },
                   {
-                    "action": "not"
+                    "action": "Not"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_335",
                   "false_target": "l1_298"
                 }
@@ -127,80 +127,80 @@
                 "label": "l1_298",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 64
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 3
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 4
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "undefined"
+                        "type": "Undefined"
                       }
                     ]
                   }
                 ],
                 "flow": {
-                  "type": "return"
+                  "type": "Return"
                 }
               },
               {
                 "label": "l1_335",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "boolean",
+                        "type": "Boolean",
                         "value": false
                       }
                     ]
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_498",
                   "false_target": "l1_345"
                 }
@@ -209,82 +209,82 @@
                 "label": "l1_345",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 2
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 5
                       }
                     ]
                   },
                   {
-                    "action": "get-member"
+                    "action": "GetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "subtract"
+                    "action": "Subtract"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 2
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 6
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 3
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 3
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 7
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   },
                   {
-                    "action": "push-duplicate"
+                    "action": "PushDuplicate"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_403",
                   "false_target": "l1_394"
                 }
@@ -293,27 +293,27 @@
                 "label": "l1_394",
                 "actions": [
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 3
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 8
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_403"
                 }
               },
@@ -321,11 +321,11 @@
                 "label": "l1_403",
                 "actions": [
                   {
-                    "action": "push-duplicate"
+                    "action": "PushDuplicate"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_418",
                   "false_target": "l1_409"
                 }
@@ -334,27 +334,27 @@
                 "label": "l1_409",
                 "actions": [
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 3
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 9
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_418"
                 }
               },
@@ -362,11 +362,11 @@
                 "label": "l1_418",
                 "actions": [
                   {
-                    "action": "push-duplicate"
+                    "action": "PushDuplicate"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_433",
                   "false_target": "l1_424"
                 }
@@ -375,27 +375,27 @@
                 "label": "l1_424",
                 "actions": [
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 3
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 10
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_433"
                 }
               },
@@ -403,11 +403,11 @@
                 "label": "l1_433",
                 "actions": [
                   {
-                    "action": "not"
+                    "action": "Not"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_488",
                   "false_target": "l1_439"
                 }
@@ -416,67 +416,67 @@
                 "label": "l1_439",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 2
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 5
                       }
                     ]
                   },
                   {
-                    "action": "get-member"
+                    "action": "GetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "subtract"
+                    "action": "Subtract"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 2
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 2
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 11
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 2
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_335"
                 }
               },
@@ -484,7 +484,7 @@
                 "label": "l1_488",
                 "actions": [],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_498"
                 }
               },
@@ -492,17 +492,17 @@
                 "label": "l1_498",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "boolean",
+                        "type": "Boolean",
                         "value": false
                       }
                     ]
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_632",
                   "false_target": "l1_508"
                 }
@@ -511,58 +511,58 @@
                 "label": "l1_508",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 2
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 6
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 4
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 4
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 7
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   },
                   {
-                    "action": "push-duplicate"
+                    "action": "PushDuplicate"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_558",
                   "false_target": "l1_549"
                 }
@@ -571,27 +571,27 @@
                 "label": "l1_549",
                 "actions": [
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 4
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 8
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_558"
                 }
               },
@@ -599,11 +599,11 @@
                 "label": "l1_558",
                 "actions": [
                   {
-                    "action": "push-duplicate"
+                    "action": "PushDuplicate"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_573",
                   "false_target": "l1_564"
                 }
@@ -612,27 +612,27 @@
                 "label": "l1_564",
                 "actions": [
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 4
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 9
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_573"
                 }
               },
@@ -640,11 +640,11 @@
                 "label": "l1_573",
                 "actions": [
                   {
-                    "action": "push-duplicate"
+                    "action": "PushDuplicate"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_588",
                   "false_target": "l1_579"
                 }
@@ -653,27 +653,27 @@
                 "label": "l1_579",
                 "actions": [
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 4
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 10
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_588"
                 }
               },
@@ -681,11 +681,11 @@
                 "label": "l1_588",
                 "actions": [
                   {
-                    "action": "not"
+                    "action": "Not"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_622",
                   "false_target": "l1_594"
                 }
@@ -694,39 +694,39 @@
                 "label": "l1_594",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 2
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 12
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 2
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_498"
                 }
               },
@@ -734,7 +734,7 @@
                 "label": "l1_622",
                 "actions": [],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_632"
                 }
               },
@@ -742,101 +742,101 @@
                 "label": "l1_632",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 13
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 2
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 14
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 8
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 15
                       }
                     ]
                   },
                   {
-                    "action": "new-object"
+                    "action": "NewObject"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 9
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 5
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 8
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 5
                       }
                     ]
                   },
                   {
-                    "action": "get-member"
+                    "action": "GetMember"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 7
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_702"
                 }
               },
@@ -844,27 +844,27 @@
                 "label": "l1_702",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 5
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 7
                       }
                     ]
                   },
                   {
-                    "action": "less2"
+                    "action": "Less2"
                   },
                   {
-                    "action": "not"
+                    "action": "Not"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_824",
                   "false_target": "l1_716"
                 }
@@ -873,82 +873,82 @@
                 "label": "l1_716",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 16
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 8
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 5
                       }
                     ]
                   },
                   {
-                    "action": "get-member"
+                    "action": "GetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 14
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 6
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 6
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 5
                       }
                     ]
                   },
                   {
-                    "action": "get-member"
+                    "action": "GetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 2
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   },
                   {
-                    "action": "not"
+                    "action": "Not"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_808",
                   "false_target": "l1_765"
                 }
@@ -957,70 +957,70 @@
                 "label": "l1_765",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 6
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       }
                     ]
                   },
                   {
-                    "action": "get-member"
+                    "action": "GetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 17
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 6
                       },
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "get-member"
+                    "action": "GetMember"
                   },
                   {
-                    "action": "add2"
+                    "action": "Add2"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 2
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 9
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 18
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_808"
                 }
               },
@@ -1028,27 +1028,27 @@
                 "label": "l1_808",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 5
                       }
                     ]
                   },
                   {
-                    "action": "increment"
+                    "action": "Increment"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 5
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_702"
                 }
               },
@@ -1056,215 +1056,215 @@
                 "label": "l1_824",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 19
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 20
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 21
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 9
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 22
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 0
                   },
                   {
-                    "action": "set-member"
+                    "action": "SetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "set-member"
+                    "action": "SetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 23
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 24
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 25
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 9
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 22
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 0
                   },
                   {
-                    "action": "set-member"
+                    "action": "SetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "set-member"
+                    "action": "SetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 26
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 27
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 28
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 9
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 22
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "store-register",
+                    "action": "StoreRegister",
                     "register": 0
                   },
                   {
-                    "action": "set-member"
+                    "action": "SetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "set-member"
+                    "action": "SetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 19
                       }
                     ]
                   },
                   {
-                    "action": "get-member"
+                    "action": "GetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "null"
+                        "type": "Null"
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   },
                   {
-                    "action": "push-duplicate"
+                    "action": "PushDuplicate"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_959",
                   "false_target": "l1_945"
                 }
@@ -1273,38 +1273,38 @@
                 "label": "l1_945",
                 "actions": [
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 23
                       }
                     ]
                   },
                   {
-                    "action": "get-member"
+                    "action": "GetMember"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "null"
+                        "type": "Null"
                       }
                     ]
                   },
                   {
-                    "action": "equals2"
+                    "action": "Equals2"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": "l1_959"
                 }
               },
@@ -1312,11 +1312,11 @@
                 "label": "l1_959",
                 "actions": [
                   {
-                    "action": "not"
+                    "action": "Not"
                   }
                 ],
                 "flow": {
-                  "type": "if",
+                  "type": "If",
                   "true_target": "l1_999",
                   "false_target": "l1_965"
                 }
@@ -1325,94 +1325,94 @@
                 "label": "l1_965",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 29
                       },
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 9
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 22
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "sint32",
+                        "type": "Sint32",
                         "value": 1
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 30
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "undefined"
+                        "type": "Undefined"
                       }
                     ]
                   }
                 ],
                 "flow": {
-                  "type": "return"
+                  "type": "Return"
                 }
               },
               {
                 "label": "l1_999",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "float64",
+                        "type": "Float64",
                         "value": 0
                       },
                       {
-                        "type": "register",
+                        "type": "Register",
                         "value": 1
                       },
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 31
                       }
                     ]
                   },
                   {
-                    "action": "call-method"
+                    "action": "CallMethod"
                   },
                   {
-                    "action": "pop"
+                    "action": "Pop"
                   }
                 ],
                 "flow": {
-                  "type": "simple",
+                  "type": "Simple",
                   "next": null
                 }
               }
@@ -1420,23 +1420,23 @@
           }
         },
         {
-          "action": "set-member"
+          "action": "SetMember"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 32
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

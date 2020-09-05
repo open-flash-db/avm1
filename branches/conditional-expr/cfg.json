@@ -4,36 +4,36 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "before conditionnal expression"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "foo"
             },
             {
-              "type": "string",
+              "type": "String",
               "value": "test"
             }
           ]
         },
         {
-          "action": "get-variable"
+          "action": "GetVariable"
         }
       ],
       "flow": {
-        "type": "if",
+        "type": "If",
         "true_target": "l0_69",
         "false_target": "l0_56"
       }
@@ -42,17 +42,17 @@
       "label": "l0_56",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "baz"
             }
           ]
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_77"
       }
     },
@@ -60,17 +60,17 @@
       "label": "l0_69",
       "actions": [
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "bar"
             }
           ]
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": "l0_77"
       }
     },
@@ -78,23 +78,23 @@
       "label": "l0_77",
       "actions": [
         {
-          "action": "define-local"
+          "action": "DefineLocal"
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "string",
+              "type": "String",
               "value": "after conditionnal expression"
             }
           ]
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }

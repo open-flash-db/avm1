@@ -4,7 +4,7 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "constant-pool",
+          "action": "ConstantPool",
           "pool": [
             "start",
             "try",
@@ -21,7 +21,7 @@
           ]
         },
         {
-          "action": "define-function",
+          "action": "DefineFunction",
           "name": "main",
           "parameters": [],
           "body": {
@@ -30,69 +30,69 @@
                 "label": "l1_119",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 0
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   }
                 ],
                 "flow": {
-                  "type": "try",
+                  "type": "Try",
                   "try": {
                     "blocks": [
                       {
                         "label": "l3_137",
                         "actions": [
                           {
-                            "action": "push",
+                            "action": "Push",
                             "values": [
                               {
-                                "type": "constant",
+                                "type": "Constant",
                                 "value": 1
                               }
                             ]
                           },
                           {
-                            "action": "trace"
+                            "action": "Trace"
                           }
                         ],
                         "flow": {
-                          "type": "try",
+                          "type": "Try",
                           "try": {
                             "blocks": [
                               {
                                 "label": "l7_154",
                                 "actions": [
                                   {
-                                    "action": "push",
+                                    "action": "Push",
                                     "values": [
                                       {
-                                        "type": "constant",
+                                        "type": "Constant",
                                         "value": 2
                                       }
                                     ]
                                   },
                                   {
-                                    "action": "trace"
+                                    "action": "Trace"
                                   },
                                   {
-                                    "action": "push",
+                                    "action": "Push",
                                     "values": [
                                       {
-                                        "type": "constant",
+                                        "type": "Constant",
                                         "value": 3
                                       }
                                     ]
                                   }
                                 ],
                                 "flow": {
-                                  "type": "return"
+                                  "type": "Return"
                                 }
                               }
                             ]
@@ -103,49 +103,49 @@
                                 "label": "l4_166",
                                 "actions": [
                                   {
-                                    "action": "push",
+                                    "action": "Push",
                                     "values": [
                                       {
-                                        "type": "constant",
+                                        "type": "Constant",
                                         "value": 4
                                       }
                                     ]
                                   },
                                   {
-                                    "action": "trace"
+                                    "action": "Trace"
                                   }
                                 ],
                                 "flow": {
-                                  "type": "try",
+                                  "type": "Try",
                                   "try": {
                                     "blocks": [
                                       {
                                         "label": "l6_183",
                                         "actions": [
                                           {
-                                            "action": "push",
+                                            "action": "Push",
                                             "values": [
                                               {
-                                                "type": "constant",
+                                                "type": "Constant",
                                                 "value": 5
                                               }
                                             ]
                                           },
                                           {
-                                            "action": "trace"
+                                            "action": "Trace"
                                           },
                                           {
-                                            "action": "push",
+                                            "action": "Push",
                                             "values": [
                                               {
-                                                "type": "constant",
+                                                "type": "Constant",
                                                 "value": 6
                                               }
                                             ]
                                           }
                                         ],
                                         "flow": {
-                                          "type": "throw"
+                                          "type": "Throw"
                                         }
                                       }
                                     ]
@@ -156,20 +156,20 @@
                                         "label": "l5_195",
                                         "actions": [
                                           {
-                                            "action": "push",
+                                            "action": "Push",
                                             "values": [
                                               {
-                                                "type": "constant",
+                                                "type": "Constant",
                                                 "value": 7
                                               }
                                             ]
                                           },
                                           {
-                                            "action": "trace"
+                                            "action": "Trace"
                                           }
                                         ],
                                         "flow": {
-                                          "type": "simple",
+                                          "type": "Simple",
                                           "next": "l3_201"
                                         }
                                       }
@@ -185,7 +185,7 @@
                         "label": "l3_201",
                         "actions": [],
                         "flow": {
-                          "type": "simple",
+                          "type": "Simple",
                           "next": "l2_212"
                         }
                       }
@@ -193,7 +193,7 @@
                   },
                   "catch": {
                     "target": {
-                      "type": "variable",
+                      "type": "Variable",
                       "target": "e"
                     },
                     "body": {
@@ -202,20 +202,20 @@
                           "label": "l8_206",
                           "actions": [
                             {
-                              "action": "push",
+                              "action": "Push",
                               "values": [
                                 {
-                                  "type": "constant",
+                                  "type": "Constant",
                                   "value": 8
                                 }
                               ]
                             },
                             {
-                              "action": "trace"
+                              "action": "Trace"
                             }
                           ],
                           "flow": {
-                            "type": "simple",
+                            "type": "Simple",
                             "next": "l2_212"
                           }
                         }
@@ -228,20 +228,20 @@
                         "label": "l2_212",
                         "actions": [
                           {
-                            "action": "push",
+                            "action": "Push",
                             "values": [
                               {
-                                "type": "constant",
+                                "type": "Constant",
                                 "value": 9
                               }
                             ]
                           },
                           {
-                            "action": "trace"
+                            "action": "Trace"
                           }
                         ],
                         "flow": {
-                          "type": "simple",
+                          "type": "Simple",
                           "next": "l1_218"
                         }
                       }
@@ -253,56 +253,56 @@
                 "label": "l1_218",
                 "actions": [
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 10
                       }
                     ]
                   },
                   {
-                    "action": "trace"
+                    "action": "Trace"
                   },
                   {
-                    "action": "push",
+                    "action": "Push",
                     "values": [
                       {
-                        "type": "constant",
+                        "type": "Constant",
                         "value": 10
                       }
                     ]
                   }
                 ],
                 "flow": {
-                  "type": "return"
+                  "type": "Return"
                 }
               }
             ]
           }
         },
         {
-          "action": "push",
+          "action": "Push",
           "values": [
             {
-              "type": "float64",
+              "type": "Float64",
               "value": 0
             },
             {
-              "type": "constant",
+              "type": "Constant",
               "value": 11
             }
           ]
         },
         {
-          "action": "call-function"
+          "action": "CallFunction"
         },
         {
-          "action": "trace"
+          "action": "Trace"
         }
       ],
       "flow": {
-        "type": "simple",
+        "type": "Simple",
         "next": null
       }
     }
