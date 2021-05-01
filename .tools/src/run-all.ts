@@ -3,13 +3,12 @@ import fs from "fs";
 import os from "os";
 import sysPath from "path";
 import rimraf from "rimraf";
-import meta from "./meta";
+import { PROJECT_ROOT } from "./locations.js";
 
 const FLASHPLAYER_PATH = "flashplayerdebugger";
 const FLASHLOG_PATH = sysPath.resolve(os.homedir(), ".macromedia/Flash_Player/Logs/flashlog.txt");
-const PROJECT_ROOT = sysPath.resolve(meta.dirname, "..");
 
-async function main() {
+export async function main() {
   await run("db/add");
   await run("db/constant-on-stack-definition");
   await run("db/constant-on-stack-redefinition");
@@ -44,7 +43,7 @@ export async function runSwf(absPath: string): Promise<Buffer> {
       FLASHPLAYER_PATH,
       [absPath],
       {cwd: PROJECT_ROOT, timeout: 20000},
-      (internalErr: Error | null, stdout: string | Buffer, stderr: string | Buffer): void => {
+      (internalErr: Error | null, _stdout: string | Buffer, _stderr: string | Buffer): void => {
         const err: ExecFileError | null = internalErr as any;
         if (err === null || err.code === 1) {
           resolve(readFlashLog());
@@ -78,8 +77,4 @@ async function readFlashLog(): Promise<Buffer> {
 
 async function writeFile(absPath: string, data: Buffer): Promise<void> {
   return fs.promises.writeFile(absPath, data);
-}
-
-if (require.main === module) {
-  main();
 }

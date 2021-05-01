@@ -58,7 +58,7 @@ async function* throttle(movieBytes: Buffer): AsyncIterableIterator<Buffer> {
 }
 
 async function wait(delayMs: number): Promise<void> {
-  return new Promise<void>((resolve, reject): void => {
+  return new Promise<void>((resolve, _reject): void => {
     setTimeout(resolve, delayMs);
   });
 }

@@ -1,7 +1,26 @@
 .idea/
-node_modules/
 .tools/template/**/*.cache
 **/SymDepend.cache
 local/
 local-*
 !.log
+/.tools/build/
+
+*.tsbuildinfo
+/avm1-bytes/*/src/*.d.ts
+/avm1-bytes/*/src/*.js
+/avm1-bytes/*/src/*.js.map
+
+###############################################################################
+# Dependencies                                                                #
+###############################################################################
+# Node dependencies directory
+node_modules/
+# Yarn without Zero-Installs
+# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

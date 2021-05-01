@@ -1,6 +1,7 @@
 import { fromPosixPath as furiFromPosixPath } from "furi";
 import sysPath from "path";
-import { PROJECT_ROOT } from "./locations";
+
+import { PROJECT_ROOT } from "./locations.js";
 
 export function emitJsfl(scripts: Iterable<[string, string]>): string {
   const data: Record<string, string> = Object.create(null);

@@ -12,5 +12,5 @@ export async function outputFile(path: string, data: Uint8Array): Promise<void> 
 }
 
 async function ensureDir(path: fs.PathLike): Promise<void> {
-  return fs.promises.mkdir(path, {recursive: true});
+  await fs.promises.mkdir(path, {recursive: true});
 }

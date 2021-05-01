@@ -1,6 +1,6 @@
 import fs from "fs";
 import { parseSwf } from "swf-parser";
-import { TagType } from "swf-types/tags/_type";
+import { TagType } from "swf-types/lib/tags/_type.js";
 
 export async function extractAvm1(absPath: string): Promise<Buffer> {
   const swfBytes = await readFile(absPath);

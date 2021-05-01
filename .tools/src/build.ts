@@ -1,25 +1,22 @@
-import { toAasm } from "avm1-asm/to-aasm";
+import { toAasm } from "avm1-asm/to-aasm.js";
 import { parseCfg } from "avm1-parser";
-import { $Cfg, Cfg } from "avm1-types/cfg/cfg";
+import { $Cfg, Cfg } from "avm1-types/lib/cfg/cfg.js";
 import fs from "fs";
 import { Incident } from "incident";
-import { JsonValueWriter } from "kryo/writers/json-value";
+import { JSON_VALUE_WRITER } from "kryo-json/lib/json-value-writer.js";
 import sysPath from "path";
 import rimraf from "rimraf";
-import { avm1BytesToSwf, getAvm1Bytes } from "./build-avm1-bytes";
-import { buildSwf } from "./build-swf-flash-pro";
-import { buildSwf as buildSwfWithHaxe } from "./build-swf-haxe";
-import { bytesFromSource } from "./bytes-from-source";
-import { extractAvm1 } from "./extract-avm1";
-import { outputFile } from "./helpers";
-import { DB_DIR } from "./locations";
-import meta from "./meta";
-import { runSwf } from "./run-all";
-import { readFile, readTextFile, writeTextFile } from "./utils";
 
-const JSON_VALUE_WRITER: JsonValueWriter = new JsonValueWriter();
+import { avm1BytesToSwf, getAvm1Bytes } from "./build-avm1-bytes.js";
+import { buildSwf } from "./build-swf-flash-pro.js";
+import { buildSwf as buildSwfWithHaxe } from "./build-swf-haxe.js";
+import { bytesFromSource } from "./bytes-from-source.js";
+import { extractAvm1 } from "./extract-avm1.js";
+import { outputFile } from "./helpers.js";
+import { DB_DIR, PROJECT_ROOT } from "./locations.js";
+import { runSwf } from "./run-all.js";
+import { readFile, readTextFile, writeTextFile } from "./utils.js";
 
-const PROJECT_ROOT = sysPath.join(meta.dirname, "..");
 const EMPTY_BUFFER: Buffer = Buffer.alloc(0);
 
 const WHITELIST: ReadonlySet<string> = new Set([
@@ -98,7 +95,7 @@ export async function build(): Promise<void> {
   async function buildTsBytesItems(): Promise<any> {
     const promises: Promise<void>[] = [];
     for (const item of testItems) {
-      if (item.src === undefined || item.src.type !== "ts-bytes") {
+      if (item.src === undefined || item.src.type !== "js-bytes") {
         continue;
       }
       promises.push(getAvm1Bytes(item.src.path).then(async (avm1Bytes: Uint8Array) => {
@@ -172,7 +169,7 @@ interface TestItem {
   src?: TestItemSource;
 }
 
-type TestItemSource = As2Source | HaxeSource | TsBytesSource | TxtBytesSource;
+type TestItemSource = As2Source | HaxeSource | JsBytesSource | TxtBytesSource;
 
 interface As2Source {
   type: "as2";
@@ -185,8 +182,8 @@ interface HaxeSource {
   main: string;
 }
 
-interface TsBytesSource {
-  type: "ts-bytes";
+interface JsBytesSource {
+  type: "js-bytes";
   path: string;
 }
 
@@ -230,12 +227,12 @@ async function getTestItems(): Promise<TestItem[]> {
 
 function getItemSourceSync(itemRoot: string): TestItemSource | undefined {
   const srcDir = sysPath.join(itemRoot, "src");
-  const tsBytesPath = sysPath.join(srcDir, "main.ts");
+  const jsBytesPath = sysPath.join(srcDir, "main.js");
   const txtBytesPath = sysPath.join(srcDir, "main.txt");
   const asPath = sysPath.join(srcDir, "main.as");
   const hxPath = sysPath.join(srcDir, "Main.hx");
-  if (fs.existsSync(tsBytesPath)) {
-    return {type: "ts-bytes", path: tsBytesPath};
+  if (fs.existsSync(jsBytesPath)) {
+    return {type: "js-bytes", path: jsBytesPath};
   } else if (fs.existsSync(txtBytesPath)) {
     return {type: "txt-bytes", path: txtBytesPath};
   } else if (fs.existsSync(asPath)) {

@@ -14,6 +14,16 @@ Some of the samples are built manually and don't have any associated source
 code. These files usually test some edge cases related the behavior of the
 interpreter.
 
+## mm.cfg
+
+To collect warnings, create a `mm.cfg` file in your home with the following content:
+
+```
+ErrorReportingEnable=1
+MaxWarnings=1000
+TraceOutputFileEnable=1
+```
+
 <!--
 Throttling (Linux):
 ```
