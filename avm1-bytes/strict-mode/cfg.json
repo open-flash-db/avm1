@@ -1,0 +1,30 @@
+{
+  "blocks": [
+    {
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "Raw",
+          "code": 137,
+          "data": "01"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "String",
+              "value": "strict"
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        }
+      ],
+      "flow": {
+        "type": "Simple",
+        "next": null
+      }
+    }
+  ]
+}

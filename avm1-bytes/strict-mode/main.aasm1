@@ -1,0 +1,5 @@
+l0_0:
+  raw();
+  push(0="strict");
+  trace();
+  end;
