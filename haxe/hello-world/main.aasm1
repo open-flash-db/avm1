@@ -745,7 +745,7 @@ l0_1473:
       getVariable();
       push(0=c:69);
       callMethod();
-      push(0=r:2, 1=5.46040909e-315f64);
+      push(0=r:2, 1=2147483648f64);
       modulo();
       strictEquals();
     l10_3493:
