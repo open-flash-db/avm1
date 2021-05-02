@@ -7,9 +7,9 @@ local-*
 /.tools/build/
 
 *.tsbuildinfo
-/avm1-bytes/*/src/*.d.ts
-/avm1-bytes/*/src/*.js
-/avm1-bytes/*/src/*.js.map
+**/src/*.d.ts
+**/src/*.js
+**/src/*.js.map
 
 ###############################################################################
 # Dependencies                                                                #

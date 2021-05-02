@@ -6,7 +6,7 @@
     "lint": "eslint \".tools/src/**/*.ts\"",
     "format": "eslint --fix \".tools/src/**/*.ts\"",
     "clean": "rimraf \"./tools/build\"",
-    "tools:build": "tsc --build ./.tools/src/tsconfig.json && tsc --build ./avm1-bytes/tsconfig.json",
+    "tools:build": "tsc --build ./.tools/src/tsconfig.json && tsc --build ./tsconfig.samples.json",
     "build": "yarn run tools:build && node .tools/build/build.js",
     "serve": "yarn run tools:build && node .tools/build/serve-throttled.js"
   },
