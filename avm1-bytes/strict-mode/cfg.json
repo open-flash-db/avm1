@@ -4,9 +4,8 @@
       "label": "l0_0",
       "actions": [
         {
-          "action": "Raw",
-          "code": 137,
-          "data": "01"
+          "action": "StrictMode",
+          "is_strict": true
         },
         {
           "action": "Push",
