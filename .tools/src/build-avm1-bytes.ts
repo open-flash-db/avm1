@@ -1,12 +1,12 @@
 import { WritableStream } from "@open-flash/stream";
 import { emitAction } from "avm1-emitter";
-import { ActionType } from "avm1-types/lib/action-type.js";
-import { GetUrl } from "avm1-types/lib/actions/get-url.js";
-import { PushValueType } from "avm1-types/lib/push-value-type.js";
+import { ActionType } from "avm1-types/action-type";
+import { GetUrl } from "avm1-types/actions/get-url";
+import { PushValueType } from "avm1-types/push-value-type";
 import { emitSwf } from "swf-emitter";
 import { Header, Movie, Tag, TagType, Ufixed8P8 } from "swf-types";
-import { Sfixed16P16 } from "swf-types/lib/fixed-point/sfixed16p16.js";
-import { TextAlignment } from "swf-types/lib/text/text-alignment.js";
+import { Sfixed16P16 } from "swf-types/fixed-point/sfixed16p16";
+import { TextAlignment } from "swf-types/text/text-alignment";
 
 export async function getAvm1Bytes(tsModulePath: string): Promise<Uint8Array> {
   return (await import(tsModulePath)).default;

@@ -11,30 +11,31 @@
     "serve": "yarn run tools:build && node .tools/build/serve-throttled.js"
   },
   "dependencies": {
-    "@open-flash/stream": "^0.3.0",
-    "avm1-asm": "^0.10.0",
-    "avm1-emitter": "^0.11.0",
-    "avm1-parser": "^0.11.0",
-    "avm1-types": "^0.11.0",
-    "kryo": "^0.11.2",
-    "swf-emitter": "^0.12.0",
-    "swf-parser": "^0.12.0",
-    "swf-types": "^0.12.0"
+    "@open-flash/stream": "^0.5.0",
+    "avm1-asm": "^0.14.0",
+    "avm1-emitter": "^0.14.0",
+    "avm1-parser": "^0.14.0",
+    "avm1-types": "^0.14.0",
+    "kryo": "^0.14.0",
+    "swf-emitter": "^0.14.0",
+    "swf-parser": "^0.14.1",
+    "swf-types": "^0.14.0",
+    "tslib": "^2.4.0"
   },
   "devDependencies": {
-    "@types/node": "^15.0.1",
-    "@types/rimraf": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
-    "eslint": "^7.23.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "@types/node": "^18.7.16",
+    "@types/rimraf": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
     "furi": "^2.0.0",
     "incident": "^3.2.1",
-    "kryo-json": "^0.11.2",
+    "kryo-json": "^0.14.0",
     "rimraf": "^3.0.2",
-    "ts-node": "^9.1.1",
+    "ts-node": "^10.9.1",
     "tslint": "^6.1.3",
-    "typescript": "^4.2.4"
+    "typescript": "^4.8.3"
   },
   "type": "module"
 }

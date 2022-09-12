@@ -61,11 +61,11 @@ export async function runSwf(absPath: string): Promise<Buffer> {
 
 async function cleanFlashLog(): Promise<void> {
   return new Promise<void>((resolve, reject) => {
-    rimraf(FLASHLOG_PATH, (err: Error | null): void => {
-      if (err !== null) {
-        reject(err);
-      } else {
+    rimraf(FLASHLOG_PATH, (err: Error | null | undefined): void => {
+      if (err === null || err === undefined) {
         resolve();
+      } else {
+        reject(err);
       }
     });
   });

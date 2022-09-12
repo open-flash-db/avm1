@@ -35,6 +35,7 @@ var data = {
   "\"branches/switch-on-non-literals/src/main.as\"": "file:///branches/switch-on-non-literals/main.swf",
   "\"branches/try-catch-finally-ok/src/main.as\"": "file:///branches/try-catch-finally-ok/main.swf",
   "\"branches/try-catch-ok/src/main.as\"": "file:///branches/try-catch-ok/main.swf",
+  "\"float/nan-comparison/src/main.as\"": "file:///float/nan-comparison/main.swf",
   "\"functions/joined-object/src/main.as\"": "file:///functions/joined-object/main.swf",
   "\"if/if-else-false/src/main.as\"": "file:///if/if-else-false/main.swf",
   "\"if/if-else-true/src/main.as\"": "file:///if/if-else-true/main.swf",
@@ -90,6 +91,7 @@ var data = {
   "\"try/try-return-finally-ok-simple/src/main.as\"": "file:///try/try-return-finally-ok-simple/main.swf",
   "\"try/try-throw-catch-finally-err/src/main.as\"": "file:///try/try-throw-catch-finally-err/main.swf",
   "\"try/try-throw-finally-err/src/main.as\"": "file:///try/try-throw-finally-err/main.swf",
+  "\"warnings/lowercase-nan/src/main.as\"": "file:///warnings/lowercase-nan/main.swf",
   "\"with/with-shadow/src/main.as\"": "file:///with/with-shadow/main.swf"
 };
 

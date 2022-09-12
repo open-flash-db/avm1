@@ -23,8 +23,8 @@
  */
 
 import { emitAction } from "avm1-emitter";
-import { ActionType } from "avm1-types/lib/action-type.js";
-import { PushValueType } from "avm1-types/lib/push-value-type.js";
+import { ActionType } from "avm1-types/action-type";
+import { PushValueType } from "avm1-types/push-value-type";
 import { WritableStream } from "@open-flash/stream";
 
 const avm1Stream = new WritableStream();

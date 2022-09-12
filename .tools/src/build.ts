@@ -1,9 +1,9 @@
-import { toAasm } from "avm1-asm/to-aasm.js";
+import { toAasm } from "avm1-asm/to-aasm";
 import { parseCfg } from "avm1-parser";
-import { $Cfg, Cfg } from "avm1-types/lib/cfg/cfg.js";
+import { $Cfg, Cfg } from "avm1-types/cfg/cfg";
 import fs from "fs";
 import { Incident } from "incident";
-import { JSON_VALUE_WRITER } from "kryo-json/lib/json-value-writer.js";
+import { JSON_VALUE_WRITER } from "kryo-json/json-value-writer";
 import sysPath from "path";
 import rimraf from "rimraf";
 
@@ -66,8 +66,8 @@ export async function build(): Promise<void> {
       try {
         const avm1Bytes: Uint8Array = await extractAvm1(item.swfPath);
         await outputFile(item.avm1Path, Buffer.from(avm1Bytes));
-      } catch (err) {
-        throw new Incident(err, "Avm1ExtractionError", item, ({swfPath}) => `Cannot extract AVM1 from ${swfPath}`);
+      } catch (err: unknown) {
+        throw new Incident(err as Error, "Avm1ExtractionError", item, ({swfPath}) => `Cannot extract AVM1 from ${swfPath}`);
       }
     }
   }
@@ -84,8 +84,8 @@ export async function build(): Promise<void> {
         try {
           const avm1Bytes: Uint8Array = await extractAvm1(item.swfPath);
           await outputFile(item.avm1Path, Buffer.from(avm1Bytes));
-        } catch (err) {
-          throw new Incident(err, "Avm1ExtractionError", item, ({swfPath}) => `Cannot extract AVM1 from ${swfPath}`);
+        } catch (err: unknown) {
+          throw new Incident(err as Error, "Avm1ExtractionError", item, ({swfPath}) => `Cannot extract AVM1 from ${swfPath}`);
         }
       })());
     }
@@ -119,8 +119,8 @@ export async function build(): Promise<void> {
           await outputFile(item.avm1Path, avm1Bytes);
           const swfBytes: Uint8Array = avm1BytesToSwf(avm1Bytes);
           await outputFile(item.swfPath, swfBytes);
-        } catch (e) {
-          throw Incident(e, "BuildTxtBytesError", {path: item.root});
+        } catch (e: unknown) {
+          throw Incident(e as Error, "BuildTxtBytesError", {path: item.root});
         }
       }));
     }
@@ -148,11 +148,11 @@ export async function build(): Promise<void> {
 
 export async function clean(): Promise<void> {
   return new Promise<void>((resolve, reject) => {
-    rimraf(DB_DIR, (err: Error | null): void => {
-      if (err !== null) {
-        reject(err);
-      } else {
+    rimraf(DB_DIR, (err: Error | null | undefined): void => {
+      if (err === null || err === undefined) {
         resolve();
+      } else {
+        reject(err);
       }
     });
   });
