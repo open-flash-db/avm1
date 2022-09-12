@@ -1,0 +1,24 @@
+NaN <= NaN
+true
+NaN < NaN
+undefined
+NaN > NaN
+undefined
+NaN >= NaN
+true
+0 <= NaN
+true
+0 < NaN
+undefined
+0 > NaN
+undefined
+0 >= NaN
+true
+1 <= NaN
+true
+1 < NaN
+undefined
+1 > NaN
+undefined
+1 >= NaN
+true

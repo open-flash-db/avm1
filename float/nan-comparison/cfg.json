@@ -1,0 +1,489 @@
+{
+  "blocks": [
+    {
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "ConstantPool",
+          "pool": [
+            "NaN <= NaN",
+            "NaN",
+            "NaN < NaN",
+            "NaN > NaN",
+            "NaN >= NaN",
+            "0 <= NaN",
+            "0 < NaN",
+            "0 > NaN",
+            "0 >= NaN",
+            "1 <= NaN",
+            "1 < NaN",
+            "1 > NaN",
+            "1 >= NaN"
+          ]
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Greater"
+        },
+        {
+          "action": "Not"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Less2"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Greater"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Less2"
+        },
+        {
+          "action": "Not"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Float64",
+              "value": 0
+            },
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Greater"
+        },
+        {
+          "action": "Not"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Float64",
+              "value": 0
+            },
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Less2"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 7
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Float64",
+              "value": 0
+            },
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Greater"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Float64",
+              "value": 0
+            },
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Less2"
+        },
+        {
+          "action": "Not"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Sint32",
+              "value": 1
+            },
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Greater"
+        },
+        {
+          "action": "Not"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Sint32",
+              "value": 1
+            },
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Less2"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 11
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Sint32",
+              "value": 1
+            },
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Greater"
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Constant",
+              "value": 12
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "Sint32",
+              "value": 1
+            },
+            {
+              "type": "Constant",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Less2"
+        },
+        {
+          "action": "Not"
+        },
+        {
+          "action": "Trace"
+        }
+      ],
+      "flow": {
+        "type": "Simple",
+        "next": null
+      }
+    }
+  ]
+}

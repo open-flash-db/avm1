@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "label": "l0_0",
+      "actions": [
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "String",
+              "value": "NaN === Nan"
+            }
+          ]
+        },
+        {
+          "action": "Trace"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "String",
+              "value": "NaN"
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "Push",
+          "values": [
+            {
+              "type": "String",
+              "value": "Nan"
+            }
+          ]
+        },
+        {
+          "action": "GetVariable"
+        },
+        {
+          "action": "StrictEquals"
+        },
+        {
+          "action": "Trace"
+        }
+      ],
+      "flow": {
+        "type": "Simple",
+        "next": null
+      }
+    }
+  ]
+}

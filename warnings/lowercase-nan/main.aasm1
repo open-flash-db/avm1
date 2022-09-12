@@ -1,0 +1,10 @@
+l0_0:
+  push(0="NaN === Nan");
+  trace();
+  push(0="NaN");
+  getVariable();
+  push(0="Nan");
+  getVariable();
+  strictEquals();
+  trace();
+  end;

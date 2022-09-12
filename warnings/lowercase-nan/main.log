@@ -1,0 +1,4 @@
+NaN === Nan
+Warning: Reference to undeclared variable, 'Nan'
+-- Probably a case mismatch.
+false
